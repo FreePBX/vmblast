@@ -1,0 +1,16 @@
+<module>
+	<rawname>vmblast</rawname>
+	<name>VoiceMail Blasting</name>
+	<version>1.0.0</version>
+	<type>setup</type>
+	<category>Inbound Call Control</category>
+	<description>
+		Creates a group of extensions that Calls a group of voicemail boxes and allows you to leave a Msg for them all at once. 
+	</description>
+	<menuitems>
+		<vmblast>VoiceMail Blasting</vmblast>
+	</menuitems>
+	<info>http://aussievoip.com.au/wiki/freePBX-VMBlasting</info>
+	<location>release/vmblast-1.0.0.tgz</location>
+	<md5sum>40a60ac6a9edaee125f6f1c6887260c1</md5sum>
+</module>
