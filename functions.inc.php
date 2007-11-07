@@ -27,16 +27,21 @@ function vmblast_get_config($engine) {
 	global $ext;  // is this the best way to pass this?
 	switch($engine) {
 		case "asterisk":
-			$ext->addInclude('from-internal-additional','vmblast');
+			$ext->addInclude('from-internal-additional','vmblast-grp');
 			$contextname = 'vmblast-grp';
 			$ringlist = vmblast_list();
 			if (is_array($ringlist)) {
 				foreach($ringlist as $item) {
 					$grpnum = ltrim($item['0']);
 					$grp = vmblast_get($grpnum);
-					$grplist = $grp['grplist'];
+					$grplist = explode('&',$grp['grplist']);
 					$ext->add($contextname, $grpnum, '', new ext_macro('user-callerid'));
-					$ext->add($contextname, $grpnum, '', new ext_vm($grplist));
+					$ext->add($contextname, $grpnum, '', new ext_setvar('GRPLIST',''));
+					foreach ($grplist as $exten) {
+						$ext->add($contextname, $grpnum, '', new ext_macro('get-vmcontext',$exten));
+						$ext->add($contextname, $grpnum, '', new ext_setvar('GRPLIST','${GRPLIST}&'.$exten.'@${VMCONTEXT}'));
+					}
+					$ext->add($contextname, $grpnum, '', new ext_vm('${GRPLIST:1},s'));
 					$ext->add($contextname, $grpnum, '', new ext_hangup(''));
 				}
 			}

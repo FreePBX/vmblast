@@ -96,7 +96,7 @@ if ($action == 'delGRP') {
 		// We need to populate grplist with the existing extension list.
 		$thisgrp = vmblast_get(ltrim($extdisplay,'GRP-'));
 		$grpliststr = $thisgrp['grplist'];
-		$grplist = explode("-", $grpliststr);
+		$grplist = explode("&", $grpliststr);
 		$description = $thisgrp['description'];
 		unset($grpliststr);
 		unset($thisgrp);
