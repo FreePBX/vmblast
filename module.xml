@@ -14,6 +14,6 @@
 		<vmblast>VoiceMail Blasting</vmblast>
 	</menuitems>
 	<info>http://aussievoip.com.au/wiki/freePBX-VMBlasting</info>
-	<location>release/vmblast-1.0.0.tgz</location>
-	<md5sum>51a8106789944be19c877441454e2507</md5sum>
+	<location>release/vmblast-1.0.1.tgz</location>
+	<md5sum>612494b07e784437f7dac4ad911702b2</md5sum>
 </module>
