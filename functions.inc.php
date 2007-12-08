@@ -20,9 +20,30 @@ function vmblast_destinations() {
 		return null;
 }
 
+function vmblast_getdest($exten) {
+	return array("vmblast-grp,$exten,1");
+}
+
+function vmblast_getdestinfo($dest) {
+	if (substr(trim($dest),0,12) == 'vmblast-grp,') {
+		$grp = explode(',',$dest);
+		$grp = $grp[1];
+		$thisgrp = vmblast_get($grp);
+		if (empty($thisgrp)) {
+			return array();
+		} else {
+			return array('description' => 'Voicemail Group '.$grp.': '.$thisgrp['description'],
+			             'edit_url' => 'config.php?display=vmblast&extdisplay=GRP-'.urlencode($grp),
+								  );
+		}
+	} else {
+		return false;
+	}
+}
+
+
 /* 	Generates dialplan for vmblast We call this with retrieve_conf
 */
-
 function vmblast_get_config($engine) {
 	global $ext;  // is this the best way to pass this?
 	switch($engine) {
@@ -30,27 +51,90 @@ function vmblast_get_config($engine) {
 			$ext->addInclude('from-internal-additional','vmblast-grp');
 			$contextname = 'vmblast-grp';
 			$ringlist = vmblast_list();
+
+			if (function_exists('recordings_list')) { 
+				$recordings_installed = true;
+				$got_recordings = false;
+			} else {
+				$recordings_installed = false;
+			}
+
 			if (is_array($ringlist)) {
 				foreach($ringlist as $item) {
 					$grpnum = ltrim($item['0']);
 					$grp = vmblast_get($grpnum);
 					$grplist = explode('&',$grp['grplist']);
 					$ext->add($contextname, $grpnum, '', new ext_macro('user-callerid'));
+					$ext->add($contextname, $grpnum, '', new ext_answer(''));
+					$ext->add($contextname, $grpnum, '', new ext_wait('1'));
+
+					if (isset($grp['password']) && trim($grp['password']) != "" && ctype_digit(trim($grp['password']))) {
+						$ext->add($contextname, $grpnum, '', new ext_authenticate($grp['password']));
+					}
+
 					$ext->add($contextname, $grpnum, '', new ext_setvar('GRPLIST',''));
 					foreach ($grplist as $exten) {
 						$ext->add($contextname, $grpnum, '', new ext_macro('get-vmcontext',$exten));
 						$ext->add($contextname, $grpnum, '', new ext_setvar('GRPLIST','${GRPLIST}&'.$exten.'@${VMCONTEXT}'));
 					}
-					$ext->add($contextname, $grpnum, '', new ext_vm('${GRPLIST:1},s'));
-					$ext->add($contextname, $grpnum, '', new ext_hangup(''));
+
+					// Add a message and confirmation so they know what group they are in
+					//
+					if ($grp['audio_label'] == -1 || !$recordings_installed) {
+						$ext->add($contextname, $grpnum, '', new ext_saydigits($grpnum));
+					} else {
+						if (!$got_recordings) {
+							$recordings = recordings_list();
+							$got_recordings = true;
+							$recording_hash = array();
+							foreach ($recordings as $recording) {
+								$recording_hash[$recording[0]] = $recording[2];
+							}
+						}
+						if (isset($recording_hash[$grp['audio_label']])) {
+							$ext->add($contextname, $grpnum, '', new ext_playback($recording_hash[$grp['audio_label']]));
+						} else {
+							$ext->add($contextname, $grpnum, '', new ext_saydigits($grpnum));
+						}
+					}
+					$ext->add($contextname, $grpnum, '', new ext_goto('1','vmblast','app-vmblast'));
 				}
+				$contextname = 'app-vmblast';
+				$ext->add($contextname, 'vmblast', '', new ext_background('if-correct-press&digits/1'));
+				$ext->add($contextname, 'vmblast', '', new ext_waitexten('20'));
+				$ext->add($contextname, 'vmblast', '', new ext_playback('sorry-youre-having-problems&goodbye'));
+				$ext->add($contextname, 'vmblast', '', new ext_hangup(''));
+
+				$ext->add($contextname, '1', '', new ext_vm('${GRPLIST:1},s'));
+				$ext->add($contextname, '1', '', new ext_hangup(''));
 			}
 		break;
 	}
 }
 
-function vmblast_add($grpnum,$grplist,$description) {
-	$sql = "INSERT INTO vmblast (grpnum, grplist, description) VALUES (".$grpnum.", '".str_replace("'", "''", $grplist)."', '".str_replace("'", "''", $description)."')";
+function vmblast_check_extensions($exten=true) {
+	$extenlist = array();
+	if (is_array($exten) && empty($exten)) {
+		return $extenlist;
+	}
+	$sql = "SELECT grpnum ,description FROM vmblast ";
+	if (is_array($exten)) {
+		$sql .= "WHERE grpnum in ('".implode("','",$exten)."')";
+	}
+	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
+
+	foreach ($results as $result) {
+		$thisexten = $result['grpnum'];
+		$extenlist[$thisexten]['description'] = _("Voicemail Group: ").$result['description'];
+		$extenlist[$thisexten]['status'] = 'INUSE';
+		$extenlist[$thisexten]['edit_url'] = 'config.php?display=vmblast&extdisplay=GRP-'.urlencode($thisexten);
+	}
+	return $extenlist;
+}
+
+
+function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password = '') {
+	$sql = "INSERT INTO vmblast (grpnum, grplist, description, audio_label, password) VALUES (".$grpnum.", '".str_replace("'", "''", $grplist)."', '".str_replace("'", "''", $description)."', $audio_label, '".str_replace("'","''", $password)."')";
 	$results = sql($sql);
 }
 
@@ -72,7 +156,7 @@ function vmblast_list() {
 }
 
 function vmblast_get($grpnum) {
-	$results = sql("SELECT grpnum, grplist, description FROM vmblast WHERE grpnum = $grpnum","getRow",DB_FETCHMODE_ASSOC);
+	$results = sql("SELECT grpnum, grplist, description, audio_label, password FROM vmblast WHERE grpnum = $grpnum","getRow",DB_FETCHMODE_ASSOC);
 	return $results;
 }
 ?>

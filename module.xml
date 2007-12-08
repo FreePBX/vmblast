@@ -1,20 +1,23 @@
 <module>
 	<rawname>vmblast</rawname>
 	<name>VoiceMail Blasting</name>
-	<version>1.0.2</version>
+	<version>1.1.0</version>
 	<type>setup</type>
-	<category>Inbound Call Control</category>
+	<category>Internal Options &amp; Configuration</category>
 	<description>
 		Creates a group of extensions that Calls a group of voicemail boxes and allows you to leave a Msg for them all at once. 
 	</description>
 	<changelog>
+		*1.1.0* add audio label, password protect, fix bug for javascript validation to work, add extension/dest registry support
 		*1.0.2* increase grouplist field to varchar(255) to increase the vmblast list
 		*1.0.l* fix: context, redisplay of groups, get proper vm contexts, beep before leaving msg
 	</changelog>
 	<menuitems>
 		<vmblast>VoiceMail Blasting</vmblast>
 	</menuitems>
-	<info>http://aussievoip.com.au/wiki/freePBX-VMBlasting</info>
+	<depends>
+		<version>2.4.0beta1</version>
+	</depends>
 	<location>release/vmblast-1.0.2.tgz</location>
 	<md5sum>936bf3071733255cc89e278204615540</md5sum>
 </module>
