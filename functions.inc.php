@@ -41,7 +41,6 @@ function vmblast_getdestinfo($dest) {
 	}
 }
 
-
 /* 	Generates dialplan for vmblast We call this with retrieve_conf
 */
 function vmblast_get_config($engine) {
@@ -136,14 +135,27 @@ function vmblast_check_extensions($exten=true) {
 	return $extenlist;
 }
 
-
 function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password = '') {
-	$sql = "INSERT INTO vmblast (grpnum, grplist, description, audio_label, password) VALUES (".$grpnum.", '".str_replace("'", "''", $grplist)."', '".str_replace("'", "''", $description)."', '$audio_label', '".str_replace("'","''", $password)."')";
+	global $db;
+
+	$xtns = explode("&",$grplist);
+	foreach ($xtns as $key => $value) {
+		$xtns[$key] = addslashes(trim($value));
+	}
+		// Sanity check input.
+
+	$compiled = $db->prepare("INSERT INTO vmblast_groups (grpnum, ext) values ('$grpnum',?)");
+	$result   = $db->executeMultiple($compiled,$xtns);
+	if(DB::IsError($result)) {
+		die_freepbx($result->getDebugInfo()."<br><br>".'error adding to vmblast_groups table');	
+	}
+	$sql = "INSERT INTO vmblast (grpnum, description, audio_label, password) VALUES (".$grpnum.", '".str_replace("'", "''", $description)."', '$audio_label', '".str_replace("'","''", $password)."')";
 	$results = sql($sql);
 }
 
 function vmblast_del($grpnum) {
-	$results = sql("DELETE FROM vmblast WHERE grpnum = $grpnum","query");
+	$results = sql("DELETE FROM vmblast WHERE grpnum = '$grpnum'","query");
+	$results = sql("DELETE FROM vmblast_groups WHERE grpnum = '$grpnum'","query");
 }
 
 function vmblast_list() {
@@ -160,7 +172,15 @@ function vmblast_list() {
 }
 
 function vmblast_get($grpnum) {
-	$results = sql("SELECT grpnum, grplist, description, audio_label, password FROM vmblast WHERE grpnum = $grpnum","getRow",DB_FETCHMODE_ASSOC);
+	global $db;
+
+	$results = sql("SELECT grpnum, description, audio_label, password FROM vmblast WHERE grpnum = '$grpnum'","getRow",DB_FETCHMODE_ASSOC);
+	$grplist = $db->getCol("SELECT ext FROM vmblast_groups WHERE grpnum = '$grpnum'");
+	if(DB::IsError($grplist)) {
+		die_freepbx($grplist->getDebugInfo()."<br><br>".'selecting from vmblast_groups table');	
+	}
+	$results['grplist'] = implode('&',$grplist);
+	
 	return $results;
 }
 ?>

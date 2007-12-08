@@ -24,7 +24,7 @@ if (isset($_REQUEST["grplist"])) {
 	$grplist = explode("\n",$_REQUEST["grplist"]);
 
 	if (!$grplist) {
-		$grplist = null;
+		$grplist = array();
 	}
 	
 	foreach (array_keys($grplist) as $key) {
@@ -132,7 +132,7 @@ if ($action == 'delGRP') {
 		}
 
 	} else {
-		$grplist = explode("-", '');;
+		$grplist = array();
 		$strategy = '';
 		$ringing = '';
 
