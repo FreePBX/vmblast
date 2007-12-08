@@ -81,7 +81,8 @@ function vmblast_get_config($engine) {
 					// Add a message and confirmation so they know what group they are in
 					//
 					if ($grp['audio_label'] == -1 || !$recordings_installed) {
-						$ext->add($contextname, $grpnum, '', new ext_saydigits($grpnum));
+						$ext->add($contextname, $grpnum, '', new ext_setvar('DIGITS',$grpnum));
+						$ext->add($contextname, $grpnum, '', new ext_goto('digits','vmblast','app-vmblast'));
 					} else {
 						if (!$got_recordings) {
 							$recordings = recordings_list();
@@ -92,14 +93,17 @@ function vmblast_get_config($engine) {
 							}
 						}
 						if (isset($recording_hash[$grp['audio_label']])) {
-							$ext->add($contextname, $grpnum, '', new ext_playback($recording_hash[$grp['audio_label']]));
+							$ext->add($contextname, $grpnum, '', new ext_setvar('MSG',$recording_hash[$grp['audio_label']]));
+							$ext->add($contextname, $grpnum, '', new ext_goto('msg','vmblast','app-vmblast'));
 						} else {
-							$ext->add($contextname, $grpnum, '', new ext_saydigits($grpnum));
+							$ext->add($contextname, $grpnum, '', new ext_setvar('DIGITS',$grpnum));
+							$ext->add($contextname, $grpnum, '', new ext_goto('digits','vmblast','app-vmblast'));
 						}
 					}
-					$ext->add($contextname, $grpnum, '', new ext_goto('1','vmblast','app-vmblast'));
 				}
 				$contextname = 'app-vmblast';
+				$ext->add($contextname, 'vmblast', 'digits', new ext_execif('$["${DIGITS}" != ""]','SayDigits','${DIGITS}'));
+				$ext->add($contextname, 'vmblast', 'msg', new ext_execif('$["${MSG}" != ""]','Background','${MSG}'));
 				$ext->add($contextname, 'vmblast', '', new ext_background('if-correct-press&digits/1'));
 				$ext->add($contextname, 'vmblast', '', new ext_waitexten('20'));
 				$ext->add($contextname, 'vmblast', '', new ext_playback('sorry-youre-having-problems&goodbye'));
@@ -134,7 +138,7 @@ function vmblast_check_extensions($exten=true) {
 
 
 function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password = '') {
-	$sql = "INSERT INTO vmblast (grpnum, grplist, description, audio_label, password) VALUES (".$grpnum.", '".str_replace("'", "''", $grplist)."', '".str_replace("'", "''", $description)."', $audio_label, '".str_replace("'","''", $password)."')";
+	$sql = "INSERT INTO vmblast (grpnum, grplist, description, audio_label, password) VALUES (".$grpnum.", '".str_replace("'", "''", $grplist)."', '".str_replace("'", "''", $description)."', '$audio_label', '".str_replace("'","''", $password)."')";
 	$results = sql($sql);
 }
 

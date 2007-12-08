@@ -176,7 +176,7 @@ if ($action == 'delGRP') {
 					<?php
 						$tresults = recordings_list();
 						$default = (isset($audio_label) ? $audio_label : -1);
-						echo '<option value="">'._("Read Group Number")."</option>";
+						echo '<option value="-1">'._("Read Group Number")."</option>";
 						if (isset($tresults[0])) {
 							foreach ($tresults as $tresult) {
 								echo '<option value="'.$tresult[0].'"'.($tresult[0] == $default ? ' SELECTED' : '').'>'.$tresult[1]."</option>\n";
