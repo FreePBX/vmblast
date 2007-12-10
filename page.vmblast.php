@@ -60,7 +60,7 @@ if(isset($_POST['action'])){
 			if (!empty($usage_arr)) {
 				$conflict_url = framework_display_extension_usage_alert($usage_arr);
 
-			} else if (vmblast_add($account,implode("&",$grplist),$description)) {
+			} else if (vmblast_add($account,$grplist,$description)) {
 				needreload();
 				redirect_standard();
 			}
@@ -76,7 +76,7 @@ if(isset($_POST['action'])){
 		//edit group - just delete and then re-add the extension
 		if ($action == 'editGRP') {
 			vmblast_del($account);	
-			vmblast_add($account,implode("&",$grplist),$description,$audio_label,$password,$default_group);
+			vmblast_add($account,$grplist,$description,$audio_label,$password,$default_group);
 			needreload();
 			redirect_standard('extdisplay');
 		}
@@ -106,8 +106,7 @@ if ($action == 'delGRP') {
 	if ($extdisplay) {
 		// We need to populate grplist with the existing extension list.
 		$thisgrp = vmblast_get(ltrim($extdisplay,'GRP-'));
-		$grpliststr = $thisgrp['grplist'];
-		$grplist = explode("&", $grpliststr);
+		$grplist     = $thisgrp['grplist'];
 		$description = $thisgrp['description'];
 		$audio_label = $thisgrp['audio_label'];
 		$password    = $thisgrp['password'];

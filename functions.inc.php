@@ -138,14 +138,14 @@ function vmblast_check_extensions($exten=true) {
 function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password = '', $default_group=0) {
 	global $db;
 
-	$xtns = explode("&",$grplist);
-	foreach ($xtns as $key => $value) {
-		$xtns[$key] = addslashes(trim($value));
+	$grplist = $grplist;
+	foreach ($grplist as $key => $value) {
+		$grplist[$key] = addslashes(trim($value));
 	}
 		// Sanity check input.
 
 	$compiled = $db->prepare("INSERT INTO vmblast_groups (grpnum, ext) values ('$grpnum',?)");
-	$result   = $db->executeMultiple($compiled,$xtns);
+	$result   = $db->executeMultiple($compiled,$grplist);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getDebugInfo()."<br><br>".'error adding to vmblast_groups table');	
 	}
@@ -187,7 +187,7 @@ function vmblast_get($grpnum) {
 	if(DB::IsError($grplist)) {
 		die_freepbx($grplist->getDebugInfo()."<br><br>".'selecting from vmblast_groups table');	
 	}
-	$results['grplist'] = implode('&',$grplist);
+	$results['grplist'] = $grplist;
 
 	$sql = "SELECT * FROM admin WHERE variable='default_vmblast_grp' AND value='$grpnum'";
 	$default_group = $db->getRow($sql, DB_FETCHMODE_ASSOC);
