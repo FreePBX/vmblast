@@ -49,7 +49,7 @@ function vmblast_get_config($engine) {
 		case "asterisk":
 			$ext->addInclude('from-internal-additional','vmblast-grp');
 			$contextname = 'vmblast-grp';
-			$ringlist = vmblast_list();
+			$vmlist = vmblast_list();
 
 			if (function_exists('recordings_list')) { 
 				$recordings_installed = true;
@@ -58,11 +58,11 @@ function vmblast_get_config($engine) {
 				$recordings_installed = false;
 			}
 
-			if (is_array($ringlist)) {
-				foreach($ringlist as $item) {
+			if (is_array($vmlist)) {
+				foreach($vmlist as $item) {
 					$grpnum = ltrim($item['0']);
 					$grp = vmblast_get($grpnum);
-					$grplist = explode('&',$grp['grplist']);
+					$grplist = $grp['grplist'];
 					$ext->add($contextname, $grpnum, '', new ext_macro('user-callerid'));
 					$ext->add($contextname, $grpnum, '', new ext_answer(''));
 					$ext->add($contextname, $grpnum, '', new ext_wait('1'));
@@ -138,14 +138,19 @@ function vmblast_check_extensions($exten=true) {
 function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password = '', $default_group=0) {
 	global $db;
 
-	$grplist = $grplist;
-	foreach ($grplist as $key => $value) {
-		$grplist[$key] = addslashes(trim($value));
+	if (is_array($grplist)) {
+		$xtns = $grplist;
+	} else {
+		$xtns = explode("\n",$grplist);
+	}
+
+	foreach ($xtns as $key => $value) {
+		$xtns[$key] = addslashes(trim($value));
 	}
 		// Sanity check input.
 
 	$compiled = $db->prepare("INSERT INTO vmblast_groups (grpnum, ext) values ('$grpnum',?)");
-	$result   = $db->executeMultiple($compiled,$grplist);
+	$result   = $db->executeMultiple($compiled,$xtns);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getDebugInfo()."<br><br>".'error adding to vmblast_groups table');	
 	}
@@ -230,7 +235,6 @@ function vmblast_configpageinit($pagename) {
 		return true;
 	}
 
-	//if ($tech_hardware != null && ($pagename == 'extensions' || $pagename == 'users')) {
 	if ($tech_hardware != null || $pagename == 'users') {
 		vmblast_applyhooks();
 		$currentcomponent->addprocessfunc('vmblast_configprocess', 8);
@@ -271,7 +275,7 @@ function vmblast_configpageload() {
 		$section = _("Default Group Inclusion");
 		if ($default_group != "") {
 			$in_default_vmblast_grp = vmblast_check_default($extdisplay);
-			$currentcomponent->addguielem($section, new gui_selectbox('in_default_vmblast_grp', $currentcomponent->getoptlist('vmblast_group'), $in_default_vmblast_grp, _('Default VMblast Group'), _('You can include or exclude this extension/device from being part of the default voicemail blast group when creating or editing.'), false));
+			$currentcomponent->addguielem($section, new gui_selectbox('in_default_vmblast_grp', $currentcomponent->getoptlist('vmblast_group'), $in_default_vmblast_grp, _('Default VMblast Group'), _('You can include or exclude this extension/user from being part of the default voicemail blast group when creating or editing. Choosing this option will be ignored if the user does not have a voicemial box.'), false));
 		} 
 	}
 }
@@ -284,17 +288,18 @@ function vmblast_configprocess() {
 	$action = isset($_REQUEST['action'])?$_REQUEST['action']:null;
 	$ext = isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:null;
 	$extn = isset($_REQUEST['extension'])?$_REQUEST['extension']:null;
+	$vm_enabled = isset($_REQUEST['vm']) && $_REQUEST['vm'] == 'enabled' ? true : false;
 	$in_default_vmblast_grp = isset($_REQUEST['in_default_vmblast_grp'])?$_REQUEST['in_default_vmblast_grp']:false;
 
 	$extdisplay = ($ext==='') ? $extn : $ext;
 	
-	if ($action == "add" || $action == "edit") {
+	if (($action == "add" || $action == "edit") && $vm_enabled) {
 		if (!isset($GLOBALS['abort']) || $GLOBALS['abort'] !== true) {
 			if ($in_default_vmblast_grp !== false) {
 				vmblast_set_default($extdisplay, $in_default_vmblast_grp);
 			}
 		}
-	} elseif ($action == "del") {
+	} elseif ($extdisplay != '' && ($action == "del" || ($action == "edit" && !$vm_enabled))) {
 		$sql = "DELETE FROM vmblast_groups WHERE ext = '$extdisplay'";
 		sql($sql);
 	}

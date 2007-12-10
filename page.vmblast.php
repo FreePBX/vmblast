@@ -20,31 +20,7 @@ $description = isset($_REQUEST['description']) ? $description : '';
 $audio_label = isset($_REQUEST['audio_label']) ? $audio_label : -1;
 $password    = isset($_REQUEST['password'])    ? $password    : '';
 $default_group  = isset($_REQUEST['default_group']) ? $default_group : '0';
-
-if (isset($_REQUEST["grplist"])) {
-	$grplist = explode("\n",$_REQUEST["grplist"]);
-
-	if (!$grplist) {
-		$grplist = array();
-	}
-	
-	foreach (array_keys($grplist) as $key) {
-		//trim it
-		$grplist[$key] = trim($grplist[$key]);
-		
-		// remove invalid chars
-		$grplist[$key] = preg_replace("/[^0-9#*]/", "", $grplist[$key]);
-		
-		if ($grplist[$key] == ltrim($extdisplay,'GRP-').'#')
-			$grplist[$key] = rtrim($grplist[$key],'#');
-		
-		// remove blanks
-		if ($grplist[$key] == "") unset($grplist[$key]);
-	}
-	
-	// check for duplicates, and re-sequence
-	$grplist = array_values(array_unique($grplist));
-}
+$vmblast_list   = isset($_REQUEST['vmblast_list'])  ? $vmblast_list  : '';
 
 // do if we are submitting a form
 if(isset($_POST['action'])){
@@ -60,7 +36,7 @@ if(isset($_POST['action'])){
 			if (!empty($usage_arr)) {
 				$conflict_url = framework_display_extension_usage_alert($usage_arr);
 
-			} else if (vmblast_add($account,$grplist,$description)) {
+			} else if (vmblast_add($account,$vmblast_list,$description)) {
 				needreload();
 				redirect_standard();
 			}
@@ -76,7 +52,7 @@ if(isset($_POST['action'])){
 		//edit group - just delete and then re-add the extension
 		if ($action == 'editGRP') {
 			vmblast_del($account);	
-			vmblast_add($account,$grplist,$description,$audio_label,$password,$default_group);
+			vmblast_add($account,$vmblast_list,$description,$audio_label,$password,$default_group);
 			needreload();
 			redirect_standard('extdisplay');
 		}
@@ -111,7 +87,6 @@ if ($action == 'delGRP') {
 		$audio_label = $thisgrp['audio_label'];
 		$password    = $thisgrp['password'];
 		$default_group = $thisgrp['default_group'];
-		unset($grpliststr);
 		unset($thisgrp);
 		
 		$delButton = "
@@ -189,7 +164,7 @@ if ($action == 'delGRP') {
 			</tr>
 <?php }	else { ?>
 			<tr>
-				<td><a href="#" class="info"><?php echo _("Audio Label:")?><span><?php echo _("The group number will be payed to the caller so they can confirm they have dialed the prooper voice mail group number.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option and choose from recordings.")?></span></a></td>
+				<td><a href="#" class="info"><?php echo _("Audio Label:")?><span><?php echo _("The group number will be played to the caller so they can confirm they have dialed the proper voice mail group number.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option and choose from recordings.")?></span></a></td>
 				<td>
 					<?php
 						$default = (isset($audio_label) ? $audio_label : -1);
@@ -206,43 +181,31 @@ if ($action == 'delGRP') {
 			</tr>
 
 			<tr>
-				<td valign="top"><a href="#" class="info"><?php echo _("Extension list")?>:<span><br><?php echo _("List Voicemail boxes to mass send to. One per line.")?><br></span></a></td>
-				<td valign="top">
-<?php
-						$rows = count($grplist)+1; 
-						($rows < 5) ? 5 : (($rows > 20) ? 20 : $rows);
-?>
-					<textarea id="grplist" cols="15" rows="<?php  echo $rows ?>" name="grplist"><?php echo implode("\n",$grplist);?></textarea>
+				<td valign='top'><a href='#' class='info'><?php echo _("Voicemail Box List:")."<span><br>"._("Select voice mail boxes to add to this group. Use Ctrl key to select multiple..") ?> 
+	<br><br></span></a>
 				</td>
-			</tr>
-
-			<tr>
-				<td>
-				<a href=# class="info"><?php echo _("Extension Quick Pick")?>
-					<span>
-						<?php echo _("Choose an extension to append to the end of the extension list above.")?>
-					</span>
-				</a>
-				</td>
-				<td>
-					<select onChange="insertExten();" id="insexten">
-						<option value=""><?php echo _("(pick extension)")?></option>
-	<?php
+				<td valign="top"> 
+					<select multiple="multiple" name="vmblast_list[]" id="xtnlist" >
+						<?php 
 						$results = core_users_list();
+						if (!is_array($results)) $results = array();
 						foreach ($results as $result) {
 							if ($result[2] != 'novm') {
-								echo "<option value='".$result[0]."'>".$result[0]." (".$result[1].")</option>\n";
+								echo '<option value="'.$result[0].'" ';
+								if (array_search($result[0], $grplist) !== false) echo ' selected="selected" ';
+								echo '>'.$result[0].' ('.$result[1].')</option>';
 							}
 						}
-	?>
+						?>
 					</select>
+				<br>
 				</td>
 			</tr>
 
 			<tr>
 				<td>
-					<a href='#' class='info'><?php echo _("Default Page Group") ?> 
-						<span> <?php echo _("Each PBX system can have a single Default Page Group. If specified, extensions can be automatically added (or removed) from the default page group in the Extensions (or Users) tab.<br />Making this group the default will uncheck the option from the current default group if specified.") ?> </span>
+					<a href='#' class='info'><?php echo _("Default VMBlast Group") ?> 
+						<span> <?php echo _("Each PBX system can have a single Default Voicemail Blast Group. If specified, extensions can be automatically added (or removed) from this default group in the Extensions (or Users) tab.<br />Making this group the default will uncheck the option from the current default group if specified.") ?> </span>
 					</a>
 				</td>
 				<td>
@@ -263,27 +226,13 @@ if ($action == 'delGRP') {
 <script language="javascript">
 <!--
 
-function insertExten() {
-	exten = document.getElementById('insexten').value;
-
-	grpList=document.getElementById('grplist');
-	if (grpList.value[ grpList.value.length - 1 ] == "\n") {
-		grpList.value = grpList.value + exten;
-	} else {
-		grpList.value = grpList.value + '\n' + exten;
-	}
-
-	// reset element
-	document.getElementById('insexten').value = '';
-}
-
-
 function checkGRP(theForm) {
 	var msgInvalidGrpNum = "<?php echo _('Invalid Group Number specified'); ?>";
 	var msgInvalidGrpNumStartWithZero = "<?php echo _('Group numbers with more than one digit cannot begin with 0'); ?>";
 	var msgInvalidExtList = "<?php echo _('Please enter an extension list.'); ?>";
 	var msgInvalidDescription = "<?php echo _('Please enter a valid Group Description'); ?>";
 	var msgInvalidPassword = "<?php echo _('Please enter a valid numeric password, only numbers are allowed'); ?>";
+	var msgInvalidExtList = "<?php echo _('Please select at least one extension'); ?>";
 
 	// form validation
 	defaultEmptyOK = false;
@@ -301,11 +250,19 @@ function checkGRP(theForm) {
 	if (!isAlphanumeric(theForm.description.value))
 		return warnInvalid(theForm.description, msgInvalidDescription);
 	
-	if (isEmpty(theForm.grplist.value))
-		return warnInvalid(theForm.grplist, msgInvalidExtList);
+	var selected = 0;
+	for (var i=0; i < theForm.xtnlist.options.length; i++) {
+		if (theForm.xtnlist.options[i].selected) selected += 1;
+	}
+	if (selected < 1) {
+    theForm.xtnlist.focus();
+		alert(msgInvalidExtList);
+		return false;
+	}
 
 	return true;		
 }
+
 //-->
 </script>
 

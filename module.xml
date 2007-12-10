@@ -1,13 +1,14 @@
 <module>
 	<rawname>vmblast</rawname>
 	<name>VoiceMail Blasting</name>
-	<version>1.1.2</version>
+	<version>1.2.0</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>
 		Creates a group of extensions that Calls a group of voicemail boxes and allows you to leave a Msg for them all at once. 
 	</description>
 	<changelog>
+		*1.2.0* change to use proper multi-select list, fix bug in js validation of empty list, add default vmblast group
 		*1.1.2* add vmblast_group table and migrate from old grplist field
 		*1.1.1* fixed a couple SQL bugs, improved dialplan so you can skip annoucement and messages immeditiately (except if saydigits used)
 		*1.1.0* add audio label, password protect, fix bug for javascript validation to work, add extension/dest registry support
