@@ -19,6 +19,7 @@ $account     = isset($_REQUEST['account'])     ? $account     : '';
 $description = isset($_REQUEST['description']) ? $description : '';
 $audio_label = isset($_REQUEST['audio_label']) ? $audio_label : -1;
 $password    = isset($_REQUEST['password'])    ? $password    : '';
+$default_group  = isset($_REQUEST['default_group']) ? $default_group : '0';
 
 if (isset($_REQUEST["grplist"])) {
 	$grplist = explode("\n",$_REQUEST["grplist"]);
@@ -75,7 +76,7 @@ if(isset($_POST['action'])){
 		//edit group - just delete and then re-add the extension
 		if ($action == 'editGRP') {
 			vmblast_del($account);	
-			vmblast_add($account,implode("&",$grplist),$description,$audio_label,$password);
+			vmblast_add($account,implode("&",$grplist),$description,$audio_label,$password,$default_group);
 			needreload();
 			redirect_standard('extdisplay');
 		}
@@ -110,6 +111,7 @@ if ($action == 'delGRP') {
 		$description = $thisgrp['description'];
 		$audio_label = $thisgrp['audio_label'];
 		$password    = $thisgrp['password'];
+		$default_group = $thisgrp['default_group'];
 		unset($grpliststr);
 		unset($thisgrp);
 		
@@ -237,6 +239,16 @@ if ($action == 'delGRP') {
 					</select>
 				</td>
 			</tr>
+
+			<tr>
+				<td>
+					<a href='#' class='info'><?php echo _("Default Page Group") ?> 
+						<span> <?php echo _("Each PBX system can have a single Default Page Group. If specified, extensions can be automatically added (or removed) from the default page group in the Extensions (or Users) tab.<br />Making this group the default will uncheck the option from the current default group if specified.") ?> </span>
+					</a>
+				</td>
+				<td>
+					<input type='checkbox' name='default_group' id="default_group" value='1' <?php if ($default_group) { echo 'CHECKED'; } ?>>
+				</td>
 
 			<tr>
 			<td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>		

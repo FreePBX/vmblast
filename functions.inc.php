@@ -135,7 +135,7 @@ function vmblast_check_extensions($exten=true) {
 	return $extenlist;
 }
 
-function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password = '') {
+function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password = '', $default_group=0) {
 	global $db;
 
 	$xtns = explode("&",$grplist);
@@ -151,11 +151,19 @@ function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password =
 	}
 	$sql = "INSERT INTO vmblast (grpnum, description, audio_label, password) VALUES (".$grpnum.", '".str_replace("'", "''", $description)."', '$audio_label', '".str_replace("'","''", $password)."')";
 	$results = sql($sql);
+
+	if ($default_group) {
+		sql("DELETE FROM `admin` WHERE variable = 'default_vmblast_grp'");
+		sql("INSERT INTO `admin` (variable, value) VALUES ('default_vmblast_grp', '$grpnum')");
+	} else {
+		sql("DELETE FROM `admin` WHERE variable = 'default_vmblast_grp' AND value = '$grpnum'");
+	}
 }
 
 function vmblast_del($grpnum) {
 	$results = sql("DELETE FROM vmblast WHERE grpnum = '$grpnum'","query");
 	$results = sql("DELETE FROM vmblast_groups WHERE grpnum = '$grpnum'","query");
+	sql("DELETE FROM `admin` WHERE variable = 'default_vmblast_grp' AND value = '$grpnum'");
 }
 
 function vmblast_list() {
@@ -180,7 +188,115 @@ function vmblast_get($grpnum) {
 		die_freepbx($grplist->getDebugInfo()."<br><br>".'selecting from vmblast_groups table');	
 	}
 	$results['grplist'] = implode('&',$grplist);
+
+	$sql = "SELECT * FROM admin WHERE variable='default_vmblast_grp' AND value='$grpnum'";
+	$default_group = $db->getRow($sql, DB_FETCHMODE_ASSOC);
+	if(DB::IsError($default_group)) {
+		$results['default_group'] = 0;
+	} else {
+		$results['default_group'] = empty($default_group) ? 0 : $default_group['value'];
+	}
 	
 	return $results;
+}
+
+function vmblast_check_default($extension) {
+	$sql = "SELECT ext FROM vmblast_groups WHERE ext = '$extension' AND grpnum = (SELECT value FROM admin WHERE variable = 'default_vmblast_grp' limit 1)";
+	$results = sql($sql,"getAll");
+	return (count($results) ? 1 : 0);
+}
+
+function vmblast_set_default($extension, $value) {
+	$default_group = sql("SELECT value FROM `admin` WHERE variable = 'default_vmblast_grp' limit 1", "getOne");
+	if ($default_group == '') {
+		return false;
+	}
+	sql("DELETE FROM vmblast_groups WHERE ext = '$extension' AND grpnum = '$default_group'");
+	if ($value == 1) {
+		sql("INSERT INTO vmblast_groups (grpnum, ext) VALUES ('$default_group', '$extension')");
+	}
+}
+
+function vmblast_configpageinit($pagename) {
+	global $currentcomponent;
+
+	$action = isset($_REQUEST['action'])?$_REQUEST['action']:null;
+	$extdisplay = isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:null;
+	$extension = isset($_REQUEST['extension'])?$_REQUEST['extension']:null;
+	$tech_hardware = isset($_REQUEST['tech_hardware'])?$_REQUEST['tech_hardware']:null;
+
+	// We only want to hook 'users' or 'extensions' pages.
+	if ($pagename != 'users' && $pagename != 'extensions') {
+		return true;
+	}
+
+	//if ($tech_hardware != null && ($pagename == 'extensions' || $pagename == 'users')) {
+	if ($tech_hardware != null || $pagename == 'users') {
+		vmblast_applyhooks();
+		$currentcomponent->addprocessfunc('vmblast_configprocess', 8);
+	} elseif ($action=="add") {
+		// We don't need to display anything on an 'add', but we do need to handle returned data.
+		$currentcomponent->addprocessfunc('vmblast_configprocess', 8);
+	} elseif ($extdisplay != '') {
+		// We're now viewing an extension, so we need to display _and_ process.
+		vmblast_applyhooks();
+		$currentcomponent->addprocessfunc('vmblast_configprocess', 8);
+	}
+}
+
+function vmblast_applyhooks() {
+	global $currentcomponent;
+
+	// Add the 'process' function - this gets called when the page is loaded, to hook into 
+	// displaying stuff on the page.
+	$currentcomponent->addoptlistitem('vmblast_group', '0', _("Exclude"));
+	$currentcomponent->addoptlistitem('vmblast_group', '1', _("Include"));
+	$currentcomponent->setoptlistopts('vmblast_group', 'sort', false);
+
+	$currentcomponent->addguifunc('vmblast_configpageload');
+}
+
+// This is called before the page is actually displayed, so we can use addguielem().
+function vmblast_configpageload() {
+	global $currentcomponent;
+
+	// Init vars from $_REQUEST[]
+	$action = isset($_REQUEST['action']) ? $_REQUEST['action']:null;
+	$extdisplay = isset($_REQUEST['extdisplay']) ? $_REQUEST['extdisplay']:null;
+	
+	// Don't display this stuff it it's on a 'This xtn has been deleted' page.
+	if ($action != 'del') {
+
+		$default_group = sql("SELECT value FROM `admin` WHERE variable = 'default_vmblast_grp'", "getOne");
+		$section = _("Default Group Inclusion");
+		if ($default_group != "") {
+			$in_default_vmblast_grp = vmblast_check_default($extdisplay);
+			$currentcomponent->addguielem($section, new gui_selectbox('in_default_vmblast_grp', $currentcomponent->getoptlist('vmblast_group'), $in_default_vmblast_grp, _('Default VMblast Group'), _('You can include or exclude this extension/device from being part of the default voicemail blast group when creating or editing.'), false));
+		} 
+	}
+}
+
+function vmblast_configprocess() {
+	global $db;
+
+	//create vars from the request
+	//
+	$action = isset($_REQUEST['action'])?$_REQUEST['action']:null;
+	$ext = isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:null;
+	$extn = isset($_REQUEST['extension'])?$_REQUEST['extension']:null;
+	$in_default_vmblast_grp = isset($_REQUEST['in_default_vmblast_grp'])?$_REQUEST['in_default_vmblast_grp']:false;
+
+	$extdisplay = ($ext==='') ? $extn : $ext;
+	
+	if ($action == "add" || $action == "edit") {
+		if (!isset($GLOBALS['abort']) || $GLOBALS['abort'] !== true) {
+			if ($in_default_vmblast_grp !== false) {
+				vmblast_set_default($extdisplay, $in_default_vmblast_grp);
+			}
+		}
+	} elseif ($action == "del") {
+		$sql = "DELETE FROM vmblast_groups WHERE ext = '$extdisplay'";
+		sql($sql);
+	}
 }
 ?>
