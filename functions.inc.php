@@ -79,7 +79,9 @@ function vmblast_get_config($engine) {
 
 					// Add a message and confirmation so they know what group they are in
 					//
-					if ($grp['audio_label'] == -1 || !$recordings_installed) {
+					if ($grp['audio_label'] == -2) {
+						$ext->add($contextname, $grpnum, '', new ext_goto('1','1','app-vmblast'));
+					} elseif ($grp['audio_label'] == -1 || !$recordings_installed) {
 						$ext->add($contextname, $grpnum, '', new ext_setvar('DIGITS',$grpnum));
 						$ext->add($contextname, $grpnum, '', new ext_goto('digits','vmblast','app-vmblast'));
 					} else {

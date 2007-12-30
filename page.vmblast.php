@@ -9,6 +9,12 @@
 //MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //GNU General Public License for more details.
 
+if (! function_exists("framework_check_extension_usage")) {
+	function framework_check_extension_usage($exten) {
+		return array();
+	}
+}
+
 $dispnum = 'vmblast'; //used for switch on config.php
 
 $action      = isset($_REQUEST['action'])      ? $action      : '';
@@ -153,6 +159,7 @@ if ($action == 'delGRP') {
 						$tresults = recordings_list();
 						$default = (isset($audio_label) ? $audio_label : -1);
 						echo '<option value="-1">'._("Read Group Number")."</option>";
+						echo '<option value="-2"'.(($default == -2) ? ' SELECTED':'').'>'._("Beep Only - No Confirmation")."</option>";
 						if (isset($tresults[0])) {
 							foreach ($tresults as $tresult) {
 								echo '<option value="'.$tresult[0].'"'.($tresult[0] == $default ? ' SELECTED' : '').'>'.$tresult[1]."</option>\n";
