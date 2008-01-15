@@ -9,27 +9,21 @@
 //MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //GNU General Public License for more details.
 
-if (! function_exists("framework_check_extension_usage")) {
-	function framework_check_extension_usage($exten) {
-		return array();
-	}
-}
-
 $dispnum = 'vmblast'; //used for switch on config.php
 
-$action      = isset($_REQUEST['action'])      ? $action      : '';
+$action         = isset($_REQUEST['action'])        ? $_REQUEST['action']      : '';
 
 //the extension we are currently displaying
-$extdisplay  = isset($_REQUEST['extdisplay'])  ? $extdisplay  : '';
-$account     = isset($_REQUEST['account'])     ? $account     : '';
-$description = isset($_REQUEST['description']) ? $description : '';
-$audio_label = isset($_REQUEST['audio_label']) ? $audio_label : -1;
-$password    = isset($_REQUEST['password'])    ? $password    : '';
-$default_group  = isset($_REQUEST['default_group']) ? $default_group : '0';
-$vmblast_list   = isset($_REQUEST['vmblast_list'])  ? $vmblast_list  : '';
+$extdisplay     = isset($_REQUEST['extdisplay'])    ? $_REQUEST['extdisplay']  : '';
+$account        = isset($_REQUEST['account'])       ? $_REQUEST['account']     : '';
+$description    = isset($_REQUEST['description'])   ? $_REQUEST['description'] : '';
+$audio_label    = isset($_REQUEST['audio_label'])   ? $_REQUEST['audio_label'] : -1;
+$password       = isset($_REQUEST['password'])      ? $_REQUEST['password']    : '';
+$default_group  = isset($_REQUEST['default_group']) ? $_REQUEST['default_group'] : '0';
+$vmblast_list   = isset($_REQUEST['vmblast_list'])  ? $_REQUEST['vmblast_list']  : '';
 
 // do if we are submitting a form
-if(isset($_POST['action'])){
+if(isset($_REQUEST['action'])){
 	//check if the extension is within range for this user
 	if (isset($account) && !checkRange($account)){
 		echo "<script>javascript:alert('". _("Warning! Extension")." ".$account." "._("is not allowed for your account").".');</script>";
