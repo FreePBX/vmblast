@@ -14,8 +14,8 @@ $dispnum = 'vmblast'; //used for switch on config.php
 $action         = isset($_REQUEST['action'])        ? $_REQUEST['action']      : '';
 
 //the extension we are currently displaying
-$extdisplay     = isset($_REQUEST['extdisplay'])    ? $_REQUEST['extdisplay']  : '';
 $account        = isset($_REQUEST['account'])       ? $_REQUEST['account']     : '';
+$extdisplay     = isset($_REQUEST['extdisplay'])    ? $_REQUEST['extdisplay']  : (($account != '')?'GRP-'.$account:'');
 $description    = isset($_REQUEST['description'])   ? $_REQUEST['description'] : '';
 $audio_label    = isset($_REQUEST['audio_label'])   ? $_REQUEST['audio_label'] : -1;
 $password       = isset($_REQUEST['password'])      ? $_REQUEST['password']    : '';
@@ -35,10 +35,10 @@ if(isset($_REQUEST['action'])){
 			$usage_arr = framework_check_extension_usage($account);
 			if (!empty($usage_arr)) {
 				$conflict_url = framework_display_extension_usage_alert($usage_arr);
-
-			} else if (vmblast_add($account,$vmblast_list,$description)) {
+			} else if (vmblast_add($account,$vmblast_list,$description,$audio_label,$password,$default_group)) {
+				$_REQUEST['action'] = 'delGRP';
 				needreload();
-				redirect_standard();
+				redirect_standard('extdisplay');
 			}
 		}
 		
