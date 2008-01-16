@@ -165,6 +165,7 @@ function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password =
 	} else {
 		sql("DELETE FROM `admin` WHERE variable = 'default_vmblast_grp' AND value = '$grpnum'");
 	}
+	return true;
 }
 
 function vmblast_del($grpnum) {
