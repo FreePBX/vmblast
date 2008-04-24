@@ -212,7 +212,13 @@ if ($action == 'delGRP') {
 				<td>
 					<input type='checkbox' name='default_group' id="default_group" value='1' <?php if ($default_group) { echo 'CHECKED'; } ?>>
 				</td>
+			</tr>
 
+<?php
+			// implementation of module hook
+			// object was initialized in config.php
+			echo $module_hook->hookHtml;
+?>
 			<tr>
 			<td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>		
 			
