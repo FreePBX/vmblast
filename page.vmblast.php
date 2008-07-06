@@ -132,23 +132,23 @@ if ($action == 'delGRP') {
 				if ($extdisplay) { 
 
 ?>
-				<input size="5" type="hidden" name="account" value="<?php  echo ltrim($extdisplay,'GRP-'); ?>">
+				<input size="5" type="hidden" name="account" value="<?php  echo ltrim($extdisplay,'GRP-'); ?>" tabindex="<?php echo ++$tabindex;?>">
 <?php 	} else { ?>
 				<td><a href="#" class="info"><?php echo _("VMBlast Number")?>:<span><?php echo _("The number users will dial to voicemail boxes in this VMBlast group")?></span></a></td>
-				<td><input size="5" type="text" name="account" value="<?php  if ($gresult[0]==0) { echo "500"; } else { echo $gresult[0] + 1; } ?>"></td>
+				<td><input size="5" type="text" name="account" value="<?php  if ($gresult[0]==0) { echo "500"; } else { echo $gresult[0] + 1; } ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 <?php 		} ?>
 			</tr>
 
 			<tr>
 				<td> <a href="#" class="info"><?php echo _("Group Description:")?>:<span><?php echo _("Provide a descriptive title for this VMBlast Group.")?></span></a></td>
-				<td><input size="20" maxlength="35" type="text" name="description" value="<?php echo htmlspecialchars($description); ?>"></td>
+				<td><input size="20" maxlength="35" type="text" name="description" value="<?php echo htmlspecialchars($description); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 
 <?php if(function_exists('recordings_list')) { //only include if recordings is enabled?>
 			<tr>
 				<td><a href="#" class="info"><?php echo _("Audio Label:")?><span><?php echo _("Play this message to the caller so they can confirm they have dialed the proper voice mail group number, or have the system simply read the group number.")?></span></a></td>
 				<td>
-					<select name="audio_label"/>
+					<select name="audio_label" tabindex="<?php echo ++$tabindex;?>"/>
 					<?php
 						$tresults = recordings_list();
 						$default = (isset($audio_label) ? $audio_label : -1);
@@ -177,7 +177,7 @@ if ($action == 'delGRP') {
 ?>
 			<tr>
 				<td><a href="#" class="info"><?php echo _("Optional Password")?>:<span><?php echo _('You can optionally include a password to authenticate before providing access to this group voicemail list.')?></span></a></td>
-				<td><input size="12" type="text" name="password" value="<?php  echo $password ?>">
+				<td><input size="12" type="text" name="password" value="<?php  echo $password ?>" tabindex="<?php echo ++$tabindex;?>">
 				</td>
 			</tr>
 
@@ -186,7 +186,7 @@ if ($action == 'delGRP') {
 	<br><br></span></a>
 				</td>
 				<td valign="top"> 
-					<select multiple="multiple" name="vmblast_list[]" id="xtnlist" >
+					<select multiple="multiple" name="vmblast_list[]" id="xtnlist"  tabindex="<?php echo ++$tabindex;?>">
 						<?php 
 						$results = core_users_list();
 						if (!is_array($results)) $results = array();
@@ -210,7 +210,7 @@ if ($action == 'delGRP') {
 					</a>
 				</td>
 				<td>
-					<input type='checkbox' name='default_group' id="default_group" value='1' <?php if ($default_group) { echo 'CHECKED'; } ?>>
+					<input type='checkbox' name='default_group' id="default_group" value='1' <?php if ($default_group) { echo 'CHECKED'; } ?> tabindex="<?php echo ++$tabindex;?>">
 				</td>
 			</tr>
 
@@ -220,7 +220,7 @@ if ($action == 'delGRP') {
 			echo $module_hook->hookHtml;
 ?>
 			<tr>
-			<td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>		
+			<td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
 			
 			</tr>
 			</table>
