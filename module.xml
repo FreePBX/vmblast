@@ -1,13 +1,14 @@
 <module>
 	<rawname>vmblast</rawname>
 	<name>VoiceMail Blasting</name>
-	<version>2.5.0</version>
+	<version>2.5.0.1</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>
 		Creates a group of extensions that Calls a group of voicemail boxes and allows you to leave a Msg for them all at once. 
 	</description>
 	<changelog>
+		*2.5.0.1* #2530 typo _GLOBALS should be GLOBALS
 		*2.5.0* #2845 tabindex
 		*2.4.3.3* add oldstyle module hook
 		*2.4.3.2* added depends on 2.4.0
@@ -29,6 +30,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.5/vmblast-2.5.0.tgz</location>
-	<md5sum>0b87ef2f978fa3222c85dca1f0cb0e43</md5sum>
+	<location>release/2.5/vmblast-2.5.0.1.tgz</location>
+	<md5sum>85f046937fc1947b6d8debee33ff0aa2</md5sum>
 </module>
