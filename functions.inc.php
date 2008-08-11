@@ -297,7 +297,7 @@ function vmblast_configprocess() {
 	$extdisplay = ($ext==='') ? $extn : $ext;
 	
 	if (($action == "add" || $action == "edit") && $vm_enabled) {
-		if (!isset($_GLOBALS['abort']) || $_GLOBALS['abort'] !== true) {
+		if (!isset($GLOBALS['abort']) || $GLOBALS['abort'] !== true) {
 			if ($in_default_vmblast_grp !== false) {
 				vmblast_set_default($extdisplay, $in_default_vmblast_grp);
 			}
