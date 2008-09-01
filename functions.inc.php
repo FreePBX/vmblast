@@ -147,7 +147,7 @@ function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password =
 	}
 
 	foreach ($xtns as $key => $value) {
-		$xtns[$key] = addslashes(trim($value));
+		$xtns[$key] = $db->escapeSimple(trim($value));
 	}
 		// Sanity check input.
 
