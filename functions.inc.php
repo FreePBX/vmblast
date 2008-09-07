@@ -156,7 +156,7 @@ function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password =
 	if(DB::IsError($result)) {
 		die_freepbx($result->getDebugInfo()."<br><br>".'error adding to vmblast_groups table');	
 	}
-	$sql = "INSERT INTO vmblast (grpnum, description, audio_label, password) VALUES (".$grpnum.", '".str_replace("'", "''", $description)."', '$audio_label', '".str_replace("'","''", $password)."')";
+	$sql = "INSERT INTO vmblast (grpnum, description, audio_label, password) VALUES (".$grpnum.", '".$db->escapeSimple($description)."', '$audio_label', '".$db->escapeSimple($password)."')";
 	$results = sql($sql);
 
 	if ($default_group) {
