@@ -6,37 +6,37 @@
 
 global $db;
 
-echo "Upgrading vmblast to add audio_label field..";
+echo _("Upgrading vmblast to add audio_label field..");
 $sql = "SELECT audio_label FROM vmblast";
 $confs = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 if (!DB::IsError($confs)) { // no error... Already done
-	echo "Not Required<br />";
+	echo _("Not Required")."<br />";
 } else {
 	$sql = "ALTER TABLE vmblast ADD audio_label INT ( 11 ) NOT NULL DEFAULT -1";
 	$results = $db->query($sql);
 	if(DB::IsError($results)) {
 	        die($results->getMessage());
 	}
-	echo "Done<br />";
+	echo _("Done")."<br />";
 }
 
-echo "Upgrading vmblast to add password field..";
+echo _("Upgrading vmblast to add password field..");
 $sql = "SELECT password FROM vmblast";
 $confs = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 if (!DB::IsError($confs)) { // no error... Already done
-	echo "Not Required<br />";
+	echo _("Not Required")."<br />";
 } else {
 	$sql = "ALTER TABLE vmblast ADD password VARCHAR ( 20 ) NOT NULL";
 	$results = $db->query($sql);
 	if(DB::IsError($results)) {
 	        die($results->getMessage());
 	}
-	echo "Done<br />";
+	echo _("Done")."<br />";
 }
 
 // Drop grplist field but first pull it's data and put in new table
 //
-echo "Dropping grplist..";
+echo _("Dropping grplist..");
 $sql = 'SELECT grpnum, grplist FROM vmblast';
 $confs = $db->getAll($sql, DB_FETCHMODE_ASSOC);
 if (!DB::IsError($confs)) { 
@@ -50,20 +50,20 @@ if (!DB::IsError($confs)) {
 	$compiled = $db->prepare("INSERT INTO vmblast_groups (grpnum, ext) values (?,?)");
 	$result   = $db->executeMultiple($compiled, $list);
 	if(DB::IsError($result)) {
-		echo "error populating vmblast_groups table<br />";	
+		echo _("error populating vmblast_groups table")."<br />";	
 		return false;
 	} else {
-		echo "populated new table<br />Dropping old grplist field";
+		echo _("populated new table<br />Dropping old grplist field");
 		$sql = "ALTER TABLE `vmblast` DROP `grplist`";
 		$results = $db->query($sql);
 		if(DB::IsError($results)) {
-			echo "failed to drop field<br />";
+			echo _("failed to drop field")."<br />";
 		} else {
-			echo "OK<br />";
+			echo _("OK")."<br />";
 		}
 	}
 } else {
-	echo "Not Needed<br />";
+	echo _("Not Needed")."<br />";
 }
 
 ?>
