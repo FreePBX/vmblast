@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX vmblast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-11 21:13+0200\n"
-"PO-Revision-Date: 2008-09-17 18:47+0100\n"
+"POT-Creation-Date: 2008-10-06 11:56+0200\n"
+"PO-Revision-Date: 2008-10-12 14:23+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
+
+#: functions.inc.php:35
+#, php-format
+msgid "Voicemail Group %s: %s"
+msgstr "Röstgrupp %s: %s"
 
 #: functions.inc.php:133
 msgid "Voicemail Group: "

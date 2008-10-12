@@ -32,7 +32,7 @@ function vmblast_getdestinfo($dest) {
 		if (empty($thisgrp)) {
 			return array();
 		} else {
-			return array('description' => 'Voicemail Group '.$grp.': '.$thisgrp['description'],
+			return array('description' => sprintf(_("Voicemail Group %s: %s"),$grp,$thisgrp['description']),
 			             'edit_url' => 'config.php?display=vmblast&extdisplay=GRP-'.urlencode($grp),
 								  );
 		}
