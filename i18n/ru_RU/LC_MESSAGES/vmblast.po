@@ -1,0 +1,235 @@
+# Russian freePBX ver. translation
+# Copyright (c) 2006-2008 PostMet Corporation
+# This file is distributed under the same license as the freePBX package.
+# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
+#
+# Использовать iconv amp.new -f UTF-8 -t ISO-8859-5 -o amp.po
+# fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-11 21:13+0200\n"
+"PO-Revision-Date: 2008-09-27 16:38+0100\n"
+"Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
+"Language-Team: Russian <faq@postmet.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-5\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.inc.php:133
+msgid "Voicemail Group: "
+msgstr "Группа голосовой почты:"
+
+#: functions.inc.php:259
+msgid "Exclude"
+msgstr "Исключить"
+
+#: functions.inc.php:260
+msgid "Include"
+msgstr "Включить"
+
+#: functions.inc.php:278
+msgid "Default Group Inclusion"
+msgstr "Включения в группу по-умолчанию"
+
+#: functions.inc.php:281
+msgid "Default VMblast Group"
+msgstr "Дефолтная группа VMblast"
+
+#: functions.inc.php:281
+msgid ""
+"You can include or exclude this extension/user from being part of the "
+"default voicemail blast group when creating or editing. Choosing this option "
+"will be ignored if the user does not have a voicemial box."
+msgstr ""
+"При создании или изменении дефолтной группы голосовой почты в неё можно включить или исключить из неё следующие (ниже) "
+"внутренние номера/пользователей. Выбор этой опции игнорируется, если у пользователя нет ящика голосовой почты."
+
+#: install.php:9
+msgid "Upgrading vmblast to add audio_label field.."
+msgstr "Апгрейдить vmblast добавлением поля аудио метки.."
+
+#: install.php:13 install.php:27
+msgid "Not Required"
+msgstr "Не требуется"
+
+#: install.php:20 install.php:34
+msgid "Done"
+msgstr "Готово"
+
+#: install.php:23
+msgid "Upgrading vmblast to add password field.."
+msgstr "Апгрейдить vmblast добавлением поля пароль.."
+
+#: install.php:39
+msgid "Dropping grplist.."
+msgstr "Сброс листа группы.."
+
+#: install.php:53
+msgid "error populating vmblast_groups table"
+msgstr "ошибка при создании таблицы группы vmblast"
+
+#: install.php:56
+msgid "populated new table<br />Dropping old grplist field"
+msgstr "создана новая таблица<br />Сбросить старые значения поля лист группы"
+
+#: install.php:60
+msgid "failed to drop field"
+msgstr "не удалось сбросить поле"
+
+#: install.php:62
+msgid "OK"
+msgstr "ОК"
+
+#: install.php:66
+msgid "Not Needed"
+msgstr "Не требуется"
+
+#: page.vmblast.php:29
+msgid "Warning! Extension"
+msgstr "Внимание! Внутренний номер"
+
+#: page.vmblast.php:29
+msgid "is not allowed for your account"
+msgstr "не доступен для вашего аккаунта"
+
+#: page.vmblast.php:65 page.vmblast.php:119 page.vmblast.php:127
+msgid "Add VMBlast Group"
+msgstr "Добавить группу VMBlast"
+
+#: page.vmblast.php:80 page.vmblast.php:100
+msgid "VMBlast Group"
+msgstr "Группа VMBlast"
+
+#: page.vmblast.php:80
+msgid "deleted"
+msgstr "удалено"
+
+#: page.vmblast.php:97
+msgid "Delete Group"
+msgstr "Удалить группу"
+
+#: page.vmblast.php:116
+msgid "Conflicting Extensions"
+msgstr "Конфликт внутренних номеров"
+
+#: page.vmblast.php:127
+msgid "Edit VMBlast Group"
+msgstr "Изменить группу VMBlast"
+
+#: page.vmblast.php:137
+msgid "VMBlast Number"
+msgstr "Номер VMBlast"
+
+#: page.vmblast.php:137
+msgid "The number users will dial to voicemail boxes in this VMBlast group"
+msgstr "Внутренний номер для пользователей ипользующих дозвон в голосовую почту этой группы VMBlast"
+
+#: page.vmblast.php:143
+msgid "Group Description:"
+msgstr "Описание группы:"
+
+#: page.vmblast.php:143
+msgid "Provide a descriptive title for this VMBlast Group."
+msgstr "Предложите понятное описание для этой группы VMBlast"
+
+#: page.vmblast.php:149 page.vmblast.php:168
+msgid "Audio Label:"
+msgstr "Аудио анонс:"
+
+#: page.vmblast.php:149
+msgid ""
+"Play this message to the caller so they can confirm they have dialed the "
+"proper voice mail group number, or have the system simply read the group "
+"number."
+msgstr ""
+"Это сообщение будет воспроизведено позвонившему для подтверждения, что звонок поступил в групповой ящик голосовой почты "
+"или система сообщит номер группы."
+
+#: page.vmblast.php:155 page.vmblast.php:173
+msgid "Read Group Number"
+msgstr "Сообщать групповой номер"
+
+#: page.vmblast.php:156
+msgid "Beep Only - No Confirmation"
+msgstr "Только звуковой сигнал - без подтверждения"
+
+#: page.vmblast.php:168
+msgid ""
+"The group number will be played to the caller so they can confirm they have "
+"dialed the proper voice mail group number.<br><br>You must install and "
+"enable the \"Systems Recordings\" Module to edit this option and choose from "
+"recordings."
+msgstr ""
+"Будет воспроизведён номер группы для подтверждения, что звонок поступил в групповой ящик голосовой почты"
+"<br><br>Нужно инсталлировать и активировать модуль Запись сообщений для изменения этой опции."
+ 
+#: page.vmblast.php:179
+msgid "Optional Password"
+msgstr "Пароль (опционально)"
+
+#: page.vmblast.php:179
+msgid ""
+"You can optionally include a password to authenticate before providing "
+"access to this group voicemail list."
+msgstr ""
+"Можно добавить пароль опционально, для аутентификации доступа в этот групповой ящик голосовой почты."
+
+#: page.vmblast.php:185
+msgid "Voicemail Box List:"
+msgstr "Список голосовой почты:"
+
+#: page.vmblast.php:185
+msgid ""
+"Select voice mail boxes to add to this group. Use Ctrl key to select "
+"multiple.."
+msgstr "Отметить ящики голосовой почты, которые будут включены в групповой ящик. удерживайте Ctrl + клик мышкой для множественного выделения"
+
+#: page.vmblast.php:208
+msgid "Default VMBlast Group"
+msgstr "Дефолтная группа VMBlast"
+
+#: page.vmblast.php:209
+msgid ""
+"Each PBX system can have a single Default Voicemail Blast Group. If "
+"specified, extensions can be automatically added (or removed) from this "
+"default group in the Extensions (or Users) tab.<br />Making this group the "
+"default will uncheck the option from the current default group if specified."
+msgstr ""
+"Каждая ИП-АТС может иметь общий дефолтный ящик групповой голосовой почты. Если "
+"указано, то внутренние номера могут быть автоматически добавлены (или удалены) из "
+"дефолтной группы в таблице Внутренних номеров (пользователей).<br />Объявляя эту группу "
+"дефолтной вы изменяете текущее значение дефолтной группы."
+
+#: page.vmblast.php:223
+msgid "Submit Changes"
+msgstr "Применить изменения"
+
+#: page.vmblast.php:237
+msgid "Invalid Group Number specified"
+msgstr "Указан неверный номер группы"
+
+#: page.vmblast.php:238
+msgid "Group numbers with more than one digit cannot begin with 0"
+msgstr "Номер группы двух- и более значный не должен начинаться с 0"
+
+#: page.vmblast.php:239
+msgid "Please enter an extension list."
+msgstr "Укажите список внутренних номеров"
+
+#: page.vmblast.php:240
+msgid "Please enter a valid Group Description"
+msgstr "Укажите понятное описание группы"
+
+#: page.vmblast.php:241
+msgid "Please enter a valid numeric password, only numbers are allowed"
+msgstr "Укажите цифровой пароль, разрешены только цифры"
+
+#: page.vmblast.php:242
+msgid "Please select at least one extension"
+msgstr "Выберите по крайней мере хотя бы один внутренний номер"
+
+#: module.xml
+msgid "VoiceMail Blasting"
+msgstr "Групповая голосовая почта"
