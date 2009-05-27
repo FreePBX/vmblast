@@ -8,6 +8,8 @@
 		Creates a group of extensions that Calls a group of voicemail boxes and allows you to leave a message for them all at once. 
 	</description>
 	<changelog>
+		*2.5.0.6* #3697
+		*2.5.0.5* localization updates
 		*2.5.0.4* #3380
 		*2.5.0.3* localization string enclosures
 		*2.5.0.2* #3138, #3165 Sqlite3 fixes

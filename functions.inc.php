@@ -122,10 +122,11 @@ function vmblast_check_extensions($exten=true) {
 	if (is_array($exten) && empty($exten)) {
 		return $extenlist;
 	}
-	$sql = "SELECT grpnum ,description FROM vmblast ";
+	$sql = "SELECT grpnum, description FROM vmblast ";
 	if (is_array($exten)) {
 		$sql .= "WHERE grpnum in ('".implode("','",$exten)."')";
 	}
+	$sql .= " ORDER BY CAST(grpnum AS UNSIGNED)";
 	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
 
 	foreach ($results as $result) {
