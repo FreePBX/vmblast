@@ -279,7 +279,7 @@ function vmblast_configpageload() {
 		$section = _("Default Group Inclusion");
 		if ($default_group != "") {
 			$in_default_vmblast_grp = vmblast_check_default($extdisplay);
-			$currentcomponent->addguielem($section, new gui_selectbox('in_default_vmblast_grp', $currentcomponent->getoptlist('vmblast_group'), $in_default_vmblast_grp, _('Default VMblast Group'), _('You can include or exclude this extension/user from being part of the default voicemail blast group when creating or editing. Choosing this option will be ignored if the user does not have a voicemial box.'), false));
+			$currentcomponent->addguielem($section, new gui_selectbox('in_default_vmblast_grp', $currentcomponent->getoptlist('vmblast_group'), $in_default_vmblast_grp, _('Default VMblast Group'), _('You can include or exclude this extension/user from being part of the default voicemail blast group when creating or editing. Choosing this option will be ignored if the user does not have a voicemail box.'), false));
 		} 
 	}
 }
