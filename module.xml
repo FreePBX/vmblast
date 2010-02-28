@@ -1,7 +1,7 @@
 <module>
 	<rawname>vmblast</rawname>
 	<name>VoiceMail Blasting</name>
-	<version>2.6.0.0</version>
+	<version>2.7.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<type>setup</type>
@@ -10,6 +10,7 @@
 		Creates a group of extensions that Calls a group of voicemail boxes and allows you to leave a message for them all at once. 
 	</description>
 	<changelog>
+		*2.7.0.0* spelling, localizations
 		*2.6.0.0* localizations, misc
 		*2.5.0.6* #3697
 		*2.5.0.5* localization updates
@@ -38,6 +39,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.6/vmblast-2.6.0.0.tgz</location>
-	<md5sum>e60af206ff78b0d8ac21b540a089f297</md5sum>
+	<location>release/2.7/vmblast-2.7.0.0.tgz</location>
+	<md5sum>8c5377a8695450a727b1d26038562bbb</md5sum>
 </module>
