@@ -148,7 +148,7 @@ if ($action == 'delGRP') {
 			<tr>
 				<td><a href="#" class="info"><?php echo _("Audio Label:")?><span><?php echo _("Play this message to the caller so they can confirm they have dialed the proper voice mail group number, or have the system simply read the group number.")?></span></a></td>
 				<td>
-					<select name="audio_label" tabindex="<?php echo ++$tabindex;?>"/>
+					<select name="audio_label" tabindex="<?php echo ++$tabindex;?>">
 					<?php
 						$tresults = recordings_list();
 						$default = (isset($audio_label) ? $audio_label : -1);
