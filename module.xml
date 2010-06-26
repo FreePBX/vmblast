@@ -7,7 +7,7 @@
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>
-		Creates a group of extensions that Calls a group of voicemail boxes and allows you to leave a message for them all at once. 
+		Creates a group of extensions that calls a group of voicemail boxes and allows you to leave a message for them all at once. 
 	</description>
 	<changelog>
 		*2.8.0.0* #4309, #4310
