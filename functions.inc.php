@@ -94,7 +94,7 @@ function vmblast_get_config($engine) {
 							}
 						}
 						if (isset($recording_hash[$grp['audio_label']])) {
-							$ext->add($contextname, $grpnum, '', new ext_setvar('MSG',$recording_hash[$grp['audio_label']]));
+							$ext->add($contextname, $grpnum, '', new ext_setvar('VMBMSG',$recording_hash[$grp['audio_label']]));
 							$ext->add($contextname, $grpnum, '', new ext_goto('msg','vmblast','app-vmblast'));
 						} else {
 							$ext->add($contextname, $grpnum, '', new ext_setvar('DIGITS',$grpnum));
@@ -104,7 +104,7 @@ function vmblast_get_config($engine) {
 				}
 				$contextname = 'app-vmblast';
 				$ext->add($contextname, 'vmblast', 'digits', new ext_execif('$["${DIGITS}" != ""]','SayDigits','${DIGITS}'));
-				$ext->add($contextname, 'vmblast', 'msg', new ext_execif('$["${MSG}" != ""]','Background','${MSG}'));
+				$ext->add($contextname, 'vmblast', 'msg', new ext_execif('$["${VMBMSG}" != ""]','Background','${VMBMSG}'));
 				$ext->add($contextname, 'vmblast', '', new ext_background('if-correct-press&digits/1'));
 				$ext->add($contextname, 'vmblast', '', new ext_waitexten('20'));
 				$ext->add($contextname, 'vmblast', '', new ext_playback('sorry-youre-having-problems&goodbye'));
