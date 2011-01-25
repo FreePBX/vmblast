@@ -6,18 +6,6 @@
 
 global $db;
 
-if (! function_exists("out")) {
-	function out($text) {
-		echo $text."<br />";
-	}
-}
-
-if (! function_exists("outn")) {
-	function outn($text) {
-		echo $text;
-	}
-}
-
 outn(_("Upgrading vmblast to add audio_label field.."));
 $sql = "SELECT audio_label FROM vmblast";
 $confs = $db->getRow($sql, DB_FETCHMODE_ASSOC);
