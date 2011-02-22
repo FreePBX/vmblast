@@ -15,7 +15,7 @@ $action         = isset($_REQUEST['action'])        ? $_REQUEST['action']      :
 
 //the extension we are currently displaying
 $account        = isset($_REQUEST['account'])       ? $_REQUEST['account']     : '';
-$extdisplay     = isset($_REQUEST['extdisplay'])    ? $_REQUEST['extdisplay']  : (($account != '')?'GRP-'.$account:'');
+$extdisplay     = isset($_REQUEST['extdisplay'])    ? ltrim($_REQUEST['extdisplay'],'GRP-')  : (($account != '')?$account:'');
 $description    = isset($_REQUEST['description'])   ? $_REQUEST['description'] : '';
 $audio_label    = isset($_REQUEST['audio_label'])   ? $_REQUEST['audio_label'] : -1;
 $password       = isset($_REQUEST['password'])      ? $_REQUEST['password']    : '';
@@ -65,10 +65,15 @@ if(isset($_REQUEST['action'])){
     <li><a id="<?php  echo ($extdisplay=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add VMBlast Group")?></a></li> <?php 
 //get unique ring groups
 $gresults = vmblast_list();
+$default_grp = vmblast_get_default_grp();
+dbug("default group $default_grp");
+dbug($gresults);
+dbug($extdisplay);
 
 if (isset($gresults)) {
 	foreach ($gresults as $gresult) {
-		echo "<li><a id=\"".($extdisplay=='GRP-'.$gresult[0] ? 'current':'')."\" href=\"config.php?display=".urlencode($dispnum)."&extdisplay=".urlencode("GRP-".$gresult[0])."\">".$gresult[1]." ({$gresult[0]})</a></li>";
+    $hl = $gresult[0] == $default_grp ? _(' [DEFAULT]') : '';
+		echo "<li><a class=\"".($extdisplay==$gresult[0] ? 'current':'')."\" href=\"config.php?display=".urlencode($dispnum)."&extdisplay=".urlencode("GRP-".$gresult[0])."\">".$gresult[1]." ({$gresult[0]})$hl</a></li>";
 	}
 }
 ?>
@@ -79,9 +84,9 @@ if (isset($gresults)) {
 if ($action == 'delGRP') {
 	echo '<br><h3>'._("VMBlast Group").' '.$account.' '._("deleted").'!</h3><br><br><br><br><br><br><br><br>';
 } else {
-	if ($extdisplay) {
+	if ($extdisplay != '') {
 		// We need to populate grplist with the existing extension list.
-		$thisgrp = vmblast_get(ltrim($extdisplay,'GRP-'));
+		$thisgrp = vmblast_get($extdisplay);
 		$grplist     = $thisgrp['grplist'];
 		$description = $thisgrp['description'];
 		$audio_label = $thisgrp['audio_label'];
@@ -92,15 +97,15 @@ if ($action == 'delGRP') {
 		$delButton = "
 			<form name=delete action=\"{$_SERVER['PHP_SELF']}\" method=POST>
 				<input type=\"hidden\" name=\"display\" value=\"{$dispnum}\">
-				<input type=\"hidden\" name=\"account\" value=\"".ltrim($extdisplay,'GRP-')."\">
+				<input type=\"hidden\" name=\"account\" value=\"".$extdisplay."\">
 				<input type=\"hidden\" name=\"action\" value=\"delGRP\">
 				<input type=submit value=\""._("Delete Group")."\">
 			</form>";
 			
-		echo "<h2>"._("VMBlast Group").": ".ltrim($extdisplay,'GRP-')."</h2>";
+		echo "<h2>"._("VMBlast Group").": ".$extdisplay."</h2>";
 		echo "<p>".$delButton."</p>";
 
-		$usage_list = framework_display_destination_usage(vmblast_getdest(ltrim($extdisplay,'GRP-')));
+		$usage_list = framework_display_destination_usage(vmblast_getdest($extdisplay));
 		if (!empty($usage_list)) {
 		?>
 			<a href="#" class="info"><?php echo $usage_list['text']?>:<span><?php echo $usage_list['tooltip']?></span></a>
@@ -121,18 +126,18 @@ if ($action == 'delGRP') {
 	?>
 			<form name="editGRP" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkGRP(editGRP);">
 			<input type="hidden" name="display" value="<?php echo $dispnum?>">
-			<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'editGRP' : 'addGRP'); ?>">
+			<input type="hidden" name="action" value="<?php echo ($extdisplay != '' ? 'editGRP' : 'addGRP'); ?>">
 			<table>
 			<tr>
-				<td colspan="2"><h5><?php  echo ($extdisplay ? _("Edit VMBlast Group") : _("Add VMBlast Group")) ?><hr></h5>
+				<td colspan="2"><h5><?php  echo ($extdisplay != '' ? _("Edit VMBlast Group") : _("Add VMBlast Group")) ?><hr></h5>
 				</td>
 			</tr>
 			<tr>
 <?php
-				if ($extdisplay) { 
+				if ($extdisplay != '') { 
 
 ?>
-				<input size="5" type="hidden" name="account" value="<?php  echo ltrim($extdisplay,'GRP-'); ?>" tabindex="<?php echo ++$tabindex;?>">
+				<input size="5" type="hidden" name="account" value="<?php  echo $extdisplay; ?>" tabindex="<?php echo ++$tabindex;?>">
 <?php 	} else { ?>
 				<td><a href="#" class="info"><?php echo _("VMBlast Number")?>:<span><?php echo _("The number users will dial to voicemail boxes in this VMBlast group")?></span></a></td>
 				<td><input size="5" type="text" name="account" value="<?php  if ($gresult[0]==0) { echo "500"; } else { echo $gresult[0] + 1; } ?>" tabindex="<?php echo ++$tabindex;?>"></td>

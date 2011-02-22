@@ -188,6 +188,11 @@ function vmblast_list() {
 		return null;
 }
 
+function vmblast_get_default_grp() {
+	$grp = sql("SELECT value FROM admin WHERE variable='default_vmblast_grp' LIMIT 1",'getOne');
+  return $grp;
+}
+
 function vmblast_get($grpnum) {
 	global $db;
 
