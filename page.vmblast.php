@@ -66,9 +66,6 @@ if(isset($_REQUEST['action'])){
 //get unique ring groups
 $gresults = vmblast_list();
 $default_grp = vmblast_get_default_grp();
-dbug("default group $default_grp");
-dbug($gresults);
-dbug($extdisplay);
 
 if (isset($gresults)) {
 	foreach ($gresults as $gresult) {
