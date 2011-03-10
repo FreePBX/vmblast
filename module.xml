@@ -1,7 +1,7 @@
 <module>
 	<rawname>vmblast</rawname>
 	<repo>standard</repo>
-	<name>VoiceMail Blasting</name>
+	<name>Voicemail Blasting</name>
 	<version>2.9.0.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
@@ -41,7 +41,7 @@
 		*1.0.l* fix: context, redisplay of groups, get proper vm contexts, beep before leaving msg
 	</changelog>
 	<menuitems>
-		<vmblast>VoiceMail Blasting</vmblast>
+		<vmblast>Voicemail Blasting</vmblast>
 	</menuitems>
 	<depends>
 		<version>2.4.0</version>
