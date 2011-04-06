@@ -1,139 +1,142 @@
 # Russian freePBX ver. translation
-# Copyright (c) 2006-2008 PostMet Corporation
+# Copyright (c) 2006-2011 PostMet Corporation
 # This file is distributed under the same license as the freePBX package.
-# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
+# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2011.
 #
-# ∏·ﬂﬁ€Ï◊ﬁ“–‚Ï iconv amp.new -f UTF-8 -t ISO-8859-5 -o amp.po
+# –ò—Å–ø–æ–ª—å–∑–æ–≤–∞—Ç—å iconv vmblast.utf8.po -f UTF-8 -t ISO-8859-5 -o vmblast.po
 # fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-22 19:14+0200\n"
-"PO-Revision-Date: 2008-09-27 16:38+0100\n"
+"POT-Creation-Date: 2011-03-18 08:25+0100\n"
+"PO-Revision-Date: 2011-04-06 17:15+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-5\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #, php-format
 msgid "Voicemail Group %s: %s"
-msgstr ""
+msgstr "–ì—Ä—É–ø–ø–∞ –≥–æ–ª–æ—Å–æ–≤–æ–π –ø–æ—á—Ç—ã %s: %s"
 
 msgid "Voicemail Group: "
-msgstr "≥‡„ﬂﬂ– ”ﬁ€ﬁ·ﬁ“ﬁŸ ﬂﬁÁ‚Î:"
+msgstr "–ì—Ä—É–ø–ø–∞ –≥–æ–ª–æ—Å–æ–≤–æ–π –ø–æ—á—Ç—ã:"
 
 msgid "Exclude"
-msgstr "∏·⁄€ÓÁÿ‚Ï"
+msgstr "–ò—Å–∫–ª—é—á–∏—Ç—å"
 
 msgid "Include"
-msgstr "≤⁄€ÓÁÿ‚Ï"
+msgstr "–í–∫–ª—é—á–∏—Ç—å"
 
 msgid "Default Group Inclusion"
-msgstr "≤⁄€ÓÁ’›ÿÔ “ ”‡„ﬂﬂ„ ﬂﬁ-„‹ﬁ€Á–›ÿÓ"
+msgstr "–í–∫–ª—é—á–µ–Ω–∏—è –≤ –≥—Ä—É–ø–ø—É –ø–æ-—É–º–æ–ª—á–∞–Ω–∏—é"
 
 msgid "Default VMblast Group"
-msgstr "¥’‰ﬁ€‚›–Ô ”‡„ﬂﬂ– VMblast"
+msgstr "–î–µ—Ñ–æ–ª—Ç–Ω–∞—è –≥—Ä—É–ø–ø–∞ VMblast"
 
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
 "will be ignored if the user does not have a voicemail box."
 msgstr ""
-"ø‡ÿ ·ﬁ◊‘–›ÿÿ ÿ€ÿ ÿ◊‹’›’›ÿÿ ‘’‰ﬁ€‚›ﬁŸ ”‡„ﬂﬂÎ ”ﬁ€ﬁ·ﬁ“ﬁŸ ﬂﬁÁ‚Î “ ›’Ò ‹ﬁ÷›ﬁ "
-"“⁄€ÓÁÿ‚Ï ÿ€ÿ ÿ·⁄€ÓÁÿ‚Ï ÿ◊ ›’Ò ·€’‘„ÓÈÿ’ (›ÿ÷’) “›„‚‡’››ÿ’ ›ﬁ‹’‡–/"
-"ﬂﬁ€Ï◊ﬁ“–‚’€’Ÿ. ≤Î—ﬁ‡ Ì‚ﬁŸ ﬁﬂÊÿÿ ÿ”›ﬁ‡ÿ‡„’‚·Ô, ’·€ÿ „ ﬂﬁ€Ï◊ﬁ“–‚’€Ô ›’‚ ÔÈÿ⁄– "
-"”ﬁ€ﬁ·ﬁ“ﬁŸ ﬂﬁÁ‚Î."
+"–ü—Ä–∏ —Å–æ–∑–¥–∞–Ω–∏–∏ –∏–ª–∏ –∏–∑–º–µ–Ω–µ–Ω–∏–∏ –¥–µ—Ñ–æ–ª—Ç–Ω–æ–π –≥—Ä—É–ø–ø—ã –≥–æ–ª–æ—Å–æ–≤–æ–π –ø–æ—á—Ç—ã –≤ –Ω–µ—ë –º–æ–∂–Ω–æ "
+"–≤–∫–ª—é—á–∏—Ç—å –∏–ª–∏ –∏—Å–∫–ª—é—á–∏—Ç—å –∏–∑ –Ω–µ—ë —Å–ª–µ–¥—É—é—â–∏–µ (–Ω–∏–∂–µ) –≤–Ω—É—Ç—Ä–µ–Ω–Ω–∏–µ –Ω–æ–º–µ—Ä–∞/"
+"–ø–æ–ª—å–∑–æ–≤–∞—Ç–µ–ª–µ–π. –í—ã–±–æ—Ä —ç—Ç–æ–π –æ–ø—Ü–∏–∏ –∏–≥–Ω–æ—Ä–∏—Ä—É–µ—Ç—Å—è, –µ—Å–ª–∏ —É –ø–æ–ª—å–∑–æ–≤–∞—Ç–µ–ª—è –Ω–µ—Ç —è—â–∏–∫–∞ "
+"–≥–æ–ª–æ—Å–æ–≤–æ–π –ø–æ—á—Ç—ã."
 
 msgid "Upgrading vmblast to add audio_label field.."
-msgstr "∞ﬂ”‡’Ÿ‘ÿ‚Ï vmblast ‘ﬁ—–“€’›ÿ’‹ ﬂﬁ€Ô –„‘ÿﬁ ‹’‚⁄ÿ.."
+msgstr "–ê–ø–≥—Ä–µ–π–¥–∏—Ç—å vmblast –¥–æ–±–∞–≤–ª–µ–Ω–∏–µ–º –ø–æ–ª—è –∞—É–¥–∏–æ –º–µ—Ç–∫–∏.."
 
 msgid "Not Required"
-msgstr "Ω’ ‚‡’—„’‚·Ô"
+msgstr "–ù–µ —Ç—Ä–µ–±—É–µ—Ç—Å—è"
 
 msgid "Done"
-msgstr "≥ﬁ‚ﬁ“ﬁ"
+msgstr "–ì–æ—Ç–æ–≤–æ"
 
 msgid "Upgrading vmblast to add password field.."
-msgstr "∞ﬂ”‡’Ÿ‘ÿ‚Ï vmblast ‘ﬁ—–“€’›ÿ’‹ ﬂﬁ€Ô ﬂ–‡ﬁ€Ï.."
+msgstr "–ê–ø–≥—Ä–µ–π–¥–∏—Ç—å vmblast –¥–æ–±–∞–≤–ª–µ–Ω–∏–µ–º –ø–æ–ª—è –ø–∞—Ä–æ–ª—å.."
 
 msgid "Dropping grplist.."
-msgstr "¡—‡ﬁ· €ÿ·‚– ”‡„ﬂﬂÎ.."
+msgstr "–°–±—Ä–æ—Å –ª–∏—Å—Ç–∞ –≥—Ä—É–ø–ø—ã.."
 
 msgid "error populating vmblast_groups table"
-msgstr "ﬁËÿ—⁄– ﬂ‡ÿ ·ﬁ◊‘–›ÿÿ ‚–—€ÿÊÎ ”‡„ﬂﬂÎ vmblast"
+msgstr "–æ—à–∏–±–∫–∞ –ø—Ä–∏ —Å–æ–∑–¥–∞–Ω–∏–∏ —Ç–∞–±–ª–∏—Ü—ã –≥—Ä—É–ø–ø—ã vmblast"
 
 msgid "populated new table"
-msgstr ""
+msgstr "—Å–æ–∑–¥–∞–Ω–∏–µ –Ω–æ–≤–æ–π —Ç–∞–±–ª–∏—Ü—ã"
 
 msgid "Dropping old grplist field.."
-msgstr ""
+msgstr "–ò–≥–Ω–æ—Ä–∏—Ä—É–µ—Ç—Å—è —Å—Ç–∞—Ä–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ –ø–æ–ª—è grplist.."
 
 msgid "failed to drop field"
-msgstr "›’ „‘–€ﬁ·Ï ·—‡ﬁ·ÿ‚Ï ﬂﬁ€’"
+msgstr "–Ω–µ —É–¥–∞–ª–æ—Å—å —Å–±—Ä–æ—Å–∏—Ç—å –ø–æ–ª–µ"
 
 msgid "OK"
-msgstr "æ∫"
+msgstr "–û–ö"
 
 msgid "Not Needed"
-msgstr "Ω’ ‚‡’—„’‚·Ô"
+msgstr "–ù–µ —Ç—Ä–µ–±—É–µ—Ç—Å—è"
 
 msgid "Warning! Extension"
-msgstr "≤›ÿ‹–›ÿ’! ≤›„‚‡’››ÿŸ ›ﬁ‹’‡"
+msgstr "–í–Ω–∏–º–∞–Ω–∏–µ! –í–Ω—É—Ç—Ä–µ–Ω–Ω–∏–π –Ω–æ–º–µ—Ä"
 
 msgid "is not allowed for your account"
-msgstr "›’ ‘ﬁ·‚„ﬂ’› ‘€Ô “–Ë’”ﬁ –⁄⁄–„›‚–"
+msgstr "–Ω–µ –¥–æ—Å—Ç—É–ø–µ–Ω –¥–ª—è –≤–∞—à–µ–≥–æ –∞–∫–∫–∞—É–Ω—Ç–∞"
 
 msgid "Add VMBlast Group"
-msgstr "¥ﬁ—–“ÿ‚Ï ”‡„ﬂﬂ„ VMBlast"
+msgstr "–î–æ–±–∞–≤–∏—Ç—å –≥—Ä—É–ø–ø—É VMBlast"
+
+msgid " [DEFAULT]"
+msgstr ""
 
 msgid "VMBlast Group"
-msgstr "≥‡„ﬂﬂ– VMBlast"
+msgstr "–ì—Ä—É–ø–ø–∞ VMBlast"
 
 msgid "deleted"
-msgstr "„‘–€’›ﬁ"
+msgstr "—É–¥–∞–ª–µ–Ω–æ"
 
 msgid "Delete Group"
-msgstr "√‘–€ÿ‚Ï ”‡„ﬂﬂ„"
+msgstr "–£–¥–∞–ª–∏—Ç—å –≥—Ä—É–ø–ø—É"
 
 msgid "Conflicting Extensions"
-msgstr "∫ﬁ›‰€ÿ⁄‚ “›„‚‡’››ÿÂ ›ﬁ‹’‡ﬁ“"
+msgstr "–ö–æ–Ω—Ñ–ª–∏–∫—Ç –≤–Ω—É—Ç—Ä–µ–Ω–Ω–∏—Ö –Ω–æ–º–µ—Ä–æ–≤"
 
 msgid "Edit VMBlast Group"
-msgstr "∏◊‹’›ÿ‚Ï ”‡„ﬂﬂ„ VMBlast"
+msgstr "–ò–∑–º–µ–Ω–∏—Ç—å –≥—Ä—É–ø–ø—É VMBlast"
 
 msgid "VMBlast Number"
-msgstr "Ωﬁ‹’‡ VMBlast"
+msgstr "–ù–æ–º–µ—Ä VMBlast"
 
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr ""
-"≤›„‚‡’››ÿŸ ›ﬁ‹’‡ ‘€Ô ﬂﬁ€Ï◊ﬁ“–‚’€’Ÿ ÿﬂﬁ€Ï◊„ÓÈÿÂ ‘ﬁ◊“ﬁ› “ ”ﬁ€ﬁ·ﬁ“„Ó ﬂﬁÁ‚„ Ì‚ﬁŸ "
-"”‡„ﬂﬂÎ VMBlast"
+"–í–Ω—É—Ç—Ä–µ–Ω–Ω–∏–π –Ω–æ–º–µ—Ä –¥–ª—è –ø–æ–ª—å–∑–æ–≤–∞—Ç–µ–ª–µ–π –∏–ø–æ–ª—å–∑—É—é—â–∏—Ö –¥–æ–∑–≤–æ–Ω –≤ –≥–æ–ª–æ—Å–æ–≤—É—é –ø–æ—á—Ç—É —ç—Ç–æ–π "
+"–≥—Ä—É–ø–ø—ã VMBlast"
 
 msgid "Group Description:"
-msgstr "æﬂÿ·–›ÿ’ ”‡„ﬂﬂÎ:"
+msgstr "–û–ø–∏—Å–∞–Ω–∏–µ –≥—Ä—É–ø–ø—ã:"
 
 msgid "Provide a descriptive title for this VMBlast Group."
-msgstr "ø‡’‘€ﬁ÷ÿ‚’ ﬂﬁ›Ô‚›ﬁ’ ﬁﬂÿ·–›ÿ’ ‘€Ô Ì‚ﬁŸ ”‡„ﬂﬂÎ VMBlast"
+msgstr "–ü—Ä–µ–¥–ª–æ–∂–∏—Ç–µ –ø–æ–Ω—è—Ç–Ω–æ–µ –æ–ø–∏—Å–∞–Ω–∏–µ –¥–ª—è —ç—Ç–æ–π –≥—Ä—É–ø–ø—ã VMBlast"
 
 msgid "Audio Label:"
-msgstr "∞„‘ÿﬁ –›ﬁ›·:"
+msgstr "–ê—É–¥–∏–æ –∞–Ω–æ–Ω—Å:"
 
 msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
 "number."
 msgstr ""
-"Õ‚ﬁ ·ﬁﬁ—È’›ÿ’ —„‘’‚ “ﬁ·ﬂ‡ﬁÿ◊“’‘’›ﬁ ﬂﬁ◊“ﬁ›ÿ“Ë’‹„ ‘€Ô ﬂﬁ‘‚“’‡÷‘’›ÿÔ, Á‚ﬁ "
-"◊“ﬁ›ﬁ⁄ ﬂﬁ·‚„ﬂÿ€ “ ”‡„ﬂﬂﬁ“ﬁŸ ÔÈÿ⁄ ”ﬁ€ﬁ·ﬁ“ﬁŸ ﬂﬁÁ‚Î ÿ€ÿ ·ÿ·‚’‹– ·ﬁﬁ—Èÿ‚ ›ﬁ‹’‡ "
-"”‡„ﬂﬂÎ."
+"–≠—Ç–æ —Å–æ–æ–±—â–µ–Ω–∏–µ –±—É–¥–µ—Ç –≤–æ—Å–ø—Ä–æ–∏–∑–≤–µ–¥–µ–Ω–æ –ø–æ–∑–≤–æ–Ω–∏–≤—à–µ–º—É –¥–ª—è –ø–æ–¥—Ç–≤–µ—Ä–∂–¥–µ–Ω–∏—è, —á—Ç–æ "
+"–∑–≤–æ–Ω–æ–∫ –ø–æ—Å—Ç—É–ø–∏–ª –≤ –≥—Ä—É–ø–ø–æ–≤–æ–π —è—â–∏–∫ –≥–æ–ª–æ—Å–æ–≤–æ–π –ø–æ—á—Ç—ã –∏–ª–∏ —Å–∏—Å—Ç–µ–º–∞ —Å–æ–æ–±—â–∏—Ç –Ω–æ–º–µ—Ä "
+"–≥—Ä—É–ø–ø—ã."
 
 msgid "Read Group Number"
-msgstr "¡ﬁﬁ—È–‚Ï ”‡„ﬂﬂﬁ“ﬁŸ ›ﬁ‹’‡"
+msgstr "–°–æ–æ–±—â–∞—Ç—å –≥—Ä—É–ø–ø–æ–≤–æ–π –Ω–æ–º–µ—Ä"
 
 msgid "Beep Only - No Confirmation"
-msgstr "¬ﬁ€Ï⁄ﬁ ◊“„⁄ﬁ“ﬁŸ ·ÿ”›–€ - —’◊ ﬂﬁ‘‚“’‡÷‘’›ÿÔ"
+msgstr "–¢–æ–ª—å–∫–æ –∑–≤—É–∫–æ–≤–æ–π —Å–∏–≥–Ω–∞–ª - –±–µ–∑ –ø–æ–¥—Ç–≤–µ—Ä–∂–¥–µ–Ω–∏—è"
 
 msgid ""
 "The group number will be played to the caller so they can confirm they have "
@@ -141,32 +144,32 @@ msgid ""
 "enable the \"Systems Recordings\" Module to edit this option and choose from "
 "recordings."
 msgstr ""
-"±„‘’‚ “ﬁ·ﬂ‡ﬁÿ◊“’‘Ò› ›ﬁ‹’‡ ”‡„ﬂﬂÎ ‘€Ô ﬂﬁ‘‚“’‡÷‘’›ÿÔ, Á‚ﬁ ◊“ﬁ›ﬁ⁄ ﬂﬁ·‚„ﬂÿ€ “ "
-"”‡„ﬂﬂﬁ“ﬁŸ ÔÈÿ⁄ ”ﬁ€ﬁ·ﬁ“ﬁŸ ﬂﬁÁ‚Î<br><br>Ω„÷›ﬁ ÿ›·‚–€€ÿ‡ﬁ“–‚Ï ÿ –⁄‚ÿ“ÿ‡ﬁ“–‚Ï "
-"‹ﬁ‘„€Ï ∑–ﬂÿ·Ï ·ﬁﬁ—È’›ÿŸ ‘€Ô ÿ◊‹’›’›ÿÔ Ì‚ﬁŸ ﬁﬂÊÿÿ."
+"–ë—É–¥–µ—Ç –≤–æ—Å–ø—Ä–æ–∏–∑–≤–µ–¥—ë–Ω –Ω–æ–º–µ—Ä –≥—Ä—É–ø–ø—ã –¥–ª—è –ø–æ–¥—Ç–≤–µ—Ä–∂–¥–µ–Ω–∏—è, —á—Ç–æ –∑–≤–æ–Ω–æ–∫ –ø–æ—Å—Ç—É–ø–∏–ª –≤ "
+"–≥—Ä—É–ø–ø–æ–≤–æ–π —è—â–∏–∫ –≥–æ–ª–æ—Å–æ–≤–æ–π –ø–æ—á—Ç—ã<br><br>–ù—É–∂–Ω–æ –∏–Ω—Å—Ç–∞–ª–ª–∏—Ä–æ–≤–∞—Ç—å –∏ –∞–∫—Ç–∏–≤–∏—Ä–æ–≤–∞—Ç—å "
+"–º–æ–¥—É–ª—å –ó–∞–ø–∏—Å—å —Å–æ–æ–±—â–µ–Ω–∏–π –¥–ª—è –∏–∑–º–µ–Ω–µ–Ω–∏—è —ç—Ç–æ–π –æ–ø—Ü–∏–∏."
 
 msgid "Optional Password"
-msgstr "ø–‡ﬁ€Ï (ﬁﬂÊÿﬁ›–€Ï›ﬁ)"
+msgstr "–ü–∞—Ä–æ–ª—å (–æ–ø—Ü–∏–æ–Ω–∞–ª—å–Ω–æ)"
 
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
 msgstr ""
-"ºﬁ÷›ﬁ ‘ﬁ—–“ÿ‚Ï ﬂ–‡ﬁ€Ï ﬁﬂÊÿﬁ›–€Ï›ﬁ, ‘€Ô –„‚’›‚ÿ‰ÿ⁄–Êÿÿ ‘ﬁ·‚„ﬂ– “ Ì‚ﬁ‚ "
-"”‡„ﬂﬂﬁ“ﬁŸ ÔÈÿ⁄ ”ﬁ€ﬁ·ﬁ“ﬁŸ ﬂﬁÁ‚Î."
+"–ú–æ–∂–Ω–æ –¥–æ–±–∞–≤–∏—Ç—å –ø–∞—Ä–æ–ª—å –æ–ø—Ü–∏–æ–Ω–∞–ª—å–Ω–æ, –¥–ª—è –∞—É—Ç–µ–Ω—Ç–∏—Ñ–∏–∫–∞—Ü–∏–∏ –¥–æ—Å—Ç—É–ø–∞ –≤ —ç—Ç–æ—Ç "
+"–≥—Ä—É–ø–ø–æ–≤–æ–π —è—â–∏–∫ –≥–æ–ª–æ—Å–æ–≤–æ–π –ø–æ—á—Ç—ã."
 
 msgid "Voicemail Box List:"
-msgstr "¡ﬂÿ·ﬁ⁄ ”ﬁ€ﬁ·ﬁ“ﬁŸ ﬂﬁÁ‚Î:"
+msgstr "–°–ø–∏—Å–æ–∫ –≥–æ–ª–æ—Å–æ–≤–æ–π –ø–æ—á—Ç—ã:"
 
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
 "multiple.."
 msgstr ""
-"æ‚‹’‚ÿ‚Ï ÔÈÿ⁄ÿ ”ﬁ€ﬁ·ﬁ“ﬁŸ ﬂﬁÁ‚Î, ⁄ﬁ‚ﬁ‡Î’ —„‘„‚ “⁄€ÓÁ’›Î “ ”‡„ﬂﬂﬁ“ﬁŸ ÔÈÿ⁄. "
-"„‘’‡÷ÿ“–Ÿ‚’ Ctrl + ⁄€ÿ⁄ ‹ÎË⁄ﬁŸ ‘€Ô ‹›ﬁ÷’·‚“’››ﬁ”ﬁ “Î‘’€’›ÿÔ"
+"–û—Ç–º–µ—Ç–∏—Ç—å —è—â–∏–∫–∏ –≥–æ–ª–æ—Å–æ–≤–æ–π –ø–æ—á—Ç—ã, –∫–æ—Ç–æ—Ä—ã–µ –±—É–¥—É—Ç –≤–∫–ª—é—á–µ–Ω—ã –≤ –≥—Ä—É–ø–ø–æ–≤–æ–π —è—â–∏–∫. "
+"—É–¥–µ—Ä–∂–∏–≤–∞–π—Ç–µ Ctrl + –∫–ª–∏–∫ –º—ã—à–∫–æ–π –¥–ª—è –º–Ω–æ–∂–µ—Å—Ç–≤–µ–Ω–Ω–æ–≥–æ –≤—ã–¥–µ–ª–µ–Ω–∏—è"
 
 msgid "Default VMBlast Group"
-msgstr "¥’‰ﬁ€‚›–Ô ”‡„ﬂﬂ– VMBlast"
+msgstr "–î–µ—Ñ–æ–ª—Ç–Ω–∞—è –≥—Ä—É–ø–ø–∞ VMBlast"
 
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
@@ -174,43 +177,42 @@ msgid ""
 "default group in the Extensions (or Users) tab.<br />Making this group the "
 "default will uncheck the option from the current default group if specified."
 msgstr ""
-"∫–÷‘–Ô ∏ø-∞¬¡ ‹ﬁ÷’‚ ÿ‹’‚Ï ﬁ—ÈÿŸ ‘’‰ﬁ€‚›ÎŸ ÔÈÿ⁄ ”‡„ﬂﬂﬁ“ﬁŸ ”ﬁ€ﬁ·ﬁ“ﬁŸ ﬂﬁÁ‚Î. "
-"µ·€ÿ „⁄–◊–›ﬁ, ‚ﬁ “›„‚‡’››ÿ’ ›ﬁ‹’‡– ‹ﬁ”„‚ —Î‚Ï –“‚ﬁ‹–‚ÿÁ’·⁄ÿ ‘ﬁ—–“€’›Î (ÿ€ÿ "
-"„‘–€’›Î) ÿ◊ ‘’‰ﬁ€‚›ﬁŸ ”‡„ﬂﬂÎ “ ‚–—€ÿÊ’ ≤›„‚‡’››ÿÂ ›ﬁ‹’‡ﬁ“ (ﬂﬁ€Ï◊ﬁ“–‚’€’Ÿ)."
-"<br />æ—ÍÔ“€ÔÔ Ì‚„ ”‡„ﬂﬂ„ ‘’‰ﬁ€‚›ﬁŸ “Î ÿ◊‹’›Ô’‚’ ‚’⁄„È’’ ◊›–Á’›ÿ’ ‘’‰ﬁ€‚›ﬁŸ "
-"”‡„ﬂﬂÎ."
+"–ö–∞–∂–¥–∞—è –ò–ü-–ê–¢–° –º–æ–∂–µ—Ç –∏–º–µ—Ç—å –æ–±—â–∏–π –¥–µ—Ñ–æ–ª—Ç–Ω—ã–π —è—â–∏–∫ –≥—Ä—É–ø–ø–æ–≤–æ–π –≥–æ–ª–æ—Å–æ–≤–æ–π –ø–æ—á—Ç—ã. "
+"–ï—Å–ª–∏ —É–∫–∞–∑–∞–Ω–æ, —Ç–æ –≤–Ω—É—Ç—Ä–µ–Ω–Ω–∏–µ –Ω–æ–º–µ—Ä–∞ –º–æ–≥—É—Ç –±—ã—Ç—å –∞–≤—Ç–æ–º–∞—Ç–∏—á–µ—Å–∫–∏ –¥–æ–±–∞–≤–ª–µ–Ω—ã (–∏–ª–∏ "
+"—É–¥–∞–ª–µ–Ω—ã) –∏–∑ –¥–µ—Ñ–æ–ª—Ç–Ω–æ–π –≥—Ä—É–ø–ø—ã –≤ —Ç–∞–±–ª–∏—Ü–µ –í–Ω—É—Ç—Ä–µ–Ω–Ω–∏—Ö –Ω–æ–º–µ—Ä–æ–≤ (–ø–æ–ª—å–∑–æ–≤–∞—Ç–µ–ª–µ–π)."
+"<br />–û–±—ä—è–≤–ª—è—è —ç—Ç—É –≥—Ä—É–ø–ø—É –¥–µ—Ñ–æ–ª—Ç–Ω–æ–π –≤—ã –∏–∑–º–µ–Ω—è–µ—Ç–µ —Ç–µ–∫—É—â–µ–µ –∑–Ω–∞—á–µ–Ω–∏–µ –¥–µ—Ñ–æ–ª—Ç–Ω–æ–π "
+"–≥—Ä—É–ø–ø—ã."
 
 msgid "Submit Changes"
-msgstr "ø‡ÿ‹’›ÿ‚Ï ÿ◊‹’›’›ÿÔ"
+msgstr "–ü—Ä–∏–º–µ–Ω–∏—Ç—å –∏–∑–º–µ–Ω–µ–Ω–∏—è"
 
 msgid "Invalid Group Number specified"
-msgstr "√⁄–◊–› ›’“’‡›ÎŸ ›ﬁ‹’‡ ”‡„ﬂﬂÎ"
+msgstr "–£–∫–∞–∑–∞–Ω –Ω–µ–≤–µ—Ä–Ω—ã–π –Ω–æ–º–µ—Ä –≥—Ä—É–ø–ø—ã"
 
 msgid "Group numbers with more than one digit cannot begin with 0"
-msgstr "Ωﬁ‹’‡ ”‡„ﬂﬂÎ ‘“„Â- ÿ —ﬁ€’’ ◊›–Á›ÎŸ ›’ ‘ﬁ€÷’› ›–Áÿ›–‚Ï·Ô · 0"
+msgstr "–ù–æ–º–µ—Ä –≥—Ä—É–ø–ø—ã –¥–≤—É—Ö- –∏ –±–æ–ª–µ–µ –∑–Ω–∞—á–Ω—ã–π –Ω–µ –¥–æ–ª–∂–µ–Ω –Ω–∞—á–∏–Ω–∞—Ç—å—Å—è —Å 0"
 
 msgid "Please enter an extension list."
-msgstr "√⁄–÷ÿ‚’ ·ﬂÿ·ﬁ⁄ “›„‚‡’››ÿÂ ›ﬁ‹’‡ﬁ“"
+msgstr "–£–∫–∞–∂–∏—Ç–µ —Å–ø–∏—Å–æ–∫ –≤–Ω—É—Ç—Ä–µ–Ω–Ω–∏—Ö –Ω–æ–º–µ—Ä–æ–≤"
 
 msgid "Please enter a valid Group Description"
-msgstr "√⁄–÷ÿ‚’ ﬂﬁ›Ô‚›ﬁ’ ﬁﬂÿ·–›ÿ’ ”‡„ﬂﬂÎ"
+msgstr "–£–∫–∞–∂–∏—Ç–µ –ø–æ–Ω—è—Ç–Ω–æ–µ –æ–ø–∏—Å–∞–Ω–∏–µ –≥—Ä—É–ø–ø—ã"
 
 msgid "Please enter a valid numeric password, only numbers are allowed"
-msgstr "√⁄–÷ÿ‚’ Êÿ‰‡ﬁ“ﬁŸ ﬂ–‡ﬁ€Ï, ‡–◊‡’Ë’›Î ‚ﬁ€Ï⁄ﬁ Êÿ‰‡Î"
+msgstr "–£–∫–∞–∂–∏—Ç–µ —Ü–∏—Ñ—Ä–æ–≤–æ–π –ø–∞—Ä–æ–ª—å, —Ä–∞–∑—Ä–µ—à–µ–Ω—ã —Ç–æ–ª—å–∫–æ —Ü–∏—Ñ—Ä—ã"
 
 msgid "Please select at least one extension"
-msgstr "≤Î—’‡ÿ‚’ ﬂﬁ ⁄‡–Ÿ›’Ÿ ‹’‡’ Âﬁ‚Ô —Î ﬁ‘ÿ› “›„‚‡’››ÿŸ ›ﬁ‹’‡"
+msgstr "–í—ã–±–µ—Ä–∏—Ç–µ –ø–æ –∫—Ä–∞–π–Ω–µ–π –º–µ—Ä–µ —Ö–æ—Ç—è –±—ã –æ–¥–∏–Ω –≤–Ω—É—Ç—Ä–µ–Ω–Ω–∏–π –Ω–æ–º–µ—Ä"
 
 msgid "VoiceMail Blasting"
-msgstr "≥‡„ﬂﬂﬁ“–Ô ”ﬁ€ﬁ·ﬁ“–Ô ﬂﬁÁ‚–"
+msgstr "–ì—Ä—É–ø–ø–æ–≤–∞—è –≥–æ–ª–æ—Å–æ–≤–∞—è –ø–æ—á—Ç–∞"
 
-msgid ""
-"Internal Options \n"
-"&\n"
-" Configuration"
-msgstr ""
+msgid "Internal Options & Configuration"
+msgstr "–ö–æ–Ω—Ñ–∏–≥—É—Ä–∞—Ü–∏—è –∏ –≤–Ω—É—Ç—Ä–µ–Ω–Ω–∏–µ –æ–ø—Ü–∏–∏"
 
 msgid ""
 "Creates a group of extensions that calls a group of voicemail boxes and "
 "allows you to leave a message for them all at once."
 msgstr ""
+"–°–æ–∑–¥–∞—ë—Ç –≥—Ä—É–ø–ø—É –≤–Ω—É—Ç—Ä–µ–Ω–Ω–∏—Ö –Ω–æ–º–µ—Ä–æ–≤, –∫–æ—Ç–æ—Ä—ã–µ –∏—Å–ø–æ–ª—å–∑—É—é—Ç —Å–æ–≤–º–µ—Å—Ç–Ω–æ –æ–¥–∏–Ω —è—â–∏–∫ "
+"–≥—Ä—É–ø–ø–æ–≤–æ–π –ø–æ—á—Ç—ã –¥–æ–ø—É—Å–∫–∞–µ—Ç —Å–æ–æ–±—â–µ–Ω–∏—è –∏ –ø—Ä–æ—Å–ª—É—à–∏–≤–∞–Ω–∏–µ –≤—Å—á–µ—Ö —á–ª–µ–Ω–æ–≤ –≥—Ä—É–ø–ø—ã."
