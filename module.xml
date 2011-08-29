@@ -5,8 +5,7 @@
 	<version>2.9.0.3</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
-	<type>setup</type>
-	<category>Internal Options &amp; Configuration</category>
+	<category>Apps</category>
 	<description>
 		Creates a group of extensions that calls a group of voicemail boxes and allows you to leave a message for them all at once. 
 	</description>
@@ -15,31 +14,6 @@
 		*2.9.0.2* #4850
 		*2.9.0.1* removed duplicate functions
 		*2.9.0.0* 2.9 Update
-		*2.8.0.2* #4551
-		*2.8.0.1* localization updates
-		*2.8.0.0* #4309, #4310
-		*2.7.0.0* spelling, localizations
-		*2.6.0.0* localizations, misc
-		*2.5.0.6* #3697
-		*2.5.0.5* localization updates
-		*2.5.0.4* #3380
-		*2.5.0.3* localization string enclosures
-		*2.5.0.2* #3138, #3165 Sqlite3 fixes
-		*2.5.0.1* #2530 typo _GLOBALS should be GLOBALS
-		*2.5.0* #2845 tabindex
-		*2.4.3.3* add oldstyle module hook
-		*2.4.3.2* added depends on 2.4.0
-		*2.4.3.1* #2632 red bar addressed now also
-		*2.4.3* #2632 audio_lable, password, default_group not saved on initial config, and fix odd refresh behavior after add
-		*2.4.2* #2630 fixed errors requiring register_globals=on to be set in php.ini
-		*2.4.1* add beep only, no confirmation option to vmblast audio label
-		*2.4.0* first official version imported into 2.4 branch
-		*1.2.0* change to use proper multi-select list, fix bug in js validation of empty list, add default vmblast group
-		*1.1.2* add vmblast_group table and migrate from old grplist field
-		*1.1.1* fixed a couple SQL bugs, improved dialplan so you can skip annoucement and messages immeditiately (except if saydigits used)
-		*1.1.0* add audio label, password protect, fix bug for javascript validation to work, add extension/dest registry support
-		*1.0.2* increase grouplist field to varchar(255) to increase the vmblast list
-		*1.0.l* fix: context, redisplay of groups, get proper vm contexts, beep before leaving msg
 	</changelog>
 	<menuitems>
 		<vmblast>Voicemail Blasting</vmblast>

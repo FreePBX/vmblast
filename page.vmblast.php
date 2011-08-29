@@ -59,7 +59,6 @@ if(isset($_REQUEST['action'])){
 	}
 }
 ?>
-</div>
 
 <div class="rnav"><ul>
     <li><a id="<?php  echo ($extdisplay=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add VMBlast Group")?></a></li> <?php 
@@ -75,8 +74,6 @@ if (isset($gresults)) {
 }
 ?>
 </ul></div>
-
-<div class="content">
 <?php 
 if ($action == 'delGRP') {
 	echo '<br><h3>'._("VMBlast Group").' '.$account.' '._("deleted").'!</h3><br><br><br><br><br><br><br><br>';
