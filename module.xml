@@ -5,7 +5,7 @@
 	<version>2.9.0.3</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
-	<category>Apps</category>
+	<category>Applications</category>
 	<description>
 		Creates a group of extensions that calls a group of voicemail boxes and allows you to leave a message for them all at once. 
 	</description>
