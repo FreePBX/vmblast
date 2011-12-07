@@ -23,6 +23,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.10/vmblast-2.10.0.0.tgz</location>
-	<md5sum>991a7f8f404a146b16ca5e56303a1942</md5sum>
+	<location>release/2.10/vmblast-2.10.0.1.tgz</location>
+	<md5sum>31311b93c825892d26506947b4dd0bf4</md5sum>
 </module>
