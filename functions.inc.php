@@ -262,8 +262,8 @@ function vmblast_applyhooks() {
 
 	// Add the 'process' function - this gets called when the page is loaded, to hook into 
 	// displaying stuff on the page.
-	$currentcomponent->addoptlistitem('vmblast_group', '0', dgettext('vmblast',_("Exclude")));
-	$currentcomponent->addoptlistitem('vmblast_group', '1', dgettext('vmblast',_("Include")));
+	$currentcomponent->addoptlistitem('vmblast_group', '0', _("Exclude"));
+	$currentcomponent->addoptlistitem('vmblast_group', '1', _("Include"));
 	$currentcomponent->setoptlistopts('vmblast_group', 'sort', false);
 
 	$currentcomponent->addguifunc('vmblast_configpageload');
