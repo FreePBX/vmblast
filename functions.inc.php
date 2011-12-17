@@ -1,4 +1,5 @@
 <?php /* $Id: functions.inc.php 3396 2006-12-21 02:40:16Z p_lindheimer $ */
+if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
 // The destinations this module provides
 // returns a associative arrays with keys 'destination' and 'description'
