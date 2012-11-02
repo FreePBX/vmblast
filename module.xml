@@ -30,6 +30,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.10/vmblast-2.10.0.2.tgz</location>
-	<md5sum>8617768946cd35743eea5b2ad6d2740b</md5sum>
+	<location>release/2.11/vmblast-2.11.0.0.tgz</location>
+	<md5sum>ee281c36e88775091adb4c60accde966</md5sum>
 </module>
