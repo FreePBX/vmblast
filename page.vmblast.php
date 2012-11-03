@@ -135,7 +135,7 @@ if ($action == 'delGRP') {
 				<input size="5" type="hidden" name="account" value="<?php  echo $extdisplay; ?>" tabindex="<?php echo ++$tabindex;?>">
 <?php 	} else { ?>
 				<td><a href="#" class="info"><?php echo _("VMBlast Number")?>:<span><?php echo _("The number users will dial to voicemail boxes in this VMBlast group")?></span></a></td>
-				<td><input size="5" type="text" name="account" value="<?php  if ($gresult[0]==0) { echo "500"; } else { echo $gresult[0] + 1; } ?>" tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input size="5" type="text" name="account" data-extdisplay="" value="<?php  if ($gresult[0]==0) { echo "500"; } else { echo $gresult[0] + 1; } ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 <?php 		} ?>
 			</tr>
 
