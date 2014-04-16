@@ -2,14 +2,16 @@
 	<rawname>vmblast</rawname>
 	<repo>standard</repo>
 	<name>Voicemail Blasting</name>
-	<version>2.11.0.1</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
+	<version>2.11.0.2</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>
 		Creates a group of extensions that calls a group of voicemail boxes and allows you to leave a message for them all at once. 
 	</description>
 	<changelog>
+		*2.11.0.2@ update license
 		*2.11.0.1* #6055
 		*2.11.0.0* #6051
 		*2.10.0.2* #5478 
