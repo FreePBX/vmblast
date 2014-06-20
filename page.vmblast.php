@@ -246,8 +246,12 @@ function checkGRP(theForm) {
 	defaultEmptyOK = true;
 	if (!isInteger(theForm.password.value))
 		return warnInvalid(theForm.password, msgInvalidPassword);
-	
-	defaultEmptyOK = false;	
+
+	var sizeDisplayName = "<?php echo module_get_field_size('vmblast', 'description', 35); ?>";	
+	defaultEmptyOK = false;
+        if (!isCorrectLength(theForm.description.value, sizeDisplayName))
+                return warnInvalid(theForm.description, "<?php echo _('The Group Description provided is too long.'); ?>")
+
 	if (!isAlphanumeric(theForm.description.value))
 		return warnInvalid(theForm.description, msgInvalidDescription);
 	
