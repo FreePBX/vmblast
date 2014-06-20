@@ -1,4 +1,4 @@
-<?php 
+<?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2013 Schmooze Com Inc.
@@ -36,17 +36,17 @@ if(isset($_REQUEST['action'])){
 				redirect_standard('extdisplay');
 			}
 		}
-		
+
 		//del group
 		if ($action == 'delGRP') {
 			vmblast_del($account);
 			needreload();
 			redirect_standard();
 		}
-		
+
 		//edit group - just delete and then re-add the extension
 		if ($action == 'editGRP') {
-			vmblast_del($account);	
+			vmblast_del($account);
 			vmblast_add($account,$vmblast_list,$description,$audio_label,$password,$default_group);
 			needreload();
 			redirect_standard('extdisplay');
@@ -56,7 +56,7 @@ if(isset($_REQUEST['action'])){
 ?>
 
 <div class="rnav"><ul>
-    <li><a id="<?php  echo ($extdisplay=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add VMBlast Group")?></a></li> <?php 
+    <li><a id="<?php  echo ($extdisplay=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add VMBlast Group")?></a></li> <?php
 //get unique ring groups
 $gresults = vmblast_list();
 $default_grp = vmblast_get_default_grp();
@@ -69,7 +69,7 @@ if (isset($gresults)) {
 }
 ?>
 </ul></div>
-<?php 
+<?php
 if ($action == 'delGRP') {
 	echo '<br><h3>'._("VMBlast Group").' '.$account.' '._("deleted").'!</h3><br><br><br><br><br><br><br><br>';
 } else {
@@ -82,7 +82,7 @@ if ($action == 'delGRP') {
 		$password    = $thisgrp['password'];
 		$default_group = $thisgrp['default_group'];
 		unset($thisgrp);
-		
+
 		$delButton = "
 			<form name=delete action=\"{$_SERVER['PHP_SELF']}\" method=POST>
 				<input type=\"hidden\" name=\"display\" value=\"{$dispnum}\">
@@ -90,7 +90,7 @@ if ($action == 'delGRP') {
 				<input type=\"hidden\" name=\"action\" value=\"delGRP\">
 				<input type=submit value=\""._("Delete Group")."\">
 			</form>";
-			
+
 		echo "<h2>"._("VMBlast Group").": ".$extdisplay."</h2>";
 		echo "<p>".$delButton."</p>";
 
@@ -123,7 +123,7 @@ if ($action == 'delGRP') {
 			</tr>
 			<tr>
 <?php
-				if ($extdisplay != '') { 
+				if ($extdisplay != '') {
 
 ?>
 				<input size="5" type="hidden" name="account" value="<?php  echo $extdisplay; ?>" tabindex="<?php echo ++$tabindex;?>">
@@ -153,8 +153,8 @@ if ($action == 'delGRP') {
 								echo '<option value="'.$tresult[0].'"'.($tresult[0] == $default ? ' SELECTED' : '').'>'.$tresult[1]."</option>\n";
 							}
 						}
-					?>		
-					</select>		
+					?>
+					</select>
 				</td>
 			</tr>
 <?php }	else { ?>
@@ -167,7 +167,7 @@ if ($action == 'delGRP') {
 					<input type="hidden" name="audio_label" value="<?php echo $default; ?>"><?php echo ($default != -1 ? $default : _('Read Group Number')); ?>
 				</td>
 			</tr>
-<?php } 
+<?php }
 ?>
 			<tr>
 				<td><a href="#" class="info"><?php echo _("Optional Password")?>:<span><?php echo _('You can optionally include a password to authenticate before providing access to this group voicemail list.')?></span></a></td>
@@ -176,12 +176,12 @@ if ($action == 'delGRP') {
 			</tr>
 
 			<tr>
-				<td valign='top'><a href='#' class='info'><?php echo _("Voicemail Box List:")."<span><br>"._("Select voice mail boxes to add to this group. Use Ctrl key to select multiple..") ?> 
+				<td valign='top'><a href='#' class='info'><?php echo _("Voicemail Box List:")."<span><br>"._("Select voice mail boxes to add to this group. Use Ctrl key to select multiple..") ?>
 	<br><br></span></a>
 				</td>
-				<td valign="top"> 
+				<td valign="top">
 					<select multiple="multiple" name="vmblast_list[]" id="xtnlist"  tabindex="<?php echo ++$tabindex;?>">
-						<?php 
+						<?php
 						$results = core_users_list();
 						if (!is_array($results)) $results = array();
 						foreach ($results as $result) {
@@ -199,7 +199,7 @@ if ($action == 'delGRP') {
 
 			<tr>
 				<td>
-					<a href='#' class='info'><?php echo _("Default VMBlast Group") ?> 
+					<a href='#' class='info'><?php echo _("Default VMBlast Group") ?>
 						<span> <?php echo _("Each PBX system can have a single Default Voicemail Blast Group. If specified, extensions can be automatically added (or removed) from this default group in the Extensions (or Users) tab.<br />Making this group the default will uncheck the option from the current default group if specified.") ?> </span>
 					</a>
 				</td>
@@ -214,14 +214,14 @@ if ($action == 'delGRP') {
 			echo $module_hook->hookHtml;
 ?>
 			<tr>
-			<td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
-			
+			<td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>
+
 			</tr>
 			</table>
 			</form>
-<?php 		
+<?php
 		} //end if action == delGRP
-		
+
 
 ?>
 <script language="javascript">
@@ -247,14 +247,17 @@ function checkGRP(theForm) {
 	if (!isInteger(theForm.password.value))
 		return warnInvalid(theForm.password, msgInvalidPassword);
 
-	var sizeDisplayName = "<?php echo module_get_field_size('vmblast', 'description', 35); ?>";	
 	defaultEmptyOK = false;
-        if (!isCorrectLength(theForm.description.value, sizeDisplayName))
-                return warnInvalid(theForm.description, "<?php echo _('The Group Description provided is too long.'); ?>")
+
+	<?php if (function_exists('module_get_field_size')) { ?>
+		var sizeDisplayName = "<?php echo module_get_field_size('vmblast', 'description', 35); ?>";
+		if (!isCorrectLength(theForm.description.value, sizeDisplayName))
+			return warnInvalid(theForm.description, "<?php echo _('The Group Description provided is too long.'); ?>")
+	<?php } ?>
 
 	if (!isAlphanumeric(theForm.description.value))
 		return warnInvalid(theForm.description, msgInvalidDescription);
-	
+
 	var selected = 0;
 	for (var i=0; i < theForm.xtnlist.options.length; i++) {
 		if (theForm.xtnlist.options[i].selected) selected += 1;
@@ -265,9 +268,8 @@ function checkGRP(theForm) {
 		return false;
 	}
 
-	return true;		
+	return true;
 }
 
 //-->
 </script>
-
