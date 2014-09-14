@@ -1,10 +1,9 @@
 # Russian freePBX ver. translation
 # Copyright (c) 2006-2011 PostMet Corporation
 # This file is distributed under the same license as the freePBX package.
-# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2011.
+# Alexander Kozyrev <ceo@postmet.com>, 2006-2012.
 #
-# Использовать iconv vmblast.utf8.po -f UTF-8 -t ISO-8859-5 -o vmblast.po
-# fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -89,7 +88,7 @@ msgid "Add VMBlast Group"
 msgstr "Добавить группу VMBlast"
 
 msgid " [DEFAULT]"
-msgstr ""
+msgstr "[Значения по умолчанию]"
 
 msgid "VMBlast Group"
 msgstr "Группа VMBlast"
@@ -205,17 +204,17 @@ msgid "Please select at least one extension"
 msgstr "Выберите по крайней мере хотя бы один внутренний номер"
 
 msgid "Voicemail Blasting"
-msgstr ""
+msgstr "Групповая голосовая почта"
 
 msgid "Applications"
-msgstr ""
+msgstr "Приложения"
 
 msgid ""
 "Creates a group of extensions that calls a group of voicemail boxes and "
 "allows you to leave a message for them all at once."
 msgstr ""
 "Создаёт группу внутренних номеров, которые используют совместно один ящик "
-"групповой почты допускает сообщения и прослушивание всчех членов группы."
+"групповой почты, допускает сообщения и прослушивание всех членов группы."
 
 #~ msgid "VoiceMail Blasting"
 #~ msgstr "Групповая голосовая почта"
