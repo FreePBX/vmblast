@@ -1,5 +1,8 @@
 <?php /* $Id: functions.inc.php 3396 2006-12-21 02:40:16Z p_lindheimer $ */
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
+//	License for all code of this FreePBX module can be found in the license file inside the module directory
+//	Copyright 2013 Schmooze Com Inc.
+//
 
 // The destinations this module provides
 // returns a associative arrays with keys 'destination' and 'description'
