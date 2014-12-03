@@ -84,7 +84,7 @@ if ($action == 'delGRP') {
 		unset($thisgrp);
 
 		$delButton = "
-			<form name=delete action=\"{$_SERVER['PHP_SELF']}\" method=POST>
+			<form name=delete action=\"\" method=POST>
 				<input type=\"hidden\" name=\"display\" value=\"{$dispnum}\">
 				<input type=\"hidden\" name=\"account\" value=\"".$extdisplay."\">
 				<input type=\"hidden\" name=\"action\" value=\"delGRP\">
@@ -113,7 +113,7 @@ if ($action == 'delGRP') {
 		echo "<h2>"._("Add VMBlast Group")."</h2>";
 	}
 	?>
-			<form name="editGRP" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkGRP(editGRP);">
+			<form name="editGRP" action="" method="post" onsubmit="return checkGRP(editGRP);">
 			<input type="hidden" name="display" value="<?php echo $dispnum?>">
 			<input type="hidden" name="action" value="<?php echo ($extdisplay != '' ? 'editGRP' : 'addGRP'); ?>">
 			<table>
@@ -210,7 +210,7 @@ if ($action == 'delGRP') {
 
 <?php
 			// implementation of module hook
-			// object was initialized in config.php
+			$module_hook == moduleHook::create();
 			echo $module_hook->hookHtml;
 ?>
 			<tr>
