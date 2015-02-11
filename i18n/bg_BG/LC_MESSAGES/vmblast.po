@@ -7,174 +7,74 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 18:11-0500\n"
 "PO-Revision-Date: 2014-11-18 13:37+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian "
-"<http://git.freepbx.org/projects/freepbx/vmblast/bg_BG/>\n"
-"Language: bg_BG\n"
+"Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/vmblast/"
+"bg_BG/>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: bg_BG\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.10-dev\n"
 "X-Poedit-Language: Bulgarian\n"
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#, php-format
-msgid "Voicemail Group %s: %s"
-msgstr "Група на Гласова Поща %s: %s"
-
-msgid "Voicemail Group: "
-msgstr "Група на Гласова Поща: "
-
-msgid "Exclude"
-msgstr "Изключи"
-
-msgid "Include"
-msgstr "Включи"
-
-msgid "Default Group Inclusion"
-msgstr "Включване на ГП Разпращане Група По-Подразбиране"
-
-msgid "Default VMblast Group"
-msgstr "ГП Група По-Подразбиране"
-
-msgid ""
-"You can include or exclude this extension/user from being part of the "
-"default voicemail blast group when creating or editing. Choosing this option "
-"will be ignored if the user does not have a voicemail box."
-msgstr ""
-"Можете да включите или изключите този потребител/вътрешна линия от това да "
-"бъде част от ГП Разпращане групата по-подразбиране. Избирането на тази опция "
-"ще се игнорира ако потребителя няма кутия за гласова поща."
-
-msgid "Upgrading vmblast to add audio_label field.."
-msgstr "Обновяване ГП Разпращане за добавяне на audio_label поле.."
-
-msgid "Not Required"
-msgstr "Не се Изисква"
-
-msgid "Done"
-msgstr "Изпълнено"
-
-msgid "Upgrading vmblast to add password field.."
-msgstr "Обновяване ГП Разпращане за добавяне на поле за парола.."
-
-msgid "Dropping grplist.."
-msgstr "Премахване на grplist.."
-
-msgid "error populating vmblast_groups table"
-msgstr "грешка при полълване на vmblast_groups таблица"
-
-msgid "populated new table"
-msgstr "попълване на нова таблица"
-
-msgid "Dropping old grplist field.."
-msgstr "Изтриване на старото поле grplist.."
-
-msgid "failed to drop field"
-msgstr "не мога да премахна поле"
-
-msgid "OK"
-msgstr "OK"
-
-msgid "Not Needed"
-msgstr "Не е Необходимо"
-
-msgid "Warning! Extension"
-msgstr "Внимание! Вътрешна Линия"
-
-msgid "is not allowed for your account"
-msgstr "не е разрешена за вашия акаунт"
-
-msgid "Add VMBlast Group"
-msgstr "Добави ГП Разпращане Група"
-
+#: /usr/src/freepbx/vmblast/page.vmblast.php:66
 msgid " [DEFAULT]"
 msgstr " [По-Подразбиране]"
 
-msgid "VMBlast Group"
-msgstr "ГП Разпращане Група"
+#: /usr/src/freepbx/vmblast/page.vmblast.php:59
+#: /usr/src/freepbx/vmblast/page.vmblast.php:113
+#: /usr/src/freepbx/vmblast/page.vmblast.php:121
+msgid "Add VMBlast Group"
+msgstr "Добави ГП Разпращане Група"
 
-msgid "deleted"
-msgstr "изтрита"
-
-msgid "Delete Group"
-msgstr "Изтрий Групата"
-
-msgid "Conflicting Extensions"
-msgstr "Вътрешни Линии в Конфликт"
-
-msgid "Edit VMBlast Group"
-msgstr "Редактирай ГП Разпращане Група"
-
-msgid "VMBlast Number"
-msgstr "ГП Разпращане Група Номер"
-
-msgid "The number users will dial to voicemail boxes in this VMBlast group"
-msgstr ""
-"Номерът който потребителите ще избират за изпращане на гласово съобщение в "
-"тази ГП Разпращане Група"
-
-msgid "Group Description:"
-msgstr "Описание на Групата:"
-
-msgid "Provide a descriptive title for this VMBlast Group."
-msgstr "Дайте описващо наименование на тази ГП Разпращане Група."
-
+#: /usr/src/freepbx/vmblast/page.vmblast.php:143
+#: /usr/src/freepbx/vmblast/page.vmblast.php:162
 msgid "Audio Label:"
 msgstr "Определи Аудио:"
 
-msgid ""
-"Play this message to the caller so they can confirm they have dialed the "
-"proper voice mail group number, or have the system simply read the group "
-"number."
-msgstr ""
-"Възпроизвежда това съобщение на обаждащия се за да потвърдят, че са избрали "
-"правилния номер на група или просто продиктува номера на групата."
-
-msgid "Read Group Number"
-msgstr "Прочети Номера на Групата"
-
+#: /usr/src/freepbx/vmblast/page.vmblast.php:150
 msgid "Beep Only - No Confirmation"
 msgstr "Само бипкане - Без Потвърждение"
 
-msgid ""
-"The group number will be played to the caller so they can confirm they have "
-"dialed the proper voice mail group number.<br><br>You must install and "
-"enable the \"Systems Recordings\" Module to edit this option and choose from "
-"recordings."
-msgstr ""
-"Номерът на групата ще бъде продиктуван на обаждащите се за да потвърдят че "
-"са избрали правилния номер на група.<br><br>Трябва да сте инсталирали и "
-"разрешили Модул \"Системни Записи\" за да редактирате тази опция и да "
-"изберете запис."
+#: /usr/src/freepbx/vmblast/page.vmblast.php:110
+msgid "Conflicting Extensions"
+msgstr "Вътрешни Линии в Конфликт"
 
-msgid "Optional Password"
-msgstr "Допълнителна Парола"
+#: /usr/src/freepbx/vmblast/functions.inc.php:288
+msgid "Default Group Inclusion"
+msgstr "Включване на ГП Разпращане Група По-Подразбиране"
 
-msgid ""
-"You can optionally include a password to authenticate before providing "
-"access to this group voicemail list."
-msgstr ""
-"Допълнително можете да включите парола за оторизиране преди да се даде "
-"достъп до тази ГП Разпращане Група."
-
-msgid "Voicemail Box List:"
-msgstr "Списък на Кутии с Гласова Поща:"
-
-msgid ""
-"Select voice mail boxes to add to this group. Use Ctrl key to select "
-"multiple.."
-msgstr ""
-"Изберете кутиите на гласови пощи за добавяне в тази група. Изолзвайте Ctrl "
-"за избиране на няколко."
-
+#: /usr/src/freepbx/vmblast/page.vmblast.php:202
 msgid "Default VMBlast Group"
 msgstr "ГП Разпращане Група По-Подразбиране"
 
+#: /usr/src/freepbx/vmblast/functions.inc.php:291
+msgid "Default VMblast Group"
+msgstr "ГП Група По-Подразбиране"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:91
+msgid "Delete Group"
+msgstr "Изтрий Групата"
+
+#: /usr/src/freepbx/vmblast/install.php:21
+#: /usr/src/freepbx/vmblast/install.php:35
+msgid "Done"
+msgstr "Изпълнено"
+
+#: /usr/src/freepbx/vmblast/install.php:40
+msgid "Dropping grplist.."
+msgstr "Премахване на grplist.."
+
+#: /usr/src/freepbx/vmblast/install.php:58
+msgid "Dropping old grplist field.."
+msgstr "Изтриване на старото поле grplist.."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:203
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -187,39 +87,199 @@ msgstr ""
 "Линии (или Потребители).<br />Определянето на тази група да бъде по-"
 "подразбиране ще размаркира опцията от текущата група по-подразбиране."
 
-msgid "Submit Changes"
-msgstr "Приеми Промените"
+#: /usr/src/freepbx/vmblast/page.vmblast.php:121
+msgid "Edit VMBlast Group"
+msgstr "Редактирай ГП Разпращане Група"
 
-msgid "Invalid Group Number specified"
-msgstr "Неправилно определен Номер на Група."
+#: /usr/src/freepbx/vmblast/functions.inc.php:269
+msgid "Exclude"
+msgstr "Изключи"
 
+#: /usr/src/freepbx/vmblast/page.vmblast.php:137
+msgid "Group Description:"
+msgstr "Описание на Групата:"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:232
 msgid "Group numbers with more than one digit cannot begin with 0"
 msgstr "Номерата на Групите с повече от една цифра не могат да започват с 0"
 
-msgid "Please enter an extension list."
-msgstr "Моля въведете списъка с вътрешни линии."
+#: /usr/src/freepbx/vmblast/functions.inc.php:270
+msgid "Include"
+msgstr "Включи"
 
+#: /usr/src/freepbx/vmblast/page.vmblast.php:231
+msgid "Invalid Group Number specified"
+msgstr "Неправилно определен Номер на Група."
+
+#: /usr/src/freepbx/vmblast/install.php:68
+msgid "Not Needed"
+msgstr "Не е Необходимо"
+
+#: /usr/src/freepbx/vmblast/install.php:14
+#: /usr/src/freepbx/vmblast/install.php:28
+msgid "Not Required"
+msgstr "Не се Изисква"
+
+#: /usr/src/freepbx/vmblast/install.php:64
+msgid "OK"
+msgstr "OK"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:173
+msgid "Optional Password"
+msgstr "Допълнителна Парола"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:143
+msgid ""
+"Play this message to the caller so they can confirm they have dialed the "
+"proper voice mail group number, or have the system simply read the group "
+"number."
+msgstr ""
+"Възпроизвежда това съобщение на обаждащия се за да потвърдят, че са избрали "
+"правилния номер на група или просто продиктува номера на групата."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:234
 msgid "Please enter a valid Group Description"
 msgstr "Моля въведете правилно Описание за Групата"
 
+#: /usr/src/freepbx/vmblast/page.vmblast.php:235
 msgid "Please enter a valid numeric password, only numbers are allowed"
 msgstr "Моля въведете правилна цифрова парола, само цифри са позволени"
 
+#: /usr/src/freepbx/vmblast/page.vmblast.php:233
+msgid "Please enter an extension list."
+msgstr "Моля въведете списъка с вътрешни линии."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:236
 msgid "Please select at least one extension"
 msgstr "Моля въведете поне една вътрешна линия."
 
-msgid "Voicemail Blasting"
-msgstr "Разпращане Гласова Поща"
+#: /usr/src/freepbx/vmblast/page.vmblast.php:137
+msgid "Provide a descriptive title for this VMBlast Group."
+msgstr "Дайте описващо наименование на тази ГП Разпращане Група."
 
-msgid "Applications"
-msgstr "Приложения"
+#: /usr/src/freepbx/vmblast/page.vmblast.php:149
+#: /usr/src/freepbx/vmblast/page.vmblast.php:167
+msgid "Read Group Number"
+msgstr "Прочети Номера на Групата"
 
+#: /usr/src/freepbx/vmblast/page.vmblast.php:179
 msgid ""
-"Creates a group of extensions that calls a group of voicemail boxes and "
-"allows you to leave a message for them all at once."
+"Select voice mail boxes to add to this group. Use Ctrl key to select "
+"multiple.."
 msgstr ""
-"Създава група от вътрешни линии, която набира група от гласови пощи на които "
-"може да се оставя гласово съобщение едновременно."
+"Изберете кутиите на гласови пощи за добавяне в тази група. Изолзвайте Ctrl "
+"за избиране на няколко."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:217
+msgid "Submit Changes"
+msgstr "Приеми Промените"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:255
+msgid "The Group Description provided is too long."
+msgstr ""
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:162
+msgid ""
+"The group number will be played to the caller so they can confirm they have "
+"dialed the proper voice mail group number.<br><br>You must install and "
+"enable the \"Systems Recordings\" Module to edit this option and choose from "
+"recordings."
+msgstr ""
+"Номерът на групата ще бъде продиктуван на обаждащите се за да потвърдят че "
+"са избрали правилния номер на група.<br><br>Трябва да сте инсталирали и "
+"разрешили Модул \"Системни Записи\" за да редактирате тази опция и да "
+"изберете запис."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:131
+msgid "The number users will dial to voicemail boxes in this VMBlast group"
+msgstr ""
+"Номерът който потребителите ще избират за изпращане на гласово съобщение в "
+"тази ГП Разпращане Група"
+
+#: /usr/src/freepbx/vmblast/install.php:10
+msgid "Upgrading vmblast to add audio_label field.."
+msgstr "Обновяване ГП Разпращане за добавяне на audio_label поле.."
+
+#: /usr/src/freepbx/vmblast/install.php:24
+msgid "Upgrading vmblast to add password field.."
+msgstr "Обновяване ГП Разпращане за добавяне на поле за парола.."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:74
+#: /usr/src/freepbx/vmblast/page.vmblast.php:94
+msgid "VMBlast Group"
+msgstr "ГП Разпращане Група"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:131
+msgid "VMBlast Number"
+msgstr "ГП Разпращане Група Номер"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:179
+msgid "Voicemail Box List:"
+msgstr "Списък на Кутии с Гласова Поща:"
+
+#: /usr/src/freepbx/vmblast/functions.inc.php:39
+#, php-format
+msgid "Voicemail Group %s: %s"
+msgstr "Група на Гласова Поща %s: %s"
+
+#: /usr/src/freepbx/vmblast/functions.inc.php:138
+msgid "Voicemail Group: "
+msgstr "Група на Гласова Поща: "
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:24
+msgid "Warning! Extension"
+msgstr "Внимание! Вътрешна Линия"
+
+#: /usr/src/freepbx/vmblast/functions.inc.php:291
+msgid ""
+"You can include or exclude this extension/user from being part of the "
+"default voicemail blast group when creating or editing. Choosing this option "
+"will be ignored if the user does not have a voicemail box."
+msgstr ""
+"Можете да включите или изключите този потребител/вътрешна линия от това да "
+"бъде част от ГП Разпращане групата по-подразбиране. Избирането на тази опция "
+"ще се игнорира ако потребителя няма кутия за гласова поща."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:173
+msgid ""
+"You can optionally include a password to authenticate before providing "
+"access to this group voicemail list."
+msgstr ""
+"Допълнително можете да включите парола за оторизиране преди да се даде "
+"достъп до тази ГП Разпращане Група."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:74
+msgid "deleted"
+msgstr "изтрита"
+
+#: /usr/src/freepbx/vmblast/install.php:54
+msgid "error populating vmblast_groups table"
+msgstr "грешка при полълване на vmblast_groups таблица"
+
+#: /usr/src/freepbx/vmblast/install.php:62
+msgid "failed to drop field"
+msgstr "не мога да премахна поле"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:24
+msgid "is not allowed for your account"
+msgstr "не е разрешена за вашия акаунт"
+
+#: /usr/src/freepbx/vmblast/install.php:57
+msgid "populated new table"
+msgstr "попълване на нова таблица"
+
+#~ msgid "Voicemail Blasting"
+#~ msgstr "Разпращане Гласова Поща"
+
+#~ msgid "Applications"
+#~ msgstr "Приложения"
+
+#~ msgid ""
+#~ "Creates a group of extensions that calls a group of voicemail boxes and "
+#~ "allows you to leave a message for them all at once."
+#~ msgstr ""
+#~ "Създава група от вътрешни линии, която набира група от гласови пощи на "
+#~ "които може да се оставя гласово съобщение едновременно."
 
 #~ msgid "VoiceMail Blasting"
 #~ msgstr "Разпращане Гласова Поща"

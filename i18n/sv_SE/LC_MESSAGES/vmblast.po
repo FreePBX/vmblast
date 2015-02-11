@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX vmblast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 18:11-0500\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,156 +30,59 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#, php-format
-msgid "Voicemail Group %s: %s"
-msgstr "Röstgrupp %s: %s"
-
-msgid "Voicemail Group: "
-msgstr "Röstbrevlådegrupp:"
-
-msgid "Exclude"
-msgstr "Exkludera"
-
-msgid "Include"
-msgstr "Inkludera"
-
-msgid "Default Group Inclusion"
-msgstr "Standard gruppinkludering"
-
-msgid "Default VMblast Group"
-msgstr "Standardgrupp för Röstgrupper"
-
-msgid ""
-"You can include or exclude this extension/user from being part of the "
-"default voicemail blast group when creating or editing. Choosing this option "
-"will be ignored if the user does not have a voicemail box."
-msgstr ""
-"Du kan inkludera eller exkludera denna anknytning/användare från att vara "
-"med i standardgruppen för Röstutskick"
-
-msgid "Upgrading vmblast to add audio_label field.."
-msgstr "Uppgraderar vmblast, lägger till fältet audio_label.."
-
-msgid "Not Required"
-msgstr "Inte nödvändig"
-
-msgid "Done"
-msgstr "Klar"
-
-msgid "Upgrading vmblast to add password field.."
-msgstr "Uppgraderar vmblast med fältet password.."
-
-msgid "Dropping grplist.."
-msgstr "Kastar grplist.."
-
-msgid "error populating vmblast_groups table"
-msgstr "fel när tabellen vmblast_groups fylldes på"
-
-msgid "populated new table"
-msgstr "fyller på ny tabell"
-
-msgid "Dropping old grplist field.."
-msgstr "Kastar den gamla fältet grplist.."
-
-msgid "failed to drop field"
-msgstr "kunde inte kasta fältet"
-
-msgid "OK"
-msgstr "OK"
-
-msgid "Not Needed"
-msgstr "Behövs inte"
-
-msgid "Warning! Extension"
-msgstr "Varning! Anknytning"
-
-msgid "is not allowed for your account"
-msgstr "är inte tillåtet för din anknytning"
-
-msgid "Add VMBlast Group"
-msgstr "Lägg till röstgrupp"
-
+#: /usr/src/freepbx/vmblast/page.vmblast.php:66
 msgid " [DEFAULT]"
 msgstr " [STANDARD]"
 
-msgid "VMBlast Group"
-msgstr "Röstgrupp"
+#: /usr/src/freepbx/vmblast/page.vmblast.php:59
+#: /usr/src/freepbx/vmblast/page.vmblast.php:113
+#: /usr/src/freepbx/vmblast/page.vmblast.php:121
+msgid "Add VMBlast Group"
+msgstr "Lägg till röstgrupp"
 
-msgid "deleted"
-msgstr "borttagen"
-
-msgid "Delete Group"
-msgstr "Ta bort grupp"
-
-msgid "Conflicting Extensions"
-msgstr "Konfliktande anknytningar"
-
-msgid "Edit VMBlast Group"
-msgstr "Redigera röstgrupp"
-
-msgid "VMBlast Number"
-msgstr "Röstgruppsnummer"
-
-msgid "The number users will dial to voicemail boxes in this VMBlast group"
-msgstr "Det nummer användare anger när dom ska ringa denna röstgrupp"
-
-msgid "Group Description:"
-msgstr "Gruppbeskrivning:"
-
-msgid "Provide a descriptive title for this VMBlast Group."
-msgstr "Skriv in en giltig beskrivning för denna röstgrupp"
-
+#: /usr/src/freepbx/vmblast/page.vmblast.php:143
+#: /usr/src/freepbx/vmblast/page.vmblast.php:162
 msgid "Audio Label:"
 msgstr "Ljudetikett:"
 
-msgid ""
-"Play this message to the caller so they can confirm they have dialed the "
-"proper voice mail group number, or have the system simply read the group "
-"number."
-msgstr ""
-"Spela upp detta meddelande så att uppringaren kan verifiera att den har ring "
-"den rätta röstgruppen, eller låt systemet läsa upp gruppnumret."
-
-msgid "Read Group Number"
-msgstr "Läs upp gruppnumret"
-
+#: /usr/src/freepbx/vmblast/page.vmblast.php:150
 msgid "Beep Only - No Confirmation"
 msgstr "Endast pip - ingen bekräftelse"
 
-msgid ""
-"The group number will be played to the caller so they can confirm they have "
-"dialed the proper voice mail group number.<br><br>You must install and "
-"enable the \"Systems Recordings\" Module to edit this option and choose from "
-"recordings."
-msgstr ""
-"Gruppnumret kommer att spelas upp för uppringaren så den vet att det är rätt "
-"röstgrupp den ringt till.<br><br>Du måste ha installerat och aktiverat "
-"modulen \"Systeminspelningar\" för att redigera detta val och välja "
-"inspelningar."
+#: /usr/src/freepbx/vmblast/page.vmblast.php:110
+msgid "Conflicting Extensions"
+msgstr "Konfliktande anknytningar"
 
-msgid "Optional Password"
-msgstr "Valfritt lösenord"
+#: /usr/src/freepbx/vmblast/functions.inc.php:288
+msgid "Default Group Inclusion"
+msgstr "Standard gruppinkludering"
 
-msgid ""
-"You can optionally include a password to authenticate before providing "
-"access to this group voicemail list."
-msgstr ""
-"Du kan valfritt inkludera ett lösenord som måste knappas in före tillgång "
-"till denna röstgrupp ges."
-
-msgid "Voicemail Box List:"
-msgstr "Lista med röstbrevlådor:"
-
-msgid ""
-"Select voice mail boxes to add to this group. Use Ctrl key to select "
-"multiple.."
-msgstr ""
-"Välj vilka röstbrevlådor du vill ha i denna grupp. Använd Ctrl-tangenten för "
-"att välja flera.."
-
+#: /usr/src/freepbx/vmblast/page.vmblast.php:202
 msgid "Default VMBlast Group"
 msgstr "Standard röstgrupp"
 
+#: /usr/src/freepbx/vmblast/functions.inc.php:291
+msgid "Default VMblast Group"
+msgstr "Standardgrupp för Röstgrupper"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:91
+msgid "Delete Group"
+msgstr "Ta bort grupp"
+
+#: /usr/src/freepbx/vmblast/install.php:21
+#: /usr/src/freepbx/vmblast/install.php:35
+msgid "Done"
+msgstr "Klar"
+
+#: /usr/src/freepbx/vmblast/install.php:40
+msgid "Dropping grplist.."
+msgstr "Kastar grplist.."
+
+#: /usr/src/freepbx/vmblast/install.php:58
+msgid "Dropping old grplist field.."
+msgstr "Kastar den gamla fältet grplist.."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:203
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -191,40 +94,191 @@ msgstr ""
 "denna standard röstgrupp i Anknytningar (eller Användare).<br>Om denna grupp "
 "anges som standard kommer den nuvarande standard röstgruppen att avaktiveras."
 
-msgid "Submit Changes"
-msgstr "Spara ändringar"
+#: /usr/src/freepbx/vmblast/page.vmblast.php:121
+msgid "Edit VMBlast Group"
+msgstr "Redigera röstgrupp"
 
-msgid "Invalid Group Number specified"
-msgstr "Ogiltigt gruppnummer angivet"
+#: /usr/src/freepbx/vmblast/functions.inc.php:269
+msgid "Exclude"
+msgstr "Exkludera"
 
+#: /usr/src/freepbx/vmblast/page.vmblast.php:137
+msgid "Group Description:"
+msgstr "Gruppbeskrivning:"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:232
 msgid "Group numbers with more than one digit cannot begin with 0"
 msgstr "Gruppnummer med mer än en siffra kan inte starta med 0"
 
-msgid "Please enter an extension list."
-msgstr "Skriv in en anknytningslista"
+#: /usr/src/freepbx/vmblast/functions.inc.php:270
+msgid "Include"
+msgstr "Inkludera"
 
+#: /usr/src/freepbx/vmblast/page.vmblast.php:231
+msgid "Invalid Group Number specified"
+msgstr "Ogiltigt gruppnummer angivet"
+
+#: /usr/src/freepbx/vmblast/install.php:68
+msgid "Not Needed"
+msgstr "Behövs inte"
+
+#: /usr/src/freepbx/vmblast/install.php:14
+#: /usr/src/freepbx/vmblast/install.php:28
+msgid "Not Required"
+msgstr "Inte nödvändig"
+
+#: /usr/src/freepbx/vmblast/install.php:64
+msgid "OK"
+msgstr "OK"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:173
+msgid "Optional Password"
+msgstr "Valfritt lösenord"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:143
+msgid ""
+"Play this message to the caller so they can confirm they have dialed the "
+"proper voice mail group number, or have the system simply read the group "
+"number."
+msgstr ""
+"Spela upp detta meddelande så att uppringaren kan verifiera att den har ring "
+"den rätta röstgruppen, eller låt systemet läsa upp gruppnumret."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:234
 msgid "Please enter a valid Group Description"
 msgstr "Skriv in en giltig gruppbeskrivning"
 
+#: /usr/src/freepbx/vmblast/page.vmblast.php:235
 msgid "Please enter a valid numeric password, only numbers are allowed"
 msgstr "Skriv in ett giltigt lösenord, endast siffror"
 
+#: /usr/src/freepbx/vmblast/page.vmblast.php:233
+msgid "Please enter an extension list."
+msgstr "Skriv in en anknytningslista"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:236
 msgid "Please select at least one extension"
 msgstr "Välj minst en anknytning"
 
-msgid "Voicemail Blasting"
-msgstr ""
+#: /usr/src/freepbx/vmblast/page.vmblast.php:137
+msgid "Provide a descriptive title for this VMBlast Group."
+msgstr "Skriv in en giltig beskrivning för denna röstgrupp"
 
-msgid "Applications"
-msgstr ""
+#: /usr/src/freepbx/vmblast/page.vmblast.php:149
+#: /usr/src/freepbx/vmblast/page.vmblast.php:167
+msgid "Read Group Number"
+msgstr "Läs upp gruppnumret"
 
+#: /usr/src/freepbx/vmblast/page.vmblast.php:179
 msgid ""
-"Creates a group of extensions that calls a group of voicemail boxes and "
-"allows you to leave a message for them all at once."
+"Select voice mail boxes to add to this group. Use Ctrl key to select "
+"multiple.."
 msgstr ""
-"Skapar en grupp av anknytningar som används för att ringa upp deras "
-"röstbrevlådor  och lämna ett meddelande till dessa röstbrevlådor med ett "
-"enda samtal"
+"Välj vilka röstbrevlådor du vill ha i denna grupp. Använd Ctrl-tangenten för "
+"att välja flera.."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:217
+msgid "Submit Changes"
+msgstr "Spara ändringar"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:255
+msgid "The Group Description provided is too long."
+msgstr ""
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:162
+msgid ""
+"The group number will be played to the caller so they can confirm they have "
+"dialed the proper voice mail group number.<br><br>You must install and "
+"enable the \"Systems Recordings\" Module to edit this option and choose from "
+"recordings."
+msgstr ""
+"Gruppnumret kommer att spelas upp för uppringaren så den vet att det är rätt "
+"röstgrupp den ringt till.<br><br>Du måste ha installerat och aktiverat "
+"modulen \"Systeminspelningar\" för att redigera detta val och välja "
+"inspelningar."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:131
+msgid "The number users will dial to voicemail boxes in this VMBlast group"
+msgstr "Det nummer användare anger när dom ska ringa denna röstgrupp"
+
+#: /usr/src/freepbx/vmblast/install.php:10
+msgid "Upgrading vmblast to add audio_label field.."
+msgstr "Uppgraderar vmblast, lägger till fältet audio_label.."
+
+#: /usr/src/freepbx/vmblast/install.php:24
+msgid "Upgrading vmblast to add password field.."
+msgstr "Uppgraderar vmblast med fältet password.."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:74
+#: /usr/src/freepbx/vmblast/page.vmblast.php:94
+msgid "VMBlast Group"
+msgstr "Röstgrupp"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:131
+msgid "VMBlast Number"
+msgstr "Röstgruppsnummer"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:179
+msgid "Voicemail Box List:"
+msgstr "Lista med röstbrevlådor:"
+
+#: /usr/src/freepbx/vmblast/functions.inc.php:39
+#, php-format
+msgid "Voicemail Group %s: %s"
+msgstr "Röstgrupp %s: %s"
+
+#: /usr/src/freepbx/vmblast/functions.inc.php:138
+msgid "Voicemail Group: "
+msgstr "Röstbrevlådegrupp:"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:24
+msgid "Warning! Extension"
+msgstr "Varning! Anknytning"
+
+#: /usr/src/freepbx/vmblast/functions.inc.php:291
+msgid ""
+"You can include or exclude this extension/user from being part of the "
+"default voicemail blast group when creating or editing. Choosing this option "
+"will be ignored if the user does not have a voicemail box."
+msgstr ""
+"Du kan inkludera eller exkludera denna anknytning/användare från att vara "
+"med i standardgruppen för Röstutskick"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:173
+msgid ""
+"You can optionally include a password to authenticate before providing "
+"access to this group voicemail list."
+msgstr ""
+"Du kan valfritt inkludera ett lösenord som måste knappas in före tillgång "
+"till denna röstgrupp ges."
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:74
+msgid "deleted"
+msgstr "borttagen"
+
+#: /usr/src/freepbx/vmblast/install.php:54
+msgid "error populating vmblast_groups table"
+msgstr "fel när tabellen vmblast_groups fylldes på"
+
+#: /usr/src/freepbx/vmblast/install.php:62
+msgid "failed to drop field"
+msgstr "kunde inte kasta fältet"
+
+#: /usr/src/freepbx/vmblast/page.vmblast.php:24
+msgid "is not allowed for your account"
+msgstr "är inte tillåtet för din anknytning"
+
+#: /usr/src/freepbx/vmblast/install.php:57
+msgid "populated new table"
+msgstr "fyller på ny tabell"
+
+#~ msgid ""
+#~ "Creates a group of extensions that calls a group of voicemail boxes and "
+#~ "allows you to leave a message for them all at once."
+#~ msgstr ""
+#~ "Skapar en grupp av anknytningar som används för att ringa upp deras "
+#~ "röstbrevlådor  och lämna ett meddelande till dessa röstbrevlådor med ett "
+#~ "enda samtal"
 
 #~ msgid "VoiceMail Blasting"
 #~ msgstr "Röstgrupper"
