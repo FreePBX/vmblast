@@ -154,8 +154,8 @@ function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password =
 	foreach ($xtns as $key => $value) {
 		$xtns[$key] = $db->escapeSimple(trim($value));
 	}
-		// Sanity check input.
 
+	// Sanity check input.
 	$compiled = $db->prepare("INSERT INTO vmblast_groups (grpnum, ext) values ('$grpnum',?)");
 	$result   = $db->executeMultiple($compiled,$xtns);
 	if(DB::IsError($result)) {
