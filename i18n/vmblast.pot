@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 18:11-0500\n"
+"POT-Creation-Date: 2015-02-20 20:07-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,59 +17,69 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:66
+#: page.vmblast.php:66
 msgid " [DEFAULT]"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:59
-#: /usr/src/freepbx/vmblast/page.vmblast.php:113
-#: /usr/src/freepbx/vmblast/page.vmblast.php:121
+#: page.vmblast.php:59
+#: page.vmblast.php:113
+#: page.vmblast.php:121
 msgid "Add VMBlast Group"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:143
-#: /usr/src/freepbx/vmblast/page.vmblast.php:162
+#: vmblast.i18n.php:4
+msgid "Applications"
+msgstr ""
+
+#: page.vmblast.php:143
+#: page.vmblast.php:162
 msgid "Audio Label:"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:150
+#: page.vmblast.php:150
 msgid "Beep Only - No Confirmation"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:110
+#: page.vmblast.php:110
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:288
+#: vmblast.i18n.php:5
+msgid ""
+"Creates a group of extensions that calls a group of voicemail boxes and "
+"allows you to leave a message for them all at once."
+msgstr ""
+
+#: functions.inc.php:288
 msgid "Default Group Inclusion"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:202
+#: page.vmblast.php:202
 msgid "Default VMBlast Group"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:291
+#: functions.inc.php:291
 msgid "Default VMblast Group"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:91
+#: page.vmblast.php:91
 msgid "Delete Group"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/install.php:21
-#: /usr/src/freepbx/vmblast/install.php:35
+#: install.php:21
+#: install.php:35
 msgid "Done"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/install.php:40
+#: install.php:40
 msgid "Dropping grplist.."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/install.php:58
+#: install.php:58
 msgid "Dropping old grplist field.."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:203
+#: page.vmblast.php:203
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -77,94 +87,94 @@ msgid ""
 "default will uncheck the option from the current default group if specified."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:121
+#: page.vmblast.php:121
 msgid "Edit VMBlast Group"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:269
+#: functions.inc.php:269
 msgid "Exclude"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:137
+#: page.vmblast.php:137
 msgid "Group Description:"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:232
+#: page.vmblast.php:232
 msgid "Group numbers with more than one digit cannot begin with 0"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:270
+#: functions.inc.php:270
 msgid "Include"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:231
+#: page.vmblast.php:231
 msgid "Invalid Group Number specified"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/install.php:68
+#: install.php:68
 msgid "Not Needed"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/install.php:14
-#: /usr/src/freepbx/vmblast/install.php:28
+#: install.php:14
+#: install.php:28
 msgid "Not Required"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/install.php:64
+#: install.php:64
 msgid "OK"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:173
+#: page.vmblast.php:173
 msgid "Optional Password"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:143
+#: page.vmblast.php:143
 msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
 "number."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:234
+#: page.vmblast.php:234
 msgid "Please enter a valid Group Description"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:235
+#: page.vmblast.php:235
 msgid "Please enter a valid numeric password, only numbers are allowed"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:233
+#: page.vmblast.php:233
 msgid "Please enter an extension list."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:236
+#: page.vmblast.php:236
 msgid "Please select at least one extension"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:137
+#: page.vmblast.php:137
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:149
-#: /usr/src/freepbx/vmblast/page.vmblast.php:167
+#: page.vmblast.php:149
+#: page.vmblast.php:167
 msgid "Read Group Number"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:179
+#: page.vmblast.php:179
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
 "multiple.."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:217
+#: page.vmblast.php:217
 msgid "Submit Changes"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:255
+#: page.vmblast.php:255
 msgid "The Group Description provided is too long."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:162
+#: page.vmblast.php:162
 msgid ""
 "The group number will be played to the caller so they can confirm they have "
 "dialed the proper voice mail group number.<br><br>You must install and "
@@ -172,73 +182,78 @@ msgid ""
 "recordings."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:131
+#: page.vmblast.php:131
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/install.php:10
+#: install.php:10
 msgid "Upgrading vmblast to add audio_label field.."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/install.php:24
+#: install.php:24
 msgid "Upgrading vmblast to add password field.."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:74
-#: /usr/src/freepbx/vmblast/page.vmblast.php:94
+#: page.vmblast.php:74
+#: page.vmblast.php:94
 msgid "VMBlast Group"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:131
+#: page.vmblast.php:131
 msgid "VMBlast Number"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:179
+#: vmblast.i18n.php:3
+#: vmblast.i18n.php:6
+msgid "Voicemail Blasting"
+msgstr ""
+
+#: page.vmblast.php:179
 msgid "Voicemail Box List:"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:39
+#: functions.inc.php:39
 #, php-format
 msgid "Voicemail Group %s: %s"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:138
+#: functions.inc.php:138
 msgid "Voicemail Group: "
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:24
+#: page.vmblast.php:24
 msgid "Warning! Extension"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:291
+#: functions.inc.php:291
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
 "will be ignored if the user does not have a voicemail box."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:173
+#: page.vmblast.php:173
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:74
+#: page.vmblast.php:74
 msgid "deleted"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/install.php:54
+#: install.php:54
 msgid "error populating vmblast_groups table"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/install.php:62
+#: install.php:62
 msgid "failed to drop field"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:24
+#: page.vmblast.php:24
 msgid "is not allowed for your account"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/install.php:57
+#: install.php:57
 msgid "populated new table"
 msgstr ""

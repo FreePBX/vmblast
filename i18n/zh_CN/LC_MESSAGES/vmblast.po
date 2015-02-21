@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 18:11-0500\n"
+"POT-Creation-Date: 2015-02-20 20:07-0500\n"
 "PO-Revision-Date: 2009-02-01 13:51+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -18,59 +18,65 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:66
+#: page.vmblast.php:66
 msgid " [DEFAULT]"
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:59
-#: /usr/src/freepbx/vmblast/page.vmblast.php:113
-#: /usr/src/freepbx/vmblast/page.vmblast.php:121
+#: page.vmblast.php:59 page.vmblast.php:113 page.vmblast.php:121
 msgid "Add VMBlast Group"
 msgstr "添加语音邮件多播组"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:143
-#: /usr/src/freepbx/vmblast/page.vmblast.php:162
+#: vmblast.i18n.php:4
+msgid "Applications"
+msgstr ""
+
+#: page.vmblast.php:143 page.vmblast.php:162
 msgid "Audio Label:"
 msgstr "语音标签："
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:150
+#: page.vmblast.php:150
 msgid "Beep Only - No Confirmation"
 msgstr "只播放“嘀”声——无确认"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:110
+#: page.vmblast.php:110
 msgid "Conflicting Extensions"
 msgstr "分机号有冲突"
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:288
+#: vmblast.i18n.php:5
+msgid ""
+"Creates a group of extensions that calls a group of voicemail boxes and "
+"allows you to leave a message for them all at once."
+msgstr ""
+
+#: functions.inc.php:288
 msgid "Default Group Inclusion"
 msgstr "语音邮件小组默认成员"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:202
+#: page.vmblast.php:202
 msgid "Default VMBlast Group"
 msgstr "默认语音邮件多播组"
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:291
+#: functions.inc.php:291
 msgid "Default VMblast Group"
 msgstr "默认语音邮件多播组"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:91
+#: page.vmblast.php:91
 msgid "Delete Group"
 msgstr "删除小组"
 
-#: /usr/src/freepbx/vmblast/install.php:21
-#: /usr/src/freepbx/vmblast/install.php:35
+#: install.php:21 install.php:35
 msgid "Done"
 msgstr "完成"
 
-#: /usr/src/freepbx/vmblast/install.php:40
+#: install.php:40
 msgid "Dropping grplist.."
 msgstr "正在删除grplist。。。"
 
-#: /usr/src/freepbx/vmblast/install.php:58
+#: install.php:58
 msgid "Dropping old grplist field.."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:203
+#: page.vmblast.php:203
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -81,48 +87,47 @@ msgstr ""
 "入或从此语音邮件多播组的分机栏中移除。<br />默认语音邮件多播组只有一个，如果"
 "让此语音邮件多播组成为默认组，其他的语音邮件多播组就不再是默认的组。"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:121
+#: page.vmblast.php:121
 msgid "Edit VMBlast Group"
 msgstr "编辑语音邮件多播组"
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:269
+#: functions.inc.php:269
 msgid "Exclude"
 msgstr "不包括"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:137
+#: page.vmblast.php:137
 msgid "Group Description:"
 msgstr "小组描述："
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:232
+#: page.vmblast.php:232
 msgid "Group numbers with more than one digit cannot begin with 0"
 msgstr "包含2位或更多位数字的组号码不能以0打头"
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:270
+#: functions.inc.php:270
 msgid "Include"
 msgstr "包括"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:231
+#: page.vmblast.php:231
 msgid "Invalid Group Number specified"
 msgstr "指定了无效的组号码"
 
-#: /usr/src/freepbx/vmblast/install.php:68
+#: install.php:68
 msgid "Not Needed"
 msgstr "不需要"
 
-#: /usr/src/freepbx/vmblast/install.php:14
-#: /usr/src/freepbx/vmblast/install.php:28
+#: install.php:14 install.php:28
 msgid "Not Required"
 msgstr "不需要"
 
-#: /usr/src/freepbx/vmblast/install.php:64
+#: install.php:64
 msgid "OK"
 msgstr "完成"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:173
+#: page.vmblast.php:173
 msgid "Optional Password"
 msgstr "可选的密码"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:143
+#: page.vmblast.php:143
 msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
@@ -131,46 +136,45 @@ msgstr ""
 "向主叫播放这个消息以让他们确认拨打了正确的语音邮件小组号码，或者你可以让系统"
 "播放小组号码。"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:234
+#: page.vmblast.php:234
 msgid "Please enter a valid Group Description"
 msgstr "请输入有效的组描述"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:235
+#: page.vmblast.php:235
 msgid "Please enter a valid numeric password, only numbers are allowed"
 msgstr "请输入有效的数字密码，只能输入数字"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:233
+#: page.vmblast.php:233
 msgid "Please enter an extension list."
 msgstr "请输入一份分机列表。"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:236
+#: page.vmblast.php:236
 msgid "Please select at least one extension"
 msgstr "请选择至少一个分机"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:137
+#: page.vmblast.php:137
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr "为语音邮件多播组提供一个描述性的标题"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:149
-#: /usr/src/freepbx/vmblast/page.vmblast.php:167
+#: page.vmblast.php:149 page.vmblast.php:167
 msgid "Read Group Number"
 msgstr "播放小组号码"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:179
+#: page.vmblast.php:179
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
 "multiple.."
 msgstr "选择要添加到这个小组的邮件信箱。要选择多个项目，请按住Ctrl键。"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:217
+#: page.vmblast.php:217
 msgid "Submit Changes"
 msgstr "提交更改"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:255
+#: page.vmblast.php:255
 msgid "The Group Description provided is too long."
 msgstr ""
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:162
+#: page.vmblast.php:162
 msgid ""
 "The group number will be played to the caller so they can confirm they have "
 "dialed the proper voice mail group number.<br><br>You must install and "
@@ -181,45 +185,48 @@ msgstr ""
 "码。<br /><br />你必须安装并启用“系统录音”模块，以编辑此选项并选择合适的录音"
 "消息。"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:131
+#: page.vmblast.php:131
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr "用户访问此语音邮件多播组中的语音邮箱时拨打的号码"
 
-#: /usr/src/freepbx/vmblast/install.php:10
+#: install.php:10
 msgid "Upgrading vmblast to add audio_label field.."
 msgstr "正在升级语音邮件多播，正在添加audio_label字段。。。"
 
-#: /usr/src/freepbx/vmblast/install.php:24
+#: install.php:24
 msgid "Upgrading vmblast to add password field.."
 msgstr "正在升级语音邮件多播，正在添加password字段。。。"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:74
-#: /usr/src/freepbx/vmblast/page.vmblast.php:94
+#: page.vmblast.php:74 page.vmblast.php:94
 msgid "VMBlast Group"
 msgstr "语音邮件多播组"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:131
+#: page.vmblast.php:131
 msgid "VMBlast Number"
 msgstr "语音邮件多播号码"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:179
+#: vmblast.i18n.php:3 vmblast.i18n.php:6
+msgid "Voicemail Blasting"
+msgstr ""
+
+#: page.vmblast.php:179
 msgid "Voicemail Box List:"
 msgstr "语音邮件信箱列表："
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:39
+#: functions.inc.php:39
 #, php-format
 msgid "Voicemail Group %s: %s"
 msgstr "语音邮件小组 %s：%s"
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:138
+#: functions.inc.php:138
 msgid "Voicemail Group: "
 msgstr "语音邮件小组："
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:24
+#: page.vmblast.php:24
 msgid "Warning! Extension"
 msgstr "警告！你的帐户无法使用分机"
 
-#: /usr/src/freepbx/vmblast/functions.inc.php:291
+#: functions.inc.php:291
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -228,29 +235,29 @@ msgstr ""
 "你可以让此用户默认被包含或者不被包含在新建的或者编辑的语音邮件多播组中。如果"
 "用户没有语音邮件信箱，此项设置将被忽略。"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:173
+#: page.vmblast.php:173
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
 msgstr "你可以为访问此小组语音邮件列表设置可选的密码。"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:74
+#: page.vmblast.php:74
 msgid "deleted"
 msgstr "已删除"
 
-#: /usr/src/freepbx/vmblast/install.php:54
+#: install.php:54
 msgid "error populating vmblast_groups table"
 msgstr "在填充vmblast_groups表时发生错误"
 
-#: /usr/src/freepbx/vmblast/install.php:62
+#: install.php:62
 msgid "failed to drop field"
 msgstr "删除字段失败"
 
-#: /usr/src/freepbx/vmblast/page.vmblast.php:24
+#: page.vmblast.php:24
 msgid "is not allowed for your account"
 msgstr " 。"
 
-#: /usr/src/freepbx/vmblast/install.php:57
+#: install.php:57
 msgid "populated new table"
 msgstr ""
 
