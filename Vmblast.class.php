@@ -55,7 +55,6 @@ class Vmblast implements \BMO {
 				if ($action == 'delGRP') {
 					vmblast_del($account);
 					needreload();
-					redirect_standard();
 				}
 
 				//edit group - just delete and then re-add the extension
@@ -63,7 +62,6 @@ class Vmblast implements \BMO {
 					vmblast_del($account);
 					vmblast_add($account,$vmblast_list,$description,$audio_label,$password,$default_group);
 					needreload();
-					redirect_standard('extdisplay','view');
 				}
 			}
 		}

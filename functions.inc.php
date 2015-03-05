@@ -144,7 +144,6 @@ function vmblast_check_extensions($exten=true) {
 
 function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password = '', $default_group=0) {
 	global $db;
-
 	if (is_array($grplist)) {
 		$xtns = $grplist;
 	} else {
@@ -152,15 +151,18 @@ function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password =
 	}
 
 	foreach ($xtns as $key => $value) {
-		$xtns[$key] = $db->escapeSimple(trim($value));
+		$xtns[$key] = array($grpnum,trim($value));
+	}
+	// Sanity check input.
+	$ret = $db->prepare("INSERT INTO vmblast_groups (grpnum, ext) values (?,?)");
+	foreach($xtns as $x){
+		try{ 
+			$ret->execute($x);
+		}catch(Exception $e){
+			die_freepbx($e->getMessage()."<br><br>".'error adding to vmblast_groups table');	
+		}
 	}
 
-	// Sanity check input.
-	$compiled = $db->prepare("INSERT INTO vmblast_groups (grpnum, ext) values ('$grpnum',?)");
-	$result   = $db->executeMultiple($compiled,$xtns);
-	if(DB::IsError($result)) {
-		die_freepbx($result->getDebugInfo()."<br><br>".'error adding to vmblast_groups table');	
-	}
 	$sql = "INSERT INTO vmblast (grpnum, description, audio_label, password) VALUES (".$grpnum.", '".$db->escapeSimple($description)."', '$audio_label', '".$db->escapeSimple($password)."')";
 	$results = sql($sql);
 
