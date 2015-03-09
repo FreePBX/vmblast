@@ -2,7 +2,7 @@
 	<rawname>vmblast</rawname>
 	<repo>standard</repo>
 	<name>Voicemail Blasting</name>
-	<version>12.0.1</version>
+	<version>13.0.1alpha1</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -11,6 +11,7 @@
 		Creates a group of extensions that calls a group of voicemail boxes and allows you to leave a message for them all at once.
 	</description>
 	<changelog>
+		*13.0.1alpha1* Visual Changes
 		*12.0.1* Redo module_hook calls to use static obj
 		*2.11.0.4* #1953
 		*2.11.0.2* update license
@@ -36,7 +37,7 @@
 		<version>12.0.1rc16</version>
 	</depends>
 	<supported>
-		<version>12.0</version>
+		<version>13.0</version>
 	</supported>
 	<location>release/2.11/vmblast-2.11.0.1.tgz</location>
 	<md5sum>5c7d8c009bd41af1db0ebe87c2424ba4</md5sum>

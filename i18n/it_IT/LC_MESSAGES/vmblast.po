@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 20:07-0500\n"
+"POT-Creation-Date: 2015-03-09 14:50-0400\n"
 "PO-Revision-Date: 2008-11-06 14:55+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -17,51 +17,59 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-#: page.vmblast.php:66
-msgid " [DEFAULT]"
+#: views/bootnav.php:2
+msgid "Add VM Blast Group"
 msgstr ""
 
-#: page.vmblast.php:59 page.vmblast.php:113 page.vmblast.php:121
+#: page.vmblast.php:19
 msgid "Add VMBlast Group"
 msgstr "Aggiungi Gruppo di Caselle Vocali"
 
-#: vmblast.i18n.php:4
+#: vmblast.i18n.php:6 vmblast.i18n.php:12
 msgid "Applications"
 msgstr ""
 
-#: page.vmblast.php:143 page.vmblast.php:162
-msgid "Audio Label:"
-msgstr "Etichetta Audio:"
+#: views/form.php:43
+msgid "Audio Label"
+msgstr ""
 
-#: page.vmblast.php:150
+#: views/form.php:49
 msgid "Beep Only - No Confirmation"
 msgstr "Solo Beep - Nessuna Conferma"
 
-#: page.vmblast.php:110
+#: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "Interni in conflitto"
 
-#: vmblast.i18n.php:5
+#: vmblast.i18n.php:8
 msgid ""
 "Creates a group of extensions that calls a group of voicemail boxes and "
 "allows you to leave a message for them all at once."
 msgstr ""
 
-#: functions.inc.php:288
+#: views/grid.php:16
+msgid "Default"
+msgstr ""
+
+#: functions.inc.php:290
 msgid "Default Group Inclusion"
 msgstr "Gruppo Predefinito d'Inclusione"
 
-#: page.vmblast.php:202
+#: views/form.php:198
 msgid "Default VMBlast Group"
 msgstr "Gruppo Caselle Predefinito"
 
-#: functions.inc.php:291
+#: functions.inc.php:293
 msgid "Default VMblast Group"
 msgstr "Gruppo Caselle Predefinito"
 
-#: page.vmblast.php:91
-msgid "Delete Group"
-msgstr "Elimina Gruppo"
+#: Vmblast.class.php:76
+msgid "Delete"
+msgstr ""
+
+#: views/grid.php:15
+msgid "Description"
+msgstr ""
 
 #: install.php:21 install.php:35
 msgid "Done"
@@ -75,7 +83,7 @@ msgstr "Sto scartando grplist.."
 msgid "Dropping old grplist field.."
 msgstr ""
 
-#: page.vmblast.php:203
+#: views/form.php:213
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -87,29 +95,33 @@ msgstr ""
 "rimossi) da questo gruppo.<br />Impostando questo gruppo come predefinito "
 "verrà rimossa l'opzione dal gruppo corrente predefinito se esiste."
 
-#: page.vmblast.php:121
+#: page.vmblast.php:17
 msgid "Edit VMBlast Group"
 msgstr "Modifica Gruppo di Caselle Vocali"
 
-#: functions.inc.php:269
+#: functions.inc.php:271
 msgid "Exclude"
 msgstr "Escludi"
 
-#: page.vmblast.php:137
-msgid "Group Description:"
-msgstr "Descrizione Gruppo:"
+#: views/grid.php:14
+msgid "Group"
+msgstr ""
 
-#: page.vmblast.php:232
-msgid "Group numbers with more than one digit cannot begin with 0"
-msgstr "I numeri dei Gruppi con più di una cifra non possono iniziare per 0"
+#: views/form.php:123
+msgid "Group Description"
+msgstr ""
 
-#: functions.inc.php:270
+#: functions.inc.php:272
 msgid "Include"
 msgstr "Includi"
 
-#: page.vmblast.php:231
-msgid "Invalid Group Number specified"
-msgstr "Numero Gruppo specificato non valido"
+#: views/bootnav.php:1
+msgid "List VM Blast Groups"
+msgstr ""
+
+#: views/form.php:205
+msgid "No"
+msgstr ""
 
 #: install.php:68
 msgid "Not Needed"
@@ -123,11 +135,11 @@ msgstr "Non Richiesto"
 msgid "OK"
 msgstr "OK"
 
-#: page.vmblast.php:173
+#: views/form.php:148
 msgid "Optional Password"
 msgstr "Password Opzionale"
 
-#: page.vmblast.php:143
+#: views/form.php:59
 msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
@@ -137,60 +149,29 @@ msgstr ""
 "chiamato il gruppo corretto, o semplicemente comunica il numero del gruppo "
 "chiamato."
 
-#: page.vmblast.php:234
-msgid "Please enter a valid Group Description"
-msgstr "Prego immettere una Descrizione del gruppo valida"
-
-#: page.vmblast.php:235
-msgid "Please enter a valid numeric password, only numbers are allowed"
-msgstr ""
-"Prego immettere una password numerica valida, solo numeri sono permessi"
-
-#: page.vmblast.php:233
-msgid "Please enter an extension list."
-msgstr "Prego immettere una lista di interni."
-
-#: page.vmblast.php:236
-msgid "Please select at least one extension"
-msgstr "Prego selezionare almeno un interno"
-
-#: page.vmblast.php:137
+#: views/form.php:135
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr "Titolo descrittivo per questo Gruppo di Caselle."
 
-#: page.vmblast.php:149 page.vmblast.php:167
+#: views/form.php:48
 msgid "Read Group Number"
 msgstr "Conferma Numero del Gruppo"
 
-#: page.vmblast.php:179
+#: Vmblast.class.php:86
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:186
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
-"multiple.."
-msgstr ""
-"Selezionare le Caselle da includere in questo gruppo. Utilizzare il tasto "
-"Ctrl per selezioni multiple."
-
-#: page.vmblast.php:217
-msgid "Submit Changes"
-msgstr "Conferma Cambiamenti"
-
-#: page.vmblast.php:255
-msgid "The Group Description provided is too long."
+"multiple."
 msgstr ""
 
-#: page.vmblast.php:162
-msgid ""
-"The group number will be played to the caller so they can confirm they have "
-"dialed the proper voice mail group number.<br><br>You must install and "
-"enable the \"Systems Recordings\" Module to edit this option and choose from "
-"recordings."
+#: Vmblast.class.php:81
+msgid "Submit"
 msgstr ""
-"Riproduce questo messaggio al chiamante in modo che può confermare che abbia "
-"chiamato il gruppo corretto. <br><br>Devi installare ed attivare il modulo "
-"\"Registrazioni di Sistema\" per modificare questa opzione e scegliere tra "
-"quelle disponibili."
 
-#: page.vmblast.php:131
+#: views/form.php:111
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr ""
 "Il numero che gli utenti dovranno chiamare per questo Gruppo di Caselle "
@@ -204,21 +185,17 @@ msgstr "Aggiornamento vmblast per aggiungere il campo audio_label.."
 msgid "Upgrading vmblast to add password field.."
 msgstr "Aggiornamento vmblast per aggiungere il campo password.."
 
-#: page.vmblast.php:74 page.vmblast.php:94
-msgid "VMBlast Group"
-msgstr "Gruppo di Caselle Vocali"
-
-#: page.vmblast.php:131
+#: views/form.php:99
 msgid "VMBlast Number"
 msgstr "Numero Gruppo"
 
-#: vmblast.i18n.php:3 vmblast.i18n.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr ""
 
-#: page.vmblast.php:179
-msgid "Voicemail Box List:"
-msgstr "Lista Caselle Vocali:"
+#: views/form.php:172
+msgid "Voicemail Box List"
+msgstr ""
 
 #: functions.inc.php:39
 #, php-format
@@ -229,11 +206,15 @@ msgstr "Gruppo Caselle Vocali %s: %s"
 msgid "Voicemail Group: "
 msgstr "Gruppo Caselle Vocali:"
 
-#: page.vmblast.php:24
+#: Vmblast.class.php:38
 msgid "Warning! Extension"
 msgstr "Attenzione! Interno"
 
-#: functions.inc.php:291
+#: views/form.php:203
+msgid "Yes"
+msgstr ""
+
+#: functions.inc.php:293
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -243,17 +224,13 @@ msgstr ""
 "caselle vocali durante la creazione o modifica. L'opzione verrà ignorata se "
 "l'utente non ha una casella vocale."
 
-#: page.vmblast.php:173
+#: views/form.php:160
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
 msgstr ""
 "Si può impostare una password opzionale prima di accedere a questo Gruppo di "
 "Caselle."
-
-#: page.vmblast.php:74
-msgid "deleted"
-msgstr "eliminato"
 
 #: install.php:54
 msgid "error populating vmblast_groups table"
@@ -263,13 +240,71 @@ msgstr "errore nel popolamento della tabella vmblast_groups"
 msgid "failed to drop field"
 msgstr "impossibile scartare il campo"
 
-#: page.vmblast.php:24
+#: Vmblast.class.php:38
 msgid "is not allowed for your account"
 msgstr "non è permesso al tuo account"
 
 #: install.php:57
 msgid "populated new table"
 msgstr ""
+
+#~ msgid "Audio Label:"
+#~ msgstr "Etichetta Audio:"
+
+#~ msgid "Delete Group"
+#~ msgstr "Elimina Gruppo"
+
+#~ msgid "Group Description:"
+#~ msgstr "Descrizione Gruppo:"
+
+#~ msgid "Group numbers with more than one digit cannot begin with 0"
+#~ msgstr "I numeri dei Gruppi con più di una cifra non possono iniziare per 0"
+
+#~ msgid "Invalid Group Number specified"
+#~ msgstr "Numero Gruppo specificato non valido"
+
+#~ msgid "Please enter a valid Group Description"
+#~ msgstr "Prego immettere una Descrizione del gruppo valida"
+
+#~ msgid "Please enter a valid numeric password, only numbers are allowed"
+#~ msgstr ""
+#~ "Prego immettere una password numerica valida, solo numeri sono permessi"
+
+#~ msgid "Please enter an extension list."
+#~ msgstr "Prego immettere una lista di interni."
+
+#~ msgid "Please select at least one extension"
+#~ msgstr "Prego selezionare almeno un interno"
+
+#~ msgid ""
+#~ "Select voice mail boxes to add to this group. Use Ctrl key to select "
+#~ "multiple.."
+#~ msgstr ""
+#~ "Selezionare le Caselle da includere in questo gruppo. Utilizzare il tasto "
+#~ "Ctrl per selezioni multiple."
+
+#~ msgid "Submit Changes"
+#~ msgstr "Conferma Cambiamenti"
+
+#~ msgid ""
+#~ "The group number will be played to the caller so they can confirm they "
+#~ "have dialed the proper voice mail group number.<br><br>You must install "
+#~ "and enable the \"Systems Recordings\" Module to edit this option and "
+#~ "choose from recordings."
+#~ msgstr ""
+#~ "Riproduce questo messaggio al chiamante in modo che può confermare che "
+#~ "abbia chiamato il gruppo corretto. <br><br>Devi installare ed attivare il "
+#~ "modulo \"Registrazioni di Sistema\" per modificare questa opzione e "
+#~ "scegliere tra quelle disponibili."
+
+#~ msgid "VMBlast Group"
+#~ msgstr "Gruppo di Caselle Vocali"
+
+#~ msgid "Voicemail Box List:"
+#~ msgstr "Lista Caselle Vocali:"
+
+#~ msgid "deleted"
+#~ msgstr "eliminato"
 
 #~ msgid "VoiceMail Blasting"
 #~ msgstr "Gruppi di Caselle Vocali"

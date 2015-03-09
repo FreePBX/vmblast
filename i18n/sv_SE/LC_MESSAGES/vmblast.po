@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX vmblast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 20:07-0500\n"
+"POT-Creation-Date: 2015-03-09 14:50-0400\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,31 +30,31 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: page.vmblast.php:66
-msgid " [DEFAULT]"
-msgstr " [STANDARD]"
+#: views/bootnav.php:2
+msgid "Add VM Blast Group"
+msgstr ""
 
-#: page.vmblast.php:59 page.vmblast.php:113 page.vmblast.php:121
+#: page.vmblast.php:19
 msgid "Add VMBlast Group"
 msgstr "Lägg till röstgrupp"
 
-#: vmblast.i18n.php:4
+#: vmblast.i18n.php:6 vmblast.i18n.php:12
 msgid "Applications"
 msgstr ""
 
-#: page.vmblast.php:143 page.vmblast.php:162
-msgid "Audio Label:"
-msgstr "Ljudetikett:"
+#: views/form.php:43
+msgid "Audio Label"
+msgstr ""
 
-#: page.vmblast.php:150
+#: views/form.php:49
 msgid "Beep Only - No Confirmation"
 msgstr "Endast pip - ingen bekräftelse"
 
-#: page.vmblast.php:110
+#: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "Konfliktande anknytningar"
 
-#: vmblast.i18n.php:5
+#: vmblast.i18n.php:8
 msgid ""
 "Creates a group of extensions that calls a group of voicemail boxes and "
 "allows you to leave a message for them all at once."
@@ -63,21 +63,29 @@ msgstr ""
 "röstbrevlådor  och lämna ett meddelande till dessa röstbrevlådor med ett "
 "enda samtal"
 
-#: functions.inc.php:288
+#: views/grid.php:16
+msgid "Default"
+msgstr ""
+
+#: functions.inc.php:290
 msgid "Default Group Inclusion"
 msgstr "Standard gruppinkludering"
 
-#: page.vmblast.php:202
+#: views/form.php:198
 msgid "Default VMBlast Group"
 msgstr "Standard röstgrupp"
 
-#: functions.inc.php:291
+#: functions.inc.php:293
 msgid "Default VMblast Group"
 msgstr "Standardgrupp för Röstgrupper"
 
-#: page.vmblast.php:91
-msgid "Delete Group"
-msgstr "Ta bort grupp"
+#: Vmblast.class.php:76
+msgid "Delete"
+msgstr ""
+
+#: views/grid.php:15
+msgid "Description"
+msgstr ""
 
 #: install.php:21 install.php:35
 msgid "Done"
@@ -91,7 +99,7 @@ msgstr "Kastar grplist.."
 msgid "Dropping old grplist field.."
 msgstr "Kastar den gamla fältet grplist.."
 
-#: page.vmblast.php:203
+#: views/form.php:213
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -103,29 +111,33 @@ msgstr ""
 "denna standard röstgrupp i Anknytningar (eller Användare).<br>Om denna grupp "
 "anges som standard kommer den nuvarande standard röstgruppen att avaktiveras."
 
-#: page.vmblast.php:121
+#: page.vmblast.php:17
 msgid "Edit VMBlast Group"
 msgstr "Redigera röstgrupp"
 
-#: functions.inc.php:269
+#: functions.inc.php:271
 msgid "Exclude"
 msgstr "Exkludera"
 
-#: page.vmblast.php:137
-msgid "Group Description:"
-msgstr "Gruppbeskrivning:"
+#: views/grid.php:14
+msgid "Group"
+msgstr ""
 
-#: page.vmblast.php:232
-msgid "Group numbers with more than one digit cannot begin with 0"
-msgstr "Gruppnummer med mer än en siffra kan inte starta med 0"
+#: views/form.php:123
+msgid "Group Description"
+msgstr ""
 
-#: functions.inc.php:270
+#: functions.inc.php:272
 msgid "Include"
 msgstr "Inkludera"
 
-#: page.vmblast.php:231
-msgid "Invalid Group Number specified"
-msgstr "Ogiltigt gruppnummer angivet"
+#: views/bootnav.php:1
+msgid "List VM Blast Groups"
+msgstr ""
+
+#: views/form.php:205
+msgid "No"
+msgstr ""
 
 #: install.php:68
 msgid "Not Needed"
@@ -139,11 +151,11 @@ msgstr "Inte nödvändig"
 msgid "OK"
 msgstr "OK"
 
-#: page.vmblast.php:173
+#: views/form.php:148
 msgid "Optional Password"
 msgstr "Valfritt lösenord"
 
-#: page.vmblast.php:143
+#: views/form.php:59
 msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
@@ -152,59 +164,29 @@ msgstr ""
 "Spela upp detta meddelande så att uppringaren kan verifiera att den har ring "
 "den rätta röstgruppen, eller låt systemet läsa upp gruppnumret."
 
-#: page.vmblast.php:234
-msgid "Please enter a valid Group Description"
-msgstr "Skriv in en giltig gruppbeskrivning"
-
-#: page.vmblast.php:235
-msgid "Please enter a valid numeric password, only numbers are allowed"
-msgstr "Skriv in ett giltigt lösenord, endast siffror"
-
-#: page.vmblast.php:233
-msgid "Please enter an extension list."
-msgstr "Skriv in en anknytningslista"
-
-#: page.vmblast.php:236
-msgid "Please select at least one extension"
-msgstr "Välj minst en anknytning"
-
-#: page.vmblast.php:137
+#: views/form.php:135
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr "Skriv in en giltig beskrivning för denna röstgrupp"
 
-#: page.vmblast.php:149 page.vmblast.php:167
+#: views/form.php:48
 msgid "Read Group Number"
 msgstr "Läs upp gruppnumret"
 
-#: page.vmblast.php:179
+#: Vmblast.class.php:86
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:186
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
-"multiple.."
-msgstr ""
-"Välj vilka röstbrevlådor du vill ha i denna grupp. Använd Ctrl-tangenten för "
-"att välja flera.."
-
-#: page.vmblast.php:217
-msgid "Submit Changes"
-msgstr "Spara ändringar"
-
-#: page.vmblast.php:255
-msgid "The Group Description provided is too long."
+"multiple."
 msgstr ""
 
-#: page.vmblast.php:162
-msgid ""
-"The group number will be played to the caller so they can confirm they have "
-"dialed the proper voice mail group number.<br><br>You must install and "
-"enable the \"Systems Recordings\" Module to edit this option and choose from "
-"recordings."
+#: Vmblast.class.php:81
+msgid "Submit"
 msgstr ""
-"Gruppnumret kommer att spelas upp för uppringaren så den vet att det är rätt "
-"röstgrupp den ringt till.<br><br>Du måste ha installerat och aktiverat "
-"modulen \"Systeminspelningar\" för att redigera detta val och välja "
-"inspelningar."
 
-#: page.vmblast.php:131
+#: views/form.php:111
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr "Det nummer användare anger när dom ska ringa denna röstgrupp"
 
@@ -216,21 +198,17 @@ msgstr "Uppgraderar vmblast, lägger till fältet audio_label.."
 msgid "Upgrading vmblast to add password field.."
 msgstr "Uppgraderar vmblast med fältet password.."
 
-#: page.vmblast.php:74 page.vmblast.php:94
-msgid "VMBlast Group"
-msgstr "Röstgrupp"
-
-#: page.vmblast.php:131
+#: views/form.php:99
 msgid "VMBlast Number"
 msgstr "Röstgruppsnummer"
 
-#: vmblast.i18n.php:3 vmblast.i18n.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr ""
 
-#: page.vmblast.php:179
-msgid "Voicemail Box List:"
-msgstr "Lista med röstbrevlådor:"
+#: views/form.php:172
+msgid "Voicemail Box List"
+msgstr ""
 
 #: functions.inc.php:39
 #, php-format
@@ -241,11 +219,15 @@ msgstr "Röstgrupp %s: %s"
 msgid "Voicemail Group: "
 msgstr "Röstbrevlådegrupp:"
 
-#: page.vmblast.php:24
+#: Vmblast.class.php:38
 msgid "Warning! Extension"
 msgstr "Varning! Anknytning"
 
-#: functions.inc.php:291
+#: views/form.php:203
+msgid "Yes"
+msgstr ""
+
+#: functions.inc.php:293
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -254,17 +236,13 @@ msgstr ""
 "Du kan inkludera eller exkludera denna anknytning/användare från att vara "
 "med i standardgruppen för Röstutskick"
 
-#: page.vmblast.php:173
+#: views/form.php:160
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
 msgstr ""
 "Du kan valfritt inkludera ett lösenord som måste knappas in före tillgång "
 "till denna röstgrupp ges."
-
-#: page.vmblast.php:74
-msgid "deleted"
-msgstr "borttagen"
 
 #: install.php:54
 msgid "error populating vmblast_groups table"
@@ -274,13 +252,73 @@ msgstr "fel när tabellen vmblast_groups fylldes på"
 msgid "failed to drop field"
 msgstr "kunde inte kasta fältet"
 
-#: page.vmblast.php:24
+#: Vmblast.class.php:38
 msgid "is not allowed for your account"
 msgstr "är inte tillåtet för din anknytning"
 
 #: install.php:57
 msgid "populated new table"
 msgstr "fyller på ny tabell"
+
+#~ msgid " [DEFAULT]"
+#~ msgstr " [STANDARD]"
+
+#~ msgid "Audio Label:"
+#~ msgstr "Ljudetikett:"
+
+#~ msgid "Delete Group"
+#~ msgstr "Ta bort grupp"
+
+#~ msgid "Group Description:"
+#~ msgstr "Gruppbeskrivning:"
+
+#~ msgid "Group numbers with more than one digit cannot begin with 0"
+#~ msgstr "Gruppnummer med mer än en siffra kan inte starta med 0"
+
+#~ msgid "Invalid Group Number specified"
+#~ msgstr "Ogiltigt gruppnummer angivet"
+
+#~ msgid "Please enter a valid Group Description"
+#~ msgstr "Skriv in en giltig gruppbeskrivning"
+
+#~ msgid "Please enter a valid numeric password, only numbers are allowed"
+#~ msgstr "Skriv in ett giltigt lösenord, endast siffror"
+
+#~ msgid "Please enter an extension list."
+#~ msgstr "Skriv in en anknytningslista"
+
+#~ msgid "Please select at least one extension"
+#~ msgstr "Välj minst en anknytning"
+
+#~ msgid ""
+#~ "Select voice mail boxes to add to this group. Use Ctrl key to select "
+#~ "multiple.."
+#~ msgstr ""
+#~ "Välj vilka röstbrevlådor du vill ha i denna grupp. Använd Ctrl-tangenten "
+#~ "för att välja flera.."
+
+#~ msgid "Submit Changes"
+#~ msgstr "Spara ändringar"
+
+#~ msgid ""
+#~ "The group number will be played to the caller so they can confirm they "
+#~ "have dialed the proper voice mail group number.<br><br>You must install "
+#~ "and enable the \"Systems Recordings\" Module to edit this option and "
+#~ "choose from recordings."
+#~ msgstr ""
+#~ "Gruppnumret kommer att spelas upp för uppringaren så den vet att det är "
+#~ "rätt röstgrupp den ringt till.<br><br>Du måste ha installerat och "
+#~ "aktiverat modulen \"Systeminspelningar\" för att redigera detta val och "
+#~ "välja inspelningar."
+
+#~ msgid "VMBlast Group"
+#~ msgstr "Röstgrupp"
+
+#~ msgid "Voicemail Box List:"
+#~ msgstr "Lista med röstbrevlådor:"
+
+#~ msgid "deleted"
+#~ msgstr "borttagen"
 
 #~ msgid "VoiceMail Blasting"
 #~ msgstr "Röstgrupper"

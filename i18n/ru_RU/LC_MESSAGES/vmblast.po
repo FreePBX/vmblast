@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 20:07-0500\n"
+"POT-Creation-Date: 2015-03-09 14:50-0400\n"
 "PO-Revision-Date: 2011-04-06 17:15+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -15,31 +15,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: page.vmblast.php:66
-msgid " [DEFAULT]"
-msgstr "[Значения по умолчанию]"
+#: views/bootnav.php:2
+msgid "Add VM Blast Group"
+msgstr ""
 
-#: page.vmblast.php:59 page.vmblast.php:113 page.vmblast.php:121
+#: page.vmblast.php:19
 msgid "Add VMBlast Group"
 msgstr "Добавить группу VMBlast"
 
-#: vmblast.i18n.php:4
+#: vmblast.i18n.php:6 vmblast.i18n.php:12
 msgid "Applications"
 msgstr "Приложения"
 
-#: page.vmblast.php:143 page.vmblast.php:162
-msgid "Audio Label:"
-msgstr "Аудио анонс:"
+#: views/form.php:43
+msgid "Audio Label"
+msgstr ""
 
-#: page.vmblast.php:150
+#: views/form.php:49
 msgid "Beep Only - No Confirmation"
 msgstr "Только звуковой сигнал - без подтверждения"
 
-#: page.vmblast.php:110
+#: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "Конфликт внутренних номеров"
 
-#: vmblast.i18n.php:5
+#: vmblast.i18n.php:8
 msgid ""
 "Creates a group of extensions that calls a group of voicemail boxes and "
 "allows you to leave a message for them all at once."
@@ -47,21 +47,29 @@ msgstr ""
 "Создаёт группу внутренних номеров, которые используют совместно один ящик "
 "групповой почты, допускает сообщения и прослушивание всех членов группы."
 
-#: functions.inc.php:288
+#: views/grid.php:16
+msgid "Default"
+msgstr ""
+
+#: functions.inc.php:290
 msgid "Default Group Inclusion"
 msgstr "Включения в группу по-умолчанию"
 
-#: page.vmblast.php:202
+#: views/form.php:198
 msgid "Default VMBlast Group"
 msgstr "Дефолтная группа VMBlast"
 
-#: functions.inc.php:291
+#: functions.inc.php:293
 msgid "Default VMblast Group"
 msgstr "Дефолтная группа VMblast"
 
-#: page.vmblast.php:91
-msgid "Delete Group"
-msgstr "Удалить группу"
+#: Vmblast.class.php:76
+msgid "Delete"
+msgstr ""
+
+#: views/grid.php:15
+msgid "Description"
+msgstr ""
 
 #: install.php:21 install.php:35
 msgid "Done"
@@ -75,7 +83,7 @@ msgstr "Сброс листа группы.."
 msgid "Dropping old grplist field.."
 msgstr "Игнорируется старое значение поля grplist.."
 
-#: page.vmblast.php:203
+#: views/form.php:213
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -88,29 +96,33 @@ msgstr ""
 "<br />Объявляя эту группу дефолтной вы изменяете текущее значение дефолтной "
 "группы."
 
-#: page.vmblast.php:121
+#: page.vmblast.php:17
 msgid "Edit VMBlast Group"
 msgstr "Изменить группу VMBlast"
 
-#: functions.inc.php:269
+#: functions.inc.php:271
 msgid "Exclude"
 msgstr "Исключить"
 
-#: page.vmblast.php:137
-msgid "Group Description:"
-msgstr "Описание группы:"
+#: views/grid.php:14
+msgid "Group"
+msgstr ""
 
-#: page.vmblast.php:232
-msgid "Group numbers with more than one digit cannot begin with 0"
-msgstr "Номер группы двух- и более значный не должен начинаться с 0"
+#: views/form.php:123
+msgid "Group Description"
+msgstr ""
 
-#: functions.inc.php:270
+#: functions.inc.php:272
 msgid "Include"
 msgstr "Включить"
 
-#: page.vmblast.php:231
-msgid "Invalid Group Number specified"
-msgstr "Указан неверный номер группы"
+#: views/bootnav.php:1
+msgid "List VM Blast Groups"
+msgstr ""
+
+#: views/form.php:205
+msgid "No"
+msgstr ""
 
 #: install.php:68
 msgid "Not Needed"
@@ -124,11 +136,11 @@ msgstr "Не требуется"
 msgid "OK"
 msgstr "ОК"
 
-#: page.vmblast.php:173
+#: views/form.php:148
 msgid "Optional Password"
 msgstr "Пароль (опционально)"
 
-#: page.vmblast.php:143
+#: views/form.php:59
 msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
@@ -138,58 +150,29 @@ msgstr ""
 "звонок поступил в групповой ящик голосовой почты или система сообщит номер "
 "группы."
 
-#: page.vmblast.php:234
-msgid "Please enter a valid Group Description"
-msgstr "Укажите понятное описание группы"
-
-#: page.vmblast.php:235
-msgid "Please enter a valid numeric password, only numbers are allowed"
-msgstr "Укажите цифровой пароль, разрешены только цифры"
-
-#: page.vmblast.php:233
-msgid "Please enter an extension list."
-msgstr "Укажите список внутренних номеров"
-
-#: page.vmblast.php:236
-msgid "Please select at least one extension"
-msgstr "Выберите по крайней мере хотя бы один внутренний номер"
-
-#: page.vmblast.php:137
+#: views/form.php:135
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr "Предложите понятное описание для этой группы VMBlast"
 
-#: page.vmblast.php:149 page.vmblast.php:167
+#: views/form.php:48
 msgid "Read Group Number"
 msgstr "Сообщать групповой номер"
 
-#: page.vmblast.php:179
+#: Vmblast.class.php:86
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:186
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
-"multiple.."
-msgstr ""
-"Отметить ящики голосовой почты, которые будут включены в групповой ящик. "
-"удерживайте Ctrl + клик мышкой для множественного выделения"
-
-#: page.vmblast.php:217
-msgid "Submit Changes"
-msgstr "Применить изменения"
-
-#: page.vmblast.php:255
-msgid "The Group Description provided is too long."
+"multiple."
 msgstr ""
 
-#: page.vmblast.php:162
-msgid ""
-"The group number will be played to the caller so they can confirm they have "
-"dialed the proper voice mail group number.<br><br>You must install and "
-"enable the \"Systems Recordings\" Module to edit this option and choose from "
-"recordings."
+#: Vmblast.class.php:81
+msgid "Submit"
 msgstr ""
-"Будет воспроизведён номер группы для подтверждения, что звонок поступил в "
-"групповой ящик голосовой почты<br><br>Нужно инсталлировать и активировать "
-"модуль Запись сообщений для изменения этой опции."
 
-#: page.vmblast.php:131
+#: views/form.php:111
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr ""
 "Внутренний номер для пользователей ипользующих дозвон в голосовую почту этой "
@@ -203,21 +186,17 @@ msgstr "Апгрейдить vmblast добавлением поля аудио 
 msgid "Upgrading vmblast to add password field.."
 msgstr "Апгрейдить vmblast добавлением поля пароль.."
 
-#: page.vmblast.php:74 page.vmblast.php:94
-msgid "VMBlast Group"
-msgstr "Группа VMBlast"
-
-#: page.vmblast.php:131
+#: views/form.php:99
 msgid "VMBlast Number"
 msgstr "Номер VMBlast"
 
-#: vmblast.i18n.php:3 vmblast.i18n.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr "Групповая голосовая почта"
 
-#: page.vmblast.php:179
-msgid "Voicemail Box List:"
-msgstr "Список голосовой почты:"
+#: views/form.php:172
+msgid "Voicemail Box List"
+msgstr ""
 
 #: functions.inc.php:39
 #, php-format
@@ -228,11 +207,15 @@ msgstr "Группа голосовой почты %s: %s"
 msgid "Voicemail Group: "
 msgstr "Группа голосовой почты:"
 
-#: page.vmblast.php:24
+#: Vmblast.class.php:38
 msgid "Warning! Extension"
 msgstr "Внимание! Внутренний номер"
 
-#: functions.inc.php:291
+#: views/form.php:203
+msgid "Yes"
+msgstr ""
+
+#: functions.inc.php:293
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -243,17 +226,13 @@ msgstr ""
 "пользователей. Выбор этой опции игнорируется, если у пользователя нет ящика "
 "голосовой почты."
 
-#: page.vmblast.php:173
+#: views/form.php:160
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
 msgstr ""
 "Можно добавить пароль опционально, для аутентификации доступа в этот "
 "групповой ящик голосовой почты."
-
-#: page.vmblast.php:74
-msgid "deleted"
-msgstr "удалено"
 
 #: install.php:54
 msgid "error populating vmblast_groups table"
@@ -263,13 +242,72 @@ msgstr "ошибка при создании таблицы группы vmblast
 msgid "failed to drop field"
 msgstr "не удалось сбросить поле"
 
-#: page.vmblast.php:24
+#: Vmblast.class.php:38
 msgid "is not allowed for your account"
 msgstr "не доступен для вашего аккаунта"
 
 #: install.php:57
 msgid "populated new table"
 msgstr "создание новой таблицы"
+
+#~ msgid " [DEFAULT]"
+#~ msgstr "[Значения по умолчанию]"
+
+#~ msgid "Audio Label:"
+#~ msgstr "Аудио анонс:"
+
+#~ msgid "Delete Group"
+#~ msgstr "Удалить группу"
+
+#~ msgid "Group Description:"
+#~ msgstr "Описание группы:"
+
+#~ msgid "Group numbers with more than one digit cannot begin with 0"
+#~ msgstr "Номер группы двух- и более значный не должен начинаться с 0"
+
+#~ msgid "Invalid Group Number specified"
+#~ msgstr "Указан неверный номер группы"
+
+#~ msgid "Please enter a valid Group Description"
+#~ msgstr "Укажите понятное описание группы"
+
+#~ msgid "Please enter a valid numeric password, only numbers are allowed"
+#~ msgstr "Укажите цифровой пароль, разрешены только цифры"
+
+#~ msgid "Please enter an extension list."
+#~ msgstr "Укажите список внутренних номеров"
+
+#~ msgid "Please select at least one extension"
+#~ msgstr "Выберите по крайней мере хотя бы один внутренний номер"
+
+#~ msgid ""
+#~ "Select voice mail boxes to add to this group. Use Ctrl key to select "
+#~ "multiple.."
+#~ msgstr ""
+#~ "Отметить ящики голосовой почты, которые будут включены в групповой ящик. "
+#~ "удерживайте Ctrl + клик мышкой для множественного выделения"
+
+#~ msgid "Submit Changes"
+#~ msgstr "Применить изменения"
+
+#~ msgid ""
+#~ "The group number will be played to the caller so they can confirm they "
+#~ "have dialed the proper voice mail group number.<br><br>You must install "
+#~ "and enable the \"Systems Recordings\" Module to edit this option and "
+#~ "choose from recordings."
+#~ msgstr ""
+#~ "Будет воспроизведён номер группы для подтверждения, что звонок поступил в "
+#~ "групповой ящик голосовой почты<br><br>Нужно инсталлировать и активировать "
+#~ "модуль Запись сообщений для изменения этой опции."
+
+#~ msgid "VMBlast Group"
+#~ msgstr "Группа VMBlast"
+
+#~ msgid "Voicemail Box List:"
+#~ msgstr "Список голосовой почты:"
+
+#~ msgid "deleted"
+#~ msgstr "удалено"
 
 #~ msgid "VoiceMail Blasting"
 #~ msgstr "Групповая голосовая почта"

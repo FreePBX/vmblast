@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 20:07-0500\n"
+"POT-Creation-Date: 2015-03-09 14:50-0400\n"
 "PO-Revision-Date: 2014-02-19 22:51+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/vmblast/ja/>\n"
@@ -48,31 +48,31 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: page.vmblast.php:66
-msgid " [DEFAULT]"
-msgstr " [デフォルト]"
+#: views/bootnav.php:2
+msgid "Add VM Blast Group"
+msgstr ""
 
-#: page.vmblast.php:59 page.vmblast.php:113 page.vmblast.php:121
+#: page.vmblast.php:19
 msgid "Add VMBlast Group"
 msgstr "VMブラストグループを追加"
 
-#: vmblast.i18n.php:4
+#: vmblast.i18n.php:6 vmblast.i18n.php:12
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: page.vmblast.php:143 page.vmblast.php:162
-msgid "Audio Label:"
-msgstr "オーディオラベル:"
+#: views/form.php:43
+msgid "Audio Label"
+msgstr ""
 
-#: page.vmblast.php:150
+#: views/form.php:49
 msgid "Beep Only - No Confirmation"
 msgstr "ビープ音のみ - 確認なし"
 
-#: page.vmblast.php:110
+#: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
-#: vmblast.i18n.php:5
+#: vmblast.i18n.php:8
 msgid ""
 "Creates a group of extensions that calls a group of voicemail boxes and "
 "allows you to leave a message for them all at once."
@@ -80,21 +80,29 @@ msgstr ""
 "ボイスメールボックスのグループを呼び出す内線グループを作成し、グループ全員に"
 "同時にメッセージを残す機能を提供します。"
 
-#: functions.inc.php:288
+#: views/grid.php:16
+msgid "Default"
+msgstr ""
+
+#: functions.inc.php:290
 msgid "Default Group Inclusion"
 msgstr "デフォルトグループを含む"
 
-#: page.vmblast.php:202
+#: views/form.php:198
 msgid "Default VMBlast Group"
 msgstr "デフォルトVMブラストグループ"
 
-#: functions.inc.php:291
+#: functions.inc.php:293
 msgid "Default VMblast Group"
 msgstr "デフォルトVMブラストグループ"
 
-#: page.vmblast.php:91
-msgid "Delete Group"
-msgstr "グループを削除"
+#: Vmblast.class.php:76
+msgid "Delete"
+msgstr ""
+
+#: views/grid.php:15
+msgid "Description"
+msgstr ""
 
 #: install.php:21 install.php:35
 msgid "Done"
@@ -108,7 +116,7 @@ msgstr "grplistをドロップ中.."
 msgid "Dropping old grplist field.."
 msgstr "古いgrplistフィールドをドロップ中.."
 
-#: page.vmblast.php:203
+#: views/form.php:213
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -121,29 +129,33 @@ msgstr ""
 "合、このグループをデフォルトにすると現在のデフォルトグループのオプションの"
 "チェックを外すことになります"
 
-#: page.vmblast.php:121
+#: page.vmblast.php:17
 msgid "Edit VMBlast Group"
 msgstr "VMブラストグループを編集"
 
-#: functions.inc.php:269
+#: functions.inc.php:271
 msgid "Exclude"
 msgstr "含まない"
 
-#: page.vmblast.php:137
-msgid "Group Description:"
-msgstr "グループの説明"
+#: views/grid.php:14
+msgid "Group"
+msgstr ""
 
-#: page.vmblast.php:232
-msgid "Group numbers with more than one digit cannot begin with 0"
-msgstr "1桁以上のグループ番号は0で開始することはできません。"
+#: views/form.php:123
+msgid "Group Description"
+msgstr ""
 
-#: functions.inc.php:270
+#: functions.inc.php:272
 msgid "Include"
 msgstr "含む"
 
-#: page.vmblast.php:231
-msgid "Invalid Group Number specified"
-msgstr "無効なグループ番号が指定されました"
+#: views/bootnav.php:1
+msgid "List VM Blast Groups"
+msgstr ""
+
+#: views/form.php:205
+msgid "No"
+msgstr ""
 
 #: install.php:68
 msgid "Not Needed"
@@ -157,11 +169,11 @@ msgstr "必須ではありません。"
 msgid "OK"
 msgstr "OK"
 
-#: page.vmblast.php:173
+#: views/form.php:148
 msgid "Optional Password"
 msgstr "オプションのパスワード"
 
-#: page.vmblast.php:143
+#: views/form.php:59
 msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
@@ -171,58 +183,29 @@ msgstr ""
 "にするため、又は単純にグループ番号を読み上げるシステムを用意するために、この"
 "メッセージを再生します。"
 
-#: page.vmblast.php:234
-msgid "Please enter a valid Group Description"
-msgstr "有効なグループ説明を入力してください"
-
-#: page.vmblast.php:235
-msgid "Please enter a valid numeric password, only numbers are allowed"
-msgstr "有効な数字パスワードを入力してください、数字のみ許可されます。"
-
-#: page.vmblast.php:233
-msgid "Please enter an extension list."
-msgstr "内線リストを入力してください。"
-
-#: page.vmblast.php:236
-msgid "Please select at least one extension"
-msgstr "少なくとも１つ以上の内線を選択してください"
-
-#: page.vmblast.php:137
+#: views/form.php:135
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr "このVMブラストグループへの説明タイトルを提供します。"
 
-#: page.vmblast.php:149 page.vmblast.php:167
+#: views/form.php:48
 msgid "Read Group Number"
 msgstr "グループ番号を読む"
 
-#: page.vmblast.php:179
+#: Vmblast.class.php:86
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:186
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
-"multiple.."
-msgstr ""
-"このグループを追加するためのボイスメールボックスを選択してください。複数選択"
-"するにはCtrlキーを使用してください。"
-
-#: page.vmblast.php:217
-msgid "Submit Changes"
-msgstr "変更を適用"
-
-#: page.vmblast.php:255
-msgid "The Group Description provided is too long."
+"multiple."
 msgstr ""
 
-#: page.vmblast.php:162
-msgid ""
-"The group number will be played to the caller so they can confirm they have "
-"dialed the proper voice mail group number.<br><br>You must install and "
-"enable the \"Systems Recordings\" Module to edit this option and choose from "
-"recordings."
+#: Vmblast.class.php:81
+msgid "Submit"
 msgstr ""
-"発信者が正しいボイスメールグループ番号にダイヤルしたことを確認できるよう、グ"
-"ループ番号が再生されます。<br><br>このオプションを編集して録音から選択するに"
-"は、\"システム録音\"モジュールをインストールして有効にしなければなりません。"
 
-#: page.vmblast.php:131
+#: views/form.php:111
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr ""
 "ユーザーがこのVMブラストグループのボイスメールボックスにダイヤルする番号"
@@ -235,21 +218,17 @@ msgstr "audio_labelフィールドを追加するためにvmblastをアップグ
 msgid "Upgrading vmblast to add password field.."
 msgstr "passwordフィールドを追加するためにvmblastをアップグレード中.."
 
-#: page.vmblast.php:74 page.vmblast.php:94
-msgid "VMBlast Group"
-msgstr "VMブラストグループ"
-
-#: page.vmblast.php:131
+#: views/form.php:99
 msgid "VMBlast Number"
 msgstr "VMブラスト番号"
 
-#: vmblast.i18n.php:3 vmblast.i18n.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr "ボイスメールブラスト"
 
-#: page.vmblast.php:179
-msgid "Voicemail Box List:"
-msgstr "ボイスメールボックスリスト:"
+#: views/form.php:172
+msgid "Voicemail Box List"
+msgstr ""
 
 #: functions.inc.php:39
 #, php-format
@@ -260,11 +239,15 @@ msgstr "ボイスメールグループ %s： %s"
 msgid "Voicemail Group: "
 msgstr "ボイスメールグループ："
 
-#: page.vmblast.php:24
+#: Vmblast.class.php:38
 msgid "Warning! Extension"
 msgstr "警告! 内線"
 
-#: functions.inc.php:291
+#: views/form.php:203
+msgid "Yes"
+msgstr ""
+
+#: functions.inc.php:293
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -274,17 +257,13 @@ msgstr ""
 "の一部に含むことも除外することもできます。ユーザーがボイスメールボックスを"
 "持っていない場合は、このオプションを選択しても無視されます。"
 
-#: page.vmblast.php:173
+#: views/form.php:160
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
 msgstr ""
 "このグループのボイスメールリストへのアクセスを提供する前に認証をするためのパ"
 "スワードをオプションで含めることができます。"
-
-#: page.vmblast.php:74
-msgid "deleted"
-msgstr "削除されました"
 
 #: install.php:54
 msgid "error populating vmblast_groups table"
@@ -294,10 +273,70 @@ msgstr "vmblast_groupsテーブルの移行エラー"
 msgid "failed to drop field"
 msgstr "フィールドのドロップに失敗"
 
-#: page.vmblast.php:24
+#: Vmblast.class.php:38
 msgid "is not allowed for your account"
 msgstr "はあなたのアカウントに許可されていません"
 
 #: install.php:57
 msgid "populated new table"
 msgstr "移入された新規テーブル"
+
+#~ msgid " [DEFAULT]"
+#~ msgstr " [デフォルト]"
+
+#~ msgid "Audio Label:"
+#~ msgstr "オーディオラベル:"
+
+#~ msgid "Delete Group"
+#~ msgstr "グループを削除"
+
+#~ msgid "Group Description:"
+#~ msgstr "グループの説明"
+
+#~ msgid "Group numbers with more than one digit cannot begin with 0"
+#~ msgstr "1桁以上のグループ番号は0で開始することはできません。"
+
+#~ msgid "Invalid Group Number specified"
+#~ msgstr "無効なグループ番号が指定されました"
+
+#~ msgid "Please enter a valid Group Description"
+#~ msgstr "有効なグループ説明を入力してください"
+
+#~ msgid "Please enter a valid numeric password, only numbers are allowed"
+#~ msgstr "有効な数字パスワードを入力してください、数字のみ許可されます。"
+
+#~ msgid "Please enter an extension list."
+#~ msgstr "内線リストを入力してください。"
+
+#~ msgid "Please select at least one extension"
+#~ msgstr "少なくとも１つ以上の内線を選択してください"
+
+#~ msgid ""
+#~ "Select voice mail boxes to add to this group. Use Ctrl key to select "
+#~ "multiple.."
+#~ msgstr ""
+#~ "このグループを追加するためのボイスメールボックスを選択してください。複数選"
+#~ "択するにはCtrlキーを使用してください。"
+
+#~ msgid "Submit Changes"
+#~ msgstr "変更を適用"
+
+#~ msgid ""
+#~ "The group number will be played to the caller so they can confirm they "
+#~ "have dialed the proper voice mail group number.<br><br>You must install "
+#~ "and enable the \"Systems Recordings\" Module to edit this option and "
+#~ "choose from recordings."
+#~ msgstr ""
+#~ "発信者が正しいボイスメールグループ番号にダイヤルしたことを確認できるよう、"
+#~ "グループ番号が再生されます。<br><br>このオプションを編集して録音から選択す"
+#~ "るには、\"システム録音\"モジュールをインストールして有効にしなければなりま"
+#~ "せん。"
+
+#~ msgid "VMBlast Group"
+#~ msgstr "VMブラストグループ"
+
+#~ msgid "Voicemail Box List:"
+#~ msgstr "ボイスメールボックスリスト:"
+
+#~ msgid "deleted"
+#~ msgstr "削除されました"

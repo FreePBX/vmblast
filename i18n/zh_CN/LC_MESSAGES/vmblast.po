@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 20:07-0500\n"
+"POT-Creation-Date: 2015-03-09 14:50-0400\n"
 "PO-Revision-Date: 2009-02-01 13:51+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -18,51 +18,59 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.vmblast.php:66
-msgid " [DEFAULT]"
+#: views/bootnav.php:2
+msgid "Add VM Blast Group"
 msgstr ""
 
-#: page.vmblast.php:59 page.vmblast.php:113 page.vmblast.php:121
+#: page.vmblast.php:19
 msgid "Add VMBlast Group"
 msgstr "添加语音邮件多播组"
 
-#: vmblast.i18n.php:4
+#: vmblast.i18n.php:6 vmblast.i18n.php:12
 msgid "Applications"
 msgstr ""
 
-#: page.vmblast.php:143 page.vmblast.php:162
-msgid "Audio Label:"
-msgstr "语音标签："
+#: views/form.php:43
+msgid "Audio Label"
+msgstr ""
 
-#: page.vmblast.php:150
+#: views/form.php:49
 msgid "Beep Only - No Confirmation"
 msgstr "只播放“嘀”声——无确认"
 
-#: page.vmblast.php:110
+#: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "分机号有冲突"
 
-#: vmblast.i18n.php:5
+#: vmblast.i18n.php:8
 msgid ""
 "Creates a group of extensions that calls a group of voicemail boxes and "
 "allows you to leave a message for them all at once."
 msgstr ""
 
-#: functions.inc.php:288
+#: views/grid.php:16
+msgid "Default"
+msgstr ""
+
+#: functions.inc.php:290
 msgid "Default Group Inclusion"
 msgstr "语音邮件小组默认成员"
 
-#: page.vmblast.php:202
+#: views/form.php:198
 msgid "Default VMBlast Group"
 msgstr "默认语音邮件多播组"
 
-#: functions.inc.php:291
+#: functions.inc.php:293
 msgid "Default VMblast Group"
 msgstr "默认语音邮件多播组"
 
-#: page.vmblast.php:91
-msgid "Delete Group"
-msgstr "删除小组"
+#: Vmblast.class.php:76
+msgid "Delete"
+msgstr ""
+
+#: views/grid.php:15
+msgid "Description"
+msgstr ""
 
 #: install.php:21 install.php:35
 msgid "Done"
@@ -76,7 +84,7 @@ msgstr "正在删除grplist。。。"
 msgid "Dropping old grplist field.."
 msgstr ""
 
-#: page.vmblast.php:203
+#: views/form.php:213
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -87,29 +95,33 @@ msgstr ""
 "入或从此语音邮件多播组的分机栏中移除。<br />默认语音邮件多播组只有一个，如果"
 "让此语音邮件多播组成为默认组，其他的语音邮件多播组就不再是默认的组。"
 
-#: page.vmblast.php:121
+#: page.vmblast.php:17
 msgid "Edit VMBlast Group"
 msgstr "编辑语音邮件多播组"
 
-#: functions.inc.php:269
+#: functions.inc.php:271
 msgid "Exclude"
 msgstr "不包括"
 
-#: page.vmblast.php:137
-msgid "Group Description:"
-msgstr "小组描述："
+#: views/grid.php:14
+msgid "Group"
+msgstr ""
 
-#: page.vmblast.php:232
-msgid "Group numbers with more than one digit cannot begin with 0"
-msgstr "包含2位或更多位数字的组号码不能以0打头"
+#: views/form.php:123
+msgid "Group Description"
+msgstr ""
 
-#: functions.inc.php:270
+#: functions.inc.php:272
 msgid "Include"
 msgstr "包括"
 
-#: page.vmblast.php:231
-msgid "Invalid Group Number specified"
-msgstr "指定了无效的组号码"
+#: views/bootnav.php:1
+msgid "List VM Blast Groups"
+msgstr ""
+
+#: views/form.php:205
+msgid "No"
+msgstr ""
 
 #: install.php:68
 msgid "Not Needed"
@@ -123,11 +135,11 @@ msgstr "不需要"
 msgid "OK"
 msgstr "完成"
 
-#: page.vmblast.php:173
+#: views/form.php:148
 msgid "Optional Password"
 msgstr "可选的密码"
 
-#: page.vmblast.php:143
+#: views/form.php:59
 msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
@@ -136,56 +148,29 @@ msgstr ""
 "向主叫播放这个消息以让他们确认拨打了正确的语音邮件小组号码，或者你可以让系统"
 "播放小组号码。"
 
-#: page.vmblast.php:234
-msgid "Please enter a valid Group Description"
-msgstr "请输入有效的组描述"
-
-#: page.vmblast.php:235
-msgid "Please enter a valid numeric password, only numbers are allowed"
-msgstr "请输入有效的数字密码，只能输入数字"
-
-#: page.vmblast.php:233
-msgid "Please enter an extension list."
-msgstr "请输入一份分机列表。"
-
-#: page.vmblast.php:236
-msgid "Please select at least one extension"
-msgstr "请选择至少一个分机"
-
-#: page.vmblast.php:137
+#: views/form.php:135
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr "为语音邮件多播组提供一个描述性的标题"
 
-#: page.vmblast.php:149 page.vmblast.php:167
+#: views/form.php:48
 msgid "Read Group Number"
 msgstr "播放小组号码"
 
-#: page.vmblast.php:179
+#: Vmblast.class.php:86
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:186
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
-"multiple.."
-msgstr "选择要添加到这个小组的邮件信箱。要选择多个项目，请按住Ctrl键。"
-
-#: page.vmblast.php:217
-msgid "Submit Changes"
-msgstr "提交更改"
-
-#: page.vmblast.php:255
-msgid "The Group Description provided is too long."
+"multiple."
 msgstr ""
 
-#: page.vmblast.php:162
-msgid ""
-"The group number will be played to the caller so they can confirm they have "
-"dialed the proper voice mail group number.<br><br>You must install and "
-"enable the \"Systems Recordings\" Module to edit this option and choose from "
-"recordings."
+#: Vmblast.class.php:81
+msgid "Submit"
 msgstr ""
-"系统将小组的号码播放给主叫听，这样他们就能确认自己拨打了合适的语音邮件小组号"
-"码。<br /><br />你必须安装并启用“系统录音”模块，以编辑此选项并选择合适的录音"
-"消息。"
 
-#: page.vmblast.php:131
+#: views/form.php:111
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr "用户访问此语音邮件多播组中的语音邮箱时拨打的号码"
 
@@ -197,21 +182,17 @@ msgstr "正在升级语音邮件多播，正在添加audio_label字段。。。"
 msgid "Upgrading vmblast to add password field.."
 msgstr "正在升级语音邮件多播，正在添加password字段。。。"
 
-#: page.vmblast.php:74 page.vmblast.php:94
-msgid "VMBlast Group"
-msgstr "语音邮件多播组"
-
-#: page.vmblast.php:131
+#: views/form.php:99
 msgid "VMBlast Number"
 msgstr "语音邮件多播号码"
 
-#: vmblast.i18n.php:3 vmblast.i18n.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr ""
 
-#: page.vmblast.php:179
-msgid "Voicemail Box List:"
-msgstr "语音邮件信箱列表："
+#: views/form.php:172
+msgid "Voicemail Box List"
+msgstr ""
 
 #: functions.inc.php:39
 #, php-format
@@ -222,11 +203,15 @@ msgstr "语音邮件小组 %s：%s"
 msgid "Voicemail Group: "
 msgstr "语音邮件小组："
 
-#: page.vmblast.php:24
+#: Vmblast.class.php:38
 msgid "Warning! Extension"
 msgstr "警告！你的帐户无法使用分机"
 
-#: functions.inc.php:291
+#: views/form.php:203
+msgid "Yes"
+msgstr ""
+
+#: functions.inc.php:293
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -235,15 +220,11 @@ msgstr ""
 "你可以让此用户默认被包含或者不被包含在新建的或者编辑的语音邮件多播组中。如果"
 "用户没有语音邮件信箱，此项设置将被忽略。"
 
-#: page.vmblast.php:173
+#: views/form.php:160
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
 msgstr "你可以为访问此小组语音邮件列表设置可选的密码。"
-
-#: page.vmblast.php:74
-msgid "deleted"
-msgstr "已删除"
 
 #: install.php:54
 msgid "error populating vmblast_groups table"
@@ -253,13 +234,67 @@ msgstr "在填充vmblast_groups表时发生错误"
 msgid "failed to drop field"
 msgstr "删除字段失败"
 
-#: page.vmblast.php:24
+#: Vmblast.class.php:38
 msgid "is not allowed for your account"
 msgstr " 。"
 
 #: install.php:57
 msgid "populated new table"
 msgstr ""
+
+#~ msgid "Audio Label:"
+#~ msgstr "语音标签："
+
+#~ msgid "Delete Group"
+#~ msgstr "删除小组"
+
+#~ msgid "Group Description:"
+#~ msgstr "小组描述："
+
+#~ msgid "Group numbers with more than one digit cannot begin with 0"
+#~ msgstr "包含2位或更多位数字的组号码不能以0打头"
+
+#~ msgid "Invalid Group Number specified"
+#~ msgstr "指定了无效的组号码"
+
+#~ msgid "Please enter a valid Group Description"
+#~ msgstr "请输入有效的组描述"
+
+#~ msgid "Please enter a valid numeric password, only numbers are allowed"
+#~ msgstr "请输入有效的数字密码，只能输入数字"
+
+#~ msgid "Please enter an extension list."
+#~ msgstr "请输入一份分机列表。"
+
+#~ msgid "Please select at least one extension"
+#~ msgstr "请选择至少一个分机"
+
+#~ msgid ""
+#~ "Select voice mail boxes to add to this group. Use Ctrl key to select "
+#~ "multiple.."
+#~ msgstr "选择要添加到这个小组的邮件信箱。要选择多个项目，请按住Ctrl键。"
+
+#~ msgid "Submit Changes"
+#~ msgstr "提交更改"
+
+#~ msgid ""
+#~ "The group number will be played to the caller so they can confirm they "
+#~ "have dialed the proper voice mail group number.<br><br>You must install "
+#~ "and enable the \"Systems Recordings\" Module to edit this option and "
+#~ "choose from recordings."
+#~ msgstr ""
+#~ "系统将小组的号码播放给主叫听，这样他们就能确认自己拨打了合适的语音邮件小组"
+#~ "号码。<br /><br />你必须安装并启用“系统录音”模块，以编辑此选项并选择合适的"
+#~ "录音消息。"
+
+#~ msgid "VMBlast Group"
+#~ msgstr "语音邮件多播组"
+
+#~ msgid "Voicemail Box List:"
+#~ msgstr "语音邮件信箱列表："
+
+#~ msgid "deleted"
+#~ msgstr "已删除"
 
 #~ msgid "VoiceMail Blasting"
 #~ msgstr "语音邮件多播"
