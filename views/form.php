@@ -2,7 +2,7 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2015 Sangoma Technologies.
 //
-extract($request);
+extract($request, EXTR_SKIP);
 if ($extdisplay != '') {
 	// We need to populate grplist with the existing extension list.
 	$thisgrp = vmblast_get($extdisplay);
@@ -19,10 +19,12 @@ if ($extdisplay != '') {
 		$usagehtml .= '<p>' . $usage_list['tooltip'] . '</p>';
 		$usagehtml .= '</div>';
 	}
+	$delURL='?display=vmblast&action=delGRP&account='.$extdisplay;
 }else{
 	$grplist = array();
 	$strategy = '';
 	$ringing = '';
+	$delURL ='';
 }
 if(function_exists('recordings_list')) {
 	$tresults = recordings_list();
@@ -85,7 +87,7 @@ foreach ($results as $result) {
 echo $usagehtml;
 ?>
 
-<form name="editGRP" class="fpbx-submit" action="" method="post" onsubmit="return checkGRP(editGRP);">
+<form name="editGRP" class="fpbx-submit" action="" method="post" onsubmit="return checkGRP(editGRP);" data-fpbx-delete="<?php echo $delURL?>">
 <input type="hidden" name="display" value="vmblast">
 <input type="hidden" name="action" value="<?php echo ($extdisplay != '' ? 'editGRP' : 'addGRP'); ?>">
 <input type="hidden" name="view" value="form">
@@ -175,7 +177,7 @@ echo $usagehtml;
 					<div class="col-md-9">
 						<select multiple="multiple" name="vmblast_list[]" id="xtnlist" class="form-control">
 							<?php echo $extenlopts ?>
-						</select>	
+						</select>
 					</div>
 				</div>
 			</div>
