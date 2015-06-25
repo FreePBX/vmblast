@@ -1,27 +1,12 @@
-msgid ""
-msgstr ""
-"Project-Id-Version: FreePBX - módulo vmblast module spanish translation\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 14:50-0400\n"
-"PO-Revision-Date: 2009-01-21 16:10+0100\n"
-"Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
-"Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Spanish\n"
-"X-Poedit-Country: SPAIN\n"
-"X-Poedit-SourceCharset: utf-8\n"
-
 #: views/bootnav.php:2
 msgid "Add VM Blast Group"
 msgstr ""
 
-#: page.vmblast.php:19
+#: page.vmblast.php:59 page.vmblast.php:113 page.vmblast.php:121
 msgid "Add VMBlast Group"
 msgstr ""
 
-#: vmblast.i18n.php:6 vmblast.i18n.php:12
+#: vmblast.i18n.php:4
 msgid "Applications"
 msgstr ""
 
@@ -29,33 +14,31 @@ msgstr ""
 msgid "Audio Label"
 msgstr ""
 
-#: views/form.php:49
+#: page.vmblast.php:150
 msgid "Beep Only - No Confirmation"
 msgstr ""
 
-#: page.vmblast.php:30
+#: page.vmblast.php:110
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: vmblast.i18n.php:8
-msgid ""
-"Creates a group of extensions that calls a group of voicemail boxes and "
-"allows you to leave a message for them all at once."
+#: vmblast.i18n.php:5
+msgid "Creates a group of extensions that calls a group of voicemail boxes and allows you to leave a message for them all at once."
 msgstr ""
 
 #: views/grid.php:16
 msgid "Default"
 msgstr ""
 
-#: functions.inc.php:290
+#: functions.inc.php:288
 msgid "Default Group Inclusion"
 msgstr ""
 
-#: views/form.php:198
+#: page.vmblast.php:202
 msgid "Default VMBlast Group"
 msgstr ""
 
-#: functions.inc.php:293
+#: functions.inc.php:291
 msgid "Default VMblast Group"
 msgstr ""
 
@@ -79,19 +62,15 @@ msgstr ""
 msgid "Dropping old grplist field.."
 msgstr ""
 
-#: views/form.php:213
-msgid ""
-"Each PBX system can have a single Default Voicemail Blast Group. If "
-"specified, extensions can be automatically added (or removed) from this "
-"default group in the Extensions (or Users) tab.<br />Making this group the "
-"default will uncheck the option from the current default group if specified."
+#: page.vmblast.php:203
+msgid "Each PBX system can have a single Default Voicemail Blast Group. If specified, extensions can be automatically added (or removed) from this default group in the Extensions (or Users) tab.<br />Making this group the default will uncheck the option from the current default group if specified."
 msgstr ""
 
-#: page.vmblast.php:17
+#: page.vmblast.php:121
 msgid "Edit VMBlast Group"
 msgstr ""
 
-#: functions.inc.php:271
+#: functions.inc.php:269
 msgid "Exclude"
 msgstr ""
 
@@ -103,7 +82,7 @@ msgstr ""
 msgid "Group Description"
 msgstr ""
 
-#: functions.inc.php:272
+#: functions.inc.php:270
 msgid "Include"
 msgstr ""
 
@@ -127,22 +106,19 @@ msgstr ""
 msgid "OK"
 msgstr ""
 
-#: views/form.php:148
+#: page.vmblast.php:173
 msgid "Optional Password"
 msgstr ""
 
-#: views/form.php:59
-msgid ""
-"Play this message to the caller so they can confirm they have dialed the "
-"proper voice mail group number, or have the system simply read the group "
-"number."
+#: page.vmblast.php:143
+msgid "Play this message to the caller so they can confirm they have dialed the proper voice mail group number, or have the system simply read the group number."
 msgstr ""
 
-#: views/form.php:135
+#: page.vmblast.php:137
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr ""
 
-#: views/form.php:48
+#: page.vmblast.php:149 page.vmblast.php:167
 msgid "Read Group Number"
 msgstr ""
 
@@ -151,16 +127,14 @@ msgid "Reset"
 msgstr ""
 
 #: views/form.php:186
-msgid ""
-"Select voice mail boxes to add to this group. Use Ctrl key to select "
-"multiple."
+msgid "Select voice mail boxes to add to this group. Use Ctrl key to select multiple."
 msgstr ""
 
 #: Vmblast.class.php:81
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:111
+#: page.vmblast.php:131
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr ""
 
@@ -172,11 +146,11 @@ msgstr ""
 msgid "Upgrading vmblast to add password field.."
 msgstr ""
 
-#: views/form.php:99
+#: page.vmblast.php:131
 msgid "VMBlast Number"
 msgstr ""
 
-#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
+#: vmblast.i18n.php:3 vmblast.i18n.php:6
 msgid "Voicemail Blasting"
 msgstr ""
 
@@ -193,7 +167,7 @@ msgstr ""
 msgid "Voicemail Group: "
 msgstr ""
 
-#: Vmblast.class.php:38
+#: page.vmblast.php:24
 msgid "Warning! Extension"
 msgstr ""
 
@@ -201,17 +175,12 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:293
-msgid ""
-"You can include or exclude this extension/user from being part of the "
-"default voicemail blast group when creating or editing. Choosing this option "
-"will be ignored if the user does not have a voicemail box."
+#: functions.inc.php:291
+msgid "You can include or exclude this extension/user from being part of the default voicemail blast group when creating or editing. Choosing this option will be ignored if the user does not have a voicemail box."
 msgstr ""
 
-#: views/form.php:160
-msgid ""
-"You can optionally include a password to authenticate before providing "
-"access to this group voicemail list."
+#: page.vmblast.php:173
+msgid "You can optionally include a password to authenticate before providing access to this group voicemail list."
 msgstr ""
 
 #: install.php:54
@@ -222,10 +191,78 @@ msgstr ""
 msgid "failed to drop field"
 msgstr ""
 
-#: Vmblast.class.php:38
+#: page.vmblast.php:24
 msgid "is not allowed for your account"
 msgstr ""
 
 #: install.php:57
 msgid "populated new table"
+msgstr ""
+
+#: page.vmblast.php:66
+msgid " [DEFAULT]"
+msgstr ""
+
+#: page.vmblast.php:143 page.vmblast.php:162
+msgid "Audio Label:"
+msgstr ""
+
+#: page.vmblast.php:91
+msgid "Delete Group"
+msgstr ""
+
+#: page.vmblast.php:137
+msgid "Group Description:"
+msgstr ""
+
+#: page.vmblast.php:232
+msgid "Group numbers with more than one digit cannot begin with 0"
+msgstr ""
+
+#: page.vmblast.php:231
+msgid "Invalid Group Number specified"
+msgstr ""
+
+#: page.vmblast.php:234
+msgid "Please enter a valid Group Description"
+msgstr ""
+
+#: page.vmblast.php:235
+msgid "Please enter a valid numeric password, only numbers are allowed"
+msgstr ""
+
+#: page.vmblast.php:233
+msgid "Please enter an extension list."
+msgstr ""
+
+#: page.vmblast.php:236
+msgid "Please select at least one extension"
+msgstr ""
+
+#: page.vmblast.php:179
+msgid "Select voice mail boxes to add to this group. Use Ctrl key to select multiple.."
+msgstr ""
+
+#: page.vmblast.php:217
+msgid "Submit Changes"
+msgstr ""
+
+#: page.vmblast.php:255
+msgid "The Group Description provided is too long."
+msgstr ""
+
+#: page.vmblast.php:162
+msgid "The group number will be played to the caller so they can confirm they have dialed the proper voice mail group number.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option and choose from recordings."
+msgstr ""
+
+#: page.vmblast.php:74 page.vmblast.php:94
+msgid "VMBlast Group"
+msgstr ""
+
+#: page.vmblast.php:179
+msgid "Voicemail Box List:"
+msgstr ""
+
+#: page.vmblast.php:74
+msgid "deleted"
 msgstr ""
