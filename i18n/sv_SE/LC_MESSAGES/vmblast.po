@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX vmblast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 14:50-0400\n"
+"POT-Creation-Date: 2015-06-24 21:07-0400\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -38,30 +38,17 @@ msgstr ""
 msgid "Add VMBlast Group"
 msgstr "Lägg till röstgrupp"
 
-#: vmblast.i18n.php:6 vmblast.i18n.php:12
-msgid "Applications"
-msgstr ""
-
-#: views/form.php:43
+#: views/form.php:45
 msgid "Audio Label"
 msgstr ""
 
-#: views/form.php:49
+#: views/form.php:51
 msgid "Beep Only - No Confirmation"
 msgstr "Endast pip - ingen bekräftelse"
 
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "Konfliktande anknytningar"
-
-#: vmblast.i18n.php:8
-msgid ""
-"Creates a group of extensions that calls a group of voicemail boxes and "
-"allows you to leave a message for them all at once."
-msgstr ""
-"Skapar en grupp av anknytningar som används för att ringa upp deras "
-"röstbrevlådor  och lämna ett meddelande till dessa röstbrevlådor med ett "
-"enda samtal"
 
 #: views/grid.php:16
 msgid "Default"
@@ -71,7 +58,7 @@ msgstr ""
 msgid "Default Group Inclusion"
 msgstr "Standard gruppinkludering"
 
-#: views/form.php:198
+#: views/form.php:200
 msgid "Default VMBlast Group"
 msgstr "Standard röstgrupp"
 
@@ -99,7 +86,7 @@ msgstr "Kastar grplist.."
 msgid "Dropping old grplist field.."
 msgstr "Kastar den gamla fältet grplist.."
 
-#: views/form.php:213
+#: views/form.php:215
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -123,7 +110,7 @@ msgstr "Exkludera"
 msgid "Group"
 msgstr ""
 
-#: views/form.php:123
+#: views/form.php:125
 msgid "Group Description"
 msgstr ""
 
@@ -135,7 +122,7 @@ msgstr "Inkludera"
 msgid "List VM Blast Groups"
 msgstr ""
 
-#: views/form.php:205
+#: views/form.php:207
 msgid "No"
 msgstr ""
 
@@ -151,11 +138,11 @@ msgstr "Inte nödvändig"
 msgid "OK"
 msgstr "OK"
 
-#: views/form.php:148
+#: views/form.php:150
 msgid "Optional Password"
 msgstr "Valfritt lösenord"
 
-#: views/form.php:59
+#: views/form.php:61
 msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
@@ -164,11 +151,11 @@ msgstr ""
 "Spela upp detta meddelande så att uppringaren kan verifiera att den har ring "
 "den rätta röstgruppen, eller låt systemet läsa upp gruppnumret."
 
-#: views/form.php:135
+#: views/form.php:137
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr "Skriv in en giltig beskrivning för denna röstgrupp"
 
-#: views/form.php:48
+#: views/form.php:50
 msgid "Read Group Number"
 msgstr "Läs upp gruppnumret"
 
@@ -176,7 +163,7 @@ msgstr "Läs upp gruppnumret"
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:186
+#: views/form.php:188
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
 "multiple."
@@ -186,7 +173,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:111
+#: views/form.php:113
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr "Det nummer användare anger när dom ska ringa denna röstgrupp"
 
@@ -198,15 +185,15 @@ msgstr "Uppgraderar vmblast, lägger till fältet audio_label.."
 msgid "Upgrading vmblast to add password field.."
 msgstr "Uppgraderar vmblast med fältet password.."
 
-#: views/form.php:99
+#: views/form.php:101
 msgid "VMBlast Number"
 msgstr "Röstgruppsnummer"
 
-#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
+#: page.vmblast.php:6
 msgid "Voicemail Blasting"
 msgstr ""
 
-#: views/form.php:172
+#: views/form.php:174
 msgid "Voicemail Box List"
 msgstr ""
 
@@ -223,7 +210,7 @@ msgstr "Röstbrevlådegrupp:"
 msgid "Warning! Extension"
 msgstr "Varning! Anknytning"
 
-#: views/form.php:203
+#: views/form.php:205
 msgid "Yes"
 msgstr ""
 
@@ -236,7 +223,7 @@ msgstr ""
 "Du kan inkludera eller exkludera denna anknytning/användare från att vara "
 "med i standardgruppen för Röstutskick"
 
-#: views/form.php:160
+#: views/form.php:162
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
@@ -259,6 +246,14 @@ msgstr "är inte tillåtet för din anknytning"
 #: install.php:57
 msgid "populated new table"
 msgstr "fyller på ny tabell"
+
+#~ msgid ""
+#~ "Creates a group of extensions that calls a group of voicemail boxes and "
+#~ "allows you to leave a message for them all at once."
+#~ msgstr ""
+#~ "Skapar en grupp av anknytningar som används för att ringa upp deras "
+#~ "röstbrevlådor  och lämna ett meddelande till dessa röstbrevlådor med ett "
+#~ "enda samtal"
 
 #~ msgid " [DEFAULT]"
 #~ msgstr " [STANDARD]"
