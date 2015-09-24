@@ -29,9 +29,10 @@ if ($extdisplay != '') {
 if(function_exists('recordings_list')) {
 	$tresults = recordings_list();
 	$default = (isset($audio_label) ? $audio_label : -1);
+	$alopts = '';
 	if (isset($tresults[0])) {
 		foreach ($tresults as $tresult) {
-			$alopts = '<option value="'.$tresult[0].'" '.($tresult[0] == $default ? ' SELECTED' : '').'>'.$tresult[1]."</option>\n";
+			$alopts .= '<option value="'.$tresult[0].'" '.($tresult[0] == $default ? ' SELECTED' : '').'>'.$tresult[1]."</option>\n";
 		}
 	}
 	$alabelhtml ='
