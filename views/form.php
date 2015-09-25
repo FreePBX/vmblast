@@ -127,7 +127,7 @@ echo $usagehtml;
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="text" class="form-control maxlen" maxlength="35" id="description" name="description" value="<?php echo htmlspecialchars($description); ?>">
+						<input type="text" class="form-control maxlen" maxlength="35" id="description" name="description" value="<?php echo htmlspecialchars($description,ENT_COMPAT | ENT_HTML401, "UTF-8"); ?>">
 					</div>
 				</div>
 			</div>
