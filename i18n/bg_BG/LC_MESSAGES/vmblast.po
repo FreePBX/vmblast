@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-24 21:07-0400\n"
+"POT-Creation-Date: 2015-09-25 17:18-0700\n"
 "PO-Revision-Date: 2015-03-11 21:56+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
@@ -30,11 +30,11 @@ msgstr ""
 msgid "Add VMBlast Group"
 msgstr "Добави ГП Разпращане Група"
 
-#: views/form.php:45
+#: views/form.php:46
 msgid "Audio Label"
 msgstr ""
 
-#: views/form.php:51
+#: views/form.php:52
 msgid "Beep Only - No Confirmation"
 msgstr "Само бипкане - Без Потвърждение"
 
@@ -50,7 +50,7 @@ msgstr ""
 msgid "Default Group Inclusion"
 msgstr "Включване на ГП Разпращане Група По-Подразбиране"
 
-#: views/form.php:200
+#: views/form.php:201
 msgid "Default VMBlast Group"
 msgstr "ГП Разпращане Група По-Подразбиране"
 
@@ -78,7 +78,7 @@ msgstr "Премахване на grplist.."
 msgid "Dropping old grplist field.."
 msgstr "Изтриване на старото поле grplist.."
 
-#: views/form.php:215
+#: views/form.php:216
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -103,7 +103,7 @@ msgstr "Изключи"
 msgid "Group"
 msgstr ""
 
-#: views/form.php:125
+#: views/form.php:126
 msgid "Group Description"
 msgstr ""
 
@@ -115,7 +115,7 @@ msgstr "Включи"
 msgid "List VM Blast Groups"
 msgstr ""
 
-#: views/form.php:207
+#: views/form.php:208
 msgid "No"
 msgstr ""
 
@@ -131,11 +131,11 @@ msgstr "Не се Изисква"
 msgid "OK"
 msgstr "OK"
 
-#: views/form.php:150
+#: views/form.php:151
 msgid "Optional Password"
 msgstr "Допълнителна Парола"
 
-#: views/form.php:61
+#: views/form.php:62
 msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
@@ -144,11 +144,11 @@ msgstr ""
 "Възпроизвежда това съобщение на обаждащия се за да потвърдят, че са избрали "
 "правилния номер на група или просто продиктува номера на групата."
 
-#: views/form.php:137
+#: views/form.php:138
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr "Дайте описващо наименование на тази ГП Разпращане Група."
 
-#: views/form.php:50
+#: views/form.php:51
 msgid "Read Group Number"
 msgstr "Прочети Номера на Групата"
 
@@ -156,7 +156,7 @@ msgstr "Прочети Номера на Групата"
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:188
+#: views/form.php:189
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
 "multiple."
@@ -166,7 +166,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:113
+#: views/form.php:114
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr ""
 "Номерът който потребителите ще избират за изпращане на гласово съобщение в "
@@ -180,7 +180,7 @@ msgstr "Обновяване ГП Разпращане за добавяне н�
 msgid "Upgrading vmblast to add password field.."
 msgstr "Обновяване ГП Разпращане за добавяне на поле за парола.."
 
-#: views/form.php:101
+#: views/form.php:102
 msgid "VMBlast Number"
 msgstr "ГП Разпращане Група Номер"
 
@@ -188,7 +188,7 @@ msgstr "ГП Разпращане Група Номер"
 msgid "Voicemail Blasting"
 msgstr "Разпращане Гласова Поща"
 
-#: views/form.php:174
+#: views/form.php:175
 msgid "Voicemail Box List"
 msgstr ""
 
@@ -205,7 +205,7 @@ msgstr "Група на Гласова Поща: "
 msgid "Warning! Extension"
 msgstr "Внимание! Вътрешна Линия"
 
-#: views/form.php:205
+#: views/form.php:206
 msgid "Yes"
 msgstr ""
 
@@ -219,7 +219,7 @@ msgstr ""
 "бъде част от ГП Разпращане групата по-подразбиране. Избирането на тази опция "
 "ще се игнорира ако потребителя няма кутия за гласова поща."
 
-#: views/form.php:162
+#: views/form.php:163
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
