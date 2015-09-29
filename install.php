@@ -1,11 +1,50 @@
 <?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
-
-// TODO:
-// TODO: MOVE TABLE CREATIONS INTO HERE
-// TODO:
-
 global $db;
+
+$sql = "CREATE TABLE IF NOT EXISTS `vmblast` (
+	`grpnum` BIGINT( 20 ) NOT NULL ,
+	`description` VARCHAR( 35 ) NOT NULL ,
+	`audio_label` INT( 11 ) NOT NULL DEFAULT -1 ,
+	`password` VARCHAR( 20 ) NOT NULL ,
+	PRIMARY KEY  (`grpnum`)
+); ";
+
+$result = $db->query($sql);
+if (DB::IsError($result)) {
+	die_freepbx($result->getDebugInfo());
+}
+unset($result);
+
+$sql = "CREATE TABLE IF NOT EXISTS vmblast_groups (
+	grpnum  BIGINT(20) NOT NULL,
+	ext VARCHAR(25),
+	PRIMARY KEY (grpnum , ext)
+);";
+
+$result = $db->query($sql);
+if (DB::IsError($result)) {
+	die_freepbx($result->getDebugInfo());
+}
+unset($result);
+
+$info = $db->getRow('SHOW COLUMNS FROM vmblast WHERE FIELD = "grpnum"', DB_FETCHMODE_ASSOC);
+if($info['type'] !== "bigint(20)") {
+	$sql = "ALTER TABLE `vmblast` CHANGE COLUMN `grpnum` `grpnum` BIGINT NOT NULL";
+	$result = $db->query($sql);
+	if (DB::IsError($result)) {
+		die_freepbx($result->getDebugInfo());
+	}
+}
+
+$info = $db->getRow('SHOW COLUMNS FROM vmblast_groups WHERE FIELD = "grpnum"', DB_FETCHMODE_ASSOC);
+if($info['type'] !== "bigint(20)") {
+	$sql = "ALTER TABLE `vmblast_groups` CHANGE COLUMN `grpnum` `grpnum` BIGINT NOT NULL";
+	$result = $db->query($sql);
+	if (DB::IsError($result)) {
+		die_freepbx($result->getDebugInfo());
+	}
+}
 
 outn(_("Upgrading vmblast to add audio_label field.."));
 $sql = "SELECT audio_label FROM vmblast";
@@ -40,7 +79,7 @@ if (!DB::IsError($confs)) { // no error... Already done
 outn(_("Dropping grplist.."));
 $sql = 'SELECT grpnum, grplist FROM vmblast';
 $confs = $db->getAll($sql, DB_FETCHMODE_ASSOC);
-if (!DB::IsError($confs)) { 
+if (!DB::IsError($confs)) {
 	$list = array();
 	foreach ($confs as $group) {
 		$grplist = explode('&',$group['grplist']);
