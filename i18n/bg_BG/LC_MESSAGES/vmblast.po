@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 17:18-0700\n"
+"POT-Creation-Date: 2015-09-29 09:54-0700\n"
 "PO-Revision-Date: 2015-03-11 21:56+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
@@ -66,15 +66,15 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: install.php:21 install.php:35
+#: install.php:60 install.php:74
 msgid "Done"
 msgstr "Изпълнено"
 
-#: install.php:40
+#: install.php:79
 msgid "Dropping grplist.."
 msgstr "Премахване на grplist.."
 
-#: install.php:58
+#: install.php:97
 msgid "Dropping old grplist field.."
 msgstr "Изтриване на старото поле grplist.."
 
@@ -119,15 +119,15 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: install.php:68
+#: install.php:107
 msgid "Not Needed"
 msgstr "Не е Необходимо"
 
-#: install.php:14 install.php:28
+#: install.php:53 install.php:67
 msgid "Not Required"
 msgstr "Не се Изисква"
 
-#: install.php:64
+#: install.php:103
 msgid "OK"
 msgstr "OK"
 
@@ -172,11 +172,11 @@ msgstr ""
 "Номерът който потребителите ще избират за изпращане на гласово съобщение в "
 "тази ГП Разпращане Група"
 
-#: install.php:10
+#: install.php:49
 msgid "Upgrading vmblast to add audio_label field.."
 msgstr "Обновяване ГП Разпращане за добавяне на audio_label поле.."
 
-#: install.php:24
+#: install.php:63
 msgid "Upgrading vmblast to add password field.."
 msgstr "Обновяване ГП Разпращане за добавяне на поле за парола.."
 
@@ -227,11 +227,11 @@ msgstr ""
 "Допълнително можете да включите парола за оторизиране преди да се даде "
 "достъп до тази ГП Разпращане Група."
 
-#: install.php:54
+#: install.php:93
 msgid "error populating vmblast_groups table"
 msgstr "грешка при полълване на vmblast_groups таблица"
 
-#: install.php:62
+#: install.php:101
 msgid "failed to drop field"
 msgstr "не мога да премахна поле"
 
@@ -239,7 +239,7 @@ msgstr "не мога да премахна поле"
 msgid "is not allowed for your account"
 msgstr "не е разрешена за вашия акаунт"
 
-#: install.php:57
+#: install.php:96
 msgid "populated new table"
 msgstr "попълване на нова таблица"
 

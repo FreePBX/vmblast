@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 17:18-0700\n"
+"POT-Creation-Date: 2015-09-29 09:54-0700\n"
 "PO-Revision-Date: 2015-04-25 00:59+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/vmblast/"
@@ -64,15 +64,15 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: install.php:21 install.php:35
+#: install.php:60 install.php:74
 msgid "Done"
 msgstr "Готово"
 
-#: install.php:40
+#: install.php:79
 msgid "Dropping grplist.."
 msgstr "Сброс листа группы.."
 
-#: install.php:58
+#: install.php:97
 msgid "Dropping old grplist field.."
 msgstr "Игнорируется старое значение поля grplist.."
 
@@ -117,15 +117,15 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: install.php:68
+#: install.php:107
 msgid "Not Needed"
 msgstr "Не требуется"
 
-#: install.php:14 install.php:28
+#: install.php:53 install.php:67
 msgid "Not Required"
 msgstr "Не требуется"
 
-#: install.php:64
+#: install.php:103
 msgid "OK"
 msgstr "ОК"
 
@@ -171,11 +171,11 @@ msgstr ""
 "Внутренний номер для пользователей ипользующих дозвон в голосовую почту этой "
 "группы VMBlast"
 
-#: install.php:10
+#: install.php:49
 msgid "Upgrading vmblast to add audio_label field.."
 msgstr "Апгрейдить vmblast добавлением поля аудио метки.."
 
-#: install.php:24
+#: install.php:63
 msgid "Upgrading vmblast to add password field.."
 msgstr "Апгрейдить vmblast добавлением поля пароль.."
 
@@ -227,11 +227,11 @@ msgstr ""
 "Можно добавить пароль опционально, для аутентификации доступа в этот "
 "групповой ящик голосовой почты."
 
-#: install.php:54
+#: install.php:93
 msgid "error populating vmblast_groups table"
 msgstr "ошибка при создании таблицы группы vmblast"
 
-#: install.php:62
+#: install.php:101
 msgid "failed to drop field"
 msgstr "не удалось сбросить поле"
 
@@ -239,7 +239,7 @@ msgstr "не удалось сбросить поле"
 msgid "is not allowed for your account"
 msgstr "не доступен для вашего аккаунта"
 
-#: install.php:57
+#: install.php:96
 msgid "populated new table"
 msgstr "создание новой таблицы"
 

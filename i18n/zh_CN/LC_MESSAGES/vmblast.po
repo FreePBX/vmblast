@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 17:18-0700\n"
+"POT-Creation-Date: 2015-09-29 09:54-0700\n"
 "PO-Revision-Date: 2009-02-01 13:51+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -62,15 +62,15 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: install.php:21 install.php:35
+#: install.php:60 install.php:74
 msgid "Done"
 msgstr "完成"
 
-#: install.php:40
+#: install.php:79
 msgid "Dropping grplist.."
 msgstr "正在删除grplist。。。"
 
-#: install.php:58
+#: install.php:97
 msgid "Dropping old grplist field.."
 msgstr ""
 
@@ -113,15 +113,15 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: install.php:68
+#: install.php:107
 msgid "Not Needed"
 msgstr "不需要"
 
-#: install.php:14 install.php:28
+#: install.php:53 install.php:67
 msgid "Not Required"
 msgstr "不需要"
 
-#: install.php:64
+#: install.php:103
 msgid "OK"
 msgstr "完成"
 
@@ -164,11 +164,11 @@ msgstr ""
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr "用户访问此语音邮件多播组中的语音邮箱时拨打的号码"
 
-#: install.php:10
+#: install.php:49
 msgid "Upgrading vmblast to add audio_label field.."
 msgstr "正在升级语音邮件多播，正在添加audio_label字段。。。"
 
-#: install.php:24
+#: install.php:63
 msgid "Upgrading vmblast to add password field.."
 msgstr "正在升级语音邮件多播，正在添加password字段。。。"
 
@@ -216,11 +216,11 @@ msgid ""
 "access to this group voicemail list."
 msgstr "你可以为访问此小组语音邮件列表设置可选的密码。"
 
-#: install.php:54
+#: install.php:93
 msgid "error populating vmblast_groups table"
 msgstr "在填充vmblast_groups表时发生错误"
 
-#: install.php:62
+#: install.php:101
 msgid "failed to drop field"
 msgstr "删除字段失败"
 
@@ -228,7 +228,7 @@ msgstr "删除字段失败"
 msgid "is not allowed for your account"
 msgstr " 。"
 
-#: install.php:57
+#: install.php:96
 msgid "populated new table"
 msgstr ""
 
