@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-29 09:54-0700\n"
+"POT-Creation-Date: 2015-11-02 09:07-0800\n"
 "PO-Revision-Date: 2009-02-01 13:51+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: views/bootnav.php:2
+#: views/bootnav.php:3 views/grid.php:12
 msgid "Add VM Blast Group"
 msgstr ""
 
@@ -38,11 +38,11 @@ msgstr "只播放“嘀”声——无确认"
 msgid "Conflicting Extensions"
 msgstr "分机号有冲突"
 
-#: views/grid.php:16
+#: views/grid.php:25
 msgid "Default"
 msgstr ""
 
-#: functions.inc.php:290
+#: functions.inc.php:281
 msgid "Default Group Inclusion"
 msgstr "语音邮件小组默认成员"
 
@@ -50,7 +50,7 @@ msgstr "语音邮件小组默认成员"
 msgid "Default VMBlast Group"
 msgstr "默认语音邮件多播组"
 
-#: functions.inc.php:293
+#: functions.inc.php:284
 msgid "Default VMblast Group"
 msgstr "默认语音邮件多播组"
 
@@ -58,7 +58,7 @@ msgstr "默认语音邮件多播组"
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:15
+#: views/grid.php:24
 msgid "Description"
 msgstr ""
 
@@ -89,11 +89,11 @@ msgstr ""
 msgid "Edit VMBlast Group"
 msgstr "编辑语音邮件多播组"
 
-#: functions.inc.php:271
+#: functions.inc.php:262
 msgid "Exclude"
 msgstr "不包括"
 
-#: views/grid.php:14
+#: views/grid.php:23
 msgid "Group"
 msgstr ""
 
@@ -101,11 +101,11 @@ msgstr ""
 msgid "Group Description"
 msgstr ""
 
-#: functions.inc.php:272
+#: functions.inc.php:263
 msgid "Include"
 msgstr "包括"
 
-#: views/bootnav.php:1
+#: views/bootnav.php:2
 msgid "List VM Blast Groups"
 msgstr ""
 
@@ -172,6 +172,10 @@ msgstr "正在升级语音邮件多播，正在添加audio_label字段。。。"
 msgid "Upgrading vmblast to add password field.."
 msgstr "正在升级语音邮件多播，正在添加password字段。。。"
 
+#: views/bootnav.php:8
+msgid "VMBlast Group"
+msgstr "语音邮件多播组"
+
 #: views/form.php:102
 msgid "VMBlast Number"
 msgstr "语音邮件多播号码"
@@ -201,7 +205,7 @@ msgstr "警告！你的帐户无法使用分机"
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:293
+#: functions.inc.php:284
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -276,9 +280,6 @@ msgstr ""
 #~ "系统将小组的号码播放给主叫听，这样他们就能确认自己拨打了合适的语音邮件小组"
 #~ "号码。<br /><br />你必须安装并启用“系统录音”模块，以编辑此选项并选择合适的"
 #~ "录音消息。"
-
-#~ msgid "VMBlast Group"
-#~ msgstr "语音邮件多播组"
 
 #~ msgid "Voicemail Box List:"
 #~ msgstr "语音邮件信箱列表："

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-29 09:54-0700\n"
+"POT-Creation-Date: 2015-11-02 09:07-0800\n"
 "PO-Revision-Date: 2015-03-11 21:56+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: views/bootnav.php:2
+#: views/bootnav.php:3 views/grid.php:12
 msgid "Add VM Blast Group"
 msgstr ""
 
@@ -42,11 +42,11 @@ msgstr "Само бипкане - Без Потвърждение"
 msgid "Conflicting Extensions"
 msgstr "Вътрешни Линии в Конфликт"
 
-#: views/grid.php:16
+#: views/grid.php:25
 msgid "Default"
 msgstr ""
 
-#: functions.inc.php:290
+#: functions.inc.php:281
 msgid "Default Group Inclusion"
 msgstr "Включване на ГП Разпращане Група По-Подразбиране"
 
@@ -54,7 +54,7 @@ msgstr "Включване на ГП Разпращане Група По-Под
 msgid "Default VMBlast Group"
 msgstr "ГП Разпращане Група По-Подразбиране"
 
-#: functions.inc.php:293
+#: functions.inc.php:284
 msgid "Default VMblast Group"
 msgstr "ГП Група По-Подразбиране"
 
@@ -62,7 +62,7 @@ msgstr "ГП Група По-Подразбиране"
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:15
+#: views/grid.php:24
 msgid "Description"
 msgstr ""
 
@@ -95,11 +95,11 @@ msgstr ""
 msgid "Edit VMBlast Group"
 msgstr "Редактирай ГП Разпращане Група"
 
-#: functions.inc.php:271
+#: functions.inc.php:262
 msgid "Exclude"
 msgstr "Изключи"
 
-#: views/grid.php:14
+#: views/grid.php:23
 msgid "Group"
 msgstr ""
 
@@ -107,11 +107,11 @@ msgstr ""
 msgid "Group Description"
 msgstr ""
 
-#: functions.inc.php:272
+#: functions.inc.php:263
 msgid "Include"
 msgstr "Включи"
 
-#: views/bootnav.php:1
+#: views/bootnav.php:2
 msgid "List VM Blast Groups"
 msgstr ""
 
@@ -180,6 +180,10 @@ msgstr "Обновяване ГП Разпращане за добавяне н�
 msgid "Upgrading vmblast to add password field.."
 msgstr "Обновяване ГП Разпращане за добавяне на поле за парола.."
 
+#: views/bootnav.php:8
+msgid "VMBlast Group"
+msgstr "ГП Разпращане Група"
+
 #: views/form.php:102
 msgid "VMBlast Number"
 msgstr "ГП Разпращане Група Номер"
@@ -209,7 +213,7 @@ msgstr "Внимание! Вътрешна Линия"
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:293
+#: functions.inc.php:284
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -306,9 +310,6 @@ msgstr "попълване на нова таблица"
 #~ "че са избрали правилния номер на група.<br><br>Трябва да сте инсталирали "
 #~ "и разрешили Модул \"Системни Записи\" за да редактирате тази опция и да "
 #~ "изберете запис."
-
-#~ msgid "VMBlast Group"
-#~ msgstr "ГП Разпращане Група"
 
 #~ msgid "Voicemail Box List:"
 #~ msgstr "Списък на Кутии с Гласова Поща:"

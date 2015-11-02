@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-29 09:54-0700\n"
+"POT-Creation-Date: 2015-11-02 09:07-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: views/bootnav.php:2
+#: views/bootnav.php:3
+#: views/grid.php:12
 msgid "Add VM Blast Group"
 msgstr ""
 
@@ -37,11 +38,11 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: views/grid.php:16
+#: views/grid.php:25
 msgid "Default"
 msgstr ""
 
-#: functions.inc.php:290
+#: functions.inc.php:281
 msgid "Default Group Inclusion"
 msgstr ""
 
@@ -49,7 +50,7 @@ msgstr ""
 msgid "Default VMBlast Group"
 msgstr ""
 
-#: functions.inc.php:293
+#: functions.inc.php:284
 msgid "Default VMblast Group"
 msgstr ""
 
@@ -57,7 +58,7 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:15
+#: views/grid.php:24
 msgid "Description"
 msgstr ""
 
@@ -86,11 +87,11 @@ msgstr ""
 msgid "Edit VMBlast Group"
 msgstr ""
 
-#: functions.inc.php:271
+#: functions.inc.php:262
 msgid "Exclude"
 msgstr ""
 
-#: views/grid.php:14
+#: views/grid.php:23
 msgid "Group"
 msgstr ""
 
@@ -98,11 +99,11 @@ msgstr ""
 msgid "Group Description"
 msgstr ""
 
-#: functions.inc.php:272
+#: functions.inc.php:263
 msgid "Include"
 msgstr ""
 
-#: views/bootnav.php:1
+#: views/bootnav.php:2
 msgid "List VM Blast Groups"
 msgstr ""
 
@@ -168,6 +169,10 @@ msgstr ""
 msgid "Upgrading vmblast to add password field.."
 msgstr ""
 
+#: views/bootnav.php:8
+msgid "VMBlast Group"
+msgstr ""
+
 #: views/form.php:102
 msgid "VMBlast Number"
 msgstr ""
@@ -197,7 +202,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:293
+#: functions.inc.php:284
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "

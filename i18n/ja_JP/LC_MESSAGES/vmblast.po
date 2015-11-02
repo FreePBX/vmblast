@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-29 09:54-0700\n"
+"POT-Creation-Date: 2015-11-02 09:07-0800\n"
 "PO-Revision-Date: 2014-02-19 22:51+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/vmblast/ja/>\n"
@@ -48,7 +48,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: views/bootnav.php:2
+#: views/bootnav.php:3 views/grid.php:12
 msgid "Add VM Blast Group"
 msgstr ""
 
@@ -68,11 +68,11 @@ msgstr "ビープ音のみ - 確認なし"
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
-#: views/grid.php:16
+#: views/grid.php:25
 msgid "Default"
 msgstr ""
 
-#: functions.inc.php:290
+#: functions.inc.php:281
 msgid "Default Group Inclusion"
 msgstr "デフォルトグループを含む"
 
@@ -80,7 +80,7 @@ msgstr "デフォルトグループを含む"
 msgid "Default VMBlast Group"
 msgstr "デフォルトVMブラストグループ"
 
-#: functions.inc.php:293
+#: functions.inc.php:284
 msgid "Default VMblast Group"
 msgstr "デフォルトVMブラストグループ"
 
@@ -88,7 +88,7 @@ msgstr "デフォルトVMブラストグループ"
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:15
+#: views/grid.php:24
 msgid "Description"
 msgstr ""
 
@@ -121,11 +121,11 @@ msgstr ""
 msgid "Edit VMBlast Group"
 msgstr "VMブラストグループを編集"
 
-#: functions.inc.php:271
+#: functions.inc.php:262
 msgid "Exclude"
 msgstr "含まない"
 
-#: views/grid.php:14
+#: views/grid.php:23
 msgid "Group"
 msgstr ""
 
@@ -133,11 +133,11 @@ msgstr ""
 msgid "Group Description"
 msgstr ""
 
-#: functions.inc.php:272
+#: functions.inc.php:263
 msgid "Include"
 msgstr "含む"
 
-#: views/bootnav.php:1
+#: views/bootnav.php:2
 msgid "List VM Blast Groups"
 msgstr ""
 
@@ -206,6 +206,10 @@ msgstr "audio_labelフィールドを追加するためにvmblastをアップグ
 msgid "Upgrading vmblast to add password field.."
 msgstr "passwordフィールドを追加するためにvmblastをアップグレード中.."
 
+#: views/bootnav.php:8
+msgid "VMBlast Group"
+msgstr "VMブラストグループ"
+
 #: views/form.php:102
 msgid "VMBlast Number"
 msgstr "VMブラスト番号"
@@ -235,7 +239,7 @@ msgstr "警告! 内線"
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:293
+#: functions.inc.php:284
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -329,9 +333,6 @@ msgstr "移入された新規テーブル"
 #~ "グループ番号が再生されます。<br><br>このオプションを編集して録音から選択す"
 #~ "るには、\"システム録音\"モジュールをインストールして有効にしなければなりま"
 #~ "せん。"
-
-#~ msgid "VMBlast Group"
-#~ msgstr "VMブラストグループ"
 
 #~ msgid "Voicemail Box List:"
 #~ msgstr "ボイスメールボックスリスト:"

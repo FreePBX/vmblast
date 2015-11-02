@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-29 09:54-0700\n"
+"POT-Creation-Date: 2015-11-02 09:07-0800\n"
 "PO-Revision-Date: 2008-11-06 14:55+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-#: views/bootnav.php:2
+#: views/bootnav.php:3 views/grid.php:12
 msgid "Add VM Blast Group"
 msgstr ""
 
@@ -37,11 +37,11 @@ msgstr "Solo Beep - Nessuna Conferma"
 msgid "Conflicting Extensions"
 msgstr "Interni in conflitto"
 
-#: views/grid.php:16
+#: views/grid.php:25
 msgid "Default"
 msgstr ""
 
-#: functions.inc.php:290
+#: functions.inc.php:281
 msgid "Default Group Inclusion"
 msgstr "Gruppo Predefinito d'Inclusione"
 
@@ -49,7 +49,7 @@ msgstr "Gruppo Predefinito d'Inclusione"
 msgid "Default VMBlast Group"
 msgstr "Gruppo Caselle Predefinito"
 
-#: functions.inc.php:293
+#: functions.inc.php:284
 msgid "Default VMblast Group"
 msgstr "Gruppo Caselle Predefinito"
 
@@ -57,7 +57,7 @@ msgstr "Gruppo Caselle Predefinito"
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:15
+#: views/grid.php:24
 msgid "Description"
 msgstr ""
 
@@ -89,11 +89,11 @@ msgstr ""
 msgid "Edit VMBlast Group"
 msgstr "Modifica Gruppo di Caselle Vocali"
 
-#: functions.inc.php:271
+#: functions.inc.php:262
 msgid "Exclude"
 msgstr "Escludi"
 
-#: views/grid.php:14
+#: views/grid.php:23
 msgid "Group"
 msgstr ""
 
@@ -101,11 +101,11 @@ msgstr ""
 msgid "Group Description"
 msgstr ""
 
-#: functions.inc.php:272
+#: functions.inc.php:263
 msgid "Include"
 msgstr "Includi"
 
-#: views/bootnav.php:1
+#: views/bootnav.php:2
 msgid "List VM Blast Groups"
 msgstr ""
 
@@ -175,6 +175,10 @@ msgstr "Aggiornamento vmblast per aggiungere il campo audio_label.."
 msgid "Upgrading vmblast to add password field.."
 msgstr "Aggiornamento vmblast per aggiungere il campo password.."
 
+#: views/bootnav.php:8
+msgid "VMBlast Group"
+msgstr "Gruppo di Caselle Vocali"
+
 #: views/form.php:102
 msgid "VMBlast Number"
 msgstr "Numero Gruppo"
@@ -204,7 +208,7 @@ msgstr "Attenzione! Interno"
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:293
+#: functions.inc.php:284
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -286,9 +290,6 @@ msgstr ""
 #~ "abbia chiamato il gruppo corretto. <br><br>Devi installare ed attivare il "
 #~ "modulo \"Registrazioni di Sistema\" per modificare questa opzione e "
 #~ "scegliere tra quelle disponibili."
-
-#~ msgid "VMBlast Group"
-#~ msgstr "Gruppo di Caselle Vocali"
 
 #~ msgid "Voicemail Box List:"
 #~ msgstr "Lista Caselle Vocali:"
