@@ -8,15 +8,24 @@ if (isset($gresults)) {
 	}
 }
 ?>
-<table class="table table-striped">
-<thead>
-	<tr>
-		<th><?php echo _("Group")?></th>
-		<th><?php echo _("Description")?></th>
-		<th><?php echo _("Default")?></th>
-	</tr>	
-</thead>
-<tbody>
-	<?php echo $grows ?>
-</tbody>
+<div id="toolbar-all">
+	<a href="?display=vmblast&view=form" class="btn btn-default"><i class="fa fa-plus"></i>&nbsp;<?php echo _("Add VM Blast Group")?></a>
+</div>
+<table id="vmblastgrid"
+			 data-cache="false"
+			 data-toolbar="#toolbar-all"
+			 data-toggle="table"
+			 data-pagination="true"
+			 data-search="true"
+			 class="table table-striped">
+	<thead>
+		<tr>
+			<th><?php echo _("Group")?></th>
+			<th><?php echo _("Description")?></th>
+			<th><?php echo _("Default")?></th>
+		</tr>
+	</thead>
+	<tbody>
+		<?php echo $grows ?>
+	</tbody>
 </table>

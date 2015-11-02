@@ -95,5 +95,59 @@ class Vmblast implements \BMO {
     		unset($buttons);
     	}
     	return $buttons;
-    } 
+    }
+		public function getRightNav($request) {
+		  if(isset($request['view']) && $request['view'] == 'form'){
+		    return load_view(__DIR__."/views/bootnav.php",array());
+		  }
+		}
+		public function listVMBlast(){
+			$sql = "SELECT grpnum, description FROM vmblast ORDER BY grpnum";
+			$stmt = $this->db->prepare($sql);
+			$stmt->execute();
+			$results = $stmt->fetchall(\PDO::FETCH_ASSOC);
+			foreach ($results as $result) {
+				if (isset($result['grpnum']) && checkRange($result['grpnum'])) {
+					$grps[] = array($result['grpnum'], $result['description']);
+				}
+			}
+			if (isset($grps))
+				return $grps;
+			else
+				return null;
+		}
+		public function ajaxRequest($req, &$setting) {
+       switch ($req) {
+           case 'getJSON':
+               return true;
+           break;
+           default:
+               return false;
+           break;
+       }
+   }
+   public function ajaxHandler(){
+       switch ($_REQUEST['command']) {
+           case 'getJSON':
+               switch ($_REQUEST['jdata']) {
+                   case 'grid':
+									 	$ret = array();
+									 	$groups =  $this->listVMBlast();
+										foreach($groups as $k => $v){
+											$ret[] = array('extension' => $v[0], 'description' => $v[1]);
+										}
+										return $ret;
+                   break;
+
+                   default:
+                       return false;
+                   break;
+               }
+           break;
+
+           default:
+               return false;
+           break;
+       }
+   }
 }

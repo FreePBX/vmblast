@@ -9,7 +9,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 function vmblast_destinations() {
 	//get the list of vmblast
 	$results = vmblast_list();
-	
+
 	// return an associative array with destination and description
 	if (isset($results)) {
 		foreach($results as $result){
@@ -17,8 +17,8 @@ function vmblast_destinations() {
 				$extens[] = array('destination' => 'vmblast-grp,'.ltrim($result['0']).',1', 'description' => $thisgrp['description'].' <'.ltrim($result['0']).'>');
 		}
 	}
-	
-	if (isset($extens)) 
+
+	if (isset($extens))
 		return $extens;
 	else
 		return null;
@@ -55,7 +55,7 @@ function vmblast_get_config($engine) {
 			$contextname = 'vmblast-grp';
 			$vmlist = vmblast_list();
 
-			if (function_exists('recordings_list')) { 
+			if (function_exists('recordings_list')) {
 				$recordings_installed = true;
 				$got_recordings = false;
 			} else {
@@ -156,10 +156,10 @@ function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password =
 	// Sanity check input.
 	$ret = $db->prepare("INSERT INTO vmblast_groups (grpnum, ext) values (?,?)");
 	foreach($xtns as $x){
-		try{ 
+		try{
 			$ret->execute($x);
 		}catch(Exception $e){
-			die_freepbx($e->getMessage()."<br><br>".'error adding to vmblast_groups table');	
+			die_freepbx($e->getMessage()."<br><br>".'error adding to vmblast_groups table');
 		}
 	}
 
@@ -182,16 +182,7 @@ function vmblast_del($grpnum) {
 }
 
 function vmblast_list() {
-	$results = sql("SELECT grpnum, description FROM vmblast ORDER BY grpnum","getAll",DB_FETCHMODE_ASSOC);
-	foreach ($results as $result) {
-		if (isset($result['grpnum']) && checkRange($result['grpnum'])) {
-			$grps[] = array($result['grpnum'], $result['description']);
-		}
-	}
-	if (isset($grps))
-		return $grps;
-	else
-		return null;
+	return \FreePBX::Vmblast()->listVMBlast();
 }
 
 function vmblast_get_default_grp() {
@@ -205,7 +196,7 @@ function vmblast_get($grpnum) {
 	$results = sql("SELECT grpnum, description, audio_label, password FROM vmblast WHERE grpnum = '$grpnum'","getRow",DB_FETCHMODE_ASSOC);
 	$grplist = $db->getCol("SELECT ext FROM vmblast_groups WHERE grpnum = '$grpnum'");
 	if(DB::IsError($grplist)) {
-		die_freepbx($grplist->getDebugInfo()."<br><br>".'selecting from vmblast_groups table');	
+		die_freepbx($grplist->getDebugInfo()."<br><br>".'selecting from vmblast_groups table');
 	}
 	$results['grplist'] = $grplist;
 
@@ -216,7 +207,7 @@ function vmblast_get($grpnum) {
 	} else {
 		$results['default_group'] = empty($default_group) ? 0 : $default_group['value'];
 	}
-	
+
 	return $results;
 }
 
@@ -266,7 +257,7 @@ function vmblast_configpageinit($pagename) {
 function vmblast_applyhooks() {
 	global $currentcomponent;
 
-	// Add the 'process' function - this gets called when the page is loaded, to hook into 
+	// Add the 'process' function - this gets called when the page is loaded, to hook into
 	// displaying stuff on the page.
 	$currentcomponent->addoptlistitem('vmblast_group', '0', _("Exclude"));
 	$currentcomponent->addoptlistitem('vmblast_group', '1', _("Include"));
@@ -282,7 +273,7 @@ function vmblast_configpageload() {
 	// Init vars from $_REQUEST[]
 	$action = isset($_REQUEST['action']) ? $_REQUEST['action']:null;
 	$extdisplay = isset($_REQUEST['extdisplay']) ? $_REQUEST['extdisplay']:null;
-	
+
 	// Don't display this stuff it it's on a 'This xtn has been deleted' page.
 	if ($action != 'del') {
 
@@ -291,7 +282,7 @@ function vmblast_configpageload() {
 		if ($default_group != "") {
 			$in_default_vmblast_grp = vmblast_check_default($extdisplay);
 			$currentcomponent->addguielem($section, new gui_selectbox('in_default_vmblast_grp', $currentcomponent->getoptlist('vmblast_group'), $in_default_vmblast_grp, _('Default VMblast Group'), _('You can include or exclude this extension/user from being part of the default voicemail blast group when creating or editing. Choosing this option will be ignored if the user does not have a voicemail box.'), false));
-		} 
+		}
 	}
 }
 
@@ -307,7 +298,7 @@ function vmblast_configprocess() {
 	$in_default_vmblast_grp = isset($_REQUEST['in_default_vmblast_grp'])?$_REQUEST['in_default_vmblast_grp']:false;
 
 	$extdisplay = ($ext==='') ? $extn : $ext;
-	
+
 	if (($action == "add" || $action == "edit") && $vm_enabled) {
 		if (!isset($GLOBALS['abort']) || $GLOBALS['abort'] !== true) {
 			if ($in_default_vmblast_grp !== false) {

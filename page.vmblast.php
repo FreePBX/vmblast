@@ -37,16 +37,11 @@ switch($request['view']){
 	<?php echo $conflicthtml ?>
 	<div class = "display full-border">
 		<div class="row">
-			<div class="col-sm-9">
+			<div class="col-sm-12">
 				<div class="fpbx-container">
 					<div class="display full-border">
 						<?php echo $content ?>
 					</div>
-				</div>
-			</div>
-			<div class="col-sm-3 bootnav">
-				<div class="list-group">
-					<?php echo show_view(__DIR__.'/views/bootnav.php', array('request' => $request));?>
 				</div>
 			</div>
 		</div>
