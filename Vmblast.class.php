@@ -131,10 +131,13 @@ class Vmblast implements \BMO {
            case 'getJSON':
                switch ($_REQUEST['jdata']) {
                    case 'grid':
+									 	$default_group = $this->getDefault();
 									 	$ret = array();
 									 	$groups =  $this->listVMBlast();
+										$groups = is_array($groups)?$groups:array();
 										foreach($groups as $k => $v){
-											$ret[] = array('extension' => $v[0], 'description' => $v[1]);
+											$default = ($default_group == $v[0])?true:false;
+											$ret[] = array('extension' => $v[0], 'description' => $v[1], 'default' => $default);
 										}
 										return $ret;
                    break;
@@ -150,4 +153,10 @@ class Vmblast implements \BMO {
            break;
        }
    }
+	 public function getDefault() {
+	 	$sql = "SELECT value FROM admin WHERE variable='default_vmblast_grp' LIMIT 1";
+		$stmt = $this->db->prepare($sql);
+		$stmt->execute();
+		return $stmt->fetchColumn();
+	 }
 }
