@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-02 09:07-0800\n"
+"POT-Creation-Date: 2015-11-11 17:43-0800\n"
 "PO-Revision-Date: 2008-11-06 14:55+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -17,7 +17,11 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-#: views/bootnav.php:3 views/grid.php:12
+#: views/grid.php:20
+msgid "Actions"
+msgstr ""
+
+#: views/bootnav.php:3 views/grid.php:5
 msgid "Add VM Blast Group"
 msgstr ""
 
@@ -37,7 +41,7 @@ msgstr "Solo Beep - Nessuna Conferma"
 msgid "Conflicting Extensions"
 msgstr "Interni in conflitto"
 
-#: views/grid.php:25
+#: views/grid.php:19
 msgid "Default"
 msgstr ""
 
@@ -57,7 +61,7 @@ msgstr "Gruppo Caselle Predefinito"
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:24
+#: views/grid.php:18
 msgid "Description"
 msgstr ""
 
@@ -93,7 +97,7 @@ msgstr "Modifica Gruppo di Caselle Vocali"
 msgid "Exclude"
 msgstr "Escludi"
 
-#: views/grid.php:23
+#: views/grid.php:17
 msgid "Group"
 msgstr ""
 

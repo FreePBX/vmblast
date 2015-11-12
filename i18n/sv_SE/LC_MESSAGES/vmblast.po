@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX vmblast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-02 09:07-0800\n"
+"POT-Creation-Date: 2015-11-11 17:43-0800\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,7 +30,11 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: views/bootnav.php:3 views/grid.php:12
+#: views/grid.php:20
+msgid "Actions"
+msgstr ""
+
+#: views/bootnav.php:3 views/grid.php:5
 msgid "Add VM Blast Group"
 msgstr ""
 
@@ -50,7 +54,7 @@ msgstr "Endast pip - ingen bekräftelse"
 msgid "Conflicting Extensions"
 msgstr "Konfliktande anknytningar"
 
-#: views/grid.php:25
+#: views/grid.php:19
 msgid "Default"
 msgstr ""
 
@@ -70,7 +74,7 @@ msgstr "Standardgrupp för Röstgrupper"
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:24
+#: views/grid.php:18
 msgid "Description"
 msgstr ""
 
@@ -106,7 +110,7 @@ msgstr "Redigera röstgrupp"
 msgid "Exclude"
 msgstr "Exkludera"
 
-#: views/grid.php:23
+#: views/grid.php:17
 msgid "Group"
 msgstr ""
 

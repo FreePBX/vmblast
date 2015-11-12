@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-02 09:07-0800\n"
+"POT-Creation-Date: 2015-11-11 17:43-0800\n"
 "PO-Revision-Date: 2015-04-25 00:59+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/vmblast/"
@@ -20,7 +20,11 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: views/bootnav.php:3 views/grid.php:12
+#: views/grid.php:20
+msgid "Actions"
+msgstr ""
+
+#: views/bootnav.php:3 views/grid.php:5
 msgid "Add VM Blast Group"
 msgstr ""
 
@@ -40,7 +44,7 @@ msgstr "Только звуковой сигнал - без подтвержде
 msgid "Conflicting Extensions"
 msgstr "Конфликт внутренних номеров"
 
-#: views/grid.php:25
+#: views/grid.php:19
 msgid "Default"
 msgstr ""
 
@@ -60,7 +64,7 @@ msgstr "Дефолтная группа VMblast"
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:24
+#: views/grid.php:18
 msgid "Description"
 msgstr ""
 
@@ -97,7 +101,7 @@ msgstr "Изменить группу VMBlast"
 msgid "Exclude"
 msgstr "Исключить"
 
-#: views/grid.php:23
+#: views/grid.php:17
 msgid "Group"
 msgstr ""
 

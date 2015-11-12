@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-02 09:07-0800\n"
+"POT-Creation-Date: 2015-11-11 17:43-0800\n"
 "PO-Revision-Date: 2014-02-19 22:51+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/vmblast/ja/>\n"
@@ -48,7 +48,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: views/bootnav.php:3 views/grid.php:12
+#: views/grid.php:20
+msgid "Actions"
+msgstr ""
+
+#: views/bootnav.php:3 views/grid.php:5
 msgid "Add VM Blast Group"
 msgstr ""
 
@@ -68,7 +72,7 @@ msgstr "ビープ音のみ - 確認なし"
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
-#: views/grid.php:25
+#: views/grid.php:19
 msgid "Default"
 msgstr ""
 
@@ -88,7 +92,7 @@ msgstr "デフォルトVMブラストグループ"
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:24
+#: views/grid.php:18
 msgid "Description"
 msgstr ""
 
@@ -125,7 +129,7 @@ msgstr "VMブラストグループを編集"
 msgid "Exclude"
 msgstr "含まない"
 
-#: views/grid.php:23
+#: views/grid.php:17
 msgid "Group"
 msgstr ""
 

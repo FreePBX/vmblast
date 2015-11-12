@@ -1,4 +1,8 @@
-#: views/bootnav.php:3 views/grid.php:12
+#: views/grid.php:20
+msgid "Actions"
+msgstr ""
+
+#: views/bootnav.php:3 views/grid.php:5
 msgid "Add VM Blast Group"
 msgstr ""
 
@@ -18,7 +22,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: views/grid.php:25
+#: views/grid.php:19
 msgid "Default"
 msgstr ""
 
@@ -38,7 +42,7 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:24
+#: views/grid.php:18
 msgid "Description"
 msgstr ""
 
@@ -70,7 +74,7 @@ msgstr ""
 msgid "Exclude"
 msgstr ""
 
-#: views/grid.php:23
+#: views/grid.php:17
 msgid "Group"
 msgstr ""
 
