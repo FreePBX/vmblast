@@ -202,9 +202,9 @@ echo $usagehtml;
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="default_group"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" class="form-control" id="default_group1" name="default_group" value="1" <?php if ($default_group) { echo 'CHECKED'; } ?>>
+						<input type="radio" class="form-control" id="default_group1" name="default_group" value="1" <?php echo ($default_group == $extdisplay )?'CHECKED':'';?>>
 						<label for="default_group1"><?php echo _("Yes")?></label>
-						<input type="radio" class="form-control" id="default_group0" name="default_group" <?php if (!$default_group) { echo 'CHECKED'; } ?>>
+						<input type="radio" class="form-control" id="default_group0" name="default_group" <?php echo ($default_group == $extdisplay)?'':'CHECKED'; ?>>
 						<label for="default_group0"><?php echo _("No")?></label>
 					</div>
 				</div>

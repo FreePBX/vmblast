@@ -45,9 +45,11 @@ class Vmblast implements \BMO {
 					if (!empty($usage_arr)) {
 						$conflict_url = framework_display_extension_usage_alert($usage_arr);
 					} else if (vmblast_add($account,$vmblast_list,$description,$audio_label,$password,$default_group)) {
-						$request['action'] = 'delGRP';
+						//$request['action'] = 'delGRP';
+						$_REQUEST['view'] = 'form';
+						$_REQUEST['extdisplay'] = $account;
 						needreload();
-						redirect_standard('extdisplay', 'view');
+						//redirect_standard('extdisplay', 'view');
 					}
 				}
 
