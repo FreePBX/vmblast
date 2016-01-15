@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-11 17:43-0800\n"
+"POT-Creation-Date: 2016-01-15 12:41-0800\n"
 "PO-Revision-Date: 2008-11-06 14:55+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -29,6 +29,10 @@ msgstr ""
 msgid "Add VMBlast Group"
 msgstr "Aggiungi Gruppo di Caselle Vocali"
 
+#: vmblast.i18n.php:6 vmblast.i18n.php:12
+msgid "Applications"
+msgstr ""
+
 #: views/form.php:46
 msgid "Audio Label"
 msgstr ""
@@ -40,6 +44,12 @@ msgstr "Solo Beep - Nessuna Conferma"
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "Interni in conflitto"
+
+#: vmblast.i18n.php:8
+msgid ""
+"Creates a group of extensions that calls a group of voicemail boxes and "
+"allows you to leave a message for them all at once."
+msgstr ""
 
 #: views/grid.php:19
 msgid "Default"
@@ -57,7 +67,7 @@ msgstr "Gruppo Caselle Predefinito"
 msgid "Default VMblast Group"
 msgstr "Gruppo Caselle Predefinito"
 
-#: Vmblast.class.php:76
+#: Vmblast.class.php:78
 msgid "Delete"
 msgstr ""
 
@@ -151,7 +161,7 @@ msgstr "Titolo descrittivo per questo Gruppo di Caselle."
 msgid "Read Group Number"
 msgstr "Conferma Numero del Gruppo"
 
-#: Vmblast.class.php:86
+#: Vmblast.class.php:88
 msgid "Reset"
 msgstr ""
 
@@ -161,7 +171,7 @@ msgid ""
 "multiple."
 msgstr ""
 
-#: Vmblast.class.php:81
+#: Vmblast.class.php:83
 msgid "Submit"
 msgstr ""
 
@@ -187,7 +197,7 @@ msgstr "Gruppo di Caselle Vocali"
 msgid "VMBlast Number"
 msgstr "Numero Gruppo"
 
-#: page.vmblast.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr ""
 

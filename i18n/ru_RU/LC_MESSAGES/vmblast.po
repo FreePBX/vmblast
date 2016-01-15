@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-11 17:43-0800\n"
+"POT-Creation-Date: 2016-01-15 12:41-0800\n"
 "PO-Revision-Date: 2015-04-25 00:59+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/vmblast/"
@@ -32,6 +32,10 @@ msgstr ""
 msgid "Add VMBlast Group"
 msgstr "Добавить группу VMBlast"
 
+#: vmblast.i18n.php:6 vmblast.i18n.php:12
+msgid "Applications"
+msgstr "Приложения"
+
 #: views/form.php:46
 msgid "Audio Label"
 msgstr ""
@@ -43,6 +47,14 @@ msgstr "Только звуковой сигнал - без подтвержде
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "Конфликт внутренних номеров"
+
+#: vmblast.i18n.php:8
+msgid ""
+"Creates a group of extensions that calls a group of voicemail boxes and "
+"allows you to leave a message for them all at once."
+msgstr ""
+"Создаёт группу внутренних номеров, которые используют совместно один ящик "
+"групповой почты, допускает сообщения и прослушивание всех членов группы."
 
 #: views/grid.php:19
 msgid "Default"
@@ -60,7 +72,7 @@ msgstr "Дефолтная группа VMBlast"
 msgid "Default VMblast Group"
 msgstr "Дефолтная группа VMblast"
 
-#: Vmblast.class.php:76
+#: Vmblast.class.php:78
 msgid "Delete"
 msgstr ""
 
@@ -155,7 +167,7 @@ msgstr "Предложите понятное описание для этой �
 msgid "Read Group Number"
 msgstr "Сообщать групповой номер"
 
-#: Vmblast.class.php:86
+#: Vmblast.class.php:88
 msgid "Reset"
 msgstr ""
 
@@ -165,7 +177,7 @@ msgid ""
 "multiple."
 msgstr ""
 
-#: Vmblast.class.php:81
+#: Vmblast.class.php:83
 msgid "Submit"
 msgstr ""
 
@@ -191,7 +203,7 @@ msgstr "Группа VMBlast"
 msgid "VMBlast Number"
 msgstr "Номер VMBlast"
 
-#: page.vmblast.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr "Групповая голосовая почта"
 
@@ -254,18 +266,8 @@ msgstr "создание новой таблицы"
 #~ msgid " [DEFAULT]"
 #~ msgstr " [Значения по умолчанию]"
 
-#~ msgid "Applications"
-#~ msgstr "Приложения"
-
 #~ msgid "Audio Label:"
 #~ msgstr "Аудио анонс:"
-
-#~ msgid ""
-#~ "Creates a group of extensions that calls a group of voicemail boxes and "
-#~ "allows you to leave a message for them all at once."
-#~ msgstr ""
-#~ "Создаёт группу внутренних номеров, которые используют совместно один ящик "
-#~ "групповой почты, допускает сообщения и прослушивание всех членов группы."
 
 #~ msgid "Delete Group"
 #~ msgstr "Удалить группу"
