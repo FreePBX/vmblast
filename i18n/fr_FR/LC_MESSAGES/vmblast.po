@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-15 12:41-0800\n"
-"PO-Revision-Date: 2016-01-16 22:56+0200\n"
-"Last-Translator: Nicolas <forums@riendeau.org>\n"
+"PO-Revision-Date: 2016-02-04 23:06+0200\n"
+"Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/vmblast/fr_FR/>\n"
 "Language: fr_FR\n"
@@ -160,7 +160,7 @@ msgstr ""
 
 #: Vmblast.class.php:88
 msgid "Reset"
-msgstr "Remise à 0"
+msgstr "Réinitialiser"
 
 #: views/form.php:189
 msgid ""
