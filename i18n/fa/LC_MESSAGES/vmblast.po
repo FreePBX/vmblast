@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-15 12:41-0800\n"
-"PO-Revision-Date: 2016-02-15 05:30+0200\n"
+"PO-Revision-Date: 2016-03-16 23:58+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian "
 "<http://weblate.freepbx.org/projects/freepbx/vmblast/fa/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:20
 msgid "Actions"
@@ -27,11 +27,11 @@ msgstr "عملیات"
 
 #: views/bootnav.php:3 views/grid.php:5
 msgid "Add VM Blast Group"
-msgstr ""
+msgstr "افزودن گروه VM Blast"
 
 #: page.vmblast.php:19
 msgid "Add VMBlast Group"
-msgstr ""
+msgstr "افزودن گروهVMBlast"
 
 #: vmblast.i18n.php:6 vmblast.i18n.php:12
 msgid "Applications"
@@ -65,11 +65,11 @@ msgstr "ظرفیت پیشفرض گروه"
 
 #: views/form.php:201
 msgid "Default VMBlast Group"
-msgstr ""
+msgstr "گروه پیشفرض VMBlast"
 
 #: functions.inc.php:284
 msgid "Default VMblast Group"
-msgstr ""
+msgstr "گروه پیشفرض VMblast"
 
 #: Vmblast.class.php:78
 msgid "Delete"
