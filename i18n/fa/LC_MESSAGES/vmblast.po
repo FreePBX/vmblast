@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-15 12:41-0800\n"
-"PO-Revision-Date: 2016-03-16 23:58+0200\n"
+"PO-Revision-Date: 2016-03-17 00:28+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian "
 "<http://weblate.freepbx.org/projects/freepbx/vmblast/fa/>\n"
@@ -54,6 +54,8 @@ msgid ""
 "Creates a group of extensions that calls a group of voicemail boxes and "
 "allows you to leave a message for them all at once."
 msgstr ""
+"Creates a group of extensions that calls a group of voicemail boxes and "
+"allows you to leave a message for them all at once ."
 
 #: views/grid.php:19
 msgid "Default"
@@ -85,11 +87,11 @@ msgstr "انجام شده"
 
 #: install.php:79
 msgid "Dropping grplist.."
-msgstr ""
+msgstr "انداختن فهرست گروه.."
 
 #: install.php:97
 msgid "Dropping old grplist field.."
-msgstr ""
+msgstr "انداختن فیلد فهرست گروه قدیمی.."
 
 #: views/form.php:216
 msgid ""
@@ -98,10 +100,14 @@ msgid ""
 "default group in the Extensions (or Users) tab.<br />Making this group the "
 "default will uncheck the option from the current default group if specified."
 msgstr ""
+"Each PBX system can have a single Default Voicemail Blast Group . If "
+"specified, extensions can be automatically added (or removed) from this "
+"default group in the Extensions (or Users) tab.<br />Making this group the "
+"default will uncheck the option from the current default group if specified."
 
 #: page.vmblast.php:17
 msgid "Edit VMBlast Group"
-msgstr ""
+msgstr "ویرایش گروه VMBlast"
 
 #: functions.inc.php:262
 msgid "Exclude"
@@ -121,7 +127,7 @@ msgstr "ورود"
 
 #: views/bootnav.php:2
 msgid "List VM Blast Groups"
-msgstr ""
+msgstr "فهرست گروه های VM Blast"
 
 #: views/form.php:208
 msgid "No"
@@ -148,11 +154,11 @@ msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
 "number."
-msgstr ""
+msgstr "پخش آهنگ که کاربر تشخیص دهد شماره گروه میل صوتی درستی را گرفته."
 
 #: views/form.php:138
 msgid "Provide a descriptive title for this VMBlast Group."
-msgstr ""
+msgstr "ایجاد عنوان درست برای گروه VMBlast."
 
 #: views/form.php:51
 msgid "Read Group Number"
@@ -166,7 +172,7 @@ msgstr "بازنشانی"
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
 "multiple."
-msgstr ""
+msgstr "انتخاب صندوق میل صوتی برای افزودن گروه."
 
 #: Vmblast.class.php:83
 msgid "Submit"
@@ -174,27 +180,27 @@ msgstr "ارسال"
 
 #: views/form.php:114
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
-msgstr ""
+msgstr "شماره که کاربران برای تماس با صندوق میل صوتی  در این گروه VMBlast"
 
 #: install.php:49
 msgid "Upgrading vmblast to add audio_label field.."
-msgstr ""
+msgstr "Upgrading vmblast to add audio_label field .."
 
 #: install.php:63
 msgid "Upgrading vmblast to add password field.."
-msgstr ""
+msgstr "ارتقا vmblast به افزودن فیلد کلمه عبور.."
 
 #: views/bootnav.php:8
 msgid "VMBlast Group"
-msgstr ""
+msgstr "گروه VMBlast"
 
 #: views/form.php:102
 msgid "VMBlast Number"
-msgstr ""
+msgstr "شماره VMBlast"
 
 #: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
-msgstr ""
+msgstr "Voice mail Blasting"
 
 #: views/form.php:175
 msgid "Voicemail Box List"
@@ -223,20 +229,24 @@ msgid ""
 "default voicemail blast group when creating or editing. Choosing this option "
 "will be ignored if the user does not have a voicemail box."
 msgstr ""
+"You can include or exclude this extension/user from being part of the "
+"default voicemail blast group when creating or editing. Choosing this option "
+"will be ignored if the user does not have a voicemail box ."
 
 #: views/form.php:163
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
 msgstr ""
+"شما میتوانید کلمه عبور را قبل از دسترسی به فهرست گروه میل صوتی تولید کنید."
 
 #: install.php:93
 msgid "error populating vmblast_groups table"
-msgstr ""
+msgstr "خطا جدول vmblast_groups"
 
 #: install.php:101
 msgid "failed to drop field"
-msgstr ""
+msgstr "خطا در انداختن فیلد"
 
 #: Vmblast.class.php:38
 msgid "is not allowed for your account"
