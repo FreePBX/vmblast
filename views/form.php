@@ -152,7 +152,7 @@ echo $usagehtml;
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="password"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="password" class="form-control toggle-password" id="password" name="password" value="<?php echo $password ?>">
+						<input type="password" class="form-control toggle-password clicktoedit" id="password" name="password" value="<?php echo $password ?>">
 					</div>
 				</div>
 			</div>
