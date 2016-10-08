@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-15 12:41-0800\n"
-"PO-Revision-Date: 2016-05-15 07:11+0200\n"
-"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"PO-Revision-Date: 2016-10-08 12:44+0200\n"
+"Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) "
 "<http://weblate.freepbx.org/projects/freepbx/vmblast/fa_IR/>\n"
 "Language: fa_IR\n"
@@ -31,7 +31,7 @@ msgstr "افزودن گروه VM Blast"
 
 #: page.vmblast.php:19
 msgid "Add VMBlast Group"
-msgstr "افزودن گروهVMBlast"
+msgstr "افزودن گروه VMBlast"
 
 #: vmblast.i18n.php:6 vmblast.i18n.php:12
 msgid "Applications"
@@ -43,35 +43,35 @@ msgstr "برچسب صدا"
 
 #: views/form.php:52
 msgid "Beep Only - No Confirmation"
-msgstr "بوق تنها - تایید نشده"
+msgstr "بوق تنها - بدون تاییدیه"
 
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
-msgstr "داخلی های متضاد"
+msgstr "تناقض داخلی ها"
 
 #: vmblast.i18n.php:8
 msgid ""
 "Creates a group of extensions that calls a group of voicemail boxes and "
 "allows you to leave a message for them all at once."
 msgstr ""
-"ایجاد گروهی از داخلی ها که به نام گروه صندوق صوتی شناخته میشوند و به شما "
-"اجازه ارسال یک پیام به همه اعضای گروه به صورت همزمان را میدهد."
+"ایجاد گروهی از داخلی ها که به نام گروه صندوق صوتی شناخته می شوند و به شما "
+"اجازه ارسال یک پیام به همه اعضای گروه به صورت همزمان را می دهد."
 
 #: views/grid.php:19
 msgid "Default"
-msgstr "پیشفرض"
+msgstr "پیش فرض"
 
 #: functions.inc.php:281
 msgid "Default Group Inclusion"
-msgstr "ظرفیت پیشفرض گروه"
+msgstr "ظرفیت پیش فرض گروه"
 
 #: views/form.php:201
 msgid "Default VMBlast Group"
-msgstr "گروه پیشفرض VMBlast"
+msgstr "گروه پیش فرض VMBlast"
 
 #: functions.inc.php:284
 msgid "Default VMblast Group"
-msgstr "گروه پیشفرض VMblast"
+msgstr "گروه پیش فرض VMblast"
 
 #: Vmblast.class.php:78
 msgid "Delete"
@@ -79,11 +79,11 @@ msgstr "حذف"
 
 #: views/grid.php:18
 msgid "Description"
-msgstr "شرح"
+msgstr "توضیحات"
 
 #: install.php:60 install.php:74
 msgid "Done"
-msgstr "انجام شده"
+msgstr "انجام شد"
 
 #: install.php:79
 msgid "Dropping grplist.."
@@ -91,7 +91,7 @@ msgstr "انداختن فهرست گروه.."
 
 #: install.php:97
 msgid "Dropping old grplist field.."
-msgstr "انداختن فیلد فهرست گروه قدیمی.."
+msgstr "انداختن در فیلد فهرست گروه قدیمی.."
 
 #: views/form.php:216
 msgid ""
