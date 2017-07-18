@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-15 12:41-0800\n"
-"PO-Revision-Date: 2017-07-17 21:15+0200\n"
+"PO-Revision-Date: 2017-07-18 08:20+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/vmblast/vi/>\n"
@@ -63,7 +63,7 @@ msgstr "Mặc định"
 
 #: functions.inc.php:281
 msgid "Default Group Inclusion"
-msgstr ""
+msgstr "Mặc định Group Inclusion"
 
 #: views/form.php:201
 msgid "Default VMBlast Group"
