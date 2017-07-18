@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-15 12:41-0800\n"
-"PO-Revision-Date: 2017-07-17 17:34+0200\n"
+"PO-Revision-Date: 2017-07-17 21:15+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/vmblast/vi/>\n"
@@ -232,25 +232,30 @@ msgid ""
 "default voicemail blast group when creating or editing. Choosing this option "
 "will be ignored if the user does not have a voicemail box."
 msgstr ""
+"Bạn có thể bao gồm hoặc loại trừ máy nhánh / người dùng này khỏi trở thành "
+"một phần của nhóm voicemail blast  mặc định khi tạo hoặc chỉnh sửa. Việc "
+"chọn tùy chọn này sẽ bị bỏ qua nếu người dùng không có hộp thư thoại."
 
 #: views/form.php:163
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
 msgstr ""
+"Bạn có thể thêm một mật khẩu để xác thực trước khi cung cấp quyền truy cập "
+"vào danh sách thư thoại của nhóm này."
 
 #: install.php:93
 msgid "error populating vmblast_groups table"
-msgstr ""
+msgstr "Lỗi khi điền vào bảng vmblast_groups"
 
 #: install.php:101
 msgid "failed to drop field"
-msgstr ""
+msgstr "Thả trường không thành công"
 
 #: Vmblast.class.php:38
 msgid "is not allowed for your account"
-msgstr ""
+msgstr "Tài khoản của bạn không được cho phép"
 
 #: install.php:96
 msgid "populated new table"
-msgstr ""
+msgstr "Bảng mới đã được điền"
