@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-15 12:41-0800\n"
-"PO-Revision-Date: 2017-07-18 08:20+0200\n"
+"PO-Revision-Date: 2017-07-19 09:14+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/vmblast/vi/>\n"
@@ -203,7 +203,7 @@ msgstr "Số VMBlast"
 
 #: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
-msgstr "Voicemail Blasting"
+msgstr "Voicemail Blasting ( Một Mô đun của PBX)"
 
 #: views/form.php:175
 msgid "Voicemail Box List"
@@ -246,7 +246,7 @@ msgstr ""
 
 #: install.php:93
 msgid "error populating vmblast_groups table"
-msgstr "Lỗi khi điền vào bảng vmblast_groups"
+msgstr "Lỗi khi mở rộng bảng vmblast_groups"
 
 #: install.php:101
 msgid "failed to drop field"
@@ -258,4 +258,4 @@ msgstr "Tài khoản của bạn không được cho phép"
 
 #: install.php:96
 msgid "populated new table"
-msgstr "Bảng mới đã được điền"
+msgstr "Bảng mới đã được mở rộng"
