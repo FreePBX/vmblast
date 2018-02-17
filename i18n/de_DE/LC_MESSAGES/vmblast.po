@@ -10,13 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-15 12:41-0800\n"
-"PO-Revision-Date: 2016-01-15 12:41-0800\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2018-02-16 18:06+0200\n"
+"Last-Translator: Nils <Nils@heckenkamp.info>\n"
+"Language-Team: German "
+"<http://weblate.freepbx.org/projects/freepbx/vmblast/de_DE/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:20
 msgid "Actions"
@@ -32,7 +35,7 @@ msgstr ""
 
 #: vmblast.i18n.php:6 vmblast.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "Anwendungen"
 
 #: views/form.php:46
 msgid "Audio Label"
@@ -70,15 +73,15 @@ msgstr ""
 
 #: Vmblast.class.php:78
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: views/grid.php:18
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: install.php:60 install.php:74
 msgid "Done"
-msgstr ""
+msgstr "Erledigt"
 
 #: install.php:79
 msgid "Dropping grplist.."
@@ -157,13 +160,15 @@ msgstr ""
 
 #: Vmblast.class.php:88
 msgid "Reset"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: views/form.php:189
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
 "multiple."
 msgstr ""
+"Wählen Sie Voicemailboxen, die zu dieser Gruppe hinzugefügt werden sollen. "
+"Verwenden Sie die Strg-Taste, um mehrere auszuwählen."
 
 #: Vmblast.class.php:83
 msgid "Submit"
@@ -212,7 +217,7 @@ msgstr ""
 
 #: views/form.php:206
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: functions.inc.php:284
 msgid ""
