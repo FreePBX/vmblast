@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-15 12:41-0800\n"
-"PO-Revision-Date: 2018-06-15 09:23+0000\n"
-"Last-Translator: Nils Heckenkamp <nheckenkamp@sangoma.com>\n"
+"PO-Revision-Date: 2018-07-18 19:15+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/vmblast/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: views/grid.php:20
 msgid "Actions"
-msgstr ""
+msgstr "Aktionen"
 
 #: views/bootnav.php:3 views/grid.php:5
 msgid "Add VM Blast Group"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: views/grid.php:19
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: functions.inc.php:281
 msgid "Default Group Inclusion"
@@ -104,7 +104,7 @@ msgstr ""
 
 #: functions.inc.php:262
 msgid "Exclude"
-msgstr ""
+msgstr "Ausschließen"
 
 #: views/grid.php:17
 msgid "Group"
@@ -112,11 +112,11 @@ msgstr ""
 
 #: views/form.php:126
 msgid "Group Description"
-msgstr ""
+msgstr "Beschreibung der Gruppe"
 
 #: functions.inc.php:263
 msgid "Include"
-msgstr ""
+msgstr "Einbinden"
 
 #: views/bootnav.php:2
 msgid "List VM Blast Groups"
@@ -124,7 +124,7 @@ msgstr ""
 
 #: views/form.php:208
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: install.php:107
 msgid "Not Needed"
