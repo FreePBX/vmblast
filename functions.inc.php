@@ -143,51 +143,23 @@ function vmblast_check_extensions($exten=true) {
 }
 
 function vmblast_add($grpnum,$grplist,$description,$audio_label= -1, $password = '', $default_group=0) {
-	global $db;
-	if (is_array($grplist)) {
-		$xtns = $grplist;
-	} else {
-		$xtns = explode("\n",$grplist);
-	}
-
-	foreach ($xtns as $key => $value) {
-		$xtns[$key] = array($grpnum,trim($value));
-	}
-	// Sanity check input.
-	$ret = $db->prepare("INSERT INTO vmblast_groups (grpnum, ext) values (?,?)");
-	foreach($xtns as $x){
-		try{
-			$ret->execute($x);
-		}catch(Exception $e){
-			die_freepbx($e->getMessage()."<br><br>".'error adding to vmblast_groups table');
-		}
-	}
-
-	$sql = "INSERT INTO vmblast (grpnum, description, audio_label, password) VALUES (".$grpnum.", '".$db->escapeSimple($description)."', '$audio_label', '".$db->escapeSimple($password)."')";
-	$results = sql($sql);
-
-	if ($default_group) {
-		sql("DELETE FROM `admin` WHERE variable = 'default_vmblast_grp'");
-		sql("INSERT INTO `admin` (variable, value) VALUES ('default_vmblast_grp', '$grpnum')");
-	} else {
-		sql("DELETE FROM `admin` WHERE variable = 'default_vmblast_grp' AND value = '$grpnum'");
-	}
-	return true;
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Vmblast()->upsert($grpnum,$grplist,$description,$audio_label, $password, $default_group);
 }
 
 function vmblast_del($grpnum) {
-	$results = sql("DELETE FROM vmblast WHERE grpnum = '$grpnum'","query");
-	$results = sql("DELETE FROM vmblast_groups WHERE grpnum = '$grpnum'","query");
-	sql("DELETE FROM `admin` WHERE variable = 'default_vmblast_grp' AND value = '$grpnum'");
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Vmblast()->delete($grpnum);
 }
 
 function vmblast_list() {
-	return \FreePBX::Vmblast()->listVMBlast();
+    FreePBX::Modules()->deprecatedFunction();
+	return FreePBX::Vmblast()->listVMBlast();
 }
 
-function vmblast_get_default_grp() {
-	$grp = sql("SELECT value FROM admin WHERE variable='default_vmblast_grp' LIMIT 1",'getOne');
-  return $grp;
+function vmblast_get_default_grp(){
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Vmblast()->getDefault();
 }
 
 function vmblast_get($grpnum) {
