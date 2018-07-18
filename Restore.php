@@ -3,7 +3,7 @@ namespace FreePBX\modules\Vmblast;
 use FreePBX\modules\Backup as Base;
 class Restore Extends Base\RestoreBase{
   public function runRestore($jobid){
-    $configs = $this->getConfigs();
+    $configs = reset($this->getConfigs());
     $groups = [];
     foreach($configs['vmblast_groups'] as $group){
         $groups[$group['grpnum']][] = $group['ext'];
