@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-15 12:41-0800\n"
+"POT-Creation-Date: 2018-08-20 12:55-0400\n"
 "PO-Revision-Date: 2015-04-25 00:59+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/vmblast/"
 "ru_RU/>\n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru_RU\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
 #: views/grid.php:20
@@ -32,10 +32,6 @@ msgstr ""
 msgid "Add VMBlast Group"
 msgstr "Добавить группу VMBlast"
 
-#: vmblast.i18n.php:6 vmblast.i18n.php:12
-msgid "Applications"
-msgstr "Приложения"
-
 #: views/form.php:46
 msgid "Audio Label"
 msgstr ""
@@ -48,19 +44,11 @@ msgstr "Только звуковой сигнал - без подтвержде
 msgid "Conflicting Extensions"
 msgstr "Конфликт внутренних номеров"
 
-#: vmblast.i18n.php:8
-msgid ""
-"Creates a group of extensions that calls a group of voicemail boxes and "
-"allows you to leave a message for them all at once."
-msgstr ""
-"Создаёт группу внутренних номеров, которые используют совместно один ящик "
-"групповой почты, допускает сообщения и прослушивание всех членов группы."
-
 #: views/grid.php:19
 msgid "Default"
 msgstr ""
 
-#: functions.inc.php:281
+#: functions.inc.php:253
 msgid "Default Group Inclusion"
 msgstr "Включения в группу по-умолчанию"
 
@@ -68,29 +56,17 @@ msgstr "Включения в группу по-умолчанию"
 msgid "Default VMBlast Group"
 msgstr "Дефолтная группа VMBlast"
 
-#: functions.inc.php:284
+#: functions.inc.php:256
 msgid "Default VMblast Group"
 msgstr "Дефолтная группа VMblast"
 
-#: Vmblast.class.php:78
+#: Vmblast.class.php:72
 msgid "Delete"
 msgstr ""
 
 #: views/grid.php:18
 msgid "Description"
 msgstr ""
-
-#: install.php:60 install.php:74
-msgid "Done"
-msgstr "Готово"
-
-#: install.php:79
-msgid "Dropping grplist.."
-msgstr "Сброс листа группы.."
-
-#: install.php:97
-msgid "Dropping old grplist field.."
-msgstr "Игнорируется старое значение поля grplist.."
 
 #: views/form.php:216
 msgid ""
@@ -109,7 +85,7 @@ msgstr ""
 msgid "Edit VMBlast Group"
 msgstr "Изменить группу VMBlast"
 
-#: functions.inc.php:262
+#: functions.inc.php:234
 msgid "Exclude"
 msgstr "Исключить"
 
@@ -121,7 +97,7 @@ msgstr ""
 msgid "Group Description"
 msgstr ""
 
-#: functions.inc.php:263
+#: functions.inc.php:235
 msgid "Include"
 msgstr "Включить"
 
@@ -132,18 +108,6 @@ msgstr ""
 #: views/form.php:208
 msgid "No"
 msgstr ""
-
-#: install.php:107
-msgid "Not Needed"
-msgstr "Не требуется"
-
-#: install.php:53 install.php:67
-msgid "Not Required"
-msgstr "Не требуется"
-
-#: install.php:103
-msgid "OK"
-msgstr "ОК"
 
 #: views/form.php:151
 msgid "Optional Password"
@@ -167,7 +131,7 @@ msgstr "Предложите понятное описание для этой �
 msgid "Read Group Number"
 msgstr "Сообщать групповой номер"
 
-#: Vmblast.class.php:88
+#: Vmblast.class.php:82
 msgid "Reset"
 msgstr ""
 
@@ -177,7 +141,7 @@ msgid ""
 "multiple."
 msgstr ""
 
-#: Vmblast.class.php:83
+#: Vmblast.class.php:77
 msgid "Submit"
 msgstr ""
 
@@ -187,14 +151,6 @@ msgstr ""
 "Внутренний номер для пользователей ипользующих дозвон в голосовую почту этой "
 "группы VMBlast"
 
-#: install.php:49
-msgid "Upgrading vmblast to add audio_label field.."
-msgstr "Апгрейдить vmblast добавлением поля аудио метки.."
-
-#: install.php:63
-msgid "Upgrading vmblast to add password field.."
-msgstr "Апгрейдить vmblast добавлением поля пароль.."
-
 #: views/bootnav.php:8
 msgid "VMBlast Group"
 msgstr "Группа VMBlast"
@@ -203,7 +159,7 @@ msgstr "Группа VMBlast"
 msgid "VMBlast Number"
 msgstr "Номер VMBlast"
 
-#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
+#: page.vmblast.php:6
 msgid "Voicemail Blasting"
 msgstr "Групповая голосовая почта"
 
@@ -220,7 +176,7 @@ msgstr "Группа голосовой почты %s: %s"
 msgid "Voicemail Group: "
 msgstr "Группа голосовой почты: "
 
-#: Vmblast.class.php:38
+#: Vmblast.class.php:34
 msgid "Warning! Extension"
 msgstr "Внимание! Внутренний номер"
 
@@ -228,7 +184,7 @@ msgstr "Внимание! Внутренний номер"
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:284
+#: functions.inc.php:256
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -247,21 +203,52 @@ msgstr ""
 "Можно добавить пароль опционально, для аутентификации доступа в этот "
 "групповой ящик голосовой почты."
 
-#: install.php:93
-msgid "error populating vmblast_groups table"
-msgstr "ошибка при создании таблицы группы vmblast"
-
-#: install.php:101
-msgid "failed to drop field"
-msgstr "не удалось сбросить поле"
-
-#: Vmblast.class.php:38
+#: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr "не доступен для вашего аккаунта"
 
-#: install.php:96
-msgid "populated new table"
-msgstr "создание новой таблицы"
+#~ msgid "Applications"
+#~ msgstr "Приложения"
+
+#~ msgid ""
+#~ "Creates a group of extensions that calls a group of voicemail boxes and "
+#~ "allows you to leave a message for them all at once."
+#~ msgstr ""
+#~ "Создаёт группу внутренних номеров, которые используют совместно один ящик "
+#~ "групповой почты, допускает сообщения и прослушивание всех членов группы."
+
+#~ msgid "Done"
+#~ msgstr "Готово"
+
+#~ msgid "Dropping grplist.."
+#~ msgstr "Сброс листа группы.."
+
+#~ msgid "Dropping old grplist field.."
+#~ msgstr "Игнорируется старое значение поля grplist.."
+
+#~ msgid "Not Needed"
+#~ msgstr "Не требуется"
+
+#~ msgid "Not Required"
+#~ msgstr "Не требуется"
+
+#~ msgid "OK"
+#~ msgstr "ОК"
+
+#~ msgid "Upgrading vmblast to add audio_label field.."
+#~ msgstr "Апгрейдить vmblast добавлением поля аудио метки.."
+
+#~ msgid "Upgrading vmblast to add password field.."
+#~ msgstr "Апгрейдить vmblast добавлением поля пароль.."
+
+#~ msgid "error populating vmblast_groups table"
+#~ msgstr "ошибка при создании таблицы группы vmblast"
+
+#~ msgid "failed to drop field"
+#~ msgstr "не удалось сбросить поле"
+
+#~ msgid "populated new table"
+#~ msgstr "создание новой таблицы"
 
 #~ msgid " [DEFAULT]"
 #~ msgstr " [Значения по умолчанию]"

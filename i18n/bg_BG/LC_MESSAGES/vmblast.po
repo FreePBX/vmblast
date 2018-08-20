@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-15 12:41-0800\n"
+"POT-Creation-Date: 2018-08-20 12:55-0400\n"
 "PO-Revision-Date: 2018-07-04 06:28+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/vmblast/bg/>\n"
@@ -33,10 +33,6 @@ msgstr "Добави ГП Разпращане Група"
 msgid "Add VMBlast Group"
 msgstr "Добави ГП Разпращане Група"
 
-#: vmblast.i18n.php:6 vmblast.i18n.php:12
-msgid "Applications"
-msgstr "Приложения"
-
 #: views/form.php:46
 msgid "Audio Label"
 msgstr "Аудио Етикет"
@@ -49,19 +45,11 @@ msgstr "Само бипкане - Без Потвърждение"
 msgid "Conflicting Extensions"
 msgstr "Вътрешни Линии в Конфликт"
 
-#: vmblast.i18n.php:8
-msgid ""
-"Creates a group of extensions that calls a group of voicemail boxes and "
-"allows you to leave a message for them all at once."
-msgstr ""
-"Създава група от вътрешни линии, която набира група от гласови пощи на които "
-"може да се оставя гласово съобщение едновременно."
-
 #: views/grid.php:19
 msgid "Default"
 msgstr "По-Подразбиране"
 
-#: functions.inc.php:281
+#: functions.inc.php:253
 msgid "Default Group Inclusion"
 msgstr "Включване на ГП Разпращане Група По-Подразбиране"
 
@@ -69,29 +57,17 @@ msgstr "Включване на ГП Разпращане Група По-Под
 msgid "Default VMBlast Group"
 msgstr "ГП Разпращане Група По-Подразбиране"
 
-#: functions.inc.php:284
+#: functions.inc.php:256
 msgid "Default VMblast Group"
 msgstr "ГП Група По-Подразбиране"
 
-#: Vmblast.class.php:78
+#: Vmblast.class.php:72
 msgid "Delete"
 msgstr "Изтрий"
 
 #: views/grid.php:18
 msgid "Description"
 msgstr "Описание"
-
-#: install.php:60 install.php:74
-msgid "Done"
-msgstr "Изпълнено"
-
-#: install.php:79
-msgid "Dropping grplist.."
-msgstr "Премахване на grplist.."
-
-#: install.php:97
-msgid "Dropping old grplist field.."
-msgstr "Изтриване на старото поле grplist.."
 
 #: views/form.php:216
 msgid ""
@@ -110,7 +86,7 @@ msgstr ""
 msgid "Edit VMBlast Group"
 msgstr "Редактирай ГП Разпращане Група"
 
-#: functions.inc.php:262
+#: functions.inc.php:234
 msgid "Exclude"
 msgstr "Изключи"
 
@@ -122,7 +98,7 @@ msgstr "Група"
 msgid "Group Description"
 msgstr "Описание на Групата"
 
-#: functions.inc.php:263
+#: functions.inc.php:235
 msgid "Include"
 msgstr "Включи"
 
@@ -133,18 +109,6 @@ msgstr "Списък на ГП Разпращане Групи"
 #: views/form.php:208
 msgid "No"
 msgstr "Не"
-
-#: install.php:107
-msgid "Not Needed"
-msgstr "Не е Необходимо"
-
-#: install.php:53 install.php:67
-msgid "Not Required"
-msgstr "Не се Изисква"
-
-#: install.php:103
-msgid "OK"
-msgstr "OK"
 
 #: views/form.php:151
 msgid "Optional Password"
@@ -167,7 +131,7 @@ msgstr "Дайте описващо наименование на тази ГП 
 msgid "Read Group Number"
 msgstr "Прочети Номера на Групата"
 
-#: Vmblast.class.php:88
+#: Vmblast.class.php:82
 msgid "Reset"
 msgstr "Изчисти"
 
@@ -179,7 +143,7 @@ msgstr ""
 "Изберете кутии за гласова поща, които да добавите към тази група. "
 "Използвайте клавиша Ctrl, за да изберете няколко."
 
-#: Vmblast.class.php:83
+#: Vmblast.class.php:77
 msgid "Submit"
 msgstr "Приеми"
 
@@ -189,14 +153,6 @@ msgstr ""
 "Номерът който потребителите ще избират за изпращане на гласово съобщение в "
 "тази ГП Разпращане Група"
 
-#: install.php:49
-msgid "Upgrading vmblast to add audio_label field.."
-msgstr "Обновяване ГП Разпращане за добавяне на audio_label поле.."
-
-#: install.php:63
-msgid "Upgrading vmblast to add password field.."
-msgstr "Обновяване ГП Разпращане за добавяне на поле за парола.."
-
 #: views/bootnav.php:8
 msgid "VMBlast Group"
 msgstr "ГП Разпращане Група"
@@ -205,7 +161,7 @@ msgstr "ГП Разпращане Група"
 msgid "VMBlast Number"
 msgstr "ГП Разпращане Група Номер"
 
-#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
+#: page.vmblast.php:6
 msgid "Voicemail Blasting"
 msgstr "Разпращане Гласова Поща"
 
@@ -222,7 +178,7 @@ msgstr "Група на Гласова Поща %s: %s"
 msgid "Voicemail Group: "
 msgstr "Група на Гласова Поща: "
 
-#: Vmblast.class.php:38
+#: Vmblast.class.php:34
 msgid "Warning! Extension"
 msgstr "Внимание! Вътрешна Линия"
 
@@ -230,7 +186,7 @@ msgstr "Внимание! Вътрешна Линия"
 msgid "Yes"
 msgstr "Да"
 
-#: functions.inc.php:284
+#: functions.inc.php:256
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -248,21 +204,52 @@ msgstr ""
 "Допълнително можете да включите парола за оторизиране преди да се даде "
 "достъп до тази ГП Разпращане Група."
 
-#: install.php:93
-msgid "error populating vmblast_groups table"
-msgstr "грешка при полълване на vmblast_groups таблица"
-
-#: install.php:101
-msgid "failed to drop field"
-msgstr "не мога да премахна поле"
-
-#: Vmblast.class.php:38
+#: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr "не е разрешена за вашия акаунт"
 
-#: install.php:96
-msgid "populated new table"
-msgstr "попълване на нова таблица"
+#~ msgid "Applications"
+#~ msgstr "Приложения"
+
+#~ msgid ""
+#~ "Creates a group of extensions that calls a group of voicemail boxes and "
+#~ "allows you to leave a message for them all at once."
+#~ msgstr ""
+#~ "Създава група от вътрешни линии, която набира група от гласови пощи на "
+#~ "които може да се оставя гласово съобщение едновременно."
+
+#~ msgid "Done"
+#~ msgstr "Изпълнено"
+
+#~ msgid "Dropping grplist.."
+#~ msgstr "Премахване на grplist.."
+
+#~ msgid "Dropping old grplist field.."
+#~ msgstr "Изтриване на старото поле grplist.."
+
+#~ msgid "Not Needed"
+#~ msgstr "Не е Необходимо"
+
+#~ msgid "Not Required"
+#~ msgstr "Не се Изисква"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Upgrading vmblast to add audio_label field.."
+#~ msgstr "Обновяване ГП Разпращане за добавяне на audio_label поле.."
+
+#~ msgid "Upgrading vmblast to add password field.."
+#~ msgstr "Обновяване ГП Разпращане за добавяне на поле за парола.."
+
+#~ msgid "error populating vmblast_groups table"
+#~ msgstr "грешка при полълване на vmblast_groups таблица"
+
+#~ msgid "failed to drop field"
+#~ msgstr "не мога да премахна поле"
+
+#~ msgid "populated new table"
+#~ msgstr "попълване на нова таблица"
 
 #~ msgid " [DEFAULT]"
 #~ msgstr " [По-Подразбиране]"

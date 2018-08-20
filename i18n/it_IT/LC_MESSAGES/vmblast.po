@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-15 12:41-0800\n"
+"POT-Creation-Date: 2018-08-20 12:55-0400\n"
 "PO-Revision-Date: 2018-05-07 20:28+0000\n"
 "Last-Translator: Maurizio Longhitano <mlonghitano@teampower.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/vmblast/it/>\n"
@@ -32,10 +32,6 @@ msgstr "Aggiungi Gruppo VM Blast"
 msgid "Add VMBlast Group"
 msgstr "Aggiungi Gruppo VMBlast"
 
-#: vmblast.i18n.php:6 vmblast.i18n.php:12
-msgid "Applications"
-msgstr "Applicazioni"
-
 #: views/form.php:46
 msgid "Audio Label"
 msgstr "Etichetta Audio"
@@ -48,19 +44,11 @@ msgstr "Solo Beep - Nessuna Conferma"
 msgid "Conflicting Extensions"
 msgstr "Interni in conflitto"
 
-#: vmblast.i18n.php:8
-msgid ""
-"Creates a group of extensions that calls a group of voicemail boxes and "
-"allows you to leave a message for them all at once."
-msgstr ""
-"Crea un gruppo di interni che chiama un gruppo di caselle vocali e permette "
-"di lasciare un messaggio per tutte in una volta."
-
 #: views/grid.php:19
 msgid "Default"
 msgstr "Predefinito"
 
-#: functions.inc.php:281
+#: functions.inc.php:253
 msgid "Default Group Inclusion"
 msgstr "Gruppo Predefinito d'Inclusione"
 
@@ -68,29 +56,17 @@ msgstr "Gruppo Predefinito d'Inclusione"
 msgid "Default VMBlast Group"
 msgstr "Gruppo Caselle Predefinito"
 
-#: functions.inc.php:284
+#: functions.inc.php:256
 msgid "Default VMblast Group"
 msgstr "Gruppo Caselle Predefinito"
 
-#: Vmblast.class.php:78
+#: Vmblast.class.php:72
 msgid "Delete"
 msgstr "Elimina"
 
 #: views/grid.php:18
 msgid "Description"
 msgstr "Descrizione"
-
-#: install.php:60 install.php:74
-msgid "Done"
-msgstr "Fatto"
-
-#: install.php:79
-msgid "Dropping grplist.."
-msgstr "Sto scartando grplist.."
-
-#: install.php:97
-msgid "Dropping old grplist field.."
-msgstr "Sto scartando il vecchio campo grplist.."
 
 #: views/form.php:216
 msgid ""
@@ -108,7 +84,7 @@ msgstr ""
 msgid "Edit VMBlast Group"
 msgstr "Modifica Gruppo di Caselle Vocali"
 
-#: functions.inc.php:262
+#: functions.inc.php:234
 msgid "Exclude"
 msgstr "Escludi"
 
@@ -120,7 +96,7 @@ msgstr "Gruppo"
 msgid "Group Description"
 msgstr "Descrizione Gruppo"
 
-#: functions.inc.php:263
+#: functions.inc.php:235
 msgid "Include"
 msgstr "Includi"
 
@@ -131,18 +107,6 @@ msgstr "Elenco Gruppi VM Blast"
 #: views/form.php:208
 msgid "No"
 msgstr "No"
-
-#: install.php:107
-msgid "Not Needed"
-msgstr "Non Necessario"
-
-#: install.php:53 install.php:67
-msgid "Not Required"
-msgstr "Non Richiesto"
-
-#: install.php:103
-msgid "OK"
-msgstr "OK"
 
 #: views/form.php:151
 msgid "Optional Password"
@@ -166,7 +130,7 @@ msgstr "Titolo descrittivo per questo Gruppo di Caselle."
 msgid "Read Group Number"
 msgstr "Conferma Numero del Gruppo"
 
-#: Vmblast.class.php:88
+#: Vmblast.class.php:82
 msgid "Reset"
 msgstr "Reset"
 
@@ -178,7 +142,7 @@ msgstr ""
 "Selezione le caselle vocali da aggiungere a questo gruppo. Usa il tasto Ctrl "
 "per la selezione multipla."
 
-#: Vmblast.class.php:83
+#: Vmblast.class.php:77
 msgid "Submit"
 msgstr "Invia"
 
@@ -188,14 +152,6 @@ msgstr ""
 "Il numero che gli utenti dovranno chiamare per questo Gruppo di Caselle "
 "Vocali"
 
-#: install.php:49
-msgid "Upgrading vmblast to add audio_label field.."
-msgstr "Aggiornamento vmblast per aggiungere il campo audio_label.."
-
-#: install.php:63
-msgid "Upgrading vmblast to add password field.."
-msgstr "Aggiornamento vmblast per aggiungere il campo password.."
-
 #: views/bootnav.php:8
 msgid "VMBlast Group"
 msgstr "Gruppo di Caselle Vocali"
@@ -204,7 +160,7 @@ msgstr "Gruppo di Caselle Vocali"
 msgid "VMBlast Number"
 msgstr "Numero Gruppo"
 
-#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
+#: page.vmblast.php:6
 msgid "Voicemail Blasting"
 msgstr "Voicemail Blasting"
 
@@ -221,7 +177,7 @@ msgstr "Gruppo Caselle Vocali %s: %s"
 msgid "Voicemail Group: "
 msgstr "Gruppo Caselle Vocali: "
 
-#: Vmblast.class.php:38
+#: Vmblast.class.php:34
 msgid "Warning! Extension"
 msgstr "Attenzione! Interno"
 
@@ -229,7 +185,7 @@ msgstr "Attenzione! Interno"
 msgid "Yes"
 msgstr "Si"
 
-#: functions.inc.php:284
+#: functions.inc.php:256
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -247,21 +203,52 @@ msgstr ""
 "Si può impostare una password opzionale prima di accedere a questo Gruppo di "
 "Caselle."
 
-#: install.php:93
-msgid "error populating vmblast_groups table"
-msgstr "errore nel popolamento della tabella vmblast_groups"
-
-#: install.php:101
-msgid "failed to drop field"
-msgstr "impossibile scartare il campo"
-
-#: Vmblast.class.php:38
+#: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr "non è permesso al tuo account"
 
-#: install.php:96
-msgid "populated new table"
-msgstr "nuova tabella popolata"
+#~ msgid "Applications"
+#~ msgstr "Applicazioni"
+
+#~ msgid ""
+#~ "Creates a group of extensions that calls a group of voicemail boxes and "
+#~ "allows you to leave a message for them all at once."
+#~ msgstr ""
+#~ "Crea un gruppo di interni che chiama un gruppo di caselle vocali e "
+#~ "permette di lasciare un messaggio per tutte in una volta."
+
+#~ msgid "Done"
+#~ msgstr "Fatto"
+
+#~ msgid "Dropping grplist.."
+#~ msgstr "Sto scartando grplist.."
+
+#~ msgid "Dropping old grplist field.."
+#~ msgstr "Sto scartando il vecchio campo grplist.."
+
+#~ msgid "Not Needed"
+#~ msgstr "Non Necessario"
+
+#~ msgid "Not Required"
+#~ msgstr "Non Richiesto"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Upgrading vmblast to add audio_label field.."
+#~ msgstr "Aggiornamento vmblast per aggiungere il campo audio_label.."
+
+#~ msgid "Upgrading vmblast to add password field.."
+#~ msgstr "Aggiornamento vmblast per aggiungere il campo password.."
+
+#~ msgid "error populating vmblast_groups table"
+#~ msgstr "errore nel popolamento della tabella vmblast_groups"
+
+#~ msgid "failed to drop field"
+#~ msgstr "impossibile scartare il campo"
+
+#~ msgid "populated new table"
+#~ msgstr "nuova tabella popolata"
 
 #~ msgid "Audio Label:"
 #~ msgstr "Etichetta Audio:"

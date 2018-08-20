@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-15 12:41-0800\n"
+"POT-Creation-Date: 2018-08-20 12:55-0400\n"
 "PO-Revision-Date: 2016-12-16 02:05+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
-"Language-Team: Portuguese (Brazil) "
-"<http://weblate.freepbx.org/projects/freepbx/vmblast/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
+"freepbx/vmblast/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,10 +33,6 @@ msgstr "Adicionar Grupo VM Blast"
 msgid "Add VMBlast Group"
 msgstr "Adicionar Grupo VMBlast"
 
-#: vmblast.i18n.php:6 vmblast.i18n.php:12
-msgid "Applications"
-msgstr "Aplicações"
-
 #: views/form.php:46
 msgid "Audio Label"
 msgstr "Rótulo de Audio"
@@ -49,19 +45,11 @@ msgstr "Somente Bip - Sem Confirmação"
 msgid "Conflicting Extensions"
 msgstr "Ramais em Conflito"
 
-#: vmblast.i18n.php:8
-msgid ""
-"Creates a group of extensions that calls a group of voicemail boxes and "
-"allows you to leave a message for them all at once."
-msgstr ""
-"Cria um grupo de ramais que chama um grupo de caixas de correio de voz e "
-"permite que você deixe uma mensagem para todos de uma vez."
-
 #: views/grid.php:19
 msgid "Default"
 msgstr "Padrão"
 
-#: functions.inc.php:281
+#: functions.inc.php:253
 msgid "Default Group Inclusion"
 msgstr "Inclusão de Grupo Padrão"
 
@@ -69,29 +57,17 @@ msgstr "Inclusão de Grupo Padrão"
 msgid "Default VMBlast Group"
 msgstr "Grupo VMBlast Padrão"
 
-#: functions.inc.php:284
+#: functions.inc.php:256
 msgid "Default VMblast Group"
 msgstr "Grupo VMblast Padrão"
 
-#: Vmblast.class.php:78
+#: Vmblast.class.php:72
 msgid "Delete"
 msgstr "Apagar"
 
 #: views/grid.php:18
 msgid "Description"
 msgstr "Descrição"
-
-#: install.php:60 install.php:74
-msgid "Done"
-msgstr "Concluído"
-
-#: install.php:79
-msgid "Dropping grplist.."
-msgstr "Esvaziando grplist..."
-
-#: install.php:97
-msgid "Dropping old grplist field.."
-msgstr "Apagando antigo campo grplist..."
 
 #: views/form.php:216
 msgid ""
@@ -110,7 +86,7 @@ msgstr ""
 msgid "Edit VMBlast Group"
 msgstr "Editar Grupo VMBlast"
 
-#: functions.inc.php:262
+#: functions.inc.php:234
 msgid "Exclude"
 msgstr "Excluir"
 
@@ -122,7 +98,7 @@ msgstr "Grupo"
 msgid "Group Description"
 msgstr "Descrição do Grupo"
 
-#: functions.inc.php:263
+#: functions.inc.php:235
 msgid "Include"
 msgstr "Incluir"
 
@@ -133,18 +109,6 @@ msgstr "Listar Grupos VM Blast"
 #: views/form.php:208
 msgid "No"
 msgstr "Não"
-
-#: install.php:107
-msgid "Not Needed"
-msgstr "Não é Necessário"
-
-#: install.php:53 install.php:67
-msgid "Not Required"
-msgstr "Não Requerido"
-
-#: install.php:103
-msgid "OK"
-msgstr "OK"
 
 #: views/form.php:151
 msgid "Optional Password"
@@ -168,7 +132,7 @@ msgstr "Forneça um título descritivo para este Grupo VMBlast."
 msgid "Read Group Number"
 msgstr "Ler o Número do Grupo"
 
-#: Vmblast.class.php:88
+#: Vmblast.class.php:82
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -180,7 +144,7 @@ msgstr ""
 "Selecione as caixas de correio de voz para adicionar a este grupo. Use a "
 "tecla Ctrl para selecionar várias."
 
-#: Vmblast.class.php:83
+#: Vmblast.class.php:77
 msgid "Submit"
 msgstr "Enviar"
 
@@ -190,14 +154,6 @@ msgstr ""
 "O número de usuários que discarão para as caixas de correio de voz neste "
 "Grupo VMBlast"
 
-#: install.php:49
-msgid "Upgrading vmblast to add audio_label field.."
-msgstr "Atualizando o vmblast para adicionar o campo audio_label..."
-
-#: install.php:63
-msgid "Upgrading vmblast to add password field.."
-msgstr "Atualizando o vmblast para adicionar o campo de senha..."
-
 #: views/bootnav.php:8
 msgid "VMBlast Group"
 msgstr "Grupo VMBlast"
@@ -206,7 +162,7 @@ msgstr "Grupo VMBlast"
 msgid "VMBlast Number"
 msgstr "Número VMBlast"
 
-#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
+#: page.vmblast.php:6
 msgid "Voicemail Blasting"
 msgstr "Correio de Voz Blasting"
 
@@ -223,7 +179,7 @@ msgstr "Grupo de Correio de Voz %s: %s"
 msgid "Voicemail Group: "
 msgstr "Grupo de Correio de Voz: "
 
-#: Vmblast.class.php:38
+#: Vmblast.class.php:34
 msgid "Warning! Extension"
 msgstr "Atenção! Ramal"
 
@@ -231,7 +187,7 @@ msgstr "Atenção! Ramal"
 msgid "Yes"
 msgstr "Sim"
 
-#: functions.inc.php:284
+#: functions.inc.php:256
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -249,18 +205,49 @@ msgstr ""
 "Você pode opcionalmente incluir uma senha para autenticar antes de fornecer "
 "acesso a esta lista de grupo de correio de voz."
 
-#: install.php:93
-msgid "error populating vmblast_groups table"
-msgstr "erro ao preencher a tabela vmblast_groups"
-
-#: install.php:101
-msgid "failed to drop field"
-msgstr "falha ao apagar campo"
-
-#: Vmblast.class.php:38
+#: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr "não é permitido para sua conta"
 
-#: install.php:96
-msgid "populated new table"
-msgstr "nova tabela preenchida"
+#~ msgid "Applications"
+#~ msgstr "Aplicações"
+
+#~ msgid ""
+#~ "Creates a group of extensions that calls a group of voicemail boxes and "
+#~ "allows you to leave a message for them all at once."
+#~ msgstr ""
+#~ "Cria um grupo de ramais que chama um grupo de caixas de correio de voz e "
+#~ "permite que você deixe uma mensagem para todos de uma vez."
+
+#~ msgid "Done"
+#~ msgstr "Concluído"
+
+#~ msgid "Dropping grplist.."
+#~ msgstr "Esvaziando grplist..."
+
+#~ msgid "Dropping old grplist field.."
+#~ msgstr "Apagando antigo campo grplist..."
+
+#~ msgid "Not Needed"
+#~ msgstr "Não é Necessário"
+
+#~ msgid "Not Required"
+#~ msgstr "Não Requerido"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Upgrading vmblast to add audio_label field.."
+#~ msgstr "Atualizando o vmblast para adicionar o campo audio_label..."
+
+#~ msgid "Upgrading vmblast to add password field.."
+#~ msgstr "Atualizando o vmblast para adicionar o campo de senha..."
+
+#~ msgid "error populating vmblast_groups table"
+#~ msgstr "erro ao preencher a tabela vmblast_groups"
+
+#~ msgid "failed to drop field"
+#~ msgstr "falha ao apagar campo"
+
+#~ msgid "populated new table"
+#~ msgstr "nova tabela preenchida"

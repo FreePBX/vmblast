@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-15 12:41-0800\n"
+"POT-Creation-Date: 2018-08-20 12:55-0400\n"
 "PO-Revision-Date: 2009-02-01 13:51+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,10 +31,6 @@ msgstr ""
 msgid "Add VMBlast Group"
 msgstr "添加语音邮件多播组"
 
-#: vmblast.i18n.php:6 vmblast.i18n.php:12
-msgid "Applications"
-msgstr ""
-
 #: views/form.php:46
 msgid "Audio Label"
 msgstr ""
@@ -46,17 +43,11 @@ msgstr "只播放“嘀”声——无确认"
 msgid "Conflicting Extensions"
 msgstr "分机号有冲突"
 
-#: vmblast.i18n.php:8
-msgid ""
-"Creates a group of extensions that calls a group of voicemail boxes and "
-"allows you to leave a message for them all at once."
-msgstr ""
-
 #: views/grid.php:19
 msgid "Default"
 msgstr ""
 
-#: functions.inc.php:281
+#: functions.inc.php:253
 msgid "Default Group Inclusion"
 msgstr "语音邮件小组默认成员"
 
@@ -64,28 +55,16 @@ msgstr "语音邮件小组默认成员"
 msgid "Default VMBlast Group"
 msgstr "默认语音邮件多播组"
 
-#: functions.inc.php:284
+#: functions.inc.php:256
 msgid "Default VMblast Group"
 msgstr "默认语音邮件多播组"
 
-#: Vmblast.class.php:78
+#: Vmblast.class.php:72
 msgid "Delete"
 msgstr ""
 
 #: views/grid.php:18
 msgid "Description"
-msgstr ""
-
-#: install.php:60 install.php:74
-msgid "Done"
-msgstr "完成"
-
-#: install.php:79
-msgid "Dropping grplist.."
-msgstr "正在删除grplist。。。"
-
-#: install.php:97
-msgid "Dropping old grplist field.."
 msgstr ""
 
 #: views/form.php:216
@@ -103,7 +82,7 @@ msgstr ""
 msgid "Edit VMBlast Group"
 msgstr "编辑语音邮件多播组"
 
-#: functions.inc.php:262
+#: functions.inc.php:234
 msgid "Exclude"
 msgstr "不包括"
 
@@ -115,7 +94,7 @@ msgstr ""
 msgid "Group Description"
 msgstr ""
 
-#: functions.inc.php:263
+#: functions.inc.php:235
 msgid "Include"
 msgstr "包括"
 
@@ -126,18 +105,6 @@ msgstr ""
 #: views/form.php:208
 msgid "No"
 msgstr ""
-
-#: install.php:107
-msgid "Not Needed"
-msgstr "不需要"
-
-#: install.php:53 install.php:67
-msgid "Not Required"
-msgstr "不需要"
-
-#: install.php:103
-msgid "OK"
-msgstr "完成"
 
 #: views/form.php:151
 msgid "Optional Password"
@@ -160,7 +127,7 @@ msgstr "为语音邮件多播组提供一个描述性的标题"
 msgid "Read Group Number"
 msgstr "播放小组号码"
 
-#: Vmblast.class.php:88
+#: Vmblast.class.php:82
 msgid "Reset"
 msgstr ""
 
@@ -170,21 +137,13 @@ msgid ""
 "multiple."
 msgstr ""
 
-#: Vmblast.class.php:83
+#: Vmblast.class.php:77
 msgid "Submit"
 msgstr ""
 
 #: views/form.php:114
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr "用户访问此语音邮件多播组中的语音邮箱时拨打的号码"
-
-#: install.php:49
-msgid "Upgrading vmblast to add audio_label field.."
-msgstr "正在升级语音邮件多播，正在添加audio_label字段。。。"
-
-#: install.php:63
-msgid "Upgrading vmblast to add password field.."
-msgstr "正在升级语音邮件多播，正在添加password字段。。。"
 
 #: views/bootnav.php:8
 msgid "VMBlast Group"
@@ -194,7 +153,7 @@ msgstr "语音邮件多播组"
 msgid "VMBlast Number"
 msgstr "语音邮件多播号码"
 
-#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
+#: page.vmblast.php:6
 msgid "Voicemail Blasting"
 msgstr ""
 
@@ -211,7 +170,7 @@ msgstr "语音邮件小组 %s：%s"
 msgid "Voicemail Group: "
 msgstr "语音邮件小组："
 
-#: Vmblast.class.php:38
+#: Vmblast.class.php:34
 msgid "Warning! Extension"
 msgstr "警告！你的帐户无法使用分机"
 
@@ -219,7 +178,7 @@ msgstr "警告！你的帐户无法使用分机"
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:284
+#: functions.inc.php:256
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -234,21 +193,36 @@ msgid ""
 "access to this group voicemail list."
 msgstr "你可以为访问此小组语音邮件列表设置可选的密码。"
 
-#: install.php:93
-msgid "error populating vmblast_groups table"
-msgstr "在填充vmblast_groups表时发生错误"
-
-#: install.php:101
-msgid "failed to drop field"
-msgstr "删除字段失败"
-
-#: Vmblast.class.php:38
+#: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr " 。"
 
-#: install.php:96
-msgid "populated new table"
-msgstr ""
+#~ msgid "Done"
+#~ msgstr "完成"
+
+#~ msgid "Dropping grplist.."
+#~ msgstr "正在删除grplist。。。"
+
+#~ msgid "Not Needed"
+#~ msgstr "不需要"
+
+#~ msgid "Not Required"
+#~ msgstr "不需要"
+
+#~ msgid "OK"
+#~ msgstr "完成"
+
+#~ msgid "Upgrading vmblast to add audio_label field.."
+#~ msgstr "正在升级语音邮件多播，正在添加audio_label字段。。。"
+
+#~ msgid "Upgrading vmblast to add password field.."
+#~ msgstr "正在升级语音邮件多播，正在添加password字段。。。"
+
+#~ msgid "error populating vmblast_groups table"
+#~ msgstr "在填充vmblast_groups表时发生错误"
+
+#~ msgid "failed to drop field"
+#~ msgstr "删除字段失败"
 
 #~ msgid "Audio Label:"
 #~ msgstr "语音标签："
