@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-15 12:41-0800\n"
-"PO-Revision-Date: 2018-07-27 10:00+0000\n"
+"PO-Revision-Date: 2018-08-25 12:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/vmblast/de/>\n"
 "Language: de_DE\n"
@@ -171,7 +171,7 @@ msgstr ""
 
 #: Vmblast.class.php:83
 msgid "Submit"
-msgstr ""
+msgstr "Absenden"
 
 #: views/form.php:114
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
