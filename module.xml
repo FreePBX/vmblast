@@ -2,7 +2,7 @@
     <rawname>vmblast</rawname>
     <repo>standard</repo>
     <name>Voicemail Blasting</name>
-    <version>15.0.2</version>
+    <version>15.0.3</version>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
     <licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -11,6 +11,7 @@
         Creates a group of extensions that calls a group of voicemail boxes and allows you to leave a message for them all at once.
     </description>
     <changelog>
+        *15.0.3* FREEPBX-18092 Fix ajax condition
 		*15.0.2* Packaging of ver 15.0.2
         *15.0.1* Backup 15.0
 	</changelog>
