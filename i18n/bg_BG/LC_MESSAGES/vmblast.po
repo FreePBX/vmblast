@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:55-0400\n"
+"POT-Creation-Date: 2018-08-31 18:56-0400\n"
 "PO-Revision-Date: 2018-07-04 06:28+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/vmblast/bg/>\n"
@@ -33,6 +33,10 @@ msgstr "Добави ГП Разпращане Група"
 msgid "Add VMBlast Group"
 msgstr "Добави ГП Разпращане Група"
 
+#: vmblast.i18n.php:6
+msgid "Applications"
+msgstr "Приложения"
+
 #: views/form.php:46
 msgid "Audio Label"
 msgstr "Аудио Етикет"
@@ -44,6 +48,14 @@ msgstr "Само бипкане - Без Потвърждение"
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "Вътрешни Линии в Конфликт"
+
+#: vmblast.i18n.php:8
+msgid ""
+"Creates a group of extensions that calls a group of voicemail boxes and "
+"allows you to leave a message for them all at once."
+msgstr ""
+"Създава група от вътрешни линии, която набира група от гласови пощи на които "
+"може да се оставя гласово съобщение едновременно."
 
 #: views/grid.php:19
 msgid "Default"
@@ -161,7 +173,7 @@ msgstr "ГП Разпращане Група"
 msgid "VMBlast Number"
 msgstr "ГП Разпращане Група Номер"
 
-#: page.vmblast.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr "Разпращане Гласова Поща"
 
@@ -207,16 +219,6 @@ msgstr ""
 #: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr "не е разрешена за вашия акаунт"
-
-#~ msgid "Applications"
-#~ msgstr "Приложения"
-
-#~ msgid ""
-#~ "Creates a group of extensions that calls a group of voicemail boxes and "
-#~ "allows you to leave a message for them all at once."
-#~ msgstr ""
-#~ "Създава група от вътрешни линии, която набира група от гласови пощи на "
-#~ "които може да се оставя гласово съобщение едновременно."
 
 #~ msgid "Done"
 #~ msgstr "Изпълнено"

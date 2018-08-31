@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:55-0400\n"
+"POT-Creation-Date: 2018-08-31 18:56-0400\n"
 "PO-Revision-Date: 2017-07-20 14:39+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -33,6 +33,10 @@ msgstr "Thêm nhóm VM Blast"
 msgid "Add VMBlast Group"
 msgstr "Thêm nhóm VMBlast"
 
+#: vmblast.i18n.php:6
+msgid "Applications"
+msgstr "Các ứng dụng"
+
 #: views/form.php:46
 msgid "Audio Label"
 msgstr "Nhãn âm thanh"
@@ -44,6 +48,14 @@ msgstr "Chỉ có tiếng bíp- Không có xác nhận"
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "Các máy nhánh xung đột"
+
+#: vmblast.i18n.php:8
+msgid ""
+"Creates a group of extensions that calls a group of voicemail boxes and "
+"allows you to leave a message for them all at once."
+msgstr ""
+"Tạo một nhóm máy nhánh gọi một nhóm các hộp thư thoại và cho phép bạn để lại "
+"tin nhắn cho chúng cùng một lúc."
 
 #: views/grid.php:19
 msgid "Default"
@@ -158,7 +170,7 @@ msgstr "Nhóm VMblast"
 msgid "VMBlast Number"
 msgstr "Số VMBlast"
 
-#: page.vmblast.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr "Voicemail Blasting ( Một Mô đun của PBX)"
 
@@ -204,16 +216,6 @@ msgstr ""
 #: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr "Tài khoản của bạn không được cho phép"
-
-#~ msgid "Applications"
-#~ msgstr "Các ứng dụng"
-
-#~ msgid ""
-#~ "Creates a group of extensions that calls a group of voicemail boxes and "
-#~ "allows you to leave a message for them all at once."
-#~ msgstr ""
-#~ "Tạo một nhóm máy nhánh gọi một nhóm các hộp thư thoại và cho phép bạn để "
-#~ "lại tin nhắn cho chúng cùng một lúc."
 
 #~ msgid "Done"
 #~ msgstr "Đã xong"

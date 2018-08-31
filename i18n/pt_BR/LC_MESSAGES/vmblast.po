@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:55-0400\n"
+"POT-Creation-Date: 2018-08-31 18:56-0400\n"
 "PO-Revision-Date: 2016-12-16 02:05+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -33,6 +33,10 @@ msgstr "Adicionar Grupo VM Blast"
 msgid "Add VMBlast Group"
 msgstr "Adicionar Grupo VMBlast"
 
+#: vmblast.i18n.php:6
+msgid "Applications"
+msgstr "Aplicações"
+
 #: views/form.php:46
 msgid "Audio Label"
 msgstr "Rótulo de Audio"
@@ -44,6 +48,14 @@ msgstr "Somente Bip - Sem Confirmação"
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "Ramais em Conflito"
+
+#: vmblast.i18n.php:8
+msgid ""
+"Creates a group of extensions that calls a group of voicemail boxes and "
+"allows you to leave a message for them all at once."
+msgstr ""
+"Cria um grupo de ramais que chama um grupo de caixas de correio de voz e "
+"permite que você deixe uma mensagem para todos de uma vez."
 
 #: views/grid.php:19
 msgid "Default"
@@ -162,7 +174,7 @@ msgstr "Grupo VMBlast"
 msgid "VMBlast Number"
 msgstr "Número VMBlast"
 
-#: page.vmblast.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr "Correio de Voz Blasting"
 
@@ -208,16 +220,6 @@ msgstr ""
 #: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr "não é permitido para sua conta"
-
-#~ msgid "Applications"
-#~ msgstr "Aplicações"
-
-#~ msgid ""
-#~ "Creates a group of extensions that calls a group of voicemail boxes and "
-#~ "allows you to leave a message for them all at once."
-#~ msgstr ""
-#~ "Cria um grupo de ramais que chama um grupo de caixas de correio de voz e "
-#~ "permite que você deixe uma mensagem para todos de uma vez."
 
 #~ msgid "Done"
 #~ msgstr "Concluído"

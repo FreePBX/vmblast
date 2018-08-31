@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:55-0400\n"
+"POT-Creation-Date: 2018-08-31 18:56-0400\n"
 "PO-Revision-Date: 2009-02-01 13:51+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -31,6 +31,10 @@ msgstr ""
 msgid "Add VMBlast Group"
 msgstr "添加语音邮件多播组"
 
+#: vmblast.i18n.php:6
+msgid "Applications"
+msgstr ""
+
 #: views/form.php:46
 msgid "Audio Label"
 msgstr ""
@@ -42,6 +46,12 @@ msgstr "只播放“嘀”声——无确认"
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "分机号有冲突"
+
+#: vmblast.i18n.php:8
+msgid ""
+"Creates a group of extensions that calls a group of voicemail boxes and "
+"allows you to leave a message for them all at once."
+msgstr ""
 
 #: views/grid.php:19
 msgid "Default"
@@ -153,7 +163,7 @@ msgstr "语音邮件多播组"
 msgid "VMBlast Number"
 msgstr "语音邮件多播号码"
 
-#: page.vmblast.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr ""
 

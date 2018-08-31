@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:55-0400\n"
+"POT-Creation-Date: 2018-08-31 18:56-0400\n"
 "PO-Revision-Date: 2018-07-27 10:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/vmblast/de/>\n"
@@ -32,6 +32,10 @@ msgstr ""
 msgid "Add VMBlast Group"
 msgstr ""
 
+#: vmblast.i18n.php:6
+msgid "Applications"
+msgstr "Anwendungen"
+
 #: views/form.php:46
 msgid "Audio Label"
 msgstr ""
@@ -43,6 +47,12 @@ msgstr ""
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "Widersprüchliche Erweiterungen"
+
+#: vmblast.i18n.php:8
+msgid ""
+"Creates a group of extensions that calls a group of voicemail boxes and "
+"allows you to leave a message for them all at once."
+msgstr ""
 
 #: views/grid.php:19
 msgid "Default"
@@ -151,7 +161,7 @@ msgstr ""
 msgid "VMBlast Number"
 msgstr ""
 
-#: page.vmblast.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr ""
 
@@ -192,9 +202,6 @@ msgstr ""
 #: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr ""
-
-#~ msgid "Applications"
-#~ msgstr "Anwendungen"
 
 #~ msgid "Done"
 #~ msgstr "Erledigt"

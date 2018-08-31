@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:55-0400\n"
+"POT-Creation-Date: 2018-08-31 18:56-0400\n"
 "PO-Revision-Date: 2014-02-19 22:51+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/vmblast/ja/>\n"
@@ -60,6 +60,10 @@ msgstr ""
 msgid "Add VMBlast Group"
 msgstr "VMブラストグループを追加"
 
+#: vmblast.i18n.php:6
+msgid "Applications"
+msgstr "アプリケーション"
+
 #: views/form.php:46
 msgid "Audio Label"
 msgstr ""
@@ -71,6 +75,14 @@ msgstr "ビープ音のみ - 確認なし"
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
+
+#: vmblast.i18n.php:8
+msgid ""
+"Creates a group of extensions that calls a group of voicemail boxes and "
+"allows you to leave a message for them all at once."
+msgstr ""
+"ボイスメールボックスのグループを呼び出す内線グループを作成し、グループ全員に"
+"同時にメッセージを残す機能を提供します。"
 
 #: views/grid.php:19
 msgid "Default"
@@ -186,7 +198,7 @@ msgstr "VMブラストグループ"
 msgid "VMBlast Number"
 msgstr "VMブラスト番号"
 
-#: page.vmblast.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr "ボイスメールブラスト"
 
@@ -232,16 +244,6 @@ msgstr ""
 #: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr "はあなたのアカウントに許可されていません"
-
-#~ msgid "Applications"
-#~ msgstr "アプリケーション"
-
-#~ msgid ""
-#~ "Creates a group of extensions that calls a group of voicemail boxes and "
-#~ "allows you to leave a message for them all at once."
-#~ msgstr ""
-#~ "ボイスメールボックスのグループを呼び出す内線グループを作成し、グループ全員"
-#~ "に同時にメッセージを残す機能を提供します。"
 
 #~ msgid "Done"
 #~ msgstr "実行済み"

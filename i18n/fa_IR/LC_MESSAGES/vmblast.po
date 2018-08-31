@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:55-0400\n"
+"POT-Creation-Date: 2018-08-31 18:56-0400\n"
 "PO-Revision-Date: 2016-10-08 12:44+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -33,6 +33,10 @@ msgstr "افزودن گروه VM Blast"
 msgid "Add VMBlast Group"
 msgstr "افزودن گروه VMBlast"
 
+#: vmblast.i18n.php:6
+msgid "Applications"
+msgstr "برنامه ها"
+
 #: views/form.php:46
 msgid "Audio Label"
 msgstr "برچسب صدا"
@@ -44,6 +48,14 @@ msgstr "بوق تنها - بدون تاییدیه"
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
 msgstr "تناقض داخلی ها"
+
+#: vmblast.i18n.php:8
+msgid ""
+"Creates a group of extensions that calls a group of voicemail boxes and "
+"allows you to leave a message for them all at once."
+msgstr ""
+"ایجاد گروهی از داخلی ها که به نام گروه صندوق صوتی شناخته می شوند و به شما "
+"اجازه ارسال یک پیام به همه اعضای گروه به صورت همزمان را می دهد."
 
 #: views/grid.php:19
 msgid "Default"
@@ -154,7 +166,7 @@ msgstr "گروه VMBlast"
 msgid "VMBlast Number"
 msgstr "شماره VMBlast"
 
-#: page.vmblast.php:6
+#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr "Voice mail Blasting"
 
@@ -199,16 +211,6 @@ msgstr ""
 #: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr "حساب شما این مجوز را ندارد"
-
-#~ msgid "Applications"
-#~ msgstr "برنامه ها"
-
-#~ msgid ""
-#~ "Creates a group of extensions that calls a group of voicemail boxes and "
-#~ "allows you to leave a message for them all at once."
-#~ msgstr ""
-#~ "ایجاد گروهی از داخلی ها که به نام گروه صندوق صوتی شناخته می شوند و به شما "
-#~ "اجازه ارسال یک پیام به همه اعضای گروه به صورت همزمان را می دهد."
 
 #~ msgid "Done"
 #~ msgstr "انجام شد"
