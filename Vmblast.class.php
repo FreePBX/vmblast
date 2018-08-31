@@ -118,7 +118,7 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 		return false;
 	}
 	public function ajaxHandler(){
-		if($_GET['command'] === 'jdata' && $_GET['jdata'] === 'grid'){
+		if($_GET['command'] === 'getJSON' && $_GET['jdata'] === 'grid'){
 			$default_group = $this->getDefault();
 			$ret = array();
 			$groups = $this->listVMBlast();
