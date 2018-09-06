@@ -88,7 +88,7 @@ foreach ($results as $result) {
 echo $usagehtml;
 ?>
 
-<form name="editGRP" class="fpbx-submit" action="" method="post" onsubmit="return checkGRP(editGRP);" data-fpbx-delete="<?php echo $delURL?>">
+<form name="editGRP" class="fpbx-submit" action="?display=vmblast" method="post" onsubmit="return checkGRP(editGRP);" data-fpbx-delete="<?php echo $delURL?>">
 <input type="hidden" name="display" value="vmblast">
 <input type="hidden" name="action" value="<?php echo ($extdisplay != '' ? 'editGRP' : 'addGRP'); ?>">
 <input type="hidden" name="view" value="form">

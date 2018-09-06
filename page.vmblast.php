@@ -11,7 +11,7 @@ $tabindex = 0;
 
 
 
-switch($request['view']){
+switch($_GET['view']){
 	case "form":
 		if($request['extdisplay'] != ''){
 			$heading .= ": "._("Edit VMBlast Group")." ".ltrim($request['extdisplay'],'GRP-');
