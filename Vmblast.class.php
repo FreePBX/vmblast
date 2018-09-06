@@ -139,14 +139,14 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 	}
 
 	public function setDefaultGroup($id){
-		$this->FreePBX->Database->prepare("REPLACE INTO admin (variable, value) VALUES (default_vmblast_grp, :grpnum)")
+		$this->FreePBX->Database->prepare("REPLACE INTO admin (`variable`, `value`) VALUES ('default_vmblast_grp', :grpnum)")
 			->execute([':grpnum' => $id]);
 		return $this;
 	}
 
 	public function clearDefaultGroup($id = ''){
 		$vars = [];
-		$sql = "DELETE FROM admin WHERE variable = default_vmblast_grp";
+		$sql = "DELETE FROM admin WHERE variable = 'default_vmblast_grp'";
 		if(!empty($id)){
 			$sql .= " AND value = :grpnum";
 			$vars = [':grpnum' => $id];
