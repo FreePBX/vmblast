@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-15 12:41-0800\n"
-"PO-Revision-Date: 2018-08-25 12:00+0000\n"
+"PO-Revision-Date: 2018-09-18 15:44+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/vmblast/de/>\n"
 "Language: de_DE\n"
@@ -132,7 +132,7 @@ msgstr ""
 
 #: install.php:53 install.php:67
 msgid "Not Required"
-msgstr ""
+msgstr "Nicht erforderlich"
 
 #: install.php:103
 msgid "OK"
@@ -212,7 +212,7 @@ msgstr ""
 
 #: Vmblast.class.php:38
 msgid "Warning! Extension"
-msgstr ""
+msgstr "Warnung! Nebenstelle"
 
 #: views/form.php:206
 msgid "Yes"
