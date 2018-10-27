@@ -1,28 +1,6 @@
-# This file is part of FreePBX.
-#
-# For licensing information, please see the file named LICENSE located in the module directory
-#
-# FreePBX language template for vmblast
-# Copyright (C) 2008-2016 Sangoma, Inc.
-#
-msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-31 18:56-0400\n"
-"PO-Revision-Date: 2018-07-27 10:00+0000\n"
-"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
-"Language-Team: German <http://*/projects/freepbx/vmblast/de/>\n"
-"Language: de_DE\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
-
 #: views/grid.php:20
 msgid "Actions"
-msgstr "Aktionen"
+msgstr ""
 
 #: views/bootnav.php:3 views/grid.php:5
 msgid "Add VM Blast Group"
@@ -34,7 +12,7 @@ msgstr ""
 
 #: vmblast.i18n.php:6
 msgid "Applications"
-msgstr "Anwendungen"
+msgstr ""
 
 #: views/form.php:46
 msgid "Audio Label"
@@ -46,7 +24,7 @@ msgstr ""
 
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
-msgstr "Widersprüchliche Erweiterungen"
+msgstr ""
 
 #: vmblast.i18n.php:8
 msgid ""
@@ -56,7 +34,7 @@ msgstr ""
 
 #: views/grid.php:19
 msgid "Default"
-msgstr "Standard"
+msgstr ""
 
 #: functions.inc.php:253
 msgid "Default Group Inclusion"
@@ -72,11 +50,11 @@ msgstr ""
 
 #: Vmblast.class.php:72
 msgid "Delete"
-msgstr "Löschen"
+msgstr ""
 
 #: views/grid.php:18
 msgid "Description"
-msgstr "Beschreibung"
+msgstr ""
 
 #: views/form.php:216
 msgid ""
@@ -92,19 +70,19 @@ msgstr ""
 
 #: functions.inc.php:234
 msgid "Exclude"
-msgstr "Ausschließen"
+msgstr ""
 
 #: views/grid.php:17
 msgid "Group"
-msgstr "Gruppe"
+msgstr ""
 
 #: views/form.php:126
 msgid "Group Description"
-msgstr "Beschreibung der Gruppe"
+msgstr ""
 
 #: functions.inc.php:235
 msgid "Include"
-msgstr "Einbinden"
+msgstr ""
 
 #: views/bootnav.php:2
 msgid "List VM Blast Groups"
@@ -112,7 +90,7 @@ msgstr ""
 
 #: views/form.php:208
 msgid "No"
-msgstr "Nein"
+msgstr ""
 
 #: views/form.php:151
 msgid "Optional Password"
@@ -135,15 +113,13 @@ msgstr ""
 
 #: Vmblast.class.php:82
 msgid "Reset"
-msgstr "Zurücksetzen"
+msgstr ""
 
 #: views/form.php:189
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
 "multiple."
 msgstr ""
-"Wählen Sie Voicemailboxen, die zu dieser Gruppe hinzugefügt werden sollen. "
-"Verwenden Sie die Strg-Taste, um mehrere auszuwählen."
 
 #: Vmblast.class.php:77
 msgid "Submit"
@@ -184,7 +160,7 @@ msgstr ""
 
 #: views/form.php:206
 msgid "Yes"
-msgstr "Ja"
+msgstr ""
 
 #: functions.inc.php:256
 msgid ""
@@ -202,9 +178,3 @@ msgstr ""
 #: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr ""
-
-#~ msgid "Done"
-#~ msgstr "Erledigt"
-
-#~ msgid "OK"
-#~ msgstr "OK"
