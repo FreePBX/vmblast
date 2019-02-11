@@ -3,7 +3,7 @@ namespace FreePBX\modules\Vmblast;
 use FreePBX\modules\Backup as Base;
 class Restore Extends Base\RestoreBase{
 	public function runRestore($jobid){
-		$configs = reset($this->getConfigs());
+		$configs = $this->getConfigs();
 		return $this->processData($configs);
 	}
 	public function processLegacy($pdo, $data, $tables, $unknownTables, $tmpfiledir){
