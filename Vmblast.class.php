@@ -45,11 +45,8 @@ class Vmblast implements \BMO {
 					if (!empty($usage_arr)) {
 						$conflict_url = framework_display_extension_usage_alert($usage_arr);
 					} else if (vmblast_add($account,$vmblast_list,$description,$audio_label,$password,$default_group)) {
-						//$request['action'] = 'delGRP';
-						$_REQUEST['view'] = 'form';
-						$_REQUEST['extdisplay'] = $account;
+						unset($_REQUEST['view']);
 						needreload();
-						//redirect_standard('extdisplay', 'view');
 					}
 				}
 
@@ -63,6 +60,7 @@ class Vmblast implements \BMO {
 				if ($action == 'editGRP') {
 					vmblast_del($account);
 					vmblast_add($account,$vmblast_list,$description,$audio_label,$password,$default_group);
+					unset($_REQUEST['view']);
 					needreload();
 				}
 			}
