@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-24 10:37+0530\n"
+"POT-Creation-Date: 2019-02-19 09:10+0530\n"
 "PO-Revision-Date: 2018-05-07 20:28+0000\n"
 "Last-Translator: Maurizio Longhitano <mlonghitano@teampower.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/vmblast/it/>\n"
@@ -72,7 +72,7 @@ msgstr "Gruppo Caselle Predefinito"
 msgid "Default VMblast Group"
 msgstr "Gruppo Caselle Predefinito"
 
-#: Vmblast.class.php:78
+#: Vmblast.class.php:76
 msgid "Delete"
 msgstr "Elimina"
 
@@ -166,7 +166,7 @@ msgstr "Titolo descrittivo per questo Gruppo di Caselle."
 msgid "Read Group Number"
 msgstr "Conferma Numero del Gruppo"
 
-#: Vmblast.class.php:88
+#: Vmblast.class.php:86
 msgid "Reset"
 msgstr "Reset"
 
@@ -178,7 +178,7 @@ msgstr ""
 "Selezione le caselle vocali da aggiungere a questo gruppo. Usa il tasto Ctrl "
 "per la selezione multipla."
 
-#: Vmblast.class.php:83
+#: Vmblast.class.php:81
 msgid "Submit"
 msgstr "Invia"
 

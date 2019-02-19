@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX vmblast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-24 10:37+0530\n"
+"POT-Creation-Date: 2019-02-19 09:10+0530\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -84,7 +84,7 @@ msgstr "Standard röstgrupp"
 msgid "Default VMblast Group"
 msgstr "Standardgrupp för Röstgrupper"
 
-#: Vmblast.class.php:78
+#: Vmblast.class.php:76
 msgid "Delete"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgstr "Skriv in en giltig beskrivning för denna röstgrupp"
 msgid "Read Group Number"
 msgstr "Läs upp gruppnumret"
 
-#: Vmblast.class.php:88
+#: Vmblast.class.php:86
 msgid "Reset"
 msgstr ""
 
@@ -187,7 +187,7 @@ msgid ""
 "multiple."
 msgstr ""
 
-#: Vmblast.class.php:83
+#: Vmblast.class.php:81
 msgid "Submit"
 msgstr ""
 

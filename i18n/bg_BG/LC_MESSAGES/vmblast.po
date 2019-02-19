@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-24 10:37+0530\n"
+"POT-Creation-Date: 2019-02-19 09:10+0530\n"
 "PO-Revision-Date: 2018-07-04 06:28+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/vmblast/bg/>\n"
@@ -73,7 +73,7 @@ msgstr "ГП Разпращане Група По-Подразбиране"
 msgid "Default VMblast Group"
 msgstr "ГП Група По-Подразбиране"
 
-#: Vmblast.class.php:78
+#: Vmblast.class.php:76
 msgid "Delete"
 msgstr "Изтрий"
 
@@ -167,7 +167,7 @@ msgstr "Дайте описващо наименование на тази ГП 
 msgid "Read Group Number"
 msgstr "Прочети Номера на Групата"
 
-#: Vmblast.class.php:88
+#: Vmblast.class.php:86
 msgid "Reset"
 msgstr "Изчисти"
 
@@ -179,7 +179,7 @@ msgstr ""
 "Изберете кутии за гласова поща, които да добавите към тази група. "
 "Използвайте клавиша Ctrl, за да изберете няколко."
 
-#: Vmblast.class.php:83
+#: Vmblast.class.php:81
 msgid "Submit"
 msgstr "Приеми"
 

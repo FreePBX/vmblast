@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-24 10:37+0530\n"
+"POT-Creation-Date: 2019-02-19 09:10+0530\n"
 "PO-Revision-Date: 2017-07-20 14:39+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -73,7 +73,7 @@ msgstr "Mặc định nhóm VMBlast"
 msgid "Default VMblast Group"
 msgstr "Mặc định nhóm VMblast"
 
-#: Vmblast.class.php:78
+#: Vmblast.class.php:76
 msgid "Delete"
 msgstr "Xóa"
 
@@ -167,7 +167,7 @@ msgstr "Cung cấp một tiêu đề mô tả cho nhóm VMBlast."
 msgid "Read Group Number"
 msgstr "Đọc số nhóm"
 
-#: Vmblast.class.php:88
+#: Vmblast.class.php:86
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -178,7 +178,7 @@ msgid ""
 msgstr ""
 "Chọn hộp thư thoại để thêm vào nhóm này. Sử dụng phím Ctrl để chọn nhiều hộp."
 
-#: Vmblast.class.php:83
+#: Vmblast.class.php:81
 msgid "Submit"
 msgstr "Gửi đi"
 
