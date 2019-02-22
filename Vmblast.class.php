@@ -181,10 +181,4 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 		$this->clearDefaultGroup($id);
 		return $this;
 	}
-	public function dumpSettings($pdo){
-		return [
-			'vmblast' => $pdo->query('SELECT * FROM vmblast')->fetchAll(PDO::FETCH_ASSOC),
-			'vmblast_groups' => $pdo->query('SELECT * FROM vmblast_groups')->fetchAll(PDO::FETCH_ASSOC),
-		];
-	}
 }
