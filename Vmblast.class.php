@@ -41,6 +41,7 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 					if (!empty($usage_arr)) {
 						$conflict_url = framework_display_extension_usage_alert($usage_arr);
 					} else if ($this->upsert($account,$vmblast_list,$description,$audio_label,$password,$default_group)) {
+						unset($_REQUEST['view']);
 						needreload();
 					}
 				}
@@ -54,7 +55,7 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 				//edit group - just delete and then re-add the extension
 				if ($action == 'editGRP') {
 					$this->upsert($account,$vmblast_list,$description,$audio_label,$password,$default_group);
-					needreload();
+					unset($_REQUEST['view']);
 				}
 			}
 		}
@@ -63,7 +64,7 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 		if ('form' !== $request['view']) {
 			return [];
 		}
-		
+
 		if($request['display'] === 'vmblast'){
 			$buttons = array(
 				'delete' => array(
@@ -88,13 +89,13 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 		}
 		return $buttons;
 	}
-	
+
 	public function getRightNav($request) {
 		if(isset($request['view']) && $request['view'] == 'form'){
 			return load_view(__DIR__."/views/bootnav.php",array());
 		}
 	}
-	
+
 	public function listVMBlast(){
 		$sql = "SELECT grpnum, description FROM vmblast ORDER BY grpnum";
 		$stmt = $this->FreePBX->Database->prepare($sql);
@@ -110,7 +111,7 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 		}
 		return null;
 	}
-	
+
 	public function ajaxRequest($command, &$setting) {
 		if($command === 'getJSON'){
 			return true;
@@ -154,7 +155,7 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 		$this->FreePBX->Database->prepare($sql)->execute($vars);
 		return $this;
 	}
-	
+
 	public function upsert($grpnum,$grplist,$description,$audio_label= -1, $password = '', $default_group=0){
 		$xtns = $grplist;
 		if(!is_array($grplist)) {
