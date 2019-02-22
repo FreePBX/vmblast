@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-31 18:56-0400\n"
+"POT-Creation-Date: 2019-02-21 23:39-0500\n"
 "PO-Revision-Date: 2014-02-19 22:51+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/vmblast/ja/>\n"
@@ -100,7 +100,7 @@ msgstr "デフォルトVMブラストグループ"
 msgid "Default VMblast Group"
 msgstr "デフォルトVMブラストグループ"
 
-#: Vmblast.class.php:72
+#: Vmblast.class.php:73
 msgid "Delete"
 msgstr ""
 
@@ -171,7 +171,7 @@ msgstr "このVMブラストグループへの説明タイトルを提供しま�
 msgid "Read Group Number"
 msgstr "グループ番号を読む"
 
-#: Vmblast.class.php:82
+#: Vmblast.class.php:83
 msgid "Reset"
 msgstr ""
 
@@ -181,7 +181,7 @@ msgid ""
 "multiple."
 msgstr ""
 
-#: Vmblast.class.php:77
+#: Vmblast.class.php:78
 msgid "Submit"
 msgstr ""
 

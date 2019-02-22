@@ -48,7 +48,7 @@ msgstr ""
 msgid "Default VMblast Group"
 msgstr ""
 
-#: Vmblast.class.php:72
+#: Vmblast.class.php:73
 msgid "Delete"
 msgstr ""
 
@@ -111,7 +111,7 @@ msgstr ""
 msgid "Read Group Number"
 msgstr ""
 
-#: Vmblast.class.php:82
+#: Vmblast.class.php:83
 msgid "Reset"
 msgstr ""
 
@@ -121,7 +121,7 @@ msgid ""
 "multiple."
 msgstr ""
 
-#: Vmblast.class.php:77
+#: Vmblast.class.php:78
 msgid "Submit"
 msgstr ""
 

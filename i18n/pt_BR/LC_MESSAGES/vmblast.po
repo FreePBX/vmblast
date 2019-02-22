@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-31 18:56-0400\n"
+"POT-Creation-Date: 2019-02-21 23:39-0500\n"
 "PO-Revision-Date: 2016-12-16 02:05+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -73,7 +73,7 @@ msgstr "Grupo VMBlast Padrão"
 msgid "Default VMblast Group"
 msgstr "Grupo VMblast Padrão"
 
-#: Vmblast.class.php:72
+#: Vmblast.class.php:73
 msgid "Delete"
 msgstr "Apagar"
 
@@ -144,7 +144,7 @@ msgstr "Forneça um título descritivo para este Grupo VMBlast."
 msgid "Read Group Number"
 msgstr "Ler o Número do Grupo"
 
-#: Vmblast.class.php:82
+#: Vmblast.class.php:83
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -156,7 +156,7 @@ msgstr ""
 "Selecione as caixas de correio de voz para adicionar a este grupo. Use a "
 "tecla Ctrl para selecionar várias."
 
-#: Vmblast.class.php:77
+#: Vmblast.class.php:78
 msgid "Submit"
 msgstr "Enviar"
 

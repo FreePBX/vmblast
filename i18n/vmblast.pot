@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-11 13:53-0500\n"
+"POT-Creation-Date: 2019-02-21 23:39-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgstr ""
 msgid "Default VMblast Group"
 msgstr ""
 
-#: Vmblast.class.php:72
+#: Vmblast.class.php:73
 msgid "Delete"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr ""
 msgid "Read Group Number"
 msgstr ""
 
-#: Vmblast.class.php:82
+#: Vmblast.class.php:83
 msgid "Reset"
 msgstr ""
 
@@ -142,7 +142,7 @@ msgid ""
 "multiple."
 msgstr ""
 
-#: Vmblast.class.php:77
+#: Vmblast.class.php:78
 msgid "Submit"
 msgstr ""
 

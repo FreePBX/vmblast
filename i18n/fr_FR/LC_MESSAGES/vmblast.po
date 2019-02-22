@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-31 18:56-0400\n"
+"POT-Creation-Date: 2019-02-21 23:39-0500\n"
 "PO-Revision-Date: 2016-02-04 23:06+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/vmblast/"
@@ -71,7 +71,7 @@ msgstr ""
 msgid "Default VMblast Group"
 msgstr ""
 
-#: Vmblast.class.php:72
+#: Vmblast.class.php:73
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -134,7 +134,7 @@ msgstr ""
 msgid "Read Group Number"
 msgstr ""
 
-#: Vmblast.class.php:82
+#: Vmblast.class.php:83
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -144,7 +144,7 @@ msgid ""
 "multiple."
 msgstr ""
 
-#: Vmblast.class.php:77
+#: Vmblast.class.php:78
 msgid "Submit"
 msgstr "Soumettre"
 
