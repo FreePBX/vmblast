@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-19 09:10+0530\n"
-"PO-Revision-Date: 2018-09-18 15:44+0000\n"
+"PO-Revision-Date: 2019-02-26 13:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/vmblast/de/>\n"
 "Language: de_DE\n"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
-msgstr "Widersprüchliche Erweiterungen"
+msgstr "Nebenstellenkonflikt"
 
 #: vmblast.i18n.php:8
 msgid ""
