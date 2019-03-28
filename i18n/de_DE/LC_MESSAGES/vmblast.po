@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 09:10+0530\n"
+"POT-Creation-Date: 2019-03-28 07:54+0530\n"
 "PO-Revision-Date: 2019-02-26 13:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/vmblast/de/>\n"
@@ -58,7 +58,7 @@ msgstr ""
 msgid "Default"
 msgstr "Standard"
 
-#: functions.inc.php:281
+#: functions.inc.php:253
 msgid "Default Group Inclusion"
 msgstr ""
 
@@ -66,29 +66,17 @@ msgstr ""
 msgid "Default VMBlast Group"
 msgstr ""
 
-#: functions.inc.php:284
+#: functions.inc.php:256
 msgid "Default VMblast Group"
 msgstr ""
 
-#: Vmblast.class.php:76
+#: Vmblast.class.php:73
 msgid "Delete"
 msgstr "Löschen"
 
 #: views/grid.php:18
 msgid "Description"
 msgstr "Beschreibung"
-
-#: install.php:60 install.php:74
-msgid "Done"
-msgstr "Erledigt"
-
-#: install.php:79
-msgid "Dropping grplist.."
-msgstr ""
-
-#: install.php:97
-msgid "Dropping old grplist field.."
-msgstr ""
 
 #: views/form.php:216
 msgid ""
@@ -102,7 +90,7 @@ msgstr ""
 msgid "Edit VMBlast Group"
 msgstr ""
 
-#: functions.inc.php:262
+#: functions.inc.php:234
 msgid "Exclude"
 msgstr "Ausschließen"
 
@@ -114,7 +102,7 @@ msgstr "Gruppe"
 msgid "Group Description"
 msgstr "Beschreibung der Gruppe"
 
-#: functions.inc.php:263
+#: functions.inc.php:235
 msgid "Include"
 msgstr "Einbinden"
 
@@ -125,18 +113,6 @@ msgstr ""
 #: views/form.php:208
 msgid "No"
 msgstr "Nein"
-
-#: install.php:107
-msgid "Not Needed"
-msgstr ""
-
-#: install.php:53 install.php:67
-msgid "Not Required"
-msgstr "Nicht erforderlich"
-
-#: install.php:103
-msgid "OK"
-msgstr "OK"
 
 #: views/form.php:151
 msgid "Optional Password"
@@ -157,7 +133,7 @@ msgstr ""
 msgid "Read Group Number"
 msgstr ""
 
-#: Vmblast.class.php:86
+#: Vmblast.class.php:83
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -169,20 +145,12 @@ msgstr ""
 "Wählen Sie Voicemailboxen, die zu dieser Gruppe hinzugefügt werden sollen. "
 "Verwenden Sie die Strg-Taste, um mehrere auszuwählen."
 
-#: Vmblast.class.php:81
+#: Vmblast.class.php:78
 msgid "Submit"
 msgstr "Absenden"
 
 #: views/form.php:114
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
-msgstr ""
-
-#: install.php:49
-msgid "Upgrading vmblast to add audio_label field.."
-msgstr ""
-
-#: install.php:63
-msgid "Upgrading vmblast to add password field.."
 msgstr ""
 
 #: views/bootnav.php:8
@@ -210,7 +178,7 @@ msgstr ""
 msgid "Voicemail Group: "
 msgstr ""
 
-#: Vmblast.class.php:38
+#: Vmblast.class.php:34
 msgid "Warning! Extension"
 msgstr "Warnung! Nebenstelle"
 
@@ -218,7 +186,7 @@ msgstr "Warnung! Nebenstelle"
 msgid "Yes"
 msgstr "Ja"
 
-#: functions.inc.php:284
+#: functions.inc.php:256
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default voicemail blast group when creating or editing. Choosing this option "
@@ -231,18 +199,15 @@ msgid ""
 "access to this group voicemail list."
 msgstr ""
 
-#: install.php:93
-msgid "error populating vmblast_groups table"
-msgstr ""
-
-#: install.php:101
-msgid "failed to drop field"
-msgstr ""
-
-#: Vmblast.class.php:38
+#: Vmblast.class.php:34
 msgid "is not allowed for your account"
 msgstr ""
 
-#: install.php:96
-msgid "populated new table"
-msgstr ""
+#~ msgid "Done"
+#~ msgstr "Erledigt"
+
+#~ msgid "Not Required"
+#~ msgstr "Nicht erforderlich"
+
+#~ msgid "OK"
+#~ msgstr "OK"
