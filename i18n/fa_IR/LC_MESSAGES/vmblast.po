@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 23:39-0500\n"
+"POT-Creation-Date: 2019-04-24 18:48-0400\n"
 "PO-Revision-Date: 2016-10-08 12:44+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -73,7 +73,7 @@ msgstr "گروه پیش فرض VMBlast"
 msgid "Default VMblast Group"
 msgstr "گروه پیش فرض VMblast"
 
-#: Vmblast.class.php:73
+#: Vmblast.class.php:74
 msgid "Delete"
 msgstr "حذف"
 
@@ -140,7 +140,7 @@ msgstr "ایجاد عنوان درست برای گروه VMBlast."
 msgid "Read Group Number"
 msgstr "خواندن شماره گروه"
 
-#: Vmblast.class.php:83
+#: Vmblast.class.php:84
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -150,7 +150,7 @@ msgid ""
 "multiple."
 msgstr "انتخاب صندوق میل صوتی برای افزودن گروه."
 
-#: Vmblast.class.php:78
+#: Vmblast.class.php:79
 msgid "Submit"
 msgstr "ارسال"
 

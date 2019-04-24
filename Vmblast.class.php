@@ -56,6 +56,7 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 				if ($action == 'editGRP') {
 					$this->upsert($account,$vmblast_list,$description,$audio_label,$password,$default_group);
 					unset($_REQUEST['view']);
+					needreload();
 				}
 			}
 		}

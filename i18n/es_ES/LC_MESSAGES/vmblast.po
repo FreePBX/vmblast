@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 23:39-0500\n"
+"POT-Creation-Date: 2019-04-24 18:48-0400\n"
 "PO-Revision-Date: 2016-12-11 01:59+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/vmblast/"
@@ -64,7 +64,7 @@ msgstr "Grupo VMBlast Por defecto"
 msgid "Default VMblast Group"
 msgstr "Grupo VMblast Por defecto"
 
-#: Vmblast.class.php:73
+#: Vmblast.class.php:74
 msgid "Delete"
 msgstr "Borrar"
 
@@ -135,7 +135,7 @@ msgstr "Provee una descripción para este Grupo VMBlast."
 msgid "Read Group Number"
 msgstr "Leer Número de Grupo"
 
-#: Vmblast.class.php:83
+#: Vmblast.class.php:84
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -147,7 +147,7 @@ msgstr ""
 "Seleccione buzones de correo de voz para agregar a este grupo. Utilice la "
 "tecla Ctrl para seleccionar varios."
 
-#: Vmblast.class.php:78
+#: Vmblast.class.php:79
 msgid "Submit"
 msgstr "Enviar"
 
