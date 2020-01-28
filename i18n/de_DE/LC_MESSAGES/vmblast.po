@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-19 09:10+0530\n"
-"PO-Revision-Date: 2019-08-07 13:00+0000\n"
-"Last-Translator: hammer125 <auswertung@mariner.at>\n"
+"PO-Revision-Date: 2020-01-29 11:00+0000\n"
+"Last-Translator: florian alberts <alberts@ar-systems.de>\n"
 "Language-Team: German <http://*/projects/freepbx/vmblast/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -99,6 +99,12 @@ msgid ""
 "default group in the Extensions (or Users) tab.<br />Making this group the "
 "default will uncheck the option from the current default group if specified."
 msgstr ""
+"Jedes PBX-System kann eine einzelne Standard-Voicemail-Blastgruppe haben. "
+"Falls angegeben, können Erweiterungen dieser Standardgruppe auf der "
+"Registerkarte \"Nebenstellen\" (oder \"Benutzer\") automatisch hinzugefügt ("
+"oder daraus entfernt) werden. <br/> Wenn Sie diese Gruppe als Standard "
+"festlegen, wird die Option in der aktuellen Standardgruppe deaktiviert, "
+"sofern angegeben."
 
 #: page.vmblast.php:17
 msgid "Edit VMBlast Group"
@@ -150,6 +156,9 @@ msgid ""
 "proper voice mail group number, or have the system simply read the group "
 "number."
 msgstr ""
+"Spielen Sie diese Nachricht für den Anrufer ab, damit dieser bestätigen "
+"kann, dass er die richtige Voicemail-Gruppennummer gewählt hat, oder lassen "
+"Sie das System einfach die Gruppennummer lesen."
 
 #: views/form.php:138
 msgid "Provide a descriptive title for this VMBlast Group."
@@ -178,6 +187,7 @@ msgstr "Absenden"
 #: views/form.php:114
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr ""
+"Die Nummer, die Benutzer für Voicemail-Boxen in dieser VMBlast-Gruppe wählen"
 
 #: install.php:49
 msgid "Upgrading vmblast to add audio_label field.."
@@ -196,8 +206,9 @@ msgid "VMBlast Number"
 msgstr "VMBlast-Nummer"
 
 #: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
+#, fuzzy
 msgid "Voicemail Blasting"
-msgstr ""
+msgstr "Voicemail Blasting"
 
 #: views/form.php:175
 msgid "Voicemail Box List"
@@ -226,6 +237,10 @@ msgid ""
 "default voicemail blast group when creating or editing. Choosing this option "
 "will be ignored if the user does not have a voicemail box."
 msgstr ""
+"Sie können diese Nebenstelle / diesen Benutzer beim Erstellen oder "
+"Bearbeiten als Teil der Standard-Voicemail-Blastgruppe ein- oder "
+"ausschließen. Die Auswahl dieser Option wird ignoriert, wenn der Benutzer "
+"keine Voicemail-Box hat."
 
 #: views/form.php:163
 msgid ""
