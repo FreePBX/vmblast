@@ -54,7 +54,7 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 
 				//edit group - just delete and then re-add the extension
 				if ($action == 'editGRP') {
-					$this->upsert($account,$vmblast_list,$description,$audio_label,$password,$default_group);
+					$this->upsert($account,$vmblast_list,$description,$audio_label,$password,$default_group,$action);
 					unset($_REQUEST['view']);
 					needreload();
 				}
@@ -157,11 +157,16 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 		return $this;
 	}
 
-	public function upsert($grpnum,$grplist,$description,$audio_label= -1, $password = '', $default_group=0){
+	public function upsert($grpnum,$grplist,$description,$audio_label= -1, $password = '', $default_group=0, $action=''){
 		$xtns = $grplist;
 		if(!is_array($grplist)) {
 			$xtns = explode("\n", $grplist);
 		}
+
+		if($action=editGRP){
+			$this->FreePBX->Database->prepare("DELETE FROM vmblast_groups WHERE grpnum = :grpnum")->execute([':grpnum' => $grpnum]);
+		}
+
 		$stmt = $this->FreePBX->Database->prepare('REPLACE INTO vmblast_groups (grpnum, ext) values (:grpnum,:ext)');
 		foreach ($xtns as $key => $value) {
 			$stmt->execute([':grpnum' => $grpnum, 'ext' => trim($value)]);
