@@ -10,6 +10,7 @@
 	<description>
 		Creates a group of extensions that calls a group of voicemail boxes and allows you to leave a message for them all at once.
 	</description>
+  	<more-info>https://wiki.freepbx.org/display/F2/Voicemail+Blasting+Module</more-info>
 	<changelog>
 		*13.0.11* Fixing FREEPBX-17867 
 		*13.0.10* FREEPBX-18344 After adding/editing a Voicemail Blasting entry the page is not redirecting to list page 
