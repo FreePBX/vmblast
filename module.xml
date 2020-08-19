@@ -2,7 +2,7 @@
 	<rawname>vmblast</rawname>
 	<repo>standard</repo>
 	<name>Voicemail Blasting</name>
-	<version>13.0.11</version>
+	<version>13.0.12</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -12,6 +12,7 @@
 	</description>
   	<more-info>https://wiki.freepbx.org/display/F2/Voicemail+Blasting+Module</more-info>
 	<changelog>
+		*13.0.12* Packaging of ver 13.0.12
 		*13.0.11* Fixing FREEPBX-17867 
 		*13.0.10* FREEPBX-18344 After adding/editing a Voicemail Blasting entry the page is not redirecting to list page 
 		*13.0.9* Fixing FREEPBX-18869 
