@@ -2,7 +2,7 @@
     <rawname>vmblast</rawname>
     <repo>standard</repo>
     <name>Voicemail Blasting</name>
-    <version>15.0.11.4</version>
+    <version>15.0.11.5</version>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
     <licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,7 +10,9 @@
     <description>
         Creates a group of extensions that calls a group of voicemail boxes and allows you to leave a message for them all at once.
     </description>
+    <more-info>https://wiki.freepbx.org/display/F2/Voicemail+Blasting+Module</more-info>
     <changelog>
+		*15.0.11.5* Packaging of ver 15.0.11.5
 		*15.0.11.4* FREEPBX-21447 
 		*15.0.11.3* Related to FREEPBX-20414: removed $jobid from runRestore() 
 		*15.0.11.2* FREEPBX-20379 Restoring legacy(FreePBX 14) Backup into FreePBX 15 system is not restoring Voicemail Blasting entries. 
