@@ -163,7 +163,7 @@ class Vmblast extends FreePBX_Helpers implements BMO {
 			$xtns = explode("\n", $grplist);
 		}
 
-		if($action=editGRP){
+		if ($action = 'editGRP') {
 			$this->FreePBX->Database->prepare("DELETE FROM vmblast_groups WHERE grpnum = :grpnum")->execute([':grpnum' => $grpnum]);
 		}
 
