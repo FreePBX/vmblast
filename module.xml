@@ -2,7 +2,7 @@
     <rawname>vmblast</rawname>
     <repo>standard</repo>
     <name>Voicemail Blasting</name>
-    <version>15.0.11.7</version>
+    <version>15.0.11.8</version>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
     <licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -12,6 +12,7 @@
     </description>
     <more-info>https://wiki.freepbx.org/display/FPG/Voicemail+Blasting+Module</more-info>
     <changelog>
+		*15.0.11.8* FREEI-3832 FreePBX 16 - Restoring freepbx 15 system backup to 16 is not restoring VM blast group "Default" option 
 		*15.0.11.7* FREEPBX-22717 
 		*15.0.11.6* Packaging of ver 15.0.11.6
 		*15.0.11.5* Packaging of ver 15.0.11.5
