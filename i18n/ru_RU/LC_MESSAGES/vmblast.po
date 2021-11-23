@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-19 09:10+0530\n"
-"PO-Revision-Date: 2021-11-23 08:01+0000\n"
+"PO-Revision-Date: 2021-11-24 11:00+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/vmblast/"
 "ru/>\n"
@@ -74,11 +74,11 @@ msgstr "Дефолтная группа VMblast"
 
 #: Vmblast.class.php:76
 msgid "Delete"
-msgstr ""
+msgstr "Удалить"
 
 #: views/grid.php:18
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 #: install.php:60 install.php:74
 msgid "Done"
