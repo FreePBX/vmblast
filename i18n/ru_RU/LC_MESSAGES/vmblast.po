@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-19 09:10+0530\n"
-"PO-Revision-Date: 2021-12-03 08:00+0000\n"
+"PO-Revision-Date: 2021-12-08 11:02+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/vmblast/"
 "ru/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: views/grid.php:20
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: views/bootnav.php:3 views/grid.php:5
 msgid "Add VM Blast Group"
@@ -169,7 +169,7 @@ msgstr "Сообщать групповой номер"
 
 #: Vmblast.class.php:86
 msgid "Reset"
-msgstr ""
+msgstr "Сброс"
 
 #: views/form.php:189
 msgid ""
@@ -257,7 +257,7 @@ msgstr "не удалось сбросить поле"
 
 #: Vmblast.class.php:38
 msgid "is not allowed for your account"
-msgstr "не доступен для вашего аккаунта"
+msgstr "не разрешено для вашего профиля"
 
 #: install.php:96
 msgid "populated new table"
