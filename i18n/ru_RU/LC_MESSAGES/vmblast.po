@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-19 09:10+0530\n"
-"PO-Revision-Date: 2021-12-08 11:02+0000\n"
+"PO-Revision-Date: 2022-04-20 09:56+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/vmblast/"
 "ru/>\n"
@@ -26,7 +26,7 @@ msgstr "Действия"
 
 #: views/bootnav.php:3 views/grid.php:5
 msgid "Add VM Blast Group"
-msgstr ""
+msgstr "Добавить группу VM Blast"
 
 #: page.vmblast.php:19
 msgid "Add VMBlast Group"
@@ -38,7 +38,7 @@ msgstr "Приложения"
 
 #: views/form.php:46
 msgid "Audio Label"
-msgstr ""
+msgstr "Аудио метка"
 
 #: views/form.php:52
 msgid "Beep Only - No Confirmation"
@@ -115,11 +115,11 @@ msgstr "Исключить"
 
 #: views/grid.php:17
 msgid "Group"
-msgstr ""
+msgstr "Группа"
 
 #: views/form.php:126
 msgid "Group Description"
-msgstr ""
+msgstr "Описание группы"
 
 #: functions.inc.php:263
 msgid "Include"
@@ -127,11 +127,11 @@ msgstr "Включить"
 
 #: views/bootnav.php:2
 msgid "List VM Blast Groups"
-msgstr ""
+msgstr "Список групп VM Blast"
 
 #: views/form.php:208
 msgid "No"
-msgstr ""
+msgstr "Нет"
 
 #: install.php:107
 msgid "Not Needed"
@@ -176,6 +176,8 @@ msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
 "multiple."
 msgstr ""
+"Выберите ящики голосовой почты для добавления в эту группу. Используйте "
+"клавишу Ctrl для выбора нескольких."
 
 #: Vmblast.class.php:81
 msgid "Submit"
@@ -209,7 +211,7 @@ msgstr "Групповая голосовая почта"
 
 #: views/form.php:175
 msgid "Voicemail Box List"
-msgstr ""
+msgstr "Список ящиков голосовой почты"
 
 #: functions.inc.php:39
 #, php-format
@@ -226,7 +228,7 @@ msgstr "Внимание! Внутренний номер"
 
 #: views/form.php:206
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #: functions.inc.php:284
 msgid ""
