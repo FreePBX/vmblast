@@ -32,7 +32,12 @@
             <field name="ext" type="string" length="25" default="" primarykey="true"/>
         </table>
     </database>
-
+    <hooks>
+		<framework class="Destinations" namespace="FreePBX">
+			<method callingMethod="getModuleDestinations" class="Vmblast" namespace="FreePBX\modules">destinations</method>
+      		<method callingMethod="getModuleDestinationInfo" class="Vmblast" namespace="FreePBX\modules">destinations_getdestinfo</method>
+		</framework>
+	</hooks>
     <popovers>
         <vmblast>
             <display>vmblast</display>
