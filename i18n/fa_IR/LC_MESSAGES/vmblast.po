@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 18:48-0400\n"
+"POT-Creation-Date: 2023-02-07 01:15+0000\n"
 "PO-Revision-Date: 2016-10-08 12:44+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,15 +21,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: views/grid.php:20
+#: views/view.grid.php:18
 msgid "Actions"
 msgstr "عملیات"
 
-#: views/bootnav.php:3 views/grid.php:5
+#: views/rnav.php:3
+msgid "Add New"
+msgstr ""
+
+#: views/view.grid.php:2
 msgid "Add VM Blast Group"
 msgstr "افزودن گروه VM Blast"
 
-#: page.vmblast.php:19
+#: views/page.main.php:14
 msgid "Add VMBlast Group"
 msgstr "افزودن گروه VMBlast"
 
@@ -37,15 +41,27 @@ msgstr "افزودن گروه VMBlast"
 msgid "Applications"
 msgstr "برنامه ها"
 
-#: views/form.php:46
+#: assets/js/vmblast.js:33
+msgid "Are you sure you want to delete ("
+msgstr ""
+
+#: views/view.form.php:54
 msgid "Audio Label"
 msgstr "برچسب صدا"
 
-#: views/form.php:52
+#: views/view.form.php:60
 msgid "Beep Only - No Confirmation"
 msgstr "بوق تنها - بدون تاییدیه"
 
-#: page.vmblast.php:30
+#: Vmblast.class.php:249
+msgid "Change Successfully"
+msgstr ""
+
+#: Vmblast.class.php:254
+msgid "Command not found!"
+msgstr ""
+
+#: views/page.main.php:28
 msgid "Conflicting Extensions"
 msgstr "تناقض داخلی ها"
 
@@ -57,31 +73,23 @@ msgstr ""
 "ایجاد گروهی از داخلی ها که به نام گروه صندوق صوتی شناخته می شوند و به شما "
 "اجازه ارسال یک پیام به همه اعضای گروه به صورت همزمان را می دهد."
 
-#: views/grid.php:19
+#: views/view.grid.php:17
 msgid "Default"
 msgstr "پیش فرض"
 
-#: functions.inc.php:253
-msgid "Default Group Inclusion"
-msgstr "ظرفیت پیش فرض گروه"
-
-#: views/form.php:201
+#: views/view.form.php:205
 msgid "Default VMBlast Group"
 msgstr "گروه پیش فرض VMBlast"
 
-#: functions.inc.php:256
-msgid "Default VMblast Group"
-msgstr "گروه پیش فرض VMblast"
-
-#: Vmblast.class.php:74
+#: Vmblast.class.php:143
 msgid "Delete"
 msgstr "حذف"
 
-#: views/grid.php:18
+#: views/view.grid.php:16
 msgid "Description"
 msgstr "توضیحات"
 
-#: views/form.php:216
+#: views/view.form.php:220
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -93,124 +101,178 @@ msgstr ""
 "default group in the Extensions (or Users) tab.<br />Making this group the "
 "default will uncheck the option from the current default group if specified."
 
-#: page.vmblast.php:17
+#: views/page.main.php:10
 msgid "Edit VMBlast Group"
 msgstr "ویرایش گروه VMBlast"
 
-#: functions.inc.php:234
-msgid "Exclude"
-msgstr "مانع شدن"
-
-#: views/grid.php:17
+#: views/view.grid.php:15
 msgid "Group"
 msgstr "گروه"
 
-#: views/form.php:126
+#: views/view.form.php:130
 msgid "Group Description"
 msgstr "شرح گروه"
 
-#: functions.inc.php:235
-msgid "Include"
-msgstr "ورود"
+#: assets/js/vmblast.js:101
+msgid "Group numbers with more than one digit cannot begin with 0"
+msgstr ""
 
-#: views/bootnav.php:2
-msgid "List VM Blast Groups"
-msgstr "فهرست گروه های VM Blast"
+#: assets/js/vmblast.js:100
+msgid "Invalid Group Number specified"
+msgstr ""
 
-#: views/form.php:208
+#: views/rnav.php:2
+msgid "List"
+msgstr ""
+
+#: assets/js/vmblast.js:34
+msgid "NO"
+msgstr ""
+
+#: Vmblast.class.php:228 Vmblast.class.php:242 assets/js/vmblast.js:91
+msgid "Necessary data is missing!"
+msgstr ""
+
+#: views/view.form.php:212
 msgid "No"
 msgstr "خیر"
 
-#: views/form.php:151
+#: views/view.form.php:155
 msgid "Optional Password"
 msgstr "پسورد اختیاری"
 
-#: views/form.php:62
+#: Vmblast.class.php:125
+#, php-format
+msgid "Page Not Found (%s)!!!!"
+msgstr ""
+
+#: views/view.form.php:70
 msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
 "number."
 msgstr "پخش آهنگ که کاربر تشخیص دهد شماره گروه میل صوتی درستی را گرفته."
 
-#: views/form.php:138
+#: assets/js/vmblast.js:103
+msgid "Please enter a valid Group Description"
+msgstr ""
+
+#: assets/js/vmblast.js:104
+msgid "Please enter a valid numeric password, only numbers are allowed"
+msgstr ""
+
+#: assets/js/vmblast.js:102
+msgid "Please enter an extension list."
+msgstr ""
+
+#: views/view.form.php:142
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr "ایجاد عنوان درست برای گروه VMBlast."
 
-#: views/form.php:51
+#: views/view.form.php:59
 msgid "Read Group Number"
 msgstr "خواندن شماره گروه"
 
-#: Vmblast.class.php:84
+#: Vmblast.class.php:153
 msgid "Reset"
 msgstr "بازنشانی"
 
-#: views/form.php:189
+#: views/view.form.php:193
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
 "multiple."
 msgstr "انتخاب صندوق میل صوتی برای افزودن گروه."
 
-#: Vmblast.class.php:79
+#: Vmblast.class.php:148
 msgid "Submit"
 msgstr "ارسال"
 
-#: views/form.php:114
+#: Vmblast.class.php:234
+msgid "Successfully Removed"
+msgstr ""
+
+#: views/view.form.php:118
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr "شماره که کاربران برای تماس با صندوق میل صوتی  در این گروه VMBlast"
 
-#: views/bootnav.php:8
+#: views/rnav.php:8
 msgid "VMBlast Group"
 msgstr "گروه VMBlast"
 
-#: views/form.php:102
+#: views/view.form.php:106
 msgid "VMBlast Number"
 msgstr "شماره VMBlast"
 
-#: page.vmblast.php:6 vmblast.i18n.php:4 vmblast.i18n.php:10
+#: views/page.main.php:2 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr "Voice mail Blasting"
 
-#: views/form.php:175
+#: views/view.form.php:179
 msgid "Voicemail Box List"
 msgstr "فهرست صندوق پیام صوتی"
 
-#: functions.inc.php:39
+#: Vmblast.class.php:489
 #, php-format
 msgid "Voicemail Group %s: %s"
 msgstr "گروه پیام صوتی %s:%s"
 
-#: functions.inc.php:138
-msgid "Voicemail Group: "
-msgstr "گروه پیام صوتی ： "
+#: Vmblast.class.php:588
+#, php-format
+msgid "Voicemail Group: %s"
+msgstr ""
 
-#: Vmblast.class.php:34
-msgid "Warning! Extension"
-msgstr "هشدار! مقصد"
+#: Vmblast.class.php:67
+#, php-format
+msgid "Warning! Extension %s is not allowed for your account."
+msgstr ""
 
-#: views/form.php:206
+#: assets/js/vmblast.js:34
+msgid "YES"
+msgstr ""
+
+#: views/view.form.php:210
 msgid "Yes"
 msgstr "بله"
 
-#: functions.inc.php:256
-msgid ""
-"You can include or exclude this extension/user from being part of the "
-"default voicemail blast group when creating or editing. Choosing this option "
-"will be ignored if the user does not have a voicemail box."
-msgstr ""
-"You can include or exclude this extension/user from being part of the "
-"default voicemail blast group when creating or editing. Choosing this option "
-"will be ignored if the user does not have a voicemail box ."
-
-#: views/form.php:163
+#: views/view.form.php:167
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
 msgstr ""
 "شما میتوانید کلمه عبور را قبل از دسترسی به فهرست گروه میل صوتی تولید کنید."
 
-#: Vmblast.class.php:34
-msgid "is not allowed for your account"
-msgstr "حساب شما این مجوز را ندارد"
+#~ msgid "Default Group Inclusion"
+#~ msgstr "ظرفیت پیش فرض گروه"
+
+#~ msgid "Default VMblast Group"
+#~ msgstr "گروه پیش فرض VMblast"
+
+#~ msgid "Exclude"
+#~ msgstr "مانع شدن"
+
+#~ msgid "Include"
+#~ msgstr "ورود"
+
+#~ msgid "List VM Blast Groups"
+#~ msgstr "فهرست گروه های VM Blast"
+
+#~ msgid "Voicemail Group: "
+#~ msgstr "گروه پیام صوتی ： "
+
+#~ msgid "Warning! Extension"
+#~ msgstr "هشدار! مقصد"
+
+#~ msgid ""
+#~ "You can include or exclude this extension/user from being part of the "
+#~ "default voicemail blast group when creating or editing. Choosing this "
+#~ "option will be ignored if the user does not have a voicemail box."
+#~ msgstr ""
+#~ "You can include or exclude this extension/user from being part of the "
+#~ "default voicemail blast group when creating or editing. Choosing this "
+#~ "option will be ignored if the user does not have a voicemail box ."
+
+#~ msgid "is not allowed for your account"
+#~ msgstr "حساب شما این مجوز را ندارد"
 
 #~ msgid "Done"
 #~ msgstr "انجام شد"
