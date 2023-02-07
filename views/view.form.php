@@ -1,38 +1,46 @@
 <?php
-//	License for all code of this FreePBX module can be found in the license file inside the module directory
-//	Copyright 2015 Sangoma Technologies.
-//
-extract($request, EXTR_SKIP);
-if ($extdisplay != '') {
+$extdisplay = empty($request['extdisplay']) ? '' 	: $request['extdisplay'];
+$typeForm 	= empty($extdisplay) 			? 'new' : 'edit';
+
+if($typeForm == 'edit')
+{
 	// We need to populate grplist with the existing extension list.
-	$thisgrp = vmblast_get($extdisplay);
-	$grplist     = $thisgrp['grplist'];
-	$description = $thisgrp['description'];
-	$audio_label = $thisgrp['audio_label'];
-	$password    = $thisgrp['password'];
-	$default_group = $thisgrp['default_group'];
+	$thisgrp 	 	= $vmblast->vmblast_get($extdisplay);
+	$grplist     	= $thisgrp['grplist'];
+	$description 	= htmlspecialchars($thisgrp['description'], ENT_COMPAT | ENT_HTML401, "UTF-8");
+	$audio_label 	= $thisgrp['audio_label'];
+	$password    	= $thisgrp['password'];
+	$default_group	= $thisgrp['default_group'];
 	unset($thisgrp);
-	$usage_list = framework_display_destination_usage(vmblast_getdest($extdisplay));
-	if (!empty($usage_list)) {
+
+	$usage_list = $vmblast->hook_destinations_usageArray($extdisplay);
+	if (!empty($usage_list))
+	{
 		$usagehtml = '<div class="well">';
 		$usagehtml .= '<h3>'. $usage_list['text'] . '</h3>';
 		$usagehtml .= '<p>' . $usage_list['tooltip'] . '</p>';
 		$usagehtml .= '</div>';
 	}
 	$delURL='?display=vmblast&action=delGRP&account='.$extdisplay;
-}else{
+}
+else
+{
 	$grplist = array();
 	$strategy = '';
 	$ringing = '';
 	$delURL ='';
 }
-if(function_exists('recordings_list')) {
+
+if (function_exists('recordings_list'))
+{
 	$tresults = recordings_list();
 	$default = (isset($audio_label) ? $audio_label : -1);
 	$alopts = '';
-	if (isset($tresults[0])) {
-		foreach ($tresults as $tresult) {
-			$alopts .= '<option value="'.$tresult[0].'" '.($tresult[0] == $default ? ' SELECTED' : '').'>'.$tresult[1]."</option>\n";
+	if (isset($tresults[0]))
+	{
+		foreach ($tresults as $tresult)
+		{
+			$alopts .= sprintf('<option value="%s" %s>%s</option>', $tresult[0], ($tresult[0] == $default ? 'SELECTED' : ''), $tresult[1]);
 		}
 	}
 	$alabelhtml ='
@@ -65,32 +73,28 @@ if(function_exists('recordings_list')) {
 		</div>
 		<!--END Audio Label-->
 	';
-}else{
-	$default = (isset($audio_label) ? $audio_label : -1);
-	$alabelhtml = '<input type="hidden" name="audio_label" value="'.$default.'">';
+}
+else
+{
+	$default 	= (isset($audio_label) ? $audio_label : -1);
+	$alabelhtml = sprintf('<input type="hidden" name="audio_label" value="%s">', $default);
 }
 
-$results = core_users_list();
-if (!is_array($results)){
-	$results = array();
-}
-foreach ($results as $result) {
-	if ($result[2] != 'novm') {
-		$extenlopts .= '<option value="'.$result[0].'" ';
-		if (array_search($result[0], $grplist) !== false){
-			$extenlopts .= ' SELECTED ';
-		}
-		$extenlopts .= '>'.$result[0].' ('.$result[1].')</option>';
+$extenlopts = "";
+foreach ($vmblast->hook_core_users_list() as $result)
+{
+	if ($result[2] != 'novm')
+	{
+		$extenlopts .= sprintf('<option value="%s" %s>%s (%s)</option>', $result[0], ((array_search($result[0], $grplist) !== false) ? 'SELECTED' : ''), $result[0], $result[1]);
 	}
 }
-
 
 echo $usagehtml;
 ?>
 
 <form name="editGRP" class="fpbx-submit" action="?display=vmblast" method="post" onsubmit="return checkGRP(editGRP);" data-fpbx-delete="<?php echo $delURL?>">
 <input type="hidden" name="display" value="vmblast">
-<input type="hidden" name="action" value="<?php echo ($extdisplay != '' ? 'editGRP' : 'addGRP'); ?>">
+<input type="hidden" name="action" value="<?php echo ($typeForm == 'edit' ? 'editGRP' : 'addGRP'); ?>">
 <input type="hidden" name="view" value="form">
 <!--VMBlast Number-->
 <div class="element-container">
@@ -103,7 +107,7 @@ echo $usagehtml;
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="account"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="text" class="form-control" id="account" name="account" value="<?php  echo $extdisplay; ?>" <?php echo (empty($extdisplay)?'':'readonly')?>>
+						<input type="text" class="form-control" id="account" name="account" value="<?php echo $extdisplay; ?>" <?php echo (empty($extdisplay) ? '' : 'readonly')?>>
 					</div>
 				</div>
 			</div>
@@ -127,7 +131,7 @@ echo $usagehtml;
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="text" class="form-control maxlen" maxlength="35" id="description" name="description" value="<?php echo htmlspecialchars($description,ENT_COMPAT | ENT_HTML401, "UTF-8"); ?>">
+						<input type="text" class="form-control maxlen" maxlength="35" id="description" name="description" value="<?php echo $description; ?>">
 					</div>
 				</div>
 			</div>
@@ -152,7 +156,7 @@ echo $usagehtml;
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="password"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="password" class="form-control toggle-password clicktoedit" id="password" name="password" value="<?php echo $password ?>">
+						<input type="password" class="form-control toggle-password clicktoedit maxlen" maxlength="20" id="password" name="password" value="<?php echo $password ?>">
 					</div>
 				</div>
 			</div>
