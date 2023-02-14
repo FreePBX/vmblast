@@ -37,7 +37,9 @@
     <hooks>
 		<framework class="Destinations" namespace="FreePBX">
 			<method callingMethod="getModuleDestinations" class="Vmblast" namespace="FreePBX\modules">destinations</method>
+			<method callingMethod="getModuleCheckDestinations" class="Vmblast" namespace="FreePBX\modules">destinations_check</method>
       		<method callingMethod="getModuleDestinationInfo" class="Vmblast" namespace="FreePBX\modules">destinations_getdestinfo</method>
+			<method callingMethod="identifyDestinations" class="Vmblast" namespace="FreePBX\modules">destinations_identif</method>
 		</framework>
 	</hooks>
     <popovers>
