@@ -270,7 +270,7 @@ class Vmblast extends \FreePBX_Helpers implements \BMO
 			}
 		}
 		
-		return isset($grps) ? $grps : null;
+		return isset($grps) ? $grps : array();
 	}
 
 	public function getDefault()
