@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-07 01:15+0000\n"
+"POT-Creation-Date: 2023-02-15 05:54+0000\n"
 "PO-Revision-Date: 2014-02-19 22:51+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/vmblast/ja/>\n"
@@ -243,12 +243,12 @@ msgstr "ボイスメールブラスト"
 msgid "Voicemail Box List"
 msgstr ""
 
-#: Vmblast.class.php:489
+#: Vmblast.class.php:524
 #, php-format
 msgid "Voicemail Group %s: %s"
 msgstr "ボイスメールグループ %s： %s"
 
-#: Vmblast.class.php:588
+#: Vmblast.class.php:638
 #, php-format
 msgid "Voicemail Group: %s"
 msgstr ""

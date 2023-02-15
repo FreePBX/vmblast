@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-07 01:15+0000\n"
+"POT-Creation-Date: 2023-02-15 05:54+0000\n"
 "PO-Revision-Date: 2019-02-26 13:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/vmblast/de/>\n"
@@ -206,12 +206,12 @@ msgstr ""
 msgid "Voicemail Box List"
 msgstr ""
 
-#: Vmblast.class.php:489
+#: Vmblast.class.php:524
 #, php-format
 msgid "Voicemail Group %s: %s"
 msgstr ""
 
-#: Vmblast.class.php:588
+#: Vmblast.class.php:638
 #, php-format
 msgid "Voicemail Group: %s"
 msgstr ""

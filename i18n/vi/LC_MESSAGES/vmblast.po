@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-07 01:15+0000\n"
+"POT-Creation-Date: 2023-02-15 05:54+0000\n"
 "PO-Revision-Date: 2017-07-20 14:39+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -215,12 +215,12 @@ msgstr "Voicemail Blasting ( Một Mô đun của PBX)"
 msgid "Voicemail Box List"
 msgstr "Danh sách hộp thư thoại"
 
-#: Vmblast.class.php:489
+#: Vmblast.class.php:524
 #, php-format
 msgid "Voicemail Group %s: %s"
 msgstr "Nhóm thư thoại %s: %s"
 
-#: Vmblast.class.php:588
+#: Vmblast.class.php:638
 #, php-format
 msgid "Voicemail Group: %s"
 msgstr ""

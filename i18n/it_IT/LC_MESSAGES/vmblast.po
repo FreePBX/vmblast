@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-07 01:15+0000\n"
+"POT-Creation-Date: 2023-02-15 05:54+0000\n"
 "PO-Revision-Date: 2018-05-07 20:28+0000\n"
 "Last-Translator: Maurizio Longhitano <mlonghitano@teampower.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/vmblast/it/>\n"
@@ -218,12 +218,12 @@ msgstr "Voicemail Blasting"
 msgid "Voicemail Box List"
 msgstr "Elenco Caselle Vocali"
 
-#: Vmblast.class.php:489
+#: Vmblast.class.php:524
 #, php-format
 msgid "Voicemail Group %s: %s"
 msgstr "Gruppo Caselle Vocali %s: %s"
 
-#: Vmblast.class.php:588
+#: Vmblast.class.php:638
 #, php-format
 msgid "Voicemail Group: %s"
 msgstr ""
