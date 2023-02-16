@@ -270,7 +270,7 @@ class Vmblast extends \FreePBX_Helpers implements \BMO
 			}
 		}
 		
-		return isset($grps) ? $grps : null;
+		return isset($grps) ? $grps : array();
 	}
 
 	public function getDefault()
@@ -480,19 +480,69 @@ class Vmblast extends \FreePBX_Helpers implements \BMO
 		$srt_section = sprintf("%s,", self::ASTERISK_SECTION);
 		if (substr(trim($dest),0, strlen($srt_section)) == $srt_section)
 		{
-			$grp = explode(',',$dest);
-			$grp = $grp[1];
-			$thisgrp = $this->vmblast_get($grp);
-			if (! empty($thisgrp))
+			$grp  = explode(',',$dest);
+			$grp  = $grp[1];
+			$info = $this->destinations_format_params($grp);
+			if (! empty($info))
 			{
 				return array(
-					'description' => sprintf(_("Voicemail Group %s: %s"), $grp, $thisgrp['description']),
-					'edit_url' 	  => sprintf('config.php?display=vmblast&view=form&extdisplay=GRP-%s', urlencode($grp)),
+					'description' => $info['description'],
+					'edit_url' 	  => $info['edit_url'],
 				);
 			}
 			return array();
 		}
 		return false;
+	}
+
+	public function destinations_check($dest=true)
+	{
+		$destlist = array();
+		if (is_array($dest) && empty($dest)) { return $destlist; }
+		foreach ($this->listVMBlast() as $result )
+		{
+			$grp  = ltrim($result['0']);
+			$info = $this->destinations_format_params($grp);
+
+			$destlist[] = array(
+				'dest' 		  => $info['dest'],
+				'description' => $info['description'],
+				'edit_url' 	  => $info['edit_url'],
+			);
+		}
+		return $destlist;
+	}
+
+	private function destinations_format_params($dest)
+	{
+		$info 	 = array();
+		$thisgrp = $this->vmblast_get($dest);
+		if (! empty($thisgrp))
+		{
+			$info = array(
+				'dest' 		  => $this->getDest($dest),
+				'description' => sprintf(_("Voicemail Group %s: %s"), $dest, $thisgrp['description']),
+				'edit_url' 	  => sprintf('config.php?display=vmblast&view=form&extdisplay=GRP-%s', urlencode($dest)),
+			);
+		}
+		return $info;
+	}
+
+	public function destinations_identif($dests)
+	{
+		if (! is_array($dests)) {
+			$dests = array($dests);
+		}
+		$return_data = array();
+		foreach ($dests as $target)
+		{
+			$info = $this->destinations_getdestinfo($target);
+			if (!empty($info))
+			{
+				$return_data[$target] = $info;
+			}
+		}
+		return $return_data;
 	}
 
 	public function vmblast_get($grpnum)

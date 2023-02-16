@@ -16,4 +16,8 @@ function vmblast_check_extensions($exten = true)
     return \FreePBX::Vmblast()->vmblast_check_extensions($exten);
 }
 
+function vmblast_list() {
+	return FreePBX::Vmblast()->listVMBlast();
+}
+
 ?>
