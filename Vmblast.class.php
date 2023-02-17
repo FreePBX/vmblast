@@ -504,6 +504,16 @@ class Vmblast extends \FreePBX_Helpers implements \BMO
 			$grp  = ltrim($result['0']);
 			$info = $this->destinations_format_params($grp);
 
+			if (is_array($dest)) 
+			{
+				foreach ($dest as $dest_line)
+				{
+					if ($info['dest'] == $dest_line) {
+						break 2;
+					}
+				}
+			}
+
 			$destlist[] = array(
 				'dest' 		  => $info['dest'],
 				'description' => $info['description'],
