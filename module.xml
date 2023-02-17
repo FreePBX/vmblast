@@ -2,7 +2,7 @@
     <rawname>vmblast</rawname>
     <repo>standard</repo>
     <name>Voicemail Blasting</name>
-    <version>16.0.8</version>
+    <version>16.0.9</version>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
     <licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -12,6 +12,7 @@
     </description>
   	<more-info>https://wiki.freepbx.org/display/F2/Voicemail+Blasting+Module</more-info>
     <changelog>
+		*16.0.9* FREEPBX-23987 
 		*16.0.8* Packaging of ver 16.0.8
 		*16.0.7* FREEPBX-24015 
 		*16.0.6* FREEI-5617 Fixing dependency issue with the CoS module 
