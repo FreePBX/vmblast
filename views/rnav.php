@@ -11,7 +11,7 @@
 </table>
 <script type="text/javascript">
 	$("#table-all-side").on('click-row.bs.table',function(e,row,elem){
-		window.location = '?display=vmblast&view=form&extdisplay='+row['extension'];
+		window.location = '?display=vmblast&view=form&extdisplay=GRP-'+row['extension'];
 	})
   function vmbformatter(v,r){
     return v+' ('+r['extension']+')';

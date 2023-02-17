@@ -101,9 +101,10 @@ class Vmblast extends \FreePBX_Helpers implements \BMO
 
 	public function showPage($page, $params = array())
 	{
+		$request = $_REQUEST;
 		$data = array(
 			"vmblast" => $this,
-			'request' => $_REQUEST,
+			'request' => $request,
 			'page' 	  => $page,
 		);
 		$data = array_merge($data, $params);
@@ -118,7 +119,17 @@ class Vmblast extends \FreePBX_Helpers implements \BMO
 			break;
 
 			case "form":
-				$data_return = load_view(__DIR__."/views/view.form.php", $data);
+				$extdisplay = empty($request['extdisplay']) ? '' 	: ltrim($request['extdisplay'], 'GRP-');
+				$thisgrp 	= $this->vmblast_get($extdisplay);
+				if (!empty($extdisplay) && empty($thisgrp['grplist']))
+				{
+					$data['extdisplay'] = $extdisplay;
+					$data_return = load_view(__DIR__."/views/view.form.error.invalid.php", $data);
+				}
+				else
+				{
+					$data_return = load_view(__DIR__."/views/view.form.php", $data);
+				}
 				break;
 
 			default:
@@ -158,6 +169,15 @@ class Vmblast extends \FreePBX_Helpers implements \BMO
 		{
 			unset($buttons['delete']);
 		}
+		else
+		{
+			$id 	 = ltrim($request['extdisplay'], 'GRP-');
+			$thisgrp = $this->vmblast_get($id);
+			if (empty($thisgrp['grplist']))
+			{
+				$buttons = array();
+			}
+		}
 		return $buttons;
 	}
 
@@ -173,6 +193,15 @@ class Vmblast extends \FreePBX_Helpers implements \BMO
 		{
 			case 'form':
 				$data_return = load_view(__DIR__.'/views/rnav.php', $data);
+				if (! empty($request['extdisplay']))
+				{
+					$id 	 = ltrim($request['extdisplay'], 'GRP-');
+					$thisgrp = $this->vmblast_get($id);
+					if (empty($thisgrp['grplist']))
+					{
+						$data_return = "";
+					}
+				}
 			break;
 			default:
 				//No show Nav
