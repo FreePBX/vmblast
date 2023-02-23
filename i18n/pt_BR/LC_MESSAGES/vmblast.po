@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-17 00:51+0000\n"
+"POT-Creation-Date: 2023-02-23 04:42+0000\n"
 "PO-Revision-Date: 2016-12-16 02:05+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -29,11 +29,15 @@ msgstr "Ações"
 msgid "Add New"
 msgstr ""
 
+#: views/view.form.error.invalid.php:19
+msgid "Add New Voicemail Blasting"
+msgstr ""
+
 #: views/view.grid.php:2
 msgid "Add VM Blast Group"
 msgstr "Adicionar Grupo VM Blast"
 
-#: views/page.main.php:14
+#: views/view.form.php:101
 msgid "Add VMBlast Group"
 msgstr "Adicionar Grupo VMBlast"
 
@@ -53,15 +57,15 @@ msgstr "Rótulo de Audio"
 msgid "Beep Only - No Confirmation"
 msgstr "Somente Bip - Sem Confirmação"
 
-#: Vmblast.class.php:249
+#: Vmblast.class.php:278
 msgid "Change Successfully"
 msgstr ""
 
-#: Vmblast.class.php:254
+#: Vmblast.class.php:283
 msgid "Command not found!"
 msgstr ""
 
-#: views/page.main.php:28
+#: views/page.main.php:17
 msgid "Conflicting Extensions"
 msgstr "Ramais em Conflito"
 
@@ -77,11 +81,11 @@ msgstr ""
 msgid "Default"
 msgstr "Padrão"
 
-#: views/view.form.php:205
+#: views/view.form.php:219
 msgid "Default VMBlast Group"
 msgstr "Grupo VMBlast Padrão"
 
-#: Vmblast.class.php:143
+#: Vmblast.class.php:154
 msgid "Delete"
 msgstr "Apagar"
 
@@ -89,7 +93,7 @@ msgstr "Apagar"
 msgid "Description"
 msgstr "Descrição"
 
-#: views/view.form.php:220
+#: views/view.form.php:234
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -102,15 +106,20 @@ msgstr ""
 "deste grupo o padrão, desmarque a opção do grupo padrão atual, se "
 "especificado."
 
-#: views/page.main.php:10
+#: views/view.form.php:97
 msgid "Edit VMBlast Group"
 msgstr "Editar Grupo VMBlast"
+
+#: views/view.form.error.invalid.php:9
+#, php-format
+msgid "Error: The specified number %s does not exist!"
+msgstr ""
 
 #: views/view.grid.php:15
 msgid "Group"
 msgstr "Grupo"
 
-#: views/view.form.php:130
+#: views/view.form.php:144
 msgid "Group Description"
 msgstr "Descrição do Grupo"
 
@@ -126,23 +135,27 @@ msgstr ""
 msgid "List"
 msgstr ""
 
+#: views/view.form.error.invalid.php:16
+msgid "List Voicemail Blasting"
+msgstr ""
+
 #: assets/js/vmblast.js:34
 msgid "NO"
 msgstr ""
 
-#: Vmblast.class.php:228 Vmblast.class.php:242 assets/js/vmblast.js:91
+#: Vmblast.class.php:257 Vmblast.class.php:271 assets/js/vmblast.js:91
 msgid "Necessary data is missing!"
 msgstr ""
 
-#: views/view.form.php:212
+#: views/view.form.php:226
 msgid "No"
 msgstr "Não"
 
-#: views/view.form.php:155
+#: views/view.form.php:169
 msgid "Optional Password"
 msgstr "Senha Opcional"
 
-#: Vmblast.class.php:125
+#: Vmblast.class.php:136
 #, php-format
 msgid "Page Not Found (%s)!!!!"
 msgstr ""
@@ -169,7 +182,7 @@ msgstr ""
 msgid "Please enter an extension list."
 msgstr ""
 
-#: views/view.form.php:142
+#: views/view.form.php:156
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr "Forneça um título descritivo para este Grupo VMBlast."
 
@@ -177,11 +190,11 @@ msgstr "Forneça um título descritivo para este Grupo VMBlast."
 msgid "Read Group Number"
 msgstr "Ler o Número do Grupo"
 
-#: Vmblast.class.php:153
+#: Vmblast.class.php:164
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: views/view.form.php:193
+#: views/view.form.php:207
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
 "multiple."
@@ -189,15 +202,15 @@ msgstr ""
 "Selecione as caixas de correio de voz para adicionar a este grupo. Use a "
 "tecla Ctrl para selecionar várias."
 
-#: Vmblast.class.php:148
+#: Vmblast.class.php:159
 msgid "Submit"
 msgstr "Enviar"
 
-#: Vmblast.class.php:234
+#: Vmblast.class.php:263
 msgid "Successfully Removed"
 msgstr ""
 
-#: views/view.form.php:118
+#: views/view.form.php:132
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr ""
 "O número de usuários que discarão para as caixas de correio de voz neste "
@@ -207,24 +220,24 @@ msgstr ""
 msgid "VMBlast Group"
 msgstr "Grupo VMBlast"
 
-#: views/view.form.php:106
+#: views/view.form.php:120
 msgid "VMBlast Number"
 msgstr "Número VMBlast"
 
-#: views/page.main.php:2 vmblast.i18n.php:4 vmblast.i18n.php:10
+#: views/page.main.php:23 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr "Correio de Voz Blasting"
 
-#: views/view.form.php:179
+#: views/view.form.php:193
 msgid "Voicemail Box List"
 msgstr "Lista de Caixas de Correio de Voz"
 
-#: Vmblast.class.php:534
+#: Vmblast.class.php:563
 #, php-format
 msgid "Voicemail Group %s: %s"
 msgstr "Grupo de Correio de Voz %s: %s"
 
-#: Vmblast.class.php:648
+#: Vmblast.class.php:677
 #, php-format
 msgid "Voicemail Group: %s"
 msgstr ""
@@ -238,11 +251,11 @@ msgstr ""
 msgid "YES"
 msgstr ""
 
-#: views/view.form.php:210
+#: views/view.form.php:224
 msgid "Yes"
 msgstr "Sim"
 
-#: views/view.form.php:167
+#: views/view.form.php:181
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
