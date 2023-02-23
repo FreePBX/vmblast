@@ -1,18 +1,7 @@
 <?php
-	$heading = _("Voicemail Blasting");
-
     switch ($request['view'])
     {
 		case 'form':
-			$heading .= ": ";
-			if(! empty($request['extdisplay']))
-			{
-				$heading .= sprintf("%s %s", _("Edit VMBlast Group"), ltrim($request['extdisplay'], 'GRP-'));
-			}
-			else
-			{
-				$heading .= _("Add VMBlast Group");
-			}
             $content = $vmblast->showPage('form');
         break;
 
@@ -31,7 +20,7 @@
 	}
 ?>
 <div class="container-fluid">
-	<h1><?php echo $heading; ?></h1>
+	<h1><?php echo _("Voicemail Blasting") ?></h1>
 	<?php echo $conflicthtml ?>
 	<div class = "display full-border">
 		<div class="row">

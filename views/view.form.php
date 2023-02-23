@@ -1,5 +1,5 @@
 <?php
-$extdisplay = empty($request['extdisplay']) ? '' 	: $request['extdisplay'];
+$extdisplay = empty($request['extdisplay']) ? '' 	: ltrim($request['extdisplay'], 'GRP-');
 $typeForm 	= empty($extdisplay) 			? 'new' : 'edit';
 
 if($typeForm == 'edit')
@@ -88,9 +88,23 @@ foreach ($vmblast->hook_core_users_list() as $result)
 		$extenlopts .= sprintf('<option value="%s" %s>%s (%s)</option>', $result[0], ((array_search($result[0], $grplist) !== false) ? 'SELECTED' : ''), $result[0], $result[1]);
 	}
 }
-
-echo $usagehtml;
 ?>
+
+<center><h2>
+	<?php
+	if(! empty($request['extdisplay']))
+	{
+		echo sprintf("%s %s", _("Edit VMBlast Group"), ltrim($request['extdisplay'], 'GRP-'));
+	}
+	else
+	{
+		echo _("Add VMBlast Group");
+	}
+	?>
+</h2>
+</center>
+
+<?php echo $usagehtml; ?>
 
 <form name="editGRP" class="fpbx-submit" action="?display=vmblast" method="post" onsubmit="return checkGRP(editGRP);" data-fpbx-delete="<?php echo $delURL?>">
 <input type="hidden" name="display" value="vmblast">
