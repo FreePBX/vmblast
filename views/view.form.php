@@ -104,7 +104,7 @@ foreach ($vmblast->hook_core_users_list() as $result)
 </h2>
 </center>
 
-<?php echo $usagehtml; ?>
+<?php echo $usagehtml ?? ''; ?>
 
 <form name="editGRP" class="fpbx-submit" action="?display=vmblast" method="post" onsubmit="return checkGRP(editGRP);" data-fpbx-delete="<?php echo $delURL?>">
 <input type="hidden" name="display" value="vmblast">
@@ -145,7 +145,7 @@ foreach ($vmblast->hook_core_users_list() as $result)
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="text" class="form-control maxlen" maxlength="35" id="description" name="description" value="<?php echo $description; ?>">
+						<input type="text" class="form-control maxlen" maxlength="35" id="description" name="description" value="<?php echo $description ?? ''; ?>">
 					</div>
 				</div>
 			</div>
@@ -170,7 +170,7 @@ foreach ($vmblast->hook_core_users_list() as $result)
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="password"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="password" class="form-control toggle-password clicktoedit maxlen" maxlength="20" id="password" name="password" value="<?php echo $password ?>">
+						<input type="password" class="form-control toggle-password clicktoedit maxlen" maxlength="20" id="password" name="password" value="<?php echo $password ?? ''; ?>">
 					</div>
 				</div>
 			</div>
@@ -220,7 +220,7 @@ foreach ($vmblast->hook_core_users_list() as $result)
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="default_group"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" class="form-control" id="default_group1" name="default_group" value="1" <?php echo ($default_group == $extdisplay )?'CHECKED':'';?>>
+						<input type="radio" class="form-control" id="default_group1" name="default_group" value="1" <?php $default_group = $default_group ?? ''; echo ($default_group == $extdisplay )?'CHECKED':'';?>>
 						<label for="default_group1"><?php echo _("Yes")?></label>
 						<input type="radio" class="form-control" id="default_group0" name="default_group" value="0" <?php echo ($default_group == $extdisplay)?'':'CHECKED'; ?>>
 						<label for="default_group0"><?php echo _("No")?></label>

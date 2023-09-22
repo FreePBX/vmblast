@@ -1,5 +1,5 @@
 <?php
-    switch ($request['view'])
+    switch ($request['view'] ?? '')
     {
 		case 'form':
             $content = $vmblast->showPage('form');
@@ -21,7 +21,7 @@
 ?>
 <div class="container-fluid">
 	<h1><?php echo _("Voicemail Blasting") ?></h1>
-	<?php echo $conflicthtml ?>
+	<?php echo $conflicthtml ?? ''; ?>
 	<div class = "display full-border">
 		<div class="row">
 			<div class="col-sm-12">

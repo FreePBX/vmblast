@@ -603,6 +603,7 @@ class Vmblast extends \FreePBX_Helpers implements \BMO
 			die_freepbx("Error selecting from vmblast_groups table");
 			// die_freepbx($grplist->getDebugInfo()."<br><br>".'selecting from vmblast_groups table');
 		}
+		if(empty($results)) $results=[];
 		$results['grplist'] = $grplist;
 
 		$sql = sprintf("SELECT * FROM %s WHERE variable = 'default_vmblast_grp' AND value = :grpnum", $this->table_name['admin']);
