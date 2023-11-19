@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-19 10:22+0000\n"
-"PO-Revision-Date: 2023-11-18 14:01+0000\n"
+"PO-Revision-Date: 2023-11-20 15:01+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/vmblast/"
 "pl/>\n"
@@ -29,57 +29,59 @@ msgstr "Działania"
 #: views/bootnav.php:3
 #: views/grid.php:5
 msgid "Add VM Blast Group"
-msgstr ""
+msgstr "Dodaj grupę VM Blast Group"
 
 #: page.vmblast.php:19
 msgid "Add VMBlast Group"
-msgstr ""
+msgstr "Dodaj VMBlast Group"
 
 #: vmblast.i18n.php:6
 msgid "Applications"
-msgstr ""
+msgstr "Aplikacje"
 
 #: views/form.php:46
 msgid "Audio Label"
-msgstr ""
+msgstr "Etykieta dźwiękowa"
 
 #: views/form.php:52
 msgid "Beep Only - No Confirmation"
-msgstr ""
+msgstr "Tylko sygnał dźwiękowy - brak potwierdzenia"
 
 #: page.vmblast.php:30
 msgid "Conflicting Extensions"
-msgstr ""
+msgstr "Numery wewnętrzne powodujące konflikt"
 
 #: vmblast.i18n.php:8
 msgid ""
 "Creates a group of extensions that calls a group of voicemail boxes and "
 "allows you to leave a message for them all at once."
 msgstr ""
+"Tworzy grupę numerów wewnętrznych, która wywołuje grupę skrzynek poczty "
+"głosowej i umożliwia pozostawienie wiadomości dla nich wszystkich naraz."
 
 #: views/grid.php:19
 msgid "Default"
-msgstr ""
+msgstr "Domyślne"
 
 #: functions.inc.php:281
 msgid "Default Group Inclusion"
-msgstr ""
+msgstr "Domyślna integracja grupy"
 
 #: views/form.php:201
 msgid "Default VMBlast Group"
-msgstr ""
+msgstr "Domyślna grupa VMBlast"
 
 #: functions.inc.php:284
 msgid "Default VMblast Group"
-msgstr ""
+msgstr "Domyślna grupa VMblast"
 
 #: Vmblast.class.php:76
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: views/grid.php:18
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #: install.php:60
 #: install.php:74
@@ -88,11 +90,11 @@ msgstr "Zrobione"
 
 #: install.php:79
 msgid "Dropping grplist.."
-msgstr ""
+msgstr "Porzucanie grplist.."
 
 #: install.php:97
 msgid "Dropping old grplist field.."
-msgstr ""
+msgstr "Porzucanie starych pól grplist.."
 
 #: views/form.php:216
 msgid ""
@@ -101,26 +103,31 @@ msgid ""
 "default group in the Extensions (or Users) tab.<br />Making this group the "
 "default will uncheck the option from the current default group if specified."
 msgstr ""
+"Każdy system PBX może mieć jedną domyślną grupę Voicemail Blast Group. Jeśli "
+"zostanie określona, numery wewnętrzne mogą być automatycznie dodawane (lub "
+"usuwane) z tej grupy domyślnej w zakładce numery wewnętrzne (lub "
+"Użytkownicy).<br />Ustawienie tej grupy jako domyślnej spowoduje usunięcie "
+"zaznaczenia opcji z bieżącej grupy domyślnej, jeśli została określona."
 
 #: page.vmblast.php:17
 msgid "Edit VMBlast Group"
-msgstr ""
+msgstr "Edytuj grupę VMBlast"
 
 #: functions.inc.php:262
 msgid "Exclude"
-msgstr ""
+msgstr "Wyklucz"
 
 #: views/grid.php:17
 msgid "Group"
-msgstr ""
+msgstr "Grupa"
 
 #: views/form.php:126
 msgid "Group Description"
-msgstr ""
+msgstr "Opis grupy"
 
 #: functions.inc.php:263
 msgid "Include"
-msgstr ""
+msgstr "Zawiera"
 
 #: views/bootnav.php:2
 msgid "List VM Blast Groups"
