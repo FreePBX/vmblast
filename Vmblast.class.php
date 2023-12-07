@@ -400,7 +400,7 @@ class Vmblast extends \FreePBX_Helpers implements \BMO
 	// ** Start: Dialplan hooks **
 	public function myDialplanHooks()
 	{
-		return true;
+		return 200;
 	}
 
 	public function doDialplanHook(&$ext, $engine, $priority)
