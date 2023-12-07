@@ -9,29 +9,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-19 10:22+0000\n"
+"POT-Creation-Date: 2023-12-07 11:46+0000\n"
 "PO-Revision-Date: 2023-11-20 15:01+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/vmblast/"
 "pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0.1\n"
 
-#: views/grid.php:20
+#: views/view.grid.php:18
 msgid "Actions"
 msgstr "Działania"
 
-#: views/bootnav.php:3
-#: views/grid.php:5
+#: views/rnav.php:3
+msgid "Add New"
+msgstr ""
+
+#: views/view.form.error.invalid.php:19
+msgid "Add New Voicemail Blasting"
+msgstr ""
+
+#: views/view.grid.php:2
 msgid "Add VM Blast Group"
 msgstr "Dodaj grupę VM Blast Group"
 
-#: page.vmblast.php:19
+#: views/view.form.php:101
 msgid "Add VMBlast Group"
 msgstr "Dodaj VMBlast Group"
 
@@ -39,15 +46,27 @@ msgstr "Dodaj VMBlast Group"
 msgid "Applications"
 msgstr "Aplikacje"
 
-#: views/form.php:46
+#: assets/js/vmblast.js:33
+msgid "Are you sure you want to delete ("
+msgstr ""
+
+#: views/view.form.php:54
 msgid "Audio Label"
 msgstr "Etykieta dźwiękowa"
 
-#: views/form.php:52
+#: views/view.form.php:60
 msgid "Beep Only - No Confirmation"
 msgstr "Tylko sygnał dźwiękowy - brak potwierdzenia"
 
-#: page.vmblast.php:30
+#: Vmblast.class.php:278
+msgid "Change Successfully"
+msgstr ""
+
+#: Vmblast.class.php:283
+msgid "Command not found!"
+msgstr ""
+
+#: views/page.main.php:17
 msgid "Conflicting Extensions"
 msgstr "Numery wewnętrzne powodujące konflikt"
 
@@ -59,44 +78,23 @@ msgstr ""
 "Tworzy grupę numerów wewnętrznych, która wywołuje grupę skrzynek poczty "
 "głosowej i umożliwia pozostawienie wiadomości dla nich wszystkich naraz."
 
-#: views/grid.php:19
+#: views/view.grid.php:17
 msgid "Default"
 msgstr "Domyślne"
 
-#: functions.inc.php:281
-msgid "Default Group Inclusion"
-msgstr "Domyślna integracja grupy"
-
-#: views/form.php:201
+#: views/view.form.php:219
 msgid "Default VMBlast Group"
 msgstr "Domyślna grupa VMBlast"
 
-#: functions.inc.php:284
-msgid "Default VMblast Group"
-msgstr "Domyślna grupa VMblast"
-
-#: Vmblast.class.php:76
+#: Vmblast.class.php:154
 msgid "Delete"
 msgstr "Usuń"
 
-#: views/grid.php:18
+#: views/view.grid.php:16
 msgid "Description"
 msgstr "Opis"
 
-#: install.php:60
-#: install.php:74
-msgid "Done"
-msgstr "Zrobione"
-
-#: install.php:79
-msgid "Dropping grplist.."
-msgstr "Porzucanie grplist.."
-
-#: install.php:97
-msgid "Dropping old grplist field.."
-msgstr "Porzucanie starych pól grplist.."
-
-#: views/form.php:216
+#: views/view.form.php:234
 msgid ""
 "Each PBX system can have a single Default Voicemail Blast Group. If "
 "specified, extensions can be automatically added (or removed) from this "
@@ -109,152 +107,171 @@ msgstr ""
 "Użytkownicy).<br />Ustawienie tej grupy jako domyślnej spowoduje usunięcie "
 "zaznaczenia opcji z bieżącej grupy domyślnej, jeśli została określona."
 
-#: page.vmblast.php:17
+#: views/view.form.php:97
 msgid "Edit VMBlast Group"
 msgstr "Edytuj grupę VMBlast"
 
-#: functions.inc.php:262
-msgid "Exclude"
-msgstr "Wyklucz"
+#: views/view.form.error.invalid.php:9
+#, php-format
+msgid "Error: The specified number %s does not exist!"
+msgstr ""
 
-#: views/grid.php:17
+#: views/view.grid.php:15
 msgid "Group"
 msgstr "Grupa"
 
-#: views/form.php:126
+#: views/view.form.php:144
 msgid "Group Description"
 msgstr "Opis grupy"
 
-#: functions.inc.php:263
-msgid "Include"
-msgstr "Zawiera"
-
-#: views/bootnav.php:2
-msgid "List VM Blast Groups"
+#: assets/js/vmblast.js:101
+msgid "Group numbers with more than one digit cannot begin with 0"
 msgstr ""
 
-#: views/form.php:208
+#: assets/js/vmblast.js:100
+msgid "Invalid Group Number specified"
+msgstr ""
+
+#: views/rnav.php:2
+msgid "List"
+msgstr ""
+
+#: views/view.form.error.invalid.php:16
+msgid "List Voicemail Blasting"
+msgstr ""
+
+#: assets/js/vmblast.js:34
+msgid "NO"
+msgstr ""
+
+#: Vmblast.class.php:257 Vmblast.class.php:271 assets/js/vmblast.js:91
+msgid "Necessary data is missing!"
+msgstr ""
+
+#: views/view.form.php:226
 msgid "No"
 msgstr ""
 
-#: install.php:107
-msgid "Not Needed"
-msgstr ""
-
-#: install.php:53
-#: install.php:67
-msgid "Not Required"
-msgstr ""
-
-#: install.php:103
-msgid "OK"
-msgstr ""
-
-#: views/form.php:151
+#: views/view.form.php:169
 msgid "Optional Password"
 msgstr ""
 
-#: views/form.php:62
+#: Vmblast.class.php:136
+#, php-format
+msgid "Page Not Found (%s)!!!!"
+msgstr ""
+
+#: views/view.form.php:70
 msgid ""
 "Play this message to the caller so they can confirm they have dialed the "
 "proper voice mail group number, or have the system simply read the group "
 "number."
 msgstr ""
 
-#: views/form.php:138
+#: assets/js/vmblast.js:103
+msgid "Please enter a valid Group Description"
+msgstr ""
+
+#: assets/js/vmblast.js:104
+msgid "Please enter a valid numeric password, only numbers are allowed"
+msgstr ""
+
+#: assets/js/vmblast.js:102
+msgid "Please enter an extension list."
+msgstr ""
+
+#: views/view.form.php:156
 msgid "Provide a descriptive title for this VMBlast Group."
 msgstr ""
 
-#: views/form.php:51
+#: views/view.form.php:59
 msgid "Read Group Number"
 msgstr ""
 
-#: Vmblast.class.php:86
+#: Vmblast.class.php:164
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:189
+#: views/view.form.php:207
 msgid ""
 "Select voice mail boxes to add to this group. Use Ctrl key to select "
 "multiple."
 msgstr ""
 
-#: Vmblast.class.php:81
+#: Vmblast.class.php:159
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:114
+#: Vmblast.class.php:263
+msgid "Successfully Removed"
+msgstr ""
+
+#: views/view.form.php:132
 msgid "The number users will dial to voicemail boxes in this VMBlast group"
 msgstr ""
 
-#: install.php:49
-msgid "Upgrading vmblast to add audio_label field.."
-msgstr ""
-
-#: install.php:63
-msgid "Upgrading vmblast to add password field.."
-msgstr ""
-
-#: views/bootnav.php:8
+#: views/rnav.php:8
 msgid "VMBlast Group"
 msgstr ""
 
-#: views/form.php:102
+#: views/view.form.php:120
 msgid "VMBlast Number"
 msgstr ""
 
-#: page.vmblast.php:6
-#: vmblast.i18n.php:4
-#: vmblast.i18n.php:10
+#: views/page.main.php:23 vmblast.i18n.php:4 vmblast.i18n.php:10
 msgid "Voicemail Blasting"
 msgstr ""
 
-#: views/form.php:175
+#: views/view.form.php:193
 msgid "Voicemail Box List"
 msgstr ""
 
-#: functions.inc.php:39
+#: Vmblast.class.php:563
 #, php-format
 msgid "Voicemail Group %s: %s"
 msgstr ""
 
-#: functions.inc.php:138
-msgid "Voicemail Group: "
+#: Vmblast.class.php:677
+#, php-format
+msgid "Voicemail Group: %s"
 msgstr ""
 
-#: Vmblast.class.php:38
-msgid "Warning! Extension"
+#: Vmblast.class.php:67
+#, php-format
+msgid "Warning! Extension %s is not allowed for your account."
 msgstr ""
 
-#: views/form.php:206
+#: assets/js/vmblast.js:34
+msgid "YES"
+msgstr ""
+
+#: views/view.form.php:224
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:284
-msgid ""
-"You can include or exclude this extension/user from being part of the "
-"default voicemail blast group when creating or editing. Choosing this option "
-"will be ignored if the user does not have a voicemail box."
-msgstr ""
-
-#: views/form.php:163
+#: views/view.form.php:181
 msgid ""
 "You can optionally include a password to authenticate before providing "
 "access to this group voicemail list."
 msgstr ""
 
-#: install.php:93
-msgid "error populating vmblast_groups table"
-msgstr ""
+#~ msgid "Default Group Inclusion"
+#~ msgstr "Domyślna integracja grupy"
 
-#: install.php:101
-msgid "failed to drop field"
-msgstr ""
+#~ msgid "Default VMblast Group"
+#~ msgstr "Domyślna grupa VMblast"
 
-#: Vmblast.class.php:38
-msgid "is not allowed for your account"
-msgstr ""
+#~ msgid "Done"
+#~ msgstr "Zrobione"
 
-#: install.php:96
-msgid "populated new table"
-msgstr ""
+#~ msgid "Dropping grplist.."
+#~ msgstr "Porzucanie grplist.."
+
+#~ msgid "Dropping old grplist field.."
+#~ msgstr "Porzucanie starych pól grplist.."
+
+#~ msgid "Exclude"
+#~ msgstr "Wyklucz"
+
+#~ msgid "Include"
+#~ msgstr "Zawiera"
