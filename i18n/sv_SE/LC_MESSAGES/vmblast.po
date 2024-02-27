@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX vmblast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-23 04:42+0000\n"
+"POT-Creation-Date: 2024-02-27 04:44-0500\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -242,7 +242,7 @@ msgstr ""
 msgid "Voicemail Group %s: %s"
 msgstr "Röstgrupp %s: %s"
 
-#: Vmblast.class.php:677
+#: Vmblast.class.php:678
 #, php-format
 msgid "Voicemail Group: %s"
 msgstr ""

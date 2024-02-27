@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for vmblast
-# Copyright (C) 2008-2023 Sangoma Technologies, Inc.
+# Copyright (C) 2008-2024 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-07 11:46+0000\n"
+"POT-Creation-Date: 2024-02-27 04:44-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -224,7 +224,7 @@ msgstr ""
 msgid "Voicemail Group %s: %s"
 msgstr ""
 
-#: Vmblast.class.php:677
+#: Vmblast.class.php:678
 #, php-format
 msgid "Voicemail Group: %s"
 msgstr ""

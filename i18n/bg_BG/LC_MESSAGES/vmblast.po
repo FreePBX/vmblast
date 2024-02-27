@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-23 04:42+0000\n"
+"POT-Creation-Date: 2024-02-27 04:44-0500\n"
 "PO-Revision-Date: 2018-07-04 06:28+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/vmblast/bg/>\n"
@@ -236,7 +236,7 @@ msgstr "Списък на Кутии за Гласова  Поща"
 msgid "Voicemail Group %s: %s"
 msgstr "Група на Гласова Поща %s: %s"
 
-#: Vmblast.class.php:677
+#: Vmblast.class.php:678
 #, php-format
 msgid "Voicemail Group: %s"
 msgstr ""

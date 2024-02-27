@@ -10,7 +10,7 @@
     <description>
         Creates a group of extensions that calls a group of voicemail boxes and allows you to leave a message for them all at once.
     </description>
-  	<more-info>https://wiki.freepbx.org/display/F2/Voicemail+Blasting+Module</more-info>
+  	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/24510683/Voicemail+Blasting+Module</more-info>
     <changelog>
 		*17.0.1* 17.0.1
 	</changelog>
