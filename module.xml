@@ -2,7 +2,7 @@
     <rawname>vmblast</rawname>
     <repo>standard</repo>
     <name>Voicemail Blasting</name>
-    <version>17.0.1</version>
+    <version>17.0.2</version>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
     <licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -29,7 +29,14 @@
             <field name="ext" type="string" length="25" default="" primarykey="true"/>
         </table>
     </database>
-
+<hooks>
+	<framework class="Destinations" namespace="FreePBX">
+		<method callingMethod="getModuleDestinations" class="Vmblast" namespace="FreePBX\modules">destinations</method>
+		<method callingMethod="getModuleCheckDestinations" class="Vmblast" namespace="FreePBX\modules">destinations_check</method>
+		<method callingMethod="getModuleDestinationInfo" class="Vmblast" namespace="FreePBX\modules">destinations_getdestinfo</method>
+		<method callingMethod="identifyDestinations" class="Vmblast" namespace="FreePBX\modules">destinations_identif</method>
+	</framework>
+</hooks>
     <popovers>
         <vmblast>
             <display>vmblast</display>
