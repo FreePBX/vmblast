@@ -2,7 +2,7 @@
     <rawname>vmblast</rawname>
     <repo>standard</repo>
     <name>Voicemail Blasting</name>
-    <version>17.0.2</version>
+    <version>18.0.1</version>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
     <licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -12,8 +12,8 @@
     </description>
   	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/24510683/Voicemail+Blasting+Module</more-info>
     <changelog>
-		*17.0.1* 17.0.1
-	</changelog>
+    	*18.0.1* initial release
+    </changelog>
     <menuitems>
         <vmblast>Voicemail Blasting</vmblast>
     </menuitems>
@@ -43,6 +43,6 @@
         </vmblast>
     </popovers>
     <supported>
-        <version>17.0</version>
+        <version>18.0</version>
     </supported>
 </module>
