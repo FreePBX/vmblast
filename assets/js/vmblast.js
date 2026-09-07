@@ -136,4 +136,10 @@ function checkGRP(theForm) {
 $(document).ready(function()
 {
 	$('#xtnlist').multiselect();
+
+	$('form').on('reset', function() {
+		setTimeout(function() {
+			$('#xtnlist').multiselect('refresh');
+		}, 50);
+	});
 });
